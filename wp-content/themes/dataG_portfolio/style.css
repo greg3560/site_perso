@@ -159,6 +159,8 @@ td
 	text-align:center;
 }
 
+
+
 /***********************************************************************************************************************************
 **************************************************PORTFOLIO***************************************************************************
 ***********************************************************************************************************************************/
@@ -2534,7 +2536,7 @@ li
 }
 #cv_competence_bloc li
 {
-	height:165px;
+	height:120px;
 	list-style-type:none;
 }
 @media all and (max-width: 710px)
@@ -2542,6 +2544,7 @@ li
 	#cv_competence_bloc li
 	{
 		margin-top:20px;
+		height:inherit;
 	}
 }
 #cv_competence_bloc
@@ -2688,8 +2691,8 @@ li
 {
 	height:32px;
 	position:relative;
-	bottom:50px;
-	left:70px;
+	bottom:65px;
+	left:85px;
 	margin-right:0;
 }
 @media all and (max-width: 710px)

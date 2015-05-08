@@ -5,14 +5,6 @@ Template Name: cv
 
 get_header(); ?>
 		<div id="cv_bloc_page">
-			<header id="cv_header">
-				<address id="cv_address">
-					GRÉGORY PEIGNÉ <br />
-					<a href="mailto:gregorypeigne1@gmail.com">gregorypeigne1@gmail.com</a> <br />
-					33 ans <br />
-					Permis B Véhicule personnel
-				</address>
-			</header>
 			<h1 id="cv_h1">Concepteur Développeur Mobile/Web.</h1>
 			<h2 class="cv_h2" onClick="openCvUl('cv_ul0')">COMPÉTENCES</h2>
 			<section class="cv_ul" id="cv_ul0">
@@ -198,11 +190,11 @@ get_header(); ?>
 			<h2 class="cv_h2" onClick="openCvUl('cv_ul5')">CENTRES D'INTERÊTS</h2>
 			<table class="cv_ul" id="cv_ul5">
 				<tr>
-					<td></td>
+					<td>2012-2015</td>
 					<td class="tab">Jujitsu.</td>
 				</tr>
 				<tr>
-					<td></td>
+					<td>2005-2015</td>
 					<td class="tab">Musique assistée par ordinateur.</td>
 				</tr>
 			</table>
