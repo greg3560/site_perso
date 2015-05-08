@@ -23,8 +23,11 @@ class FMControllerSubmissions_fm {
     $id = ((isset($_POST['current_id'])) ? esc_html($_POST['current_id']) : 0);
     $form_id = ((isset($_POST['form_id']) && esc_html($_POST['form_id']) != '') ? esc_html($_POST['form_id']) : 0);	
     if (method_exists($this, $task)) {
-      check_admin_referer('nonce_fm', 'nonce_fm');
-      $this->$task($id); 
+		if($task != 'show_stats')
+			check_admin_referer('nonce_fm', 'nonce_fm');
+		else
+			check_ajax_referer('nonce_fm_ajax', 'nonce_fm_ajax');
+		$this->$task($id); 
     }
     else {
       $this->display($form_id); 
@@ -61,9 +64,7 @@ class FMControllerSubmissions_fm {
     $id = ((isset($_POST['current_id']) && esc_html($_POST['current_id']) != '') ? (int) $_POST['current_id'] : 0);
 			
     $form_id = $wpdb->get_var("SELECT form_id FROM " . $wpdb->prefix . "formmaker_submits WHERE group_id='" . $id . "'");	
-    $form = $wpdb->get_var("SELECT * FROM " . $wpdb->prefix . "formmaker WHERE id='" . $form_id . "'");
-    $theme_id = $form->theme;
-    $css = $wpdb->get_var("SELECT css FROM " . $wpdb->prefix . "formmaker_themes WHERE id='" . $theme_id . "'");	
+    $form = $wpdb->get_row("SELECT * FROM " . $wpdb->prefix . "formmaker WHERE id='" . $form_id . "'");
 
     if (isset($form->form)) {
       $old = TRUE;
@@ -79,7 +80,7 @@ class FMControllerSubmissions_fm {
       $view->edit($id);
     }
   }
-
+  
   public function save() {
     $form_id = ((isset($_POST['form_id']) && esc_html($_POST['form_id']) != '') ? esc_html($_POST['form_id']) : 0);
     $this->save_db();
@@ -669,7 +670,18 @@ class FMControllerSubmissions_fm {
     global $wpdb;
     $form_id = ((isset($_POST['form_id']) && esc_html($_POST['form_id']) != '') ? esc_html($_POST['form_id']) : 0);	    
     $query = $wpdb->prepare('DELETE FROM ' . $wpdb->prefix . 'formmaker_submits WHERE group_id="%d"', $id);
+    // $elements_col = $wpdb->get_col($wpdb->prepare('SELECT element_value FROM ' . $wpdb->prefix . 'formmaker_submits WHERE group_id="%d"', $id));
     if ($wpdb->query($query)) {
+      // foreach ($elements_col as $element_value) {
+        // $destination = str_replace(site_url() . '/', '', $element_value);
+        // $destination = str_replace('*@@url@@*', '', $destination);
+        // if ($destination) {
+          // $destination = ABSPATH . $destination;
+          // if (file_exists($destination)) {
+             // unlink($destination);
+          // }
+        // }
+      // }
       echo WDW_FM_Library::message('Item Succesfully Deleted.', 'updated');
     }
     else {
@@ -685,7 +697,18 @@ class FMControllerSubmissions_fm {
     if (count($cid)) {
       $cids = implode(',', $cid);
       $query = 'DELETE FROM ' . $wpdb->prefix . 'formmaker_submits WHERE group_id IN ( ' . $cids . ' )';
+      // $elements_col = $wpdb->get_col('SELECT element_value FROM ' . $wpdb->prefix . 'formmaker_submits WHERE group_id IN ( ' . $cids . ' )');
       if ($wpdb->query($query)) {
+        // foreach ($elements_col as $element_value) {
+          // $destination = str_replace(site_url() . '/', '', $element_value);
+          // $destination = str_replace('*@@url@@*', '', $destination);
+          // if ($destination) {
+            // $destination = ABSPATH . $destination;
+            // if (file_exists($destination)) {
+               // unlink($destination);
+            // }
+          // }
+        // }
         echo WDW_FM_Library::message('Items Succesfully Deleted.', 'updated');
       }
       else {

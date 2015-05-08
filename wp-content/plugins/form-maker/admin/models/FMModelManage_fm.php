@@ -20,7 +20,7 @@ class FMModelManage_fm {
   ////////////////////////////////////////////////////////////////////////////////////////
   public function get_rows_data() {
     global $wpdb;
-    $where = 'WHERE `id` NOT IN (' . (get_option('contact_form_forms', '') != '' ? get_option('contact_form_forms') : 0) . ')';
+     $where = 'WHERE `id` NOT IN (' . (get_option('contact_form_forms', '') != '' ? get_option('contact_form_forms') : 0) . ')';
     $where .= ((isset($_POST['search_value']) && (esc_html($_POST['search_value']) != '')) ? ' AND title LIKE "%' . esc_html($_POST['search_value']) . '%"' : '');
     $asc_or_desc = ((isset($_POST['asc_or_desc'])) ? esc_html($_POST['asc_or_desc']) : 'asc');
     $order_by = ' ORDER BY ' . ((isset($_POST['order_by']) && esc_html($_POST['order_by']) != '') ? esc_html($_POST['order_by']) : 'id') . ' ' . $asc_or_desc;
@@ -209,28 +209,39 @@ class FMModelManage_fm {
               $rep ='<div id="wdform_field'.$id.'" type="type_send_copy" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" style="display: '.$param['w_field_label_pos'].'"><input type="hidden" value="type_send_copy" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp" /><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp" /><input type="checkbox" id="'.$id.'_elementform_id_temp" name="'.$id.'_elementform_id_temp" onclick="set_checked(&quot;'.$id.'&quot;,&quot;&quot;,&quot;form_id_temp&quot;)" '.$input_active.' '.$param['attributes'].' disabled /></div></div>';
               break;
             }
-            case 'type_text': {
-              $params_names = array('w_field_label_size', 'w_field_label_pos', 'w_size', 'w_first_val', 'w_title', 'w_required', 'w_unique');
-              $temp = $params;
-              foreach ($params_names as $params_name) {
-                $temp = explode('*:*' . $params_name . '*:*', $temp);
-                $param[$params_name] = $temp[0];
-                $temp = $temp[1];
-              }
-              if ($temp) {
-                $temp	= explode('*:*w_attr_name*:*', $temp);
-                $attrs = array_slice($temp, 0, count($temp) - 1);
-                foreach ($attrs as $attr) {
-                  $param['attributes'] = $param['attributes'] . ' add_' . $attr;
-                }
-              }
-              $param['w_field_label_pos'] = ($param['w_field_label_pos'] == "left" ? "table-cell" : "block");
-              $input_active = ($param['w_first_val'] == $param['w_title'] ? "input_deactive" : "input_active");
-              $required_sym = ($param['w_required'] == "yes" ? " *" : "");
-              $rep ='<div id="wdform_field'.$id.'" type="type_text" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" style="display: '.$param['w_field_label_pos'].'"><input type="hidden" value="type_text" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp" /><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp" /><input type="hidden" value="'.$param['w_unique'].'" name="'.$id.'_uniqueform_id_temp" id="'.$id.'_uniqueform_id_temp" /><input type="text" class="'.$input_active.'" id="'.$id.'_elementform_id_temp" name="'.$id.'_elementform_id_temp" value="'.$param['w_first_val'].'" title="'.$param['w_title'].'" onfocus="delete_value(&quot;'.$id.'_elementform_id_temp&quot;)" onblur="return_value(&quot;'.$id.'_elementform_id_temp&quot;)" onchange="change_value(&quot;'.$id.'_elementform_id_temp&quot;)" style="width: '.$param['w_size'].'px;" '.$param['attributes'].' disabled /></div></div>';
-              break;
+           case 'type_text': {
+				$params_names = array('w_field_label_size', 'w_field_label_pos', 'w_size', 'w_first_val', 'w_title', 'w_required', 'w_unique');
+				$temp = $params;
+				if(strpos($temp, 'w_regExp_status') > -1)
+					$params_names = array('w_field_label_size','w_field_label_pos','w_size','w_first_val','w_title','w_required', 'w_regExp_status', 'w_regExp_value', 'w_regExp_common', 'w_regExp_arg', 'w_regExp_alert', 'w_unique');
+				foreach ($params_names as $params_name) {
+					$temp = explode('*:*' . $params_name . '*:*', $temp);
+					$param[$params_name] = $temp[0];
+					$temp = $temp[1];
+				}
+				if ($temp) {
+					$temp	= explode('*:*w_attr_name*:*', $temp);
+					$attrs = array_slice($temp, 0, count($temp) - 1);
+					foreach ($attrs as $attr) {
+					  $param['attributes'] = $param['attributes'] . ' add_' . $attr;
+					}
+				}
+				
+				$param['w_field_label_pos'] = ($param['w_field_label_pos'] == "left" ? "table-cell" : "block");
+				$input_active = ($param['w_first_val'] == $param['w_title'] ? "input_deactive" : "input_active");
+				$required_sym = ($param['w_required'] == "yes" ? " *" : "");
+				
+				$param['w_regExp_status'] = (isset($param['w_regExp_status']) ? $param['w_regExp_status'] : "no");
+				$param['w_regExp_value'] = (isset($param['w_regExp_value']) ? $param['w_regExp_value'] : "");
+				$param['w_regExp_common'] = (isset($param['w_regExp_common']) ? $param['w_regExp_common'] : "");
+				$param['w_regExp_arg'] = (isset($param['w_regExp_arg']) ? $param['w_regExp_arg'] : "");
+				$param['w_regExp_alert'] = (isset($param['w_regExp_alert']) ? $param['w_regExp_alert'] : "Incorrect Value");
+				
+				$rep ='<div id="wdform_field'.$id.'" type="type_text" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" style="display: '.$param['w_field_label_pos'].'"><input type="hidden" value="type_text" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp" /><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp" /><input type="hidden" value="'.$param['w_regExp_status'].'" name="'.$id.'_regExpStatusform_id_temp" id="'.$id.'_regExpStatusform_id_temp"><input type="hidden" value="'.$param['w_regExp_value'].'" name="'.$id.'_regExp_valueform_id_temp" id="'.$id.'_regExp_valueform_id_temp"><input type="hidden" value="'.$param['w_regExp_common'].'" name="'.$id.'_regExp_commonform_id_temp" id="'.$id.'_regExp_commonform_id_temp"><input type="hidden" value="'.$param['w_regExp_alert'].'" name="'.$id.'_regExp_alertform_id_temp" id="'.$id.'_regExp_alertform_id_temp"><input type="hidden" value="'.$param['w_regExp_arg'].'" name="'.$id.'_regArgumentform_id_temp" id="'.$id.'_regArgumentform_id_temp"><input type="hidden" value="'.$param['w_unique'].'" name="'.$id.'_uniqueform_id_temp" id="'.$id.'_uniqueform_id_temp" /><input type="text" class="'.$input_active.'" id="'.$id.'_elementform_id_temp" name="'.$id.'_elementform_id_temp" value="'.$param['w_first_val'].'" title="'.$param['w_title'].'" onfocus="delete_value(&quot;'.$id.'_elementform_id_temp&quot;)" onblur="return_value(&quot;'.$id.'_elementform_id_temp&quot;)" onchange="change_value(&quot;'.$id.'_elementform_id_temp&quot;)" style="width: '.$param['w_size'].'px;" '.$param['attributes'].' disabled /></div></div>';
+				
+				break;
             }
-            case 'type_number': {
+          case 'type_number': {
               $params_names = array('w_field_label_size', 'w_field_label_pos', 'w_size', 'w_first_val', 'w_title', 'w_required', 'w_unique', 'w_class');
               $temp = $params;
               foreach ($params_names as $params_name) {
@@ -413,8 +424,8 @@ class FMModelManage_fm {
 					if($w_disabled_fields[5]=='no')
 					{
 					$g++;
-					$address_fields .= '<span style="float: '.(($g%2==0) ? 'right' : 'left').'; width: 48%; padding-bottom: 8px;"><select type="text" id="'.$id.'_countryform_id_temp" name="'.($id+5).'_countryform_id_temp" onchange="change_value(&quot;'.$id.'_countryform_id_temp&quot;)" style="width: 100%;" '.$param['attributes'].'><option value=""></option><option value="Afghanistan">Afghanistan</option><option value="Albania">Albania</option><option value="Algeria">Algeria</option><option value="Andorra">Andorra</option><option value="Angola">Angola</option><option value="Antigua and Barbuda">Antigua and Barbuda</option><option value="Argentina">Argentina</option><option value="Armenia">Armenia</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Azerbaijan">Azerbaijan</option><option value="Bahamas">Bahamas</option><option value="Bahrain">Bahrain</option><option value="Bangladesh">Bangladesh</option><option value="Barbados">Barbados</option><option value="Belarus">Belarus</option><option value="Belgium">Belgium</option><option value="Belize">Belize</option><option value="Benin">Benin</option><option value="Bhutan">Bhutan</option><option value="Bolivia">Bolivia</option><option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option value="Botswana">Botswana</option><option value="Brazil">Brazil</option><option value="Brunei">Brunei</option><option value="Bulgaria">Bulgaria</option><option value="Burkina Faso">Burkina Faso</option><option value="Burundi">Burundi</option><option value="Cambodia">Cambodia</option><option value="Cameroon">Cameroon</option><option value="Canada">Canada</option><option value="Cape Verde">Cape Verde</option><option value="Central African Republic">Central African Republic</option><option value="Chad">Chad</option><option value="Chile">Chile</option><option value="China">China</option><option value="Colombi">Colombi</option><option value="Comoros">Comoros</option><option value="Congo (Brazzaville)">Congo (Brazzaville)</option><option value="Congo">Congo</option><option value="Costa Rica">Costa Rica</option><option value="Cote d\'Ivoire">Cote d\'Ivoire</option><option value="Croatia">Croatia</option><option value="Cuba">Cuba</option><option value="Cyprus">Cyprus</option><option value="Czech Republic">Czech Republic</option><option value="Denmark">Denmark</option><option value="Djibouti">Djibouti</option><option value="Dominica">Dominica</option><option value="Dominican Republic">Dominican Republic</option><option value="East Timor (Timor Timur)">East Timor (Timor Timur)</option><option value="Ecuador">Ecuador</option><option value="Egypt">Egypt</option><option value="El Salvador">El Salvador</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Eritrea">Eritrea</option><option value="Estonia">Estonia</option><option value="Ethiopia">Ethiopia</option><option value="Fiji">Fiji</option><option value="Finland">Finland</option><option value="France">France</option><option value="Gabon">Gabon</option><option value="Gambia, The">Gambia, The</option><option value="Georgia">Georgia</option><option value="Germany">Germany</option><option value="Ghana">Ghana</option><option value="Greece">Greece</option><option value="Grenada">Grenada</option><option value="Guatemala">Guatemala</option><option value="Guinea">Guinea</option><option value="Guinea-Bissau">Guinea-Bissau</option><option value="Guyana">Guyana</option><option value="Haiti">Haiti</option><option value="Honduras">Honduras</option><option value="Hungary">Hungary</option><option value="Iceland">Iceland</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran">Iran</option><option value="Iraq">Iraq</option><option value="Ireland">Ireland</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Jamaica">Jamaica</option><option value="Japan">Japan</option><option value="Jordan">Jordan</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option va
-lue="Kiribati">Kiribati</option><option value="Korea, North">Korea, North</option><option value="Korea, South">Korea, South</option><option value="Kuwait">Kuwait</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Laos">Laos</option><option value="Latvia">Latvia</option><option value="Lebanon">Lebanon</option><option value="Lesotho">Lesotho</option><option value="Liberia">Liberia</option><option value="Libya">Libya</option><option value="Liechtenstein">Liechtenstein</option><option value="Lithuania">Lithuania</option><option value="Luxembourg">Luxembourg</option><option value="Macedonia">Macedonia</option><option value="Madagascar">Madagascar</option><option value="Malawi">Malawi</option><option value="Malaysia">Malaysia</option><option value="Maldives">Maldives</option><option value="Mali">Mali</option><option value="Malta">Malta</option><option value="Marshall Islands">Marshall Islands</option><option value="Mauritania">Mauritania</option><option value="Mauritius">Mauritius</option><option value="Mexico">Mexico</option><option value="Micronesia">Micronesia</option><option value="Moldova">Moldova</option><option value="Monaco">Monaco</option><option value="Mongolia">Mongolia</option><option value="Morocco">Morocco</option><option value="Mozambique">Mozambique</option><option value="Myanmar">Myanmar</option><option value="Namibia">Namibia</option><option value="Nauru">Nauru</option><option value="Nepa">Nepa</option><option value="Netherlands">Netherlands</option><option value="New Zealand">New Zealand</option><option value="Nicaragua">Nicaragua</option><option value="Niger">Niger</option><option value="Nigeria">Nigeria</option><option value="Norway">Norway</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Palau">Palau</option><option value="Panama">Panama</option><option value="Papua New Guinea">Papua New Guinea</option><option value="Paraguay">Paraguay</option><option value="Peru">Peru</option><option value="Philippines">Philippines</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Qatar">Qatar</option><option value="Romania">Romania</option><option value="Russia">Russia</option><option value="Rwanda">Rwanda</option><option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option value="Saint Lucia">Saint Lucia</option><option value="Saint Vincent">Saint Vincent</option><option value="Samoa">Samoa</option><option value="San Marino">San Marino</option><option value="Sao Tome and Principe">Sao Tome and Principe</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Senegal">Senegal</option><option value="Serbia and Montenegro">Serbia and Montenegro</option><option value="Seychelles">Seychelles</option><option value="Sierra Leone">Sierra Leone</option><option value="Singapore">Singapore</option><option value="Slovakia">Slovakia</option><option value="Slovenia">Slovenia</option><option value="Solomon Islands">Solomon Islands</option><option value="Somalia">Somalia</option><option value="South Africa">South Africa</option><option value="Spain">Spain</option><option value="Sri Lanka">Sri Lanka</option><option value="Sudan">Sudan</option><option value="Suriname">Suriname</option><option value="Swaziland">Swaziland</option><option value="Sweden">Sweden</option><option value="Switzerland">Switzerland</option><option value="Syria">Syria</option><option value="Taiwan">Taiwan</option><option value="Tajikistan">Tajikistan</option><option value="Tanzania">Tanzania</option><option value="Thailand">Thailand</option><option value="Togo">Togo</option><option value="Tonga">Tonga</option><option value="Trinidad and Tobago">Trinidad and Tobago</option><option value="Tunisia">Tunisia</option><option value="Turkey">Turkey</option><option value="Turkmenistan">Turkmenistan</option><option value="Tuvalu">Tuvalu</option><option value="Uganda">Uganda</option><option value="Ukraine">Ukraine</option><option value="United Arab Emirates">United Arab Emirates</option><option value="United Kingdom">United Ki
+					$address_fields .= '<span style="float: '.(($g%2==0) ? 'right' : 'left').'; width: 48%; padding-bottom: 8px;"><select type="text" id="'.$id.'_countryform_id_temp" name="'.($id+5).'_countryform_id_temp" onchange="change_value(&quot;'.$id.'_countryform_id_temp&quot;)" style="width: 100%;" '.$param['attributes'].'><option value=""></option><option value="Afghanistan">Afghanistan</option><option value="Albania">Albania</option><option value="Algeria">Algeria</option><option value="Andorra">Andorra</option><option value="Angola">Angola</option><option value="Antigua and Barbuda">Antigua and Barbuda</option><option value="Argentina">Argentina</option><option value="Armenia">Armenia</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Azerbaijan">Azerbaijan</option><option value="Bahamas">Bahamas</option><option value="Bahrain">Bahrain</option><option value="Bangladesh">Bangladesh</option><option value="Barbados">Barbados</option><option value="Belarus">Belarus</option><option value="Belgium">Belgium</option><option value="Belize">Belize</option><option value="Benin">Benin</option><option value="Bhutan">Bhutan</option><option value="Bolivia">Bolivia</option><option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option value="Botswana">Botswana</option><option value="Brazil">Brazil</option><option value="Brunei">Brunei</option><option value="Bulgaria">Bulgaria</option><option value="Burkina Faso">Burkina Faso</option><option value="Burundi">Burundi</option><option value="Cambodia">Cambodia</option><option value="Cameroon">Cameroon</option><option value="Canada">Canada</option><option value="Cape Verde">Cape Verde</option><option value="Central African Republic">Central African Republic</option><option value="Chad">Chad</option><option value="Chile">Chile</option><option value="China">China</option><option value="Colombia">Colombia</option><option value="Comoros">Comoros</option><option value="Congo (Brazzaville)">Congo (Brazzaville)</option><option value="Congo">Congo</option><option value="Costa Rica">Costa Rica</option><option value="Cote d\'Ivoire">Cote d\'Ivoire</option><option value="Croatia">Croatia</option><option value="Cuba">Cuba</option><option value="Cyprus">Cyprus</option><option value="Czech Republic">Czech Republic</option><option value="Denmark">Denmark</option><option value="Djibouti">Djibouti</option><option value="Dominica">Dominica</option><option value="Dominican Republic">Dominican Republic</option><option value="East Timor (Timor Timur)">East Timor (Timor Timur)</option><option value="Ecuador">Ecuador</option><option value="Egypt">Egypt</option><option value="El Salvador">El Salvador</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Eritrea">Eritrea</option><option value="Estonia">Estonia</option><option value="Ethiopia">Ethiopia</option><option value="Fiji">Fiji</option><option value="Finland">Finland</option><option value="France">France</option><option value="Gabon">Gabon</option><option value="Gambia, The">Gambia, The</option><option value="Georgia">Georgia</option><option value="Germany">Germany</option><option value="Ghana">Ghana</option><option value="Greece">Greece</option><option value="Grenada">Grenada</option><option value="Guatemala">Guatemala</option><option value="Guinea">Guinea</option><option value="Guinea-Bissau">Guinea-Bissau</option><option value="Guyana">Guyana</option><option value="Haiti">Haiti</option><option value="Honduras">Honduras</option><option value="Hungary">Hungary</option><option value="Iceland">Iceland</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran">Iran</option><option value="Iraq">Iraq</option><option value="Ireland">Ireland</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Jamaica">Jamaica</option><option value="Japan">Japan</option><option value="Jordan">Jordan</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option va
+lue="Kiribati">Kiribati</option><option value="Korea, North">Korea, North</option><option value="Korea, South">Korea, South</option><option value="Kuwait">Kuwait</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Laos">Laos</option><option value="Latvia">Latvia</option><option value="Lebanon">Lebanon</option><option value="Lesotho">Lesotho</option><option value="Liberia">Liberia</option><option value="Libya">Libya</option><option value="Liechtenstein">Liechtenstein</option><option value="Lithuania">Lithuania</option><option value="Luxembourg">Luxembourg</option><option value="Macedonia">Macedonia</option><option value="Madagascar">Madagascar</option><option value="Malawi">Malawi</option><option value="Malaysia">Malaysia</option><option value="Maldives">Maldives</option><option value="Mali">Mali</option><option value="Malta">Malta</option><option value="Marshall Islands">Marshall Islands</option><option value="Mauritania">Mauritania</option><option value="Mauritius">Mauritius</option><option value="Mexico">Mexico</option><option value="Micronesia">Micronesia</option><option value="Moldova">Moldova</option><option value="Monaco">Monaco</option><option value="Mongolia">Mongolia</option><option value="Morocco">Morocco</option><option value="Mozambique">Mozambique</option><option value="Myanmar">Myanmar</option><option value="Namibia">Namibia</option><option value="Nauru">Nauru</option><option value="Nepal">Nepal</option><option value="Netherlands">Netherlands</option><option value="New Zealand">New Zealand</option><option value="Nicaragua">Nicaragua</option><option value="Niger">Niger</option><option value="Nigeria">Nigeria</option><option value="Norway">Norway</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Palau">Palau</option><option value="Panama">Panama</option><option value="Papua New Guinea">Papua New Guinea</option><option value="Paraguay">Paraguay</option><option value="Peru">Peru</option><option value="Philippines">Philippines</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Qatar">Qatar</option><option value="Romania">Romania</option><option value="Russia">Russia</option><option value="Rwanda">Rwanda</option><option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option value="Saint Lucia">Saint Lucia</option><option value="Saint Vincent">Saint Vincent</option><option value="Samoa">Samoa</option><option value="San Marino">San Marino</option><option value="Sao Tome and Principe">Sao Tome and Principe</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Senegal">Senegal</option><option value="Serbia and Montenegro">Serbia and Montenegro</option><option value="Seychelles">Seychelles</option><option value="Sierra Leone">Sierra Leone</option><option value="Singapore">Singapore</option><option value="Slovakia">Slovakia</option><option value="Slovenia">Slovenia</option><option value="Solomon Islands">Solomon Islands</option><option value="Somalia">Somalia</option><option value="South Africa">South Africa</option><option value="Spain">Spain</option><option value="Sri Lanka">Sri Lanka</option><option value="Sudan">Sudan</option><option value="Suriname">Suriname</option><option value="Swaziland">Swaziland</option><option value="Sweden">Sweden</option><option value="Switzerland">Switzerland</option><option value="Syria">Syria</option><option value="Taiwan">Taiwan</option><option value="Tajikistan">Tajikistan</option><option value="Tanzania">Tanzania</option><option value="Thailand">Thailand</option><option value="Togo">Togo</option><option value="Tonga">Tonga</option><option value="Trinidad and Tobago">Trinidad and Tobago</option><option value="Tunisia">Tunisia</option><option value="Turkey">Turkey</option><option value="Turkmenistan">Turkmenistan</option><option value="Tuvalu">Tuvalu</option><option value="Uganda">Uganda</option><option value="Ukraine">Ukraine</option><option value="United Arab Emirates">United Arab Emirates</option><option value="United Kingdom">United Ki
 ngdom</option><option value="United States">United States</option><option value="Uruguay">Uruguay</option><option value="Uzbekistan">Uzbekistan</option><option value="Vanuatu">Vanuatu</option><option value="Vatican City">Vatican City</option><option value="Venezuela">Venezuela</option><option value="Vietnam">Vietnam</option><option value="Yemen">Yemen</option><option value="Zambia">Zambia</option><option value="Zimbabwe">Zimbabwe</option></select><label class="mini_label" style="display: block;" id="'.$id.'_mini_label_country">'.$w_mini_labels[5].'</span>';
 					}				
 				
@@ -450,6 +461,8 @@ ngdom</option><option value="United States">United States</option><option value=
             {
               $params_names=array('w_field_label_size','w_field_label_pos','w_flow','w_choices','w_choices_checked','w_rowcol', 'w_required','w_randomize','w_allow_other','w_allow_other_num','w_class');
               $temp=$params;
+			  if(strpos($temp, 'w_field_option_pos') > -1)
+						$params_names=array('w_field_label_size','w_field_label_pos','w_field_option_pos','w_flow','w_choices','w_choices_checked','w_rowcol', 'w_required','w_randomize','w_allow_other','w_allow_other_num', 'w_value_disabled','w_choices_value', 'w_choices_params', 'w_class');
               foreach($params_names as $params_name )
               {	
                 $temp=explode('*:*'.$params_name.'*:*',$temp);
@@ -464,12 +477,23 @@ ngdom</option><option value="United States">United States</option><option value=
                 foreach($attrs as $attr)
                   $param['attributes'] = $param['attributes'].' add_'.$attr;
               }
-
+               if(!isset($param['w_value_disabled']))
+						$param['w_value_disabled'] = 'no';
+					
+			   if(!isset($param['w_field_option_pos']))
+						$param['w_field_option_pos'] = 'left';
+						
               $param['w_field_label_pos'] = ($param['w_field_label_pos']=="left" ? "table-cell" : "block");	
               $required_sym = ($param['w_required']=="yes" ? " *" : "");	
               $param['w_choices']	= explode('***',$param['w_choices']);
               $param['w_choices_checked']	= explode('***',$param['w_choices_checked']);
-              
+			  
+              if(isset($param['w_choices_value']))
+				{
+					$param['w_choices_value'] = explode('***',$param['w_choices_value']);
+					$param['w_choices_params'] = explode('***',$param['w_choices_params']);	
+				}
+					
               foreach($param['w_choices_checked'] as $key => $choices_checked )
               {
                 if($choices_checked=='true')
@@ -478,8 +502,8 @@ ngdom</option><option value="United States">United States</option><option value=
                   $param['w_choices_checked'][$key]='';
               }
               
-              $rep='<div id="wdform_field'.$id.'" type="type_checkbox" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].';"><input type="hidden" value="type_checkbox" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp"><input type="hidden" value="'.$param['w_randomize'].'" name="'.$id.'_randomizeform_id_temp" id="'.$id.'_randomizeform_id_temp"><input type="hidden" value="'.$param['w_allow_other'].'" name="'.$id.'_allow_otherform_id_temp" id="'.$id.'_allow_otherform_id_temp"><input type="hidden" value="'.$param['w_allow_other_num'].'" name="'.$id.'_allow_other_numform_id_temp" id="'.$id.'_allow_other_numform_id_temp"><input type="hidden" value="'.$param['w_rowcol'].'" name="'.$id.'_rowcol_numform_id_temp" id="'.$id.'_rowcol_numform_id_temp"><div style="display: table;"><div id="'.$id.'_table_little" style="display: table-row-group;" '.($param['w_flow']=='hor' ? 'for_hor="'.$id.'_hor"' : '').'>';
-            
+              $rep='<div id="wdform_field'.$id.'" type="type_checkbox" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].';"><input type="hidden" value="type_checkbox" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp"><input type="hidden" value="'.$param['w_randomize'].'" name="'.$id.'_randomizeform_id_temp" id="'.$id.'_randomizeform_id_temp"><input type="hidden" value="'.$param['w_allow_other'].'" name="'.$id.'_allow_otherform_id_temp" id="'.$id.'_allow_otherform_id_temp"><input type="hidden" value="'.$param['w_allow_other_num'].'" name="'.$id.'_allow_other_numform_id_temp" id="'.$id.'_allow_other_numform_id_temp"><input type="hidden" value="'.$param['w_rowcol'].'" name="'.$id.'_rowcol_numform_id_temp" id="'.$id.'_rowcol_numform_id_temp"><input type="hidden" value="'.$param['w_field_option_pos'].'" id="'.$id.'_option_left_right"><input type="hidden" value="'.$param['w_value_disabled'].'" name="'.$id.'_value_disabledform_id_temp" id="'.$id.'_value_disabledform_id_temp"><div style="display: table;"><div id="'.$id.'_table_little" style="display: table-row-group;" '.($param['w_flow']=='hor' ? 'for_hor="'.$id.'_hor"' : '').'>';
+				
             if($param['w_flow']=='hor')
             {
                 $j = 0;
@@ -493,9 +517,28 @@ ngdom</option><option value="United States">United States</option><option value=
                       continue;
                       
                       if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==(int)$param['w_rowcol']*$i+$l)
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$l+$i).'" idi="'.((int)$param['w_rowcol']*$l+$i).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$l+$i).'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$l+$i].' '.$param['attributes'].' disabled /><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$l+$i).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'">'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'</label></div>';
-									else						
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$l+$i).'" idi="'.((int)$param['w_rowcol']*$l+$i).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$l+$i).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$l+$i].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$l+$i).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'">'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'</label></div>';
+							         $rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$l+$i).'" idi="'.((int)$param['w_rowcol']*$l+$i).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$l+$i).'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$l+$i].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled  /><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$l+$i).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'">'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'</label></div>';
+								else	
+									{
+										$where = '';
+										$order_by = '';
+										$db_info = '';
+										if(isset($param['w_choices_value']))
+											$choise_value = $param['w_choices_value'][(int)$param['w_rowcol']*$l+$i];
+										else
+											$choise_value = $param['w_choices'][(int)$param['w_rowcol']*$l+$i];
+									
+										if(isset($param['w_choices_params']) && $param['w_choices_params'][(int)$param['w_rowcol']*$l+$i])
+										{
+											$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][(int)$param['w_rowcol']*$l+$i]);
+											$where = "where='".$w_choices_params[0]."'";
+											$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+											$order_by = "order_by='".$w_choices_params[0]."'";
+											$db_info = "db_info='".$w_choices_params[1]."'";
+										}
+									
+										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$l+$i).'" idi="'.((int)$param['w_rowcol']*$l+$i).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$l+$i).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$l+$i].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$l+$i).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" '.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'</label></div>';	
+									}
                     }
                   
                   $j++;
@@ -514,17 +557,56 @@ ngdom</option><option value="United States">United States</option><option value=
 								for($l=0; $l<$param['w_rowcol']; $l++)
 								{
 									if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==(int)$param['w_rowcol']*$i+$l)
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' disabled /><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
-									else						
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled /><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+										else
+									{
+										$where = '' ;
+										$order_by = '' ;
+										$db_info = '' ;
+										if(isset($param['w_choices_value']))
+											$choise_value =	$param['w_choices_value'][(int)$param['w_rowcol']*$i+$l]; 
+										else
+											$choise_value = $param['w_choices'][(int)$param['w_rowcol']*$i+$l];
+
+										if(isset($param['w_choices_params']) && $param['w_choices_params'][(int)$param['w_rowcol']*$i+$l])
+										{
+											$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][(int)$param['w_rowcol']*$i+$l]);
+											$where = "where='".$w_choices_params[0]."'";
+											$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+											$order_by = "order_by='".$w_choices_params[0]."'";
+											$db_info = "db_info='".$w_choices_params[1]."'";
+										}
+									
+										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'"
+										'.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+									}	
 								}
 							else
 								for($l=0; $l<count($param['w_choices']); $l++)
 								{
 									if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==(int)$param['w_rowcol']*$i+$l)
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
-									else	
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+											$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+									else
+									{
+										$where = '' ;
+										$order_by = '' ;
+										$db_info = '' ;
+										if(isset($param['w_choices_value']))
+											$choise_value = $param['w_choices_value'][(int)$param['w_rowcol']*$i+$l];
+										else
+											$choise_value = $param['w_choices'][(int)$param['w_rowcol']*$i+$l];
+							
+										if(isset($param['w_choices_params']) && $param['w_choices_params'][(int)$param['w_rowcol']*$i+$l])
+										{
+											$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][(int)$param['w_rowcol']*$i+$l]);
+											$where = "where='".$w_choices_params[0]."'";
+											$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+											$order_by = "order_by='".$w_choices_params[0]."'";
+											$db_info = "db_info='".$w_choices_params[1]."'";
+										}
+									
+										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" '.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+									}
 								}
 							
 							$rep.='</div>';	
@@ -538,9 +620,27 @@ ngdom</option><option value="United States">United States</option><option value=
                   {
                     $l = count($param['w_choices']) - count($param['w_choices'])%$param['w_rowcol'] + $k;
                     if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==$l)
-									$rep.='<div valign="top" id="'.$id.'_td_little'.$l.'" idi="'.$l.'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][$l].'" id="'.$id.'_elementform_id_temp'.$l.'" name="'.$id.'_elementform_id_temp'.$l.'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.$l.'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][$l].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$l.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$l.'">'.$param['w_choices'][$l].'</label></div>';
-								else	
-									$rep.='<div valign="top" id="'.$id.'_td_little'.$l.'" idi="'.$l.'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][$l].'" id="'.$id.'_elementform_id_temp'.$l.'" name="'.$id.'_elementform_id_temp'.$l.'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.$l.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$l].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$l.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$l.'">'.$param['w_choices'][$l].'</label></div>';
+										$rep.='<div valign="top" id="'.$id.'_td_little'.$l.'" idi="'.$l.'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][$l].'" id="'.$id.'_elementform_id_temp'.$l.'" name="'.$id.'_elementform_id_temp'.$l.'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.$l.'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$l.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$l.'">'.$param['w_choices'][$l].'</label></div>';
+								else
+								{
+									$where = '' ;
+									$order_by = '' ;
+									$db_info = '' ;
+									if(isset($param['w_choices_value']))
+										$choise_value = $param['w_choices_value'][$l];
+									else
+										$choise_value = $param['w_choices'][$l];
+							
+									if(isset($param['w_choices_params']) && $param['w_choices_params'][$l])
+									{
+										$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][$l]);
+										$where = "where='".$w_choices_params[0]."'";
+										$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+										$order_by = "order_by='".$w_choices_params[0]."'";
+										$db_info = "db_info='".$w_choices_params[1]."'";
+									}
+									$rep.='<div valign="top" id="'.$id.'_td_little'.$l.'" idi="'.$l.'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][$l].'" id="'.$id.'_elementform_id_temp'.$l.'" name="'.$id.'_elementform_id_temp'.$l.'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.$l.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$l.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$l.'" '.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][$l].'</label></div>';
+								}	
                   }
                   
                   $rep.='</div>';	
@@ -557,6 +657,8 @@ ngdom</option><option value="United States">United States</option><option value=
             
               $params_names=array('w_field_label_size','w_field_label_pos','w_flow','w_choices','w_choices_checked','w_rowcol', 'w_required','w_randomize','w_allow_other','w_allow_other_num','w_class');
               $temp=$params;
+			  if(strpos($temp, 'w_field_option_pos') > -1)
+						$params_names=array('w_field_label_size','w_field_label_pos','w_field_option_pos','w_flow','w_choices','w_choices_checked','w_rowcol', 'w_required','w_randomize','w_allow_other','w_allow_other_num', 'w_value_disabled', 'w_choices_value', 'w_choices_params','w_class');
               foreach($params_names as $params_name )
               {	
                 $temp=explode('*:*'.$params_name.'*:*',$temp);
@@ -571,12 +673,21 @@ ngdom</option><option value="United States">United States</option><option value=
                 foreach($attrs as $attr)
                   $param['attributes'] = $param['attributes'].' add_'.$attr;
               }
-
+              if(!isset($param['w_value_disabled']))
+						$param['w_value_disabled'] = 'no';
+					
+			  if(!isset($param['w_field_option_pos']))
+						$param['w_field_option_pos'] = 'left';
               $param['w_field_label_pos'] = ($param['w_field_label_pos']=="left" ? "table-cell" : "block");	
               $required_sym = ($param['w_required']=="yes" ? " *" : "");	
               $param['w_choices']	= explode('***',$param['w_choices']);
               $param['w_choices_checked']	= explode('***',$param['w_choices_checked']);
-              
+			  
+              if(isset($param['w_choices_value']))
+					{
+						$param['w_choices_value'] = explode('***',$param['w_choices_value']);
+						$param['w_choices_params'] = explode('***',$param['w_choices_params']);	
+					}
               
               foreach($param['w_choices_checked'] as $key => $choices_checked )
               {
@@ -586,7 +697,7 @@ ngdom</option><option value="United States">United States</option><option value=
                   $param['w_choices_checked'][$key]='';
               }	
               
-              $rep='<div id="wdform_field'.$id.'" type="type_radio" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].';"><input type="hidden" value="type_radio" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp"><input type="hidden" value="'.$param['w_randomize'].'" name="'.$id.'_randomizeform_id_temp" id="'.$id.'_randomizeform_id_temp"><input type="hidden" value="'.$param['w_allow_other'].'" name="'.$id.'_allow_otherform_id_temp" id="'.$id.'_allow_otherform_id_temp"><input type="hidden" value="'.$param['w_allow_other_num'].'" name="'.$id.'_allow_other_numform_id_temp" id="'.$id.'_allow_other_numform_id_temp"><input type="hidden" value="'.$param['w_rowcol'].'" name="'.$id.'_rowcol_numform_id_temp" id="'.$id.'_rowcol_numform_id_temp"><div style="display: table;"><div id="'.$id.'_table_little" style="display: table-row-group;" '.($param['w_flow']=='hor' ? 'for_hor="'.$id.'_hor"' : '').'>';
+              $rep='<div id="wdform_field'.$id.'" type="type_radio" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].';"><input type="hidden" value="type_radio" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp"><input type="hidden" value="'.$param['w_randomize'].'" name="'.$id.'_randomizeform_id_temp" id="'.$id.'_randomizeform_id_temp"><input type="hidden" value="'.$param['w_allow_other'].'" name="'.$id.'_allow_otherform_id_temp" id="'.$id.'_allow_otherform_id_temp"><input type="hidden" value="'.$param['w_allow_other_num'].'" name="'.$id.'_allow_other_numform_id_temp" id="'.$id.'_allow_other_numform_id_temp"><input type="hidden" value="'.$param['w_rowcol'].'" name="'.$id.'_rowcol_numform_id_temp" id="'.$id.'_rowcol_numform_id_temp"><input type="hidden" value="'.$param['w_field_option_pos'].'" id="'.$id.'_option_left_right"><input type="hidden" value="'.$param['w_value_disabled'].'" name="'.$id.'_value_disabledform_id_temp" id="'.$id.'_value_disabledform_id_temp"><div style="display: table;"><div id="'.$id.'_table_little" style="display: table-row-group;" '.($param['w_flow']=='hor' ? 'for_hor="'.$id.'_hor"' : '').'>';
             
             
               if($param['w_flow']=='hor')
@@ -602,9 +713,28 @@ ngdom</option><option value="United States">United States</option><option value=
                       continue;
                       
                       if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==(int)$param['w_rowcol']*$i+$l)
-											$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$l+$i).'" idi="'.((int)$param['w_rowcol']*$l+$i).'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" name="'.$id.'_elementform_id_temp" other="1" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$l+$i).'&quot;,&quot;form_id_temp&quot;); show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$l+$i].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$l+$i).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'">'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'</label></div>';
-										else						
-											$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$l+$i).'" idi="'.((int)$param['w_rowcol']*$l+$i).'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" name="'.$id.'_elementform_id_temp" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$l+$i).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$l+$i].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$l+$i).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'">'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'</label></div>';		
+											$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$l+$i).'" idi="'.((int)$param['w_rowcol']*$l+$i).'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" name="'.$id.'_elementform_id_temp" other="1" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$l+$i).'&quot;,&quot;form_id_temp&quot;); show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$l+$i].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$l+$i).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'">'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'</label></div>';
+										else	
+										{
+											$where = '' ;
+											$order_by = '' ;
+											$db_info = '' ;
+											if(isset($param['w_choices_value']))
+												$choise_value = $param['w_choices_value'][(int)$param['w_rowcol']*$l+$i];	
+											else
+												$choise_value = $param['w_choices'][(int)$param['w_rowcol']*$l+$i];
+												
+											if(isset($param['w_choices_params']) && $param['w_choices_params'][(int)$param['w_rowcol']*$l+$i])
+											{
+												$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][(int)$param['w_rowcol']*$i+$l]);
+												$where = "where='".$w_choices_params[0]."'";
+												$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+												$order_by = "order_by='".$w_choices_params[0]."'";
+												$db_info = "db_info='".$w_choices_params[1]."'";
+											}
+											
+											$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$l+$i).'" idi="'.((int)$param['w_rowcol']*$l+$i).'" style="display: table-cell;"><input type="radio" value="'.$choise_value.'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" name="'.$id.'_elementform_id_temp" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$l+$i).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$l+$i].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$l+$i).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" '.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'</label></div>';
+										}		
                     }
                     
                   $j++;
@@ -623,22 +753,60 @@ ngdom</option><option value="United States">United States</option><option value=
 								for($l=0; $l<$param['w_rowcol']; $l++)
 								{
 									if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==(int)$param['w_rowcol']*$i+$l)
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp" other="1" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;); show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
-									else						
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp" other="1" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;); show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].'  '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+									else
+									{
+										$where = '' ;
+										$order_by = '' ;
+										$db_info = '' ;
+										if(isset($param['w_choices_value']))
+											$choise_value = $param['w_choices_value'][(int)$param['w_rowcol']*$i+$l];	
+										else
+											$choise_value = $param['w_choices'][(int)$param['w_rowcol']*$i+$l];
+
+										if(isset($param['w_choices_params']) && $param['w_choices_params'][(int)$param['w_rowcol']*$i+$l])
+										{
+											$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][(int)$param['w_rowcol']*$i+$l]);
+											$where = "where='".$w_choices_params[0]."'";
+											$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+											$order_by = "order_by='".$w_choices_params[0]."'";
+											$db_info = "db_info='".$w_choices_params[1]."'";
+										}		
+									
+										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="radio" value="'.$choise_value.'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" '.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+									}	
 								}
 							else
 								for($l=0; $l<count($param['w_choices']); $l++)
 								{
 									if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==(int)$param['w_rowcol']*$i+$l)
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp" other="1" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;); show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
-									else	
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp" other="1" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;); show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").'  disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+									else
+									{
+										$where = '' ;
+										$order_by = '' ;
+										$db_info = '' ;
+										if(isset($param['w_choices_value']))
+											$choise_value = $param['w_choices_value'][(int)$param['w_rowcol']*$i+$l];	
+										else
+											$choise_value = $param['w_choices'][(int)$param['w_rowcol']*$i+$l];
+
+										if(isset($param['w_choices_params']) && $param['w_choices_params'][(int)$param['w_rowcol']*$i+$l])
+										{
+											$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][(int)$param['w_rowcol']*$i+$l]);
+											$where = "where='".$w_choices_params[0]."'";
+											$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+											$order_by = "order_by='".$w_choices_params[0]."'";
+											$db_info = "db_info='".$w_choices_params[1]."'";
+										}		
+									
+										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="radio" value="'.$choise_value.'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" '.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+									}	
 								}
 							
 							$rep.='</div>';	
                 }
-                
+
                 if(count($param['w_choices'])%$param['w_rowcol']!=0)
                 {
                   $rep.='<div id="'.$id.'_element_tr'.((int)(count($param['w_choices'])/(int)$param['w_rowcol'])).'" style="display: table-row;">';
@@ -647,9 +815,29 @@ ngdom</option><option value="United States">United States</option><option value=
 							{
 								$l = count($param['w_choices']) - count($param['w_choices'])%$param['w_rowcol'] + $k;
 								if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==$l)
-									$rep.='<div valign="top" id="'.$id.'_td_little'.$l.'" idi="'.$l.'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices'][$l].'" id="'.$id.'_elementform_id_temp'.$l.'" name="'.$id.'_elementform_id_temp" other="1" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$l.'&quot;,&quot;form_id_temp&quot;); show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][$l].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$l.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$l.'">'.$param['w_choices'][$l].'</label></div>';
-								else	
-									$rep.='<div valign="top" id="'.$id.'_td_little'.$l.'" idi="'.$l.'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices'][$l].'" id="'.$id.'_elementform_id_temp'.$l.'" name="'.$id.'_elementform_id_temp" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$l.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$l].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$l.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$l.'">'.$param['w_choices'][$l].'</label></div>';
+									$rep.='<div valign="top" id="'.$id.'_td_little'.$l.'" idi="'.$l.'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices'][$l].'" id="'.$id.'_elementform_id_temp'.$l.'" name="'.$id.'_elementform_id_temp" other="1" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$l.'&quot;,&quot;form_id_temp&quot;); show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$l.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$l.'">'.$param['w_choices'][$l].'</label></div>';
+								else
+								{
+									$where = '' ;
+									$order_by = '' ;
+									$db_info = '' ;
+									if(isset($param['w_choices_value']))
+										$choise_value = $param['w_choices_value'][$l];
+									else
+										$choise_value = $param['w_choices'][$l];
+									
+									if(isset($param['w_choices_params']) && $param['w_choices_params'][$l])
+									{
+										$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][$l]);
+										$where = "where='".$w_choices_params[0]."'";
+										$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+										$order_by = "order_by='".$w_choices_params[0]."'";
+										$db_info = "db_info='".$w_choices_params[1]."'";
+									}
+								
+									$rep.='<div valign="top" id="'.$id.'_td_little'.$l.'" idi="'.$l.'" style="display: table-cell;"><input type="radio" value="'.$choise_value.'" id="'.$id.'_elementform_id_temp'.$l.'" name="'.$id.'_elementform_id_temp" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$l.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$l.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$l.'"
+									'.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][$l].'</label></div>';
+								}	
 							}
 							
 							$rep.='</div>';	
@@ -667,6 +855,8 @@ ngdom</option><option value="United States">United States</option><option value=
             {
               $params_names=array('w_field_label_size','w_field_label_pos','w_size','w_choices','w_choices_checked', 'w_choices_disabled','w_required','w_class');
               $temp=$params;
+			  if(strpos($temp, 'w_choices_value') > -1)
+						$params_names=array('w_field_label_size','w_field_label_pos','w_size','w_choices','w_choices_checked', 'w_choices_disabled', 'w_required', 'w_value_disabled', 'w_choices_value', 'w_choices_params', 'w_class');
               foreach($params_names as $params_name )
               {	
                 $temp=explode('*:*'.$params_name.'*:*',$temp);
@@ -687,7 +877,16 @@ ngdom</option><option value="United States">United States</option><option value=
               $param['w_choices']	= explode('***',$param['w_choices']);
               $param['w_choices_checked']	= explode('***',$param['w_choices_checked']);
               $param['w_choices_disabled']	= explode('***',$param['w_choices_disabled']);
-            
+			  
+              if(isset($param['w_choices_value']))
+					{
+						$param['w_choices_value'] = explode('***',$param['w_choices_value']);
+						$param['w_choices_params'] = explode('***',$param['w_choices_params']);	
+					}
+					
+			   if(!isset($param['w_value_disabled']))
+						$param['w_value_disabled'] = 'no';
+						
               foreach($param['w_choices_checked'] as $key => $choices_checked )
               {
                 if($choices_checked=='true')
@@ -696,14 +895,23 @@ ngdom</option><option value="United States">United States</option><option value=
                   $param['w_choices_checked'][$key]='';
               }
               
-              $rep='<div id="wdform_field'.$id.'" type="type_own_select" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; "><input type="hidden" value="type_own_select" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp"><select id="'.$id.'_elementform_id_temp" name="'.$id.'_elementform_id_temp" onchange="set_select(this)" style="width: '.$param['w_size'].'px;"  '.$param['attributes'].' disabled>';
+              $rep='<div id="wdform_field'.$id.'" type="type_own_select" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; "><input type="hidden" value="type_own_select" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp"><input type="hidden" value="'.$param['w_value_disabled'].'" name="'.$id.'_value_disabledform_id_temp" id="'.$id.'_value_disabledform_id_temp"><select id="'.$id.'_elementform_id_temp" name="'.$id.'_elementform_id_temp" onchange="set_select(this)" style="width: '.$param['w_size'].'px;"  '.$param['attributes'].' disabled>';
               foreach($param['w_choices'] as $key => $choice)
               {
-                if($param['w_choices_disabled'][$key]=="true")
-                  $choice_value='';
-                else
-                  $choice_value=$choice;
-                $rep.='<option id="'.$id.'_option'.$key.'" value="'.$choice_value.'" onselect="set_select(&quot;'.$id.'_option'.$key.'&quot;)" '.$param['w_choices_checked'][$key].'>'.$choice.'</option>';
+                        $where = '';
+						$order_by = '';
+						$db_info = '';
+						$choice_value = $param['w_choices_disabled'][$key]=='true' ? '' : (isset($param['w_choices_value']) ? $param['w_choices_value'][$key] : $choice);
+						if(isset($param['w_choices_params']) && $param['w_choices_params'][$key])
+						{
+							$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][$key]);
+							$where = "where='".$w_choices_params[0]."'";
+							$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+							$order_by = "order_by='".$w_choices_params[0]."'";
+							$db_info = "db_info='".$w_choices_params[1]."'";
+						}
+					
+						$rep.='<option id="'.$id.'_option'.$key.'" value="'.$choice_value.'" onselect="set_select(&quot;'.$id.'_option'.$key.'&quot;)" '.$param['w_choices_checked'][$key].' '.$where.' '.$order_by.' '.$db_info.'>'.$choice.'</option>';
               }
               $rep.='</select></div></div>';
               break;
@@ -1139,6 +1347,8 @@ ngdom</option><option value="United States">United States</option><option value=
             {
             $params_names=array('w_field_label_size','w_field_label_pos','w_size','w_choices','w_choices_price','w_choices_checked', 'w_choices_disabled','w_required','w_quantity', 'w_quantity_value','w_class','w_property','w_property_values');
               $temp=$params;
+			  if(strpos($temp, 'w_choices_params') > -1)
+						$params_names=array('w_field_label_size','w_field_label_pos','w_size','w_choices','w_choices_price','w_choices_checked', 'w_choices_disabled','w_required','w_quantity', 'w_quantity_value', 'w_choices_params', 'w_class', 'w_property', 'w_property_values');	
               foreach($params_names as $params_name )
               {	
                 $temp=explode('*:*'.$params_name.'*:*',$temp);
@@ -1165,7 +1375,8 @@ ngdom</option><option value="United States">United States</option><option value=
               $param['w_choices_disabled']	= explode('***',$param['w_choices_disabled']);
               $param['w_property']	= explode('***',$param['w_property']);
               $param['w_property_values']	= explode('***',$param['w_property_values']);
-          
+             if(isset($param['w_choices_params']))
+						$param['w_choices_params'] = explode('***',$param['w_choices_params']);	
               foreach($param['w_choices_checked'] as $key => $choices_checked )
               {
                 if($choices_checked=='true')
@@ -1178,11 +1389,20 @@ ngdom</option><option value="United States">United States</option><option value=
               $rep='<div id="wdform_field'.$id.'" type="type_paypal_select" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; "><input type="hidden" value="type_paypal_select" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp"><select id="'.$id.'_elementform_id_temp" name="'.$id.'_elementform_id_temp" onchange="set_select(this)" style="width: '.$param['w_size'].'px;"  '.$param['attributes'].' disabled>';
 					foreach($param['w_choices'] as $key => $choice)
 					{
-						if($param['w_choices_disabled'][$key]=="true")
-							$choice_value='';
-						else
-							$choice_value=$param['w_choices_price'][$key];
-					  $rep.='<option id="'.$id.'_option'.$key.'" value="'.$choice_value.'" onselect="set_select(&quot;'.$id.'_option'.$key.'&quot;)" '.$param['w_choices_checked'][$key].'>'.$choice.'</option>';
+						$where = '';
+						$order_by = '';
+						$db_info = '';
+						$choice_value = $param['w_choices_disabled'][$key]=="true" ? '' : $param['w_choices_price'][$key];
+							
+						if(isset($param['w_choices_params']) && $param['w_choices_params'][$key])
+						{
+							$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][$key]);
+							$where = "where='".$w_choices_params[0]."'";
+							$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+							$order_by = "order_by='".$w_choices_params[0]."'";
+							$db_info = "db_info='".$w_choices_params[1]."'";
+						}	
+						 $rep.='<option id="'.$id.'_option'.$key.'" value="'.$choice_value.'" onselect="set_select(&quot;'.$id.'_option'.$key.'&quot;)" '.$param['w_choices_checked'][$key].' '.$where.' '.$order_by.' '.$db_info.'>'.$choice.'</option>';
 					}
 					$rep.='</select><div id="'.$id.'_divform_id_temp">';
 					if($param['w_quantity']=="yes")
@@ -1214,6 +1434,8 @@ ngdom</option><option value="United States">United States</option><option value=
                         
               $params_names=array('w_field_label_size','w_field_label_pos','w_flow','w_choices','w_choices_price','w_choices_checked','w_required','w_randomize','w_allow_other','w_allow_other_num','w_class','w_property','w_property_values','w_quantity','w_quantity_value');
               $temp=$params;
+			  if(strpos($temp, 'w_field_option_pos') > -1)
+						$params_names=array('w_field_label_size','w_field_label_pos', 'w_field_option_pos', 'w_flow','w_choices','w_choices_price','w_choices_checked','w_required','w_randomize','w_allow_other','w_allow_other_num', 'w_choices_params', 'w_class','w_property','w_property_values','w_quantity','w_quantity_value');
               foreach($params_names as $params_name )
               {	
                 $temp=explode('*:*'.$params_name.'*:*',$temp);
@@ -1228,7 +1450,9 @@ ngdom</option><option value="United States">United States</option><option value=
                 foreach($attrs as $attr)
                   $param['attributes'] = $param['attributes'].' add_'.$attr;
               }
-
+              if(!isset($param['w_field_option_pos']))
+						$param['w_field_option_pos'] = 'left';
+						
               $param['w_field_label_pos'] = ($param['w_field_label_pos']=="left" ? "table-cell" : "block");	
               $required_sym = ($param['w_required']=="yes" ? " *" : "");	
               $param['w_choices']	= explode('***',$param['w_choices']);				   
@@ -1236,7 +1460,10 @@ ngdom</option><option value="United States">United States</option><option value=
               $param['w_choices_checked']	= explode('***',$param['w_choices_checked']);		  
               $param['w_property']	= explode('***',$param['w_property']);
               $param['w_property_values']	= explode('***',$param['w_property_values']);
-              
+			  
+              if(isset($param['w_choices_params']))
+						$param['w_choices_params']	= explode('***',$param['w_choices_params']);
+					
               foreach($param['w_choices_checked'] as $key => $choices_checked )
               {
                 if($choices_checked=='true')
@@ -1245,30 +1472,49 @@ ngdom</option><option value="United States">United States</option><option value=
                   $param['w_choices_checked'][$key]='';
               }
               
-              $rep='<div id="wdform_field'.$id.'" type="type_paypal_checkbox" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].';"><input type="hidden" value="type_paypal_checkbox" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp"><input type="hidden" value="'.$param['w_randomize'].'" name="'.$id.'_randomizeform_id_temp" id="'.$id.'_randomizeform_id_temp"><input type="hidden" value="'.$param['w_allow_other'].'" name="'.$id.'_allow_otherform_id_temp" id="'.$id.'_allow_otherform_id_temp"><input type="hidden" value="'.$param['w_allow_other_num'].'" name="'.$id.'_allow_other_numform_id_temp" id="'.$id.'_allow_other_numform_id_temp"><div style="display: table;"><div id="'.$id.'_table_little" style="display: table-row-group;">';
+              $rep='<div id="wdform_field'.$id.'" type="type_paypal_checkbox" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="wd_form_label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].';"><input type="hidden" value="type_paypal_checkbox" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp"><input type="hidden" value="'.$param['w_randomize'].'" name="'.$id.'_randomizeform_id_temp" id="'.$id.'_randomizeform_id_temp"><input type="hidden" value="'.$param['w_allow_other'].'" name="'.$id.'_allow_otherform_id_temp" id="'.$id.'_allow_otherform_id_temp"><input type="hidden" value="'.$param['w_allow_other_num'].'" name="'.$id.'_allow_other_numform_id_temp" id="'.$id.'_allow_other_numform_id_temp"><input type="hidden" value="'.$param['w_field_option_pos'].'" id="'.$id.'_option_left_right"><div style="display: table;"><div id="'.$id.'_table_little" style="display: table-row-group;">';
 				
 					if($param['w_flow']=='hor')
 					{
 						$rep.= '<div id="'.$id.'_hor" style="display: table-row;">';
 						foreach($param['w_choices'] as $key => $choice)
 						{
-						if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==$key)
-							$rep.='<div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="checkbox" other="1" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp'.$key.'" value="'.$param['w_choices_price'][$key].'" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'">'.$choice.'</label></div>';
-						else
-							$rep.='<div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="checkbox" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp'.$key.'" value="'.$param['w_choices_price'][$key].'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'" >'.$choice.'</label></div>';
+						    $where ='';
+							$order_by ='';
+							$db_info = '';
+							if(isset($param['w_choices_params']) && $param['w_choices_params'][$key])
+							{
+								$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][$key]);
+								$where = "where='".$w_choices_params[0]."'";
+								$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+								$order_by = "order_by='".$w_choices_params[0]."'";
+								$db_info = "db_info='".$w_choices_params[1]."'";
+							}
+						
+							$rep.='<div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="checkbox" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp'.$key.'" value="'.$param['w_choices_price'][$key].'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'" '.$where.' '.$order_by.' '.$db_info.'>'.$choice.'</label></div>';
 						}
 						$rep.= '</div>';
 					}
 					else
 					{
-						$rep.= '<div id="'.$id.'_table_little" style="display: table-row-group;">';
+						
 						foreach($param['w_choices'] as $key => $choice)
 						{
-						if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==$key)
-							$rep.='<div id="'.$id.'_element_tr'.$key.'" style="display: table-row;"><div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices_price'][$key].'" other="1" id="'.$id.'_elementform_id_temp'.$key.'" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" name="'.$id.'_elementform_id_temp'.$key.'" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'">'.$choice.'</label></div></div>';
-						else
-							$rep.='<div id="'.$id.'_element_tr'.$key.'" style="display: table-row;"><div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="checkbox" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp'.$key.'" value="'.$param['w_choices_price'][$key].'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'">'.$choice.'</label></div></div>';					}
-						$rep.= '</div>';
+						$where ='';
+							$order_by ='';
+							$db_info ='';
+							if(isset($param['w_choices_params']) && $param['w_choices_params'][$key])
+							{
+								$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][$key]);
+								$where = "where='".$w_choices_params[0]."'";
+								$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+								$order_by = "order_by='".$w_choices_params[0]."'";
+								$db_info = "db_info='".$w_choices_params[1]."'";
+							}
+						
+							$rep.='<div id="'.$id.'_element_tr'.$key.'" style="display: table-row;"><div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="checkbox" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp'.$key.'" value="'.$param['w_choices_price'][$key].'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'" '.$where.' '.$order_by.' '.$db_info.'>'.$choice.'</label></div></div>';		
+					    }
+						
 					}
 					$rep.='</div></div>';
 
@@ -1300,6 +1546,8 @@ ngdom</option><option value="United States">United States</option><option value=
               
               $params_names=array('w_field_label_size','w_field_label_pos','w_flow','w_choices','w_choices_price','w_choices_checked','w_required','w_randomize','w_allow_other','w_allow_other_num','w_class','w_property','w_property_values','w_quantity','w_quantity_value');
               $temp=$params;
+			  if(strpos($temp, 'w_field_option_pos') > -1)
+						$params_names=array('w_field_label_size','w_field_label_pos', 'w_field_option_pos', 'w_flow','w_choices','w_choices_price','w_choices_checked','w_required','w_randomize','w_allow_other','w_allow_other_num', 'w_choices_params', 'w_class','w_property','w_property_values','w_quantity','w_quantity_value');
               foreach($params_names as $params_name )
               {	
                 $temp=explode('*:*'.$params_name.'*:*',$temp);
@@ -1314,7 +1562,8 @@ ngdom</option><option value="United States">United States</option><option value=
                 foreach($attrs as $attr)
                   $param['attributes'] = $param['attributes'].' add_'.$attr;
               }
-
+             if(!isset($param['w_field_option_pos']))
+						$param['w_field_option_pos'] = 'left';
               $param['w_field_label_pos'] = ($param['w_field_label_pos']=="left" ? "table-cell" : "block");	
               $required_sym = ($param['w_required']=="yes" ? " *" : "");	
               $param['w_choices']	= explode('***',$param['w_choices']);
@@ -1325,7 +1574,10 @@ ngdom</option><option value="United States">United States</option><option value=
                 
               $param['w_property']	= explode('***',$param['w_property']);
               $param['w_property_values']	= explode('***',$param['w_property_values']);
-              
+			  
+              if(isset($param['w_choices_params']))
+						$param['w_choices_params']	= explode('***',$param['w_choices_params']);
+						
               foreach($param['w_choices_checked'] as $key => $choices_checked )
               {
                 if($choices_checked=='true')
@@ -1334,30 +1586,50 @@ ngdom</option><option value="United States">United States</option><option value=
                   $param['w_choices_checked'][$key]='';
               }
               
-              $rep='<div id="wdform_field'.$id.'" type="type_paypal_radio" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].';"><input type="hidden" value="type_paypal_radio" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp"><input type="hidden" value="'.$param['w_randomize'].'" name="'.$id.'_randomizeform_id_temp" id="'.$id.'_randomizeform_id_temp"><input type="hidden" value="'.$param['w_allow_other'].'" name="'.$id.'_allow_otherform_id_temp" id="'.$id.'_allow_otherform_id_temp"><input type="hidden" value="'.$param['w_allow_other_num'].'" name="'.$id.'_allow_other_numform_id_temp" id="'.$id.'_allow_other_numform_id_temp"><div style="display: table;"><div id="'.$id.'_table_little" style="display: table-row-group;">';
+              $rep='<div id="wdform_field'.$id.'" type="type_paypal_radio" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="wd_form_label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].';"><input type="hidden" value="type_paypal_radio" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp"><input type="hidden" value="'.$param['w_randomize'].'" name="'.$id.'_randomizeform_id_temp" id="'.$id.'_randomizeform_id_temp"><input type="hidden" value="'.$param['w_allow_other'].'" name="'.$id.'_allow_otherform_id_temp" id="'.$id.'_allow_otherform_id_temp"><input type="hidden" value="'.$param['w_allow_other_num'].'" name="'.$id.'_allow_other_numform_id_temp" id="'.$id.'_allow_other_numform_id_temp"><input type="hidden" value="'.$param['w_field_option_pos'].'" id="'.$id.'_option_left_right"><div style="display: table;"><div id="'.$id.'_table_little" style="display: table-row-group;">';
 				
 				if($param['w_flow']=='hor')
 				{
 					$rep.= '<div id="'.$id.'_hor" style="display: table-row;">';
 					foreach($param['w_choices'] as $key => $choice)
 					{
-					if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==$key)
-						$rep.='<div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="radio" other="1" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp" value="'.$param['w_choices_price'][$key].'" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;); show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'">'.$choice.'</label></div>';
-					else
-						$rep.='<div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="radio" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp" value="'.$param['w_choices_price'][$key].'" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'">'.$choice.'</label></div>';
+					$where ='';
+						$order_by ='';
+						$db_info ='';
+						if(isset($param['w_choices_params']) && $param['w_choices_params'][$key])
+						{
+							$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][$key]);
+							$where = "where='".$w_choices_params[0]."'";
+							$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+							$order_by = "order_by='".$w_choices_params[0]."'";
+							$db_info = "db_info='".$w_choices_params[1]."'";
+						}
+						
+						$rep.='<div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="radio" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp" value="'.$param['w_choices_price'][$key].'" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'" '.$where.' '.$order_by.' '.$db_info.'>'.$choice.'</label></div>';
 					}
 					$rep.= '</div>';
 				}
 				else
 				{
-					$rep.= '<div id="'.$id.'_table_little" style="display: table-row-group;">';
+					
 					foreach($param['w_choices'] as $key => $choice)
 					{
-					if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==$key)
-						$rep.='<div id="'.$id.'_element_tr'.$key.'" style="display: table-row;"><div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices_price'][$key].'" other="1" id="'.$id.'_elementform_id_temp'.$key.'" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;); show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" name="'.$id.'_elementform_id_temp" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'">'.$choice.'</label></div></div>';
-					else
-						$rep.='<div id="'.$id.'_element_tr'.$key.'" style="display: table-row;"><div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="radio" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp" value="'.$param['w_choices_price'][$key].'" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'">'.$choice.'</label></div></div>';					}
-					$rep.= '</div>';
+					
+						$where ='';
+						$order_by ='';
+						$db_info ='';
+						if(isset($param['w_choices_params']) && $param['w_choices_params'][$key])
+						{
+							$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][$key]);
+							$where = "where='".$w_choices_params[0]."'";
+							$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+							$order_by = "order_by='".$w_choices_params[0]."'";
+							$db_info = "db_info='".$w_choices_params[1]."'";
+						}
+						
+						$rep.='<div id="'.$id.'_element_tr'.$key.'" style="display: table-row;"><div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="radio" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp" value="'.$param['w_choices_price'][$key].'" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'" '.$where.' '.$order_by.' '.$db_info.'>'.$choice.'</label></div></div>';				
+					}
+					
 				}
 					$rep.='</div></div>';
 
@@ -1388,8 +1660,10 @@ ngdom</option><option value="United States">United States</option><option value=
             case 'type_paypal_shipping':
             {
               
-              $params_names=array('w_field_label_size','w_field_label_pos','w_flow','w_choices','w_choices_price','w_choices_checked','w_required','w_randomize','w_allow_other','w_allow_other_num','w_class');
+              $params_names=array('w_field_label_size','w_field_label_pos', 'w_field_option_pos', 'w_flow','w_choices','w_choices_price','w_choices_checked','w_required','w_randomize','w_allow_other','w_allow_other_num','w_class');
               $temp=$params;
+			  if(strpos($temp, 'w_field_option_pos') > -1)
+				$params_names=array('w_field_label_size','w_field_label_pos', 'w_flow','w_choices','w_choices_price','w_choices_checked','w_required','w_randomize','w_allow_other','w_allow_other_num','w_choices_params','w_class');
               foreach($params_names as $params_name )
               {	
                 $temp=explode('*:*'.$params_name.'*:*',$temp);
@@ -1404,7 +1678,9 @@ ngdom</option><option value="United States">United States</option><option value=
                 foreach($attrs as $attr)
                   $param['attributes'] = $param['attributes'].' add_'.$attr;
               }
-
+              if(!isset($param['w_field_option_pos']))
+						$param['w_field_option_pos'] = 'left';
+						
               $param['w_field_label_pos'] = ($param['w_field_label_pos']=="left" ? "table-cell" : "block");	
               $required_sym = ($param['w_required']=="yes" ? " *" : "");	
               $param['w_choices']	= explode('***',$param['w_choices']);
@@ -1413,7 +1689,9 @@ ngdom</option><option value="United States">United States</option><option value=
               
               $param['w_choices_checked']	= explode('***',$param['w_choices_checked']);
                 
-              
+              if(isset($param['w_choices_params']))
+						$param['w_choices_params']	= explode('***',$param['w_choices_params']); 
+						
               foreach($param['w_choices_checked'] as $key => $choices_checked )
               {
                 if($choices_checked=='true')
@@ -1422,36 +1700,55 @@ ngdom</option><option value="United States">United States</option><option value=
                   $param['w_choices_checked'][$key]='';
               }
               
-              $rep='<div id="wdform_field'.$id.'" type="type_paypal_shipping" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].';"><input type="hidden" value="type_paypal_shipping" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp"><input type="hidden" value="'.$param['w_randomize'].'" name="'.$id.'_randomizeform_id_temp" id="'.$id.'_randomizeform_id_temp"><input type="hidden" value="'.$param['w_allow_other'].'" name="'.$id.'_allow_otherform_id_temp" id="'.$id.'_allow_otherform_id_temp"><input type="hidden" value="'.$param['w_allow_other_num'].'" name="'.$id.'_allow_other_numform_id_temp" id="'.$id.'_allow_other_numform_id_temp"><div style="display: table;"><div id="'.$id.'_table_little" style="display: table-row-group;">';
+              $rep='<div id="wdform_field'.$id.'" type="type_paypal_shipping" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="wd_form_label" style="vertical-align: top;">'.$label.'</span><span id="'.$id.'_required_elementform_id_temp" class="required" style="vertical-align: top;">'.$required_sym.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].'; vertical-align:top;"><input type="hidden" value="type_paypal_shipping" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><input type="hidden" value="'.$param['w_required'].'" name="'.$id.'_requiredform_id_temp" id="'.$id.'_requiredform_id_temp"><input type="hidden" value="'.$param['w_randomize'].'" name="'.$id.'_randomizeform_id_temp" id="'.$id.'_randomizeform_id_temp"><input type="hidden" value="'.$param['w_allow_other'].'" name="'.$id.'_allow_otherform_id_temp" id="'.$id.'_allow_otherform_id_temp"><input type="hidden" value="'.$param['w_allow_other_num'].'" name="'.$id.'_allow_other_numform_id_temp" id="'.$id.'_allow_other_numform_id_temp"><input type="hidden" value="'.$param['w_field_option_pos'].'" id="'.$id.'_option_left_right"><div style="display: table;"><div id="'.$id.'_table_little" style="display: table-row-group;">';
 				
 				if($param['w_flow']=='hor')
 				{
 					$rep.= '<div id="'.$id.'_hor" style="display: table-row;">';
 					foreach($param['w_choices'] as $key => $choice)
 					{
-					if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==$key)
-						$rep.='<div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="radio" other="1" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp" value="'.$param['w_choices_price'][$key].'" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;); show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'">'.$choice.'</label></div>';
-					else
-						$rep.='<div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="radio" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp" value="'.$param['w_choices_price'][$key].'" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'">'.$choice.'</label></div>';
+					    $where ='';
+						$order_by ='';
+						$db_info ='';
+						if(isset($param['w_choices_params']) && $param['w_choices_params'][$key])
+						{
+							$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][$key]);
+							$where = "where='".$w_choices_params[0]."'";
+							$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+							$order_by = "order_by='".$w_choices_params[0]."'";
+							$db_info = "db_info='".$w_choices_params[1]."'";
+						}
+						
+						$rep.='<div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="radio" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp" value="'.$param['w_choices_price'][$key].'" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'" '.$where.' '.$order_by.' '.$db_info.'>'.$choice.'</label></div>';
 					}
 					$rep.= '</div>';
 				}
 				else
 				{
-					$rep.= '<div id="'.$id.'_table_little" style="display: table-row-group;">';
+					
 					foreach($param['w_choices'] as $key => $choice)
 					{
-					if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==$key)
-						$rep.='<div id="'.$id.'_element_tr'.$key.'" style="display: table-row;"><div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices_price'][$key].'" other="1" id="'.$id.'_elementform_id_temp'.$key.'" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;); show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" name="'.$id.'_elementform_id_temp" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'">'.$choice.'</label></div></div>';
-					else
-						$rep.='<div id="'.$id.'_element_tr'.$key.'" style="display: table-row;"><div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="radio" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp" value="'.$param['w_choices_price'][$key].'" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' /><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'">'.$choice.'</label></div></div>';					}
-					$rep.= '</div>';
+					$where ='';
+						$order_by ='';
+						$db_info =''; 
+						if(isset($param['w_choices_params']) && $param['w_choices_params'][$key])
+						{
+							$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][$key]);
+							$where = "where='".$w_choices_params[0]."'";
+							$w_choices_params = explode('[db_info]',$w_choices_params[1]);
+							$order_by = "order_by='".$w_choices_params[0]."'";
+							$db_info = "db_info='".$w_choices_params[1]."'";
+						}
+					
+						$rep.='<div id="'.$id.'_element_tr'.$key.'" style="display: table-row;"><div valign="top" id="'.$id.'_td_little'.$key.'" idi="'.$key.'" style="display: table-cell;"><input type="radio" id="'.$id.'_elementform_id_temp'.$key.'" name="'.$id.'_elementform_id_temp" value="'.$param['w_choices_price'][$key].'" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.$key.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$key].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$key.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$key.'" '.$where.' '.$order_by.' '.$db_info.'>'.$choice.'</label></div></div>';
+					}
+					
 				}
 					$rep.='</div></div>';
 
-              $rep.='</div></div>';
-            
-              break;
+					$rep.='</div></div>';
+				
+					break;
             }
             case 'type_paypal_total':
             {

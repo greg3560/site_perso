@@ -4,7 +4,7 @@ Plugin Name: Google Analytics by BestWebSoft
 Plugin URI: http://bestwebsoft.com/products/
 Description: This plugin allows you to retrieve basic stats from Google Analytics account and adds the necessary tracking code to your blog.
 Author: BestWebSoft
-Version: 1.6.2
+Version: 1.6.3
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -316,7 +316,7 @@ if ( ! function_exists( 'gglnltcs_show_notices' ) ) {
 		} 
 		if ( 'plugins.php' == $hook_suffix ) {   
 			global $gglnltcs_plugin_info;
-			bws_plugin_banner( $gglnltcs_plugin_info, 'gglnltcs', 'bws-google-analytics', '938dae82c516792dea3980ff61a6af29', '125', plugins_url( 'images/banner.png', __FILE__ ) );
+			bws_plugin_banner( $gglnltcs_plugin_info, 'gglnltcs', 'bws-google-analytics', '938dae82c516792dea3980ff61a6af29', '125', '//ps.w.org/bws-google-analytics/assets/icon-128x128.png' );
 		}
 	}
 }
