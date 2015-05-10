@@ -343,23 +343,23 @@ global $post;
 	} else if ( is_single() ) {
 		printf( __( '%s', 'lan-thinkupthemes' ), get_the_title() );
 	} else if ( is_search() ) {
-		printf( __( 'Search Results: %s', 'lan-thinkupthemes' ), get_search_query() );
+		printf( __( 'Résultats de la recherche: %s', 'lan-thinkupthemes' ), get_search_query() );
 	} else if ( is_404() ) {
-		printf( __( 'Page Not Found', 'lan-thinkupthemes' ) );
+		printf( __( 'Page non trouvée', 'lan-thinkupthemes' ) );
 	} else if ( is_category() ) {
-		printf( __( 'Category Archives: %s', 'lan-thinkupthemes' ), single_cat_title( '', false ) );
+		printf( __( 'Catégorie: %s', 'lan-thinkupthemes' ), single_cat_title( '', false ) );
 	} elseif ( is_tag() ) {
-		printf( __( 'Tag Archives: %s', 'lan-thinkupthemes' ), single_tag_title( '', false ) );
+		printf( __( 'Articles mots clés: %s', 'lan-thinkupthemes' ), single_tag_title( '', false ) );
 	} elseif ( is_author() ) {
 		the_post();
-		printf( __( 'Author Archives: %s', 'lan-thinkupthemes' ), get_the_author() );
+		printf( __( 'Articles Auteur: %s', 'lan-thinkupthemes' ), get_the_author() );
 		rewind_posts();
 	} elseif ( is_day() ) {
-		printf( __( 'Daily Archives: %s', 'lan-thinkupthemes' ), get_the_date() );
+		printf( __( 'Articles journée du: %s', 'lan-thinkupthemes' ), get_the_date() );
 	} elseif ( is_month() ) {
-		printf( __( 'Monthly Archives: %s', 'lan-thinkupthemes' ), get_the_date( 'F Y' ) );
+		printf( __( 'Articles du mois: %s', 'lan-thinkupthemes' ), get_the_date( 'F Y' ) );
 	} elseif ( is_year() ) {
-		printf( __( 'Yearly Archives: %s', 'lan-thinkupthemes' ), get_the_date( 'Y' ) );
+		printf( __( 'Articles année: %s', 'lan-thinkupthemes' ), get_the_date( 'Y' ) );
 	} elseif ( is_post_type_archive( 'portfolio' ) ) {
 		printf( __( 'Portfolio', 'lan-thinkupthemes' ) );
 	} elseif ( is_blog() ) {
@@ -431,9 +431,9 @@ function thinkup_input_responsivefall() {
 }
 
 function thinkup_input_responsivehtml() {
-global $thinkup_general_fixedlayoutswitch;
+global $thinkup_general_responsiveswitch;
 
-	if ( $thinkup_general_fixedlayoutswitch !== '1' ) {
+	if ( $thinkup_general_responsiveswitch == '1' ) {
 		
 		$args = array(
 			'theme_location' => 'header_menu',
@@ -453,18 +453,18 @@ global $thinkup_general_fixedlayoutswitch;
 }
 
 function thinkup_input_responsivecss() {
-global $thinkup_general_fixedlayoutswitch;
+global $thinkup_general_responsiveswitch;
 	
-	if ( $thinkup_general_fixedlayoutswitch !== '1' ) {
+	if ( $thinkup_general_responsiveswitch == '1' ) {
 		wp_enqueue_style ( 'responsive' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'thinkup_input_responsivecss', '12' );
 
 function thinkup_input_responsiveclass($classes){
-global $thinkup_general_fixedlayoutswitch;
+global $thinkup_general_responsiveswitch;
 
-	if ( $thinkup_general_fixedlayoutswitch == '1' ) {
+	if ( $thinkup_general_responsiveswitch !== '1' ) {
 		$classes[] = 'layout-fixed';
 	} else {
 		$classes[] = 'layout-responsive';	
