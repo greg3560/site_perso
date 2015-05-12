@@ -7,13 +7,10 @@ Version: 1.0.0
 Template: engrave-lite
 */
 
+/*iMPORT*/
+
 @import url("../engrave-lite/style.css");
 
-
-
-
-
-@import url("sites_web/calculatrice/css/style.css");
 
 ﻿/* Définition des polices personnalisées */
 
@@ -2933,18 +2930,18 @@ li
 
 #mes_amis ul
 {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 0;
-    width: 40%;
-    list-style-image: url('img/blog_zozor/ico_liensexterne.png');
-    padding-left: 2px;
+    	display: inline-block;
+    	vertical-align: top;
+    	margin-top: 0;
+    	width: 40%;
+    	list-style-image: url('img/blog_zozor/ico_liensexterne.png');
+    	padding-left: 2px;
 }
 
 #mes_amis a
 {
-    text-decoration: none;
-    color: #760001;
+    	text-decoration: none;
+    	color: #760001;
 }
 
 
@@ -2954,21 +2951,127 @@ li
 
 .old_ie #titre_principal, .old_ie #logo, .old_ie header h1, .old_ie nav, .old_ie nav li, .old_ie .bouton_rouge, .old_ie article, .old_ie aside, .old_ie #tweet, .old_ie #mes_photos, .old_ie #mes_amis, .old_ie #mes_amis ul
 {
-    display: inline;
-    zoom: 1;
+    	display: inline;
+    	zoom: 1;
 }
 
 /* Quelques ajustements pour les vieilles versions d'IE */
 
 .old_ie section h1, .ie8 section h1
 {
-    font-size: 1.1em;
+    	font-size: 1.1em;
 }
 
 .old_ie #zozor_footer div, .ie8 #zozor_footer div
 {
-    margin-top: 30px;
-    background: url('img/blog_zozor/separateur.png') repeat-x top;
+	margin-top: 30px;
+    	background: url('img/blog_zozor/separateur.png') repeat-x top;
+}
+
+
+/**********************************************************************************************************************************
+*************************************************CALCULATRICE**********************************************************************
+***********************************************************************************************************************************/
+
+#calc_body
+{
+	background: rgb(242,249,254); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(242,249,254,1) 0%, rgba(214,240,253,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(242,249,254,1)), color-stop(100%,rgba(214,240,253,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* IE10+ */
+	background: linear-gradient(135deg, rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	height:1000px;
+}
+
+.calc_a
+{
+	width:60px;
+	height:60px;
+	background: rgb(172,220,239); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(172,220,239,1) 0%, rgba(44,175,227,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(172,220,239,1)), color-stop(100%,rgba(44,175,227,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, rgba(172,220,239,1) 0%,rgba(44,175,227,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, rgba(172,220,239,1) 0%,rgba(44,175,227,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, rgba(172,220,239,1) 0%,rgba(44,175,227,1) 100%); /* IE10+ */
+	background: linear-gradient(135deg, rgba(172,220,239,1) 0%,rgba(44,175,227,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#acdcef', endColorstr='#2cafe3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	color:#d34213;
+	font-size:2em;
+	text-align:center;
+	display:inline-block;
+	vertical-align:top;
+	cursor:pointer;
+	margin:2%;
+	line-height:60px;
+	border-radius:50%;
+	text-decoration:none;
+}
+@media all and (max-width: 1000px)
+{
+	.calc_a
+	{
+		width:40px;
+		height:40px;
+		line-height:40px;
+	}
+}
+.calc_section
+{
+	width:43%;
+	min-width: 280px;
+	border:1px ridge #CACFD1;
+	margin:auto;
+	padding: 60px 0 60px 0;
+	background: rgb(242,245,246); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(37%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* IE10+ */
+	background: linear-gradient(135deg, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	margin-top:100px;
+	margin-bottom:100px;
+}
+@media all and (max-width: 480px)
+{
+	.calc_section
+	{
+		width:99%;
+		margin:0;
+	}
+}
+#number
+{
+	width:75%;
+	height:50px;
+	margin-bottom:30px;
+	text-align:center;
+	font-size:2em;
+}
+
+#bloc, #premiere, #deuxieme, #troisieme, #quatrieme, #calc_form, #calc_h1
+{
+	text-align:center;
+	
+}
+#calc_h1
+{
+	font-family: Dayrom, serif;
+	font-weight:lighter;
+	color:#4B4B4B;
+	
+	padding-top:60px;
+	height:100px;
+	margin:auto;
+	
+}
+form
+{
+	position:relative;
 }
 
 
