@@ -198,12 +198,6 @@ td
 	text-shadow: 1px 1px 0px #FFF;
 	padding: 5px 15px;
 	border: 1px solid #FFF;
-	background: #F6F6F6;
-	-webkit-box-shadow: 0 0 0 1px #DDD;
-	-moz-box-shadow: 0 0 0 1px #DDD;
-	-ms-box-shadow: 0 0 0 1px #DDD;
-	-o-box-shadow: 0 0 0 1px #DDD;
-	box-shadow: 0 0 0 1px #DDD;
 }
 .blog-style1 .blog-title a {
 	color: inherit; 
