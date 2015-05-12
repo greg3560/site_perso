@@ -161,37 +161,37 @@ td
 
 /******CORRECTIONS MISE A JOUR BLOG-STYLE1 EN BLOG-ARTICLE*********************************************/
 
-.blog-article .more-link, .blog-style1 .more-link {
+.blog-style1 .more-link {
 	padding: 5px 10px;
 }
-.blog-article .more-link:after, .blog-style1 .more-link:after {
+.blog-style1 .more-link:after {
 	font-family: FontAwesome;
 	content: '\f054';
 	font-size: 70%;
 	padding-left: 5px;
 }
-.blog-article, .blog-style1 {
+.blog-style1 {
 	background: #FFF;
 	border: 1px solid #EEE;
 	margin-bottom: 20px;
 }
-.blog-article .entry-meta, .blog-style1 .entry-meta {
+.blog-style1 .entry-meta {
 	border-top: 1px solid #EEE;
 	padding: 20px 0 15px;
 	margin: 0 20px;
 }
-.blog-article .entry-header, .blog-style1 .entry-header {
+.blog-style1 .entry-header {
 	position: relative;
 }
-.blog-article .blog-icon, .blog-style1 .blog-icon {
+.blog-style1 .blog-icon {
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-.blog-article .blog-thumb, .blog-style1 .blog-thumb {
+.blog-style1 .blog-thumb {
 	margin-bottom: 0; 
 }
-.blog-article .blog-title, .blog-style1 .blog-title {
+.blog-style1 .blog-title {
 	position: relative;
 	margin: 0 0 1px;
 	font-size: 14px;
@@ -205,32 +205,54 @@ td
 	-o-box-shadow: 0 0 0 1px #DDD;
 	box-shadow: 0 0 0 1px #DDD;
 }
-.blog-article .blog-title a, .blog-style1 .blog-title a {
+.blog-style1 .blog-title a {
 	color: inherit; 
 }
-.blog-article .entry-content, .blog-style1 .entry-content {
+.blog-style1 .entry-content {
 	padding: 20px 20px 0;
 }
-.blog-article .entry-footer, .blog-style1 .entry-footer {
+.blog-style1 .entry-footer {
 	padding: 20px 20px 15px;
 }
-.blog-article .entry-meta > span, .blog-style1 .entry-meta > span {
+.blog-style1 .entry-meta > span {
 	padding-right: 10px
 }
-.blog-article .entry-meta a, .blog-style1 .entry-meta a {
+.blog-style1 .entry-meta a {
 	color: inherit;
 }
-.blog-article .entry-meta a:hover, .blog-style1 .entry-meta a:hover {
+.blog-style1 .entry-meta a:hover {
 	color: #EC4C4C;
 }
-.blog-article .entry-meta i, .blog-style1 .entry-meta i {
+.blog-style1 .entry-meta i {
 	padding-right: 5px
 }
-.search-results .blog-article .entry-meta, .search-results .blog-style1 .entry-meta {
+.search-results .blog-style1 .entry-meta {
 	margin: 0;
 }
 
 
+/***********************LIENS SOCIAUX***************************/
+
+
+/*facebook*/
+#pre-header-social .facebook a {
+    background: url("img/facebook.png") no-repeat scroll center center transparent;
+}
+/*twitter*/
+#pre-header-social .twitter a {
+    background: url("img/twitter.png") no-repeat scroll center center transparent;
+}
+/*google*/
+#pre-header-social .google a {
+    background: url("img/google.png") no-repeat scroll center center transparent;
+}
+/*linkedin*/
+#pre-header-social .linkedin a {
+    background: url("img/linkedin.png") no-repeat scroll center center transparent;
+}
+#pre-header-social .facebook a, #pre-header-social .twitter a, #pre-header-social .linkedin a, #pre-header-social .google a, #pre-header-social .flickr a, #pre-header-social .lastfm a, #pre-header-social .rss a {
+    background-size: 20px auto;
+}
 /***********************************************************************************************************************************
 **************************************************PORTFOLIO***************************************************************************
 ***********************************************************************************************************************************/
