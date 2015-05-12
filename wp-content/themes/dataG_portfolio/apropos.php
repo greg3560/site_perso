@@ -8,7 +8,7 @@ get_header(); ?>
 		<h1 id="apropos_h1">Développeur Web.</h1>
 		
 		<section id="greg_section">		
-		<p><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/gregory.png" alt="gregory" title="gregory" id="greg"/>Anciennement technicien son, titulaire d'un BEP électronique puis d'un BAC PRO MAVELEC, je suis en reconversion professionnelle vers les métiers de l’informatique web.Je recherche un contrat de professionnalisation en alternance pour suivre la formation a l'IPI (institut de poly informatique) <a href="http://www.inspi.fr/formation-continue/programmes-de-formations/developpeur-informatique/" title="IPI" target="_blank">Concepteur Développeur Web & Mobile.</a></p>
+		<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/gregory.png" alt="gregory" title="gregory" id="greg"/>Anciennement technicien son, titulaire d'un BEP électronique puis d'un BAC PRO MAVELEC, je suis en reconversion professionnelle vers les métiers de l’informatique web.Je recherche un contrat de professionnalisation en alternance pour suivre la formation a l'IPI (institut de poly informatique) <a href="http://www.inspi.fr/formation-continue/programmes-de-formations/developpeur-informatique/" title="IPI" target="_blank">Concepteur Développeur Web & Mobile.</a></p>
 	
 	<p>Je suis donc depuis plusieurs années passionné par ce secteur. J'ai pu, grâce à mon métier actuel utiliser l'outil informatique (console de mixage réseaux ethersound etc...). Je souhaiterai maintenant faire de cette passion ma profession. L’ère numérique m’intéresse beaucoup: ma créativité, mon organisation et ma patience m’apporteront tous les atouts pour réussir dans le domaine de l'application web.</p>
 	
