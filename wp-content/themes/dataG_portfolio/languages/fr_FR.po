@@ -1,0 +1,170 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Engrave Lite\n"
+"POT-Creation-Date: 2015-05-11 00:37+0100\n"
+"PO-Revision-Date: 2015-05-11 00:38+0100\n"
+"Last-Translator: dataG <greg.spectacle@gmail.com>\n"
+"Language-Team: Think Up Themes <contact@thinkupthemes.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../01.general-settings.php:340 ../01.general-settings.php:344
+#: ../01.general-settings.php:368
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../01.general-settings.php:342
+#, php-format
+msgid "Blog Post Image: %s"
+msgstr ""
+
+#: ../01.general-settings.php:346
+#, php-format
+msgid "Search Results: %s"
+msgstr "Résultats de la recherche:%s"
+
+#: ../01.general-settings.php:348
+msgid "Page Not Found"
+msgstr "Perdu ?"
+
+#: ../01.general-settings.php:350
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Articles par catégories:%s"
+
+#: ../01.general-settings.php:352
+#, fuzzy, php-format
+msgid "Tag Archijkhkjhkjhkjhkjhkjves: %s"
+msgstr "Articles par mots clés:%s"
+
+#: ../01.general-settings.php:355
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Articles auteur:%s"
+
+#: ../01.general-settings.php:358
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Articles du jour:%s"
+
+#: ../01.general-settings.php:360
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Articles du mois:%s"
+
+#: ../01.general-settings.php:362
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Articles de l'année:%s"
+
+#: ../01.general-settings.php:364
+msgid "Portfolio"
+msgstr ""
+
+#: ../01.general-settings.php:366
+msgid "Blog"
+msgstr ""
+
+#: ../01.general-settings.php:429 ../01.general-settings.php:440
+msgid "Navigation"
+msgstr ""
+
+#: ../template-sitemap.php:13
+#, fuzzy
+msgid "Auteur(s)"
+msgstr "Auteur(s)"
+
+#: ../template-sitemap.php:20
+msgid "Articles"
+msgstr ""
+
+#: ../template-sitemap.php:32
+msgid "Catégorie:"
+msgstr ""
+
+#: ../template-sitemap.php:48
+msgid "Archives"
+msgstr "Articles"
+
+#: ../functions.php:23
+msgid "Lire la suite"
+msgstr ""
+
+#: ../searchform.php:9
+msgid "Rechercher"
+msgstr ""
+
+#: ../single.php:16
+msgid "Edit"
+msgstr "Edition"
+
+#: ../Blog.php:18
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#~ msgid "Posts"
+#~ msgstr "Commentaires"
+
+#~ msgid "Category:"
+#~ msgstr "Catégories:"
+
+#~ msgid "Recent Posts:"
+#~ msgstr "Derniers articles:"
+
+#~ msgid "Monthly:"
+#~ msgstr "Articles du mois:"
+
+#~ msgid "Author(s):"
+#~ msgstr "Auteur(s):"
+
+#~ msgid "Search"
+#~ msgstr "Recherche"
+
+#, fuzzy
+#~ msgid "1 Comment"
+#~ msgid_plural "%1$s Comments"
+#~ msgstr[0] ""
+#~ "#-#-#-#-#  0extracted.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+#~ "#-#-#-#-#  4extracted.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+#~ "#-#-#-#-#  5extracted.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+#~ msgstr[1] "#-#-#-#-#  0extracted.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+
+#~ msgid "Older Comments"
+#~ msgstr "Commentaires les plus anciens"
+
+#~ msgid "Newer Comments"
+#~ msgstr "Derniers commentaires"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Les commentaires ne sont plus acceptés."
+
+#~ msgid "Homepage"
+#~ msgstr "Accueil"
+
+#~ msgid "Link"
+#~ msgstr "Lien"
+
+#~ msgid "Archive Category: "
+#~ msgstr "Articles par catégories:"
+
+#~ msgid "Error 404 - Not Found."
+#~ msgstr "Perdu ?"
+
+#~ msgid "Prev"
+#~ msgstr "Précédent"
+
+#~ msgid "Next"
+#~ msgstr "Suivant"
+
+#~ msgid "No Comments"
+#~ msgstr "Pas de commentaires"
