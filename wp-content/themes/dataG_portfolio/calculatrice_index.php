@@ -5,7 +5,7 @@ Template Name: calculatrice
 session_start();
 
 get_header(); ?>
-{tooltip}<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/informations.png" alt="Consle Midas." /> {end-texte|w=350|mood=800|tipd=1000|offsety=50}<h2>Objectif:</h2>
+{tooltip}<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/informations.png" alt="Informations" /> {end-texte|w=350|mood=800|tipd=1000|offsety=50}<h2>Objectif:</h2>
 						<p>Mettre en place une application PHP et javascript à l'aide des connaissances acquises.La calculatrice était une approche simple et appropriée.</p>
 						<h2>Pédagogie:</h2>
 						<ul>
@@ -45,8 +45,8 @@ get_header(); ?>
 					<a class="calc_a"id="c1"></a>
 					<a class="calc_a"id="c2"></a>
 					<a class="calc_a"id="c3"></a>
-					<a class="calc_a"id="" href="./?page_id=224">C</a>
-					<a class="calc_a"id="" href="./?page_id=224">CE</a>
+					<a class="calc_a"id="" href="../../portfolio_/calculatrice/">C</a>
+					<a class="calc_a"id="" href="../../portfolio_/calculatrice/">CE</a>
 				</div>
 				<div id="deuxieme">
 					<a class="calc_a"id="c6"></a>
