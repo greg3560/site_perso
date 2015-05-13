@@ -24,7 +24,7 @@ get_header(); ?>
 						<p>
 						Optimisation de la hiéarchie des fichier avec un fichier de traitement pour l'envoi du formulaire et utilisation de la fonction include de php pour ce qui concerne l'en-tete, le pied de page et le menu.Création de fichier de connexion a la base de données.</p>{end-tooltip}	
 			<?php
-				include(__DIR__."/inc/mud_header.php");
+				include("inc/mud_header.php");
 			?>
 		<div id="bloc_page_site">
 			<h1 id="mud_h1">L'ÉVÉNEMENT À LA CARTE</h1>
@@ -64,6 +64,6 @@ M. Louis : stephanelouis.mud@free.fr</p>
 			</div>
 		</div>
 		<?php
-			include(__DIR__."/inc/mud_footer.php");
+			include("inc/mud_footer.php");
 		?>
 <?php get_footer(); ?>

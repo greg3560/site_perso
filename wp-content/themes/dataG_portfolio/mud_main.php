@@ -4,7 +4,7 @@ Template Name: mud_main
 */
 
 get_header(); ?>
-{tooltip}<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/informations.png" alt="Informations" /> {end-texte|w=350|mood=800|tipd=1000|offsety=50}<h2>Objectif:</h2>
+{tooltip}<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/informations.png" alt="Informations" /> {end-texte|w=350|mood=800|tipd=1000|offsety=50}<h2>Objectif:</h2>
 						<p>Refonte du site www.m-u-d-60.fr.Redonner un nouvel aspect au site et intégrer de nouveaux outil comme google maps ou un formulaire de contact.Toutes les pages du sites sont développées.</p>
 						<h2>Pédagogie:</h2>
 						<p>
@@ -24,7 +24,7 @@ get_header(); ?>
 						<p>
 						Optimisation de la hiéarchie des fichier avec un fichier de traitement pour l'envoi du formulaire et utilisation de la fonction include de php pour ce qui concerne l'en-tete, le pied de page et le menu.Création de fichier de connexion a la base de données.</p>{end-tooltip}	
 			<?php
-				include(__DIR__."/sites_web/MUD/includes/header.php");
+				include("inc/mud_header.php");
 			?>
 				<span id="sl_play" class="sl_command"></span>  
 				<span id="sl_pause" class="sl_command"></span>  
@@ -40,18 +40,18 @@ get_header(); ?>
         					<div class="c_slider"></div>  
         					<div class="slider">  
             						<figure><!--  
-                						--><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/mud/plateau.jpg" alt="" class="slideImg" />  
+                						--><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mud/plateau.jpg" alt="" class="slideImg" />  
                 						<figcaption>Sonorisation</figcaption>  
   							</figure><!----><figure><!--  
-                						--><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/mud/conference.jpg" alt="" class="slideImg" />  
+                						--><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mud/conference.jpg" alt="" class="slideImg" />  
                 						<figcaption>Discothèques, Soirées dansante, Bal</figcaption>  
             						</figure><!-- 
             						--><figure>  
-                						<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/mud/club.jpg" alt="" class="slideImg" />  
+                						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mud/club.jpg" alt="" class="slideImg" />  
                 						<figcaption>Congrès, Séminaires, Conférences</figcaption>  
             						</figure><!-- 
             						--><figure>  
-                						<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/mud/spectacle_mud.jpg" alt="" class="slideImg" />  
+                						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mud/spectacle_mud.jpg" alt="" class="slideImg" />  
                 						<figcaption>Cabarets, Theâtre, One man show</figcaption>  
             						</figure>  
         					</div>  
@@ -99,7 +99,7 @@ A l'époque où la communication est en pleine expansion, une ville, une entrepr
 			</div>
 		</div>
 		<?php
-			include(__DIR__."/sites_web/MUD/includes/footer.php");
+			include("inc/mud_footer.php");
 		?>
 	
 <?php get_footer(); ?>

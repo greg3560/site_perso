@@ -5,7 +5,7 @@ Template Name: mud_nous_contacter
 */
 
 get_header(); ?>
-{tooltip}<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/informations.png" alt="Informations" /> {end-texte|w=350|mood=800|tipd=1000|offsety=50}<h2>Objectif:</h2>
+{tooltip}<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/informations.png" alt="Informations" /> {end-texte|w=350|mood=800|tipd=1000|offsety=50}<h2>Objectif:</h2>
 						<p>Refonte du site www.m-u-d-60.fr.Redonner un nouvel aspect au site et intégrer de nouveaux outil comme google maps ou un formulaire de contact.Toutes les pages du sites sont développées.</p>
 						<h2>Pédagogie:</h2>
 						<p>
@@ -25,7 +25,7 @@ get_header(); ?>
 						<p>
 						Optimisation de la hiéarchie des fichier avec un fichier de traitement pour l'envoi du formulaire et utilisation de la fonction include de php pour ce qui concerne l'en-tete, le pied de page et le menu.Création de fichier de connexion a la base de données.</p>{end-tooltip}
 			<?php
-				include(__DIR__."/sites_web/MUD/includes/header.php");
+				include("inc/mud_header.php");
 			?>
 		<div id="bloc_page_site">
 			<h1 id="mud_h1">NOUS CONTACTER</h1>
@@ -69,7 +69,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<?php
-			include(__DIR__."/sites_web/MUD/includes/footer.php");
+			include("inc/mud_footer.php");
 		?>
 <?php get_footer(); ?>
 
