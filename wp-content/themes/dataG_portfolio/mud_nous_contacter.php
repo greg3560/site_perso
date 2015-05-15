@@ -44,7 +44,8 @@ get_header(); ?>
 					}
 				}
 			?>
-		 <form id="form_contact" method="post" action="libs/traitement.php?action=formulaire">
+		 <form id="form_contact" method="POST" action="functions.php?action=formulaire">
+			<?php wp_nonce_field('mud_contact', 'mud_home'); ?>
 			<fieldset>
                                 <label class="label" for="raison_sociale">Raison sociale</label><input type="text" name="raison_sociale" class="input_text"/><br/>
                                 <label class="label">Civilité</label>
@@ -61,7 +62,7 @@ get_header(); ?>
                                 <label class="label" for="fax">Fax</label><input type="tel" name="fax" class="input_text"/><br/>
                                 <label class="label" for="mail">E-mail<span>*</span></label><input type="email" name="mail" class="input_text" required /><br/>
                 <label class="label" for="message">Votre message:<span>*</span></label><textarea name="message" id="message" required row="8" cols="35"></textarea><br/>
-                        <input type="submit" value="Envoyer"id="valider"/><div class="fleche"></div>
+                        <input type="submit" name="mud_form" value="Envoyer"id="valider"/><div class="fleche"></div>
 				</fieldset>
 			<em class="mud_em"><span class="mud_span">*</span>Informations obligatoires.</em>
                 </form>

@@ -4,7 +4,7 @@ Template Name: naujac_main
 */
 
 get_header(); ?>
-{tooltip}<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/informations.png" alt="Consle Midas." /> {end-texte|w=350|mood=800|tipd=1000|offsety=50}<h2>Objectif:</h2>
+{tooltip}<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/informations.png" alt="Informations." /> {end-texte|w=350|mood=800|tipd=1000|offsety=50}<h2>Objectif:</h2>
 						<p>Refonte d'un site de mairie de notre choix pour le jury de fin de formation à l'INFA.</p>
 						<h2>Pédagogie:</h2>
 						<p>
@@ -24,19 +24,19 @@ get_header(); ?>
 							</ul>
 						</p>{end-tooltip}	
 <?php
-	require_once(__DIR__."/sites_web/mairie_naujac/modele/cnx.php");
+	/*require_once("modele/cnx.php");*/
 	
 	if(!isset($_GET["section"]) OR $_GET["section"] == "index")
 	{
-		require_once(__DIR__."/sites_web/mairie_naujac/controleur/blog/index.php");
+		require_once("controleur/blog/index.php");
 	}
 	elseif($_GET["section"] == "article")
 	{
-		require_once(__DIR__."/sites_web/mairie_naujac/controleur/blog/commentaires.php");
+		require_once("controleur/blog/commentaires.php");
 	}
 	elseif($_GET["section"] == "set_commentaire")
 	{
-		require_once(__DIR__."/sites_web/mairie_naujac/controleur/blog/set_commentaire.php");
+		require_once("controleur/blog/set_commentaire.php");
 	}
 get_footer();
 ?>

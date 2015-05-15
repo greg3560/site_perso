@@ -1,5 +1,5 @@
 <?php
-	require_once(__DIR__."/../cnx.php");
+	/*require_once(__DIR__."/../cnx.php");*/
 
 function get_articles($offset, $limit)
 {
