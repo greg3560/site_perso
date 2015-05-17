@@ -1,10 +1,13 @@
 <?php
-	require_once(__DIR__."/../cnx.php");
 
-	function ajout_commentaire($id, $pseudo, $commentaire)
-	{
-		global $bdd;
+function ajout_commentaire($id, $pseudo, $commentaire)
+{
+	global $wpdb;
+
+	$id = (int) $id;
+	if(is_string($pseudo) && is_string($commentaire))
+	{	
+		$wpdb->query( $wpdb->prepare("INSERT INTO gp_naujac_commentaires (id, id_billet, auteur, commentaire, date_commentaire) VALUES (\"\", %d, %s, %s, NOW())", $id, $pseudo, $commentaire));
 		
-		$req = $bdd->prepare("INSERT INTO gp_naujac_commentaires (id, id_billet, auteur, commentaire, date_commentaire) VALUES (\"\", :id, :pseudo, :commentaire, NOW())");
-		$req->execute(array("id"=>$id, "pseudo"=>$pseudo, "commentaire"=>$commentaire));
 	}
+}

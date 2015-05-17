@@ -5,7 +5,7 @@ Template Name: calculatrice
 session_start();
 
 get_header(); ?>
-{tooltip}<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/informations.png" alt="Informations" /> {end-texte|w=350|mood=800|tipd=1000|offsety=50}<h2>Objectif:</h2>
+{tooltip}<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/informations.png" alt="Informations." /> {end-texte|w=350|mood=800|tipd=1000|offsety=50}<h2>Objectif:</h2>
 						<p>Mettre en place une application PHP et javascript à l'aide des connaissances acquises.La calculatrice était une approche simple et appropriée.</p>
 						<h2>Pédagogie:</h2>
 						<ul>

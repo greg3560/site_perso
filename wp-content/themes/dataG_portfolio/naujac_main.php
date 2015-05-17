@@ -24,19 +24,25 @@ get_header(); ?>
 							</ul>
 						</p>{end-tooltip}	
 <?php
-	/*require_once("modele/cnx.php");*/
+	
 	
 	if(!isset($_GET["section"]) OR $_GET["section"] == "index")
 	{
+		
 		require_once("controleur/blog/index.php");
+		
 	}
 	elseif($_GET["section"] == "article")
 	{
+		
 		require_once("controleur/blog/commentaires.php");
+		
 	}
 	elseif($_GET["section"] == "set_commentaire")
 	{
+		
 		require_once("controleur/blog/set_commentaire.php");
+		
 	}
 get_footer();
 ?>

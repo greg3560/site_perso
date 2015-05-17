@@ -6,6 +6,40 @@
 		case "formulaire":
 			envoiFormulaire();
 			break;
+		/*mud*/
+		case "calcul":
+			session_start();
+			if(preg_match("#\+#", "\"".urlencode($_GET["operation"])."\""))
+			{
+				$exp = [];
+				$exp=explode(" ", $_GET["operation"]);
+				addition($exp[0], $exp[1]);
+			}
+			else if(preg_match("#\-#", "\"".$_GET["operation"]."\""))
+			{
+				$exp=explode("-", $_GET["operation"]);
+				soustraction($exp[0], $exp[1]);
+			}
+			else if(preg_match("#\*#", "\"".$_GET["operation"]."\""))
+			{
+				$exp=explode("*", $_GET["operation"]);
+				multiplication($exp[0], $exp[1]);
+			}
+			else if(preg_match("#\/#", "\"".$_GET["operation"]."\""))
+			{
+				$exp=explode("/", $_GET["operation"]);
+				division($exp[0], $exp[1]);
+			}
+			else if(preg_match("#\%#", "\"".$_GET["operation"]."\""))
+			{
+				$exp=explode("%", $_GET["operation"]);
+				modulo($exp[0], $exp[1]);
+			}
+			else
+			{
+				header("Location:../../../calculatrice_index.php");
+			}
+			break;
 	}
 // enqueue javascript
  
@@ -119,6 +153,35 @@ function envoiFormulaire()
 		}
 	}
 }
-add_action('template_redirect', 'traitement_formulaire_mud');
+add_action('template_redirect', 'envoiFormulaire');
+
+
+/*CALCULATRICE*/
+
+function addition($t, $d)
+{
+	$_SESSION["result"]=$t + $d;
+	header("Location:../../../portfolio_/calculatrice/");
+}
+function soustraction($t, $d)
+{
+	$_SESSION["result"]=$t - $d;
+	header("Location:../../../portfolio_/calculatrice/");
+}
+function multiplication($t, $d)
+{
+	$_SESSION["result"]=$t * $d;
+	header("Location:../../../portfolio_/calculatrice/");
+}
+function division($t, $d)
+{
+	$_SESSION["result"]=$t / $d;
+	header("Location:../../../portfolio_/calculatrice/");
+}
+function modulo($t, $d)
+{
+	$_SESSION["result"]=$t % $d;
+	header("Location:../../../portfolio_/calculatrice/");
+}
 
 ?>

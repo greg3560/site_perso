@@ -4,7 +4,7 @@ Template Name: test_responsive
 */
 
 get_header(); ?>
-{tooltip}<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/informations.png" alt="Informations" /> {end-texte|w=350|mood=800|tipd=1000|offsety=50}<h2>Objectif:</h2>
+{tooltip}<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/informations.png" alt="Informations" /> {end-texte|w=350|mood=800|tipd=1000|offsety=50}<h2>Objectif:</h2>
 						<p>Mise en pratique des connaissances liées au responsive design.Le but etant de créer une page plein écran et l'adapter sur des résolutions plus petites.</p>
 						<h2>Pédagogie:</h2>
 						<p>
@@ -23,7 +23,7 @@ get_header(); ?>
 						</p>{end-tooltip}
 		<div id="test_bloc_page">
 			<header id="test_header">
-				<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/test_responsive/badge.png"/>
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/test_responsive/badge.png"/>
 				<h1>L'agence</h1>
 				<nav>
 					<a href="#">lorem</a>
@@ -32,7 +32,7 @@ get_header(); ?>
 				</nav>
 			</header>
 			<section id="debut">
-				<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/test_responsive/bateauSteampunk.jpg" />
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/test_responsive/bateauSteampunk.jpg" />
 				<h2>MISE EN PAGE ADAPTATIVE AVEC LES MEDIA QUERIES</h2>
 				<div id="text">
 					<p>Savez-vous quelle est la première préoccupation des webmasters qui mettent en place le design de leur site ? La résolution d'écran de leurs visiteurs. Eh oui : selon les écrans, il y a plus ou moins de place, plus ou moins de pixels de largeur.
@@ -51,7 +51,7 @@ C'est là que les media queries entrent en jeu. Ce sont des règles à appliquer
 						<h3>Mise en place des media queries</h3>
 						<p>Les media queries font partie des nouveautés de CSS3. Il ne s'agit pas de nouvelles propriétés mais de règles que l'on peut appliquer dans certaines conditions. Concrètement, vous allez pouvoir dire « Si la résolution de l'écran du visiteur est inférieure à tant, alors applique les propriétés CSS suivantes ». Cela vous permet de changer l'apparence du site dans certaines conditions : vous pourrez augmenter la taille du texte, changer la couleur de fond, positionner différemment votre menu dans certaines résolutions, etc.
 Contrairement à ce qu'on pourrait penser, les media queries ne concernent pas que les résolutions d'écran. Vous pouvez changer l'apparence de votre site en fonction d'autres critères comme le type d'écran (smartphone, télévision, projecteur…), le nombre de couleurs, l'orientation de l'écran (portrait ou paysage), etc. Les possibilités sont très nombreuses !</p>
-						<p><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/test_responsive/steamMiya.jpg"/>Les media queries font partie des nouveautés de CSS3. Il ne s'agit pas de nouvelles propriétés mais de règles que l'on peut appliquer dans certaines conditions. Concrètement, vous allez pouvoir dire « Si la résolution de l'écran du visiteur est inférieure à tant, alors applique les propriétés CSS suivantes ». Cela vous permet de changer l'apparence du site dans certaines conditions : vous pourrez augmenter la taille du texte, changer la couleur de fond, positionner différemment votre menu dans certaines résolutions, etc.
+						<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/test_responsive/steamMiya.jpg"/>Les media queries font partie des nouveautés de CSS3. Il ne s'agit pas de nouvelles propriétés mais de règles que l'on peut appliquer dans certaines conditions. Concrètement, vous allez pouvoir dire « Si la résolution de l'écran du visiteur est inférieure à tant, alors applique les propriétés CSS suivantes ». Cela vous permet de changer l'apparence du site dans certaines conditions : vous pourrez augmenter la taille du texte, changer la couleur de fond, positionner différemment votre menu dans certaines résolutions, etc.
 Contrairement à ce qu'on pourrait penser, les media queries ne concernent pas que les résolutions d'écran. Vous pouvez changer l'apparence de votre site en fonction d'autres critères comme le type d'écran (smartphone, télévision, projecteur…), le nombre de couleurs, l'orientation de l'écran (portrait ou paysage), etc. Les possibilités sont très nombreuses !</p>
 					</article>
 					<article>
@@ -59,7 +59,7 @@ Contrairement à ce qu'on pourrait penser, les media queries ne concernent pas q
 						<p>Comme vous le savez sûrement, les écrans des smartphones sont beaucoup moins larges que nos écrans habituels (seulement quelques centaines de pixels de large). Pour s'adapter, les navigateurs mobiles affichent le site en « dézoomant », ce qui permet d'avoir un aperçu de l'ensemble de la page. La zone d'affichage simulée est appelée le viewport : c'est la largeur de la fenêtre du navigateur sur le mobile.
 
 En CSS, avec les media queries, si vous ciblez l'écran avec max-width sur un mobile, celui-ci va comparer la largeur que vous indiquez avec celle de son viewport. Le problème, c'est que le viewport change selon le navigateur mobile utilisé !</p>
-						<p><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/test_responsive/gare.jpg" />JavaScript est régulièrement utilisé aujourd'hui pour faire de l'AJAX (Asynchronous JavaScript And XML). Cette technique permet de modifier une partie de la page web que le visiteur consulte en échangeant des données avec le serveur. Cela donne l'impression que les pages sont plus dynamiques et plus réactives. Le visiteur n'a plus besoin de recharger systématiquement toute la page.
+						<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/test_responsive/gare.jpg" />JavaScript est régulièrement utilisé aujourd'hui pour faire de l'AJAX (Asynchronous JavaScript And XML). Cette technique permet de modifier une partie de la page web que le visiteur consulte en échangeant des données avec le serveur. Cela donne l'impression que les pages sont plus dynamiques et plus réactives. Le visiteur n'a plus besoin de recharger systématiquement toute la page.
 
 Les navigateurs sont de plus en plus efficaces dans leur traitement de JavaScript, ce qui fait que les pages qui utilisent JavaScript sont de plus en plus réactives. On peut ainsi arriver aujourd'hui à créer des sites qui deviennent littéralement des applications web, l'équivalent de logiciels mais disponibles sous forme de sites web !
 Un exemple célèbre : Google Docs, la suite bureautique de Google, disponible sur le Web (figure suivante)..</p>

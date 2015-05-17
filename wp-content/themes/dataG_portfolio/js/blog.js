@@ -880,7 +880,7 @@ jQuery(document).ready(function(e)
 			}
 			jQuery("#egal").bind("click", function(event)
 				{
-					jQuery(this).attr("href", "../../wp-content/themes/dataG_portfolio/sites_web/calculatrice/engine/services.php?operation="+jQuery("#number").val());
+					jQuery(this).attr("href", "../../wp-content/themes/dataG_portfolio/functions.php?action=calcul&operation="+jQuery("#number").val());
 				});
 		});
 

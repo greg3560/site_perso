@@ -22,7 +22,7 @@
 				}
 				$premiereEntree=($pageActuelle-1)*$billetsParPage;
 				$dataArticlesolos=get_articles(0, 1);
-
+				
 				foreach($dataArticlesolos as $cle => $dataArticlesolo)
 				{
 					$dataArticlesolos[$cle]["titre"] = expression_reguliere($dataArticlesolo["titre"]);
