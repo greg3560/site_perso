@@ -5,7 +5,7 @@
 			
 			foreach($sql as $data)
 			{ ?>
-				<a href="../../../<?= $data->src_menu ?>"><?= $data->libelle ?></a>
+				<a href="<?php echo get_stylesheet_directory_uri(); ?>../../../../<?= $data->src_menu ?>"><?= $data->libelle ?></a>
 			<?php
 			}
 		?>
