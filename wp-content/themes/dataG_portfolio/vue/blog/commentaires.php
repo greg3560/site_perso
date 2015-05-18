@@ -4,8 +4,9 @@
 				{
 			?>
 			<div class="news">
-				<em><a href="index.php?section=index">Retour à la liste des billets</a></em>
+				<em><a href="./?section=index">Retour à la liste des billets</a></em>
 				<h3>
+					<img class="naujac_img" class="image_article" src="<?php echo get_stylesheet_directory_uri(); ?>/img/naujac/<?php echo $dataBillet['src']; ?>" alt="image article" />
 					<?php echo $dataBillet["titre"]; ?>
 					<em>le <?php echo $dataBillet["date"]; ?></em>
 				</h3>
@@ -32,7 +33,7 @@
 				}
 			?>
 			<div class="ajoutCommentaire">
-				<form method="post" action="<?php bloginfo('template_directory'); ?>portfolio_/naujac-sur-mer/?page_id=218&section=set_commentaire&article=<?php echo $_GET['article']; ?> ">
+				<form method="post" action="./?section=set_commentaire&article=<?php echo $_GET['article']; ?> ">
 					<table>
 						<tr>
 							<td><label>Pseudo:</label></td>

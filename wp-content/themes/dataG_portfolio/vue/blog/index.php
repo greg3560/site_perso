@@ -1,9 +1,9 @@
 
 		<header id="naujac_header">
 			<ul class="rslides">
-			  <li><img class="naujac_img" src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/naujac/bord_de_mer.jpg" alt=""></li>
-			  <li><img class="naujac_img" src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/naujac/dune.jpg" alt=""></li>
-			  <li><img class="naujac_img" src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/naujac/lac.jpg" alt=""></li>
+			  <li><img class="naujac_img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/naujac/bord_de_mer.jpg" alt=""></li>
+			  <li><img class="naujac_img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/naujac/dune.jpg" alt=""></li>
+			  <li><img class="naujac_img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/naujac/lac.jpg" alt=""></li>
 			</ul>
 		</header>
 		<div id="naujac_bloc_page">
@@ -30,7 +30,7 @@
 						<em>le <?php echo $dataArticlesolo["date"]; ?></em>
 					</h3>
 					<p>
-						<img class="naujac_img" src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/naujac/<?php echo $dataArticlesolo['src']; ?>" alt="photo a la une" />
+						<img class="naujac_img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/naujac/<?php echo $dataArticlesolo['src']; ?>" alt="photo a la une" />
 						<?php echo $dataArticlesolo["contenu"]; ?>
 						<br />
 					</p>
@@ -46,16 +46,16 @@
 				?>
 				<li class="article">
 					<h4 class="naujac_h4">
-						<a href="#"><?php echo $dataArticle["titre"]; ?></a><br />
+						<a href="./?article=<?php echo $dataArticle['id']; ?>&section=article"><?php echo $dataArticle["titre"]; ?></a><br />
 						<em>le <?php echo $dataArticle["date"]; ?></em>
 					</h4>
-					<img class="naujac_img" class="image_article" src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/naujac/<?php echo $dataArticle['src']; ?>" alt="image article" />
+					<img class="naujac_img" class="image_article" src="<?php echo get_stylesheet_directory_uri(); ?>/img/naujac/<?php echo $dataArticle['src']; ?>" alt="image article" />
 					<p>
 						<?php echo $dataArticle["contenu"]; ?>
 						<br />
 					</p>
 				</li>
-						<em class="lire_la_suite"><a href="<?php bloginfo('template_directory'); ?>../../../../?page_id=218&article=<?php echo $dataArticle['id']; ?>&section=article">Lire la suite</a></em>
+						<em class="lire_la_suite"><a href="./?article=<?php echo $dataArticle['id']; ?>&section=article">Lire la suite</a></em>
 				<?php
 					}
 				?>
@@ -122,7 +122,7 @@
 				<p>et de 13h30 à 18h.</p>
 			</div>
 			<div id="naujac_logo">
-				<img class="naujac_img" src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/naujac/logo.jpg" id="logo_image" alt="logo" />
+				<img class="naujac_img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/naujac/logo.jpg" id="logo_image" alt="logo" />
 			</div>
 		</footer>
 

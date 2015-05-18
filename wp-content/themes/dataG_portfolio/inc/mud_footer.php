@@ -1,7 +1,7 @@
 <footer id="mud_footer">
 	<section id="adresse">
 		<h4 class="mud_h4">Coordonnées</h4>
-		<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/mud/logo_mud.gif" alt="Logo MUD" id="logo_footer" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mud/logo_mud.gif" alt="Logo MUD" id="logo_footer" />
 		<address>Music Until Dawn</br>
 			<a href="mailto:ph.espercieux@m-u-d.fr">ph.espercieux@m-u-d.fr</a></br>
 		

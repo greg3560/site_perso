@@ -10,27 +10,27 @@ get_header(); ?>
 			<section class="cv_ul" id="cv_ul0">
 				<div id="cv_competence_bloc">
 					<ul class="cv_ul_comp">
-							<li><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/html5.png" alt="html5" class="cv_competences" /><figure class="level5"></figure></li>
-							<li><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/css3.png" alt="css3" id="css3" /><figure class="level4"></figure></li>
-							<li><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/javascript.png" alt="javascript" id="javascript" /><figure class="level2"></figure></li>
+							<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/html5.png" alt="html5" class="cv_competences" /><figure class="level5"></figure></li>
+							<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/css3.png" alt="css3" id="css3" /><figure class="level4"></figure></li>
+							<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/javascript.png" alt="javascript" id="javascript" /><figure class="level2"></figure></li>
 					</ul>
 					<ul class="cv_ul_comp">
-							<li><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/wordpress.png" alt="wordpress" id="wp" /><figure class="level4"></figure></li>
-							<li><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/php.png" alt="php" id="php" /><figure class="level4"></figure></li>
-							<li><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/mysql.png" alt="mysql" id="mysql" /><figure class="level3"></figure></li>
+							<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/wordpress.png" alt="wordpress" id="wp" /><figure class="level4"></figure></li>
+							<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/php.png" alt="php" id="php" /><figure class="level4"></figure></li>
+							<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/mysql.png" alt="mysql" id="mysql" /><figure class="level3"></figure></li>
 					</ul>
 					<ul class="cv_ul_comp">
-							<li><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/linux.png" alt="linux" id="linux" /><figure class="level3"></figure></li>
-							<li><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/git.png" alt="git" id="git" /><figure class="level3"></figure></li>
-							<li><img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/photoshop.png" alt="photoshop" class="cv_competences" /><figure class="level2"></figure></li>
+							<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/linux.png" alt="linux" id="linux" /><figure class="level3"></figure></li>
+							<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/git.png" alt="git" id="git" /><figure class="level3"></figure></li>
+							<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/photoshop.png" alt="photoshop" class="cv_competences" /><figure class="level2"></figure></li>
 					</ul>
 				</div>
 			</section>
 			<h2 class="cv_h2" onClick="openCvUl('cv_ul1')" id="ancre">CERTIFICATIONS</h2>
 			<ul class="cv_ul" id="cv_ul1">
 				<li id="0">
-					<a href="../../certificats/HTML5 CSS3.pdf" title="HTML5 CSS3" target="_blank">
-						<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/HTML5 CSS3.png" alt="HTML5 CSS3" title="HTML5 CSS3"/>
+					<a href="../certificats/HTML5 CSS3.pdf" title="HTML5 CSS3" target="_blank">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/HTML5 CSS3.png" alt="HTML5 CSS3" title="HTML5 CSS3"/>
 						<p class="gallery_p">
 							Apprenez à créer votre site web avec HTML5 et CSS3.<br />
 							Délivré le 17/02/2014.
@@ -39,8 +39,8 @@ get_header(); ?>
 					
 				</li>
 				<li id="1">
-					<a href="../../certificats/PHP MySql.pdf" title="PHP MySQL" target="_blank">
-						<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/PHP MySql.png" alt="PHP MySql" title="PHP MySQL"/>
+					<a href="../certificats/PHP MySql.pdf" title="PHP MySQL" target="_blank">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/PHP MySql.png" alt="PHP MySql" title="PHP MySQL"/>
 						<p class="gallery_p">
 							Concevez votre site web avec PHP et MySQL.<br />
 							Délivré le 22/04/2014.
@@ -49,8 +49,8 @@ get_header(); ?>
 					
 				</li>
 				<li id="2">
-					<a href="../../certificats/Reprenez le controle a l'aide de linux.pdf" title="Linux" target="_blank">
-						<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/Reprenez le controle a l'aide de linux.png" alt="Linux" title="Linux"/>
+					<a href="../certificats/Reprenez le controle a l'aide de linux.pdf" title="Linux" target="_blank">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/Reprenez le controle a l'aide de linux.png" alt="Linux" title="Linux"/>
 						<p class="gallery_p">
 							Reprenez le contrôle à l'aide de Linux !<br />
 							Délivré le 12/10/2014.
@@ -58,8 +58,8 @@ get_header(); ?>
 					</a>
 				</li>
 				<li id="3">
-					<a href="../../certificats/certificat gerer son code avec git et github.pdf" title="GIT et GITHUB" target="_blank">
-						<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/certificat gerer son code avec git et github.png" alt="GIT et GITHUB" title="GIT et GITHUB"/>
+					<a href="../certificats/certificat gerer son code avec git et github.pdf" title="GIT et GITHUB" target="_blank">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/certificat gerer son code avec git et github.png" alt="GIT et GITHUB" title="GIT et GITHUB"/>
 						<p class="gallery_p">
 							Gérer son code avec Git et GitHub.<br />
 							Délivré le 22/10/2014.
@@ -68,8 +68,8 @@ get_header(); ?>
 					
 				</li>
 				<li id="4">
-					<a href="../../certificats/apprenez à programmer en C.pdf" title="apprenez à programmer en C" target="_blank">
-						<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/apprenez à programmer en C.png" alt="apprenez à programmer en C" title="apprenez à programmer en C"/>
+					<a href="../certificats/apprenez à programmer en C.pdf" title="apprenez à programmer en C" target="_blank">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/apprenez à programmer en C.png" alt="apprenez à programmer en C" title="apprenez à programmer en C"/>
 						<p class="gallery_p">
 							Apprenez à programmer en C !<br />
 							Délivré le 12/11/2014.
@@ -78,8 +78,8 @@ get_header(); ?>
 					
 				</li>	
 				<li id="4">
-					<a href="../../certificats/Comprendre le web.pdf" title="Comprendre le web" target="_blank">
-						<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/Comprendre le web.png" alt="Comprendre le web" title="Comprendre le web"/>
+					<a href="../certificats/Comprendre le web.pdf" title="Comprendre le web" target="_blank">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/Comprendre le web.png" alt="Comprendre le web" title="Comprendre le web"/>
 						<p class="gallery_p">
 							Comprendre le Web.<br />
 							Délivré le 11/03/2014.
@@ -88,8 +88,8 @@ get_header(); ?>
 					
 				</li>
 				<li id="4">
-					<a href="../../certificats/certificat le monde des start-ups.pdf" title="le monde des start-ups" target="_blank">
-						<img src="<?php bloginfo('template_directory'); ?>/../dataG_portfolio/img/cv/certificat le monde des start-ups.png" alt="le monde des start-ups" title="le monde des start-ups"/>
+					<a href="../certificats/certificat le monde des start-ups.pdf" title="le monde des start-ups" target="_blank">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cv/certificat le monde des start-ups.png" alt="le monde des start-ups" title="le monde des start-ups"/>
 						<p class="gallery_p">
 							Découvrez le monde des start-ups.<br />
 							Délivré le 07/10/2014.
