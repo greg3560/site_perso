@@ -1,26 +1,23 @@
 <div id="bloc_page">
-			<div id="main">
-				<div id="contenu">
-					<div class="la_une">
-						<?php
-							foreach($dataArticles as $dataArticle)
-							{
-						?>
-						<em><a href="./?section=index">Retour à la liste des billets</a></em>
-						<h3>
-							<?php echo $dataArticle["titre"]; ?>
-							<em>le <?php echo $dataArticle["date"]; ?></em>
-						</h3>
-						<p>
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/naujac/<?php echo $dataArticle["src"]; ?>" alt="photo a la une" />
-							<?php echo $dataArticle["contenu"]; ?>
-							<br />
-						</p>
-					
-					<?php
-							}
-					?>
-					</div>
+			<?php
+				foreach($dataBillets as $dataBillet)
+				{
+			?>
+			<div class="news">
+				<em><a href="./?section=index">Retour à la liste des billets</a></em>
+				<h3>
+					<img class="naujac_img" class="image_article" src="<?php echo get_stylesheet_directory_uri(); ?>/img/naujac/<?php echo $dataBillet['src']; ?>" alt="image article" />
+					<?php echo $dataBillet["titre"]; ?>
+					<em>le <?php echo $dataBillet["date"]; ?></em>
+				</h3>
+				<p>
+					<?php echo $dataBillet["contenu"]; ?>
+					<br />
+				</p>
+			</div>
+			<?php
+				}
+				?>
 					<div class="commentaires">
 						<p>
 							<?php echo ("Il n'y a pas de commentaires pour ce billet."); ?>
@@ -43,7 +40,7 @@
 							</table>
 						</form>
 					</div>
-				</div>
+				
 				
 			</div>
 		</div>

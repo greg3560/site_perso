@@ -6,6 +6,7 @@
 			<div class="news">
 				<em><a href="./?section=index">Retour à la liste des billets</a></em>
 				<h3>
+					<img class="naujac_img" class="image_article" src="<?php echo get_stylesheet_directory_uri(); ?>/img/naujac/<?php echo $dataBillet['src']; ?>" alt="image article" />
 					<?php echo $dataBillet["titre"]; ?>
 					<em>le <?php echo $dataBillet["date"]; ?></em>
 				</h3>

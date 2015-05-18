@@ -31,11 +31,12 @@
 				}
 				else
 				{
-					$dataArticles = get_articles($_GET["article"]-1, 1);
-					foreach($dataArticles as $cle => $dataArticle)
+					$dataBillets = get_articles($_GET["article"]-1, 1);
+					foreach($dataBillets as $cle => $dataBillet)
 					{
-						$dataArticles[$cle]["titre"] = expression_reguliere($dataArticle["titre"]);
-						$dataArticles[$cle]["contenu"] = expression_reguliere($dataArticle["contenu"]);
+						$dataBillets[$cle]["src"] = $dataBillet["src"];
+						$dataBillets[$cle]["titre"] = expression_reguliere($dataBillet["titre"]);
+						$dataBillets[$cle]["contenu"] = expression_reguliere($dataBillet["contenu"]);
 					}
 					require_once(__DIR__."/../../vue/blog/sans_commentaire.php");
 				}
