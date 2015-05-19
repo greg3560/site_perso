@@ -5,7 +5,7 @@ Template Name: apropos
 
 get_header(); ?>
 
-		<h1 id="apropos_h1">Développeur Web.</h1>
+		<h1 id="apropos_h1">Développeur Web</h1>
 		
 		<section id="greg_section">		
 		<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/gregory.png" alt="gregory" title="gregory" id="greg"/>Anciennement technicien son, titulaire d'un BEP électronique puis d'un BAC PRO MAVELEC, je suis en reconversion professionnelle vers les métiers de l’informatique web.Je recherche un contrat de professionnalisation en alternance pour suivre la formation a l'IPI (institut de poly informatique) <a href="http://www.inspi.fr/formation-continue/programmes-de-formations/developpeur-informatique/" title="IPI" target="_blank">Concepteur Développeur Web & Mobile.</a></p>
