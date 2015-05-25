@@ -197,7 +197,8 @@ td
 }
 
 /*titre pages*/
-#intro.option1 {
+#intro.option1
+{
     background-color:#F6F6F6;
     text-align: center;
 }
