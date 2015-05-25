@@ -202,6 +202,12 @@ td
     text-align: center;
 }
 
+/*span dans slider accueil*/
+#slider .featured
+{
+	vertical-align:inherit;
+}
+
 /******CORRECTIONS MISE A JOUR BLOG-STYLE1 EN BLOG-ARTICLE*********************************************/
 
 .blog-style1 .more-link {
