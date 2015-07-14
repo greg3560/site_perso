@@ -22,8 +22,11 @@ class FMModelManage_fm {
     global $wpdb;
      $where = 'WHERE `id` NOT IN (' . (get_option('contact_form_forms', '') != '' ? get_option('contact_form_forms') : 0) . ')';
     $where .= ((isset($_POST['search_value']) && (esc_html($_POST['search_value']) != '')) ? ' AND title LIKE "%' . esc_html($_POST['search_value']) . '%"' : '');
-    $asc_or_desc = ((isset($_POST['asc_or_desc'])) ? esc_html($_POST['asc_or_desc']) : 'asc');
-    $order_by = ' ORDER BY ' . ((isset($_POST['order_by']) && esc_html($_POST['order_by']) != '') ? esc_html($_POST['order_by']) : 'id') . ' ' . $asc_or_desc;
+    $asc_or_desc = ((isset($_POST['asc_or_desc']) && ($_POST['asc_or_desc'] == 'asc' || $_POST['asc_or_desc'] == 'desc')) ? esc_html($_POST['asc_or_desc']) : 'asc');
+    $order_by = ((isset($_POST['order_by']) && esc_html(stripslashes($_POST['order_by'])) != '') ? esc_html(stripslashes($_POST['order_by'])) : 'id');
+    $order_by_array = array('id', 'title', 'mail');
+    $order_by = in_array($order_by, $order_by_array) ? $order_by : 'id';
+    $order_by = ' ORDER BY `' . $order_by . '` ' . $asc_or_desc;
     if (isset($_POST['page_number']) && $_POST['page_number']) {
       $limit = ((int) $_POST['page_number'] - 1) * 20;
     }
@@ -95,7 +98,7 @@ class FMModelManage_fm {
   public function get_row_data_new($id) {
     global $wpdb;
     if ($id != 0) {
-      $row = $wpdb->get_row($wpdb->prepare('SELECT * FROM ' . $wpdb->prefix . 'formmaker WHERE id="%d"', $id));
+      $row = $wpdb->get_row($wpdb->prepare('SELECT * FROM ' . $wpdb->prefix . 'formmaker_backup WHERE backup_id="%d"', $id));
       $labels2 = array();
       $label_id = array();
       $label_order_original = array(); 
@@ -152,6 +155,7 @@ class FMModelManage_fm {
             
             case 'type_send_copy':
             case 'type_captcha':
+			case 'type_arithmetic_captcha':
             case 'type_recaptcha':
             {
               $arrows =$arrows.'<div id="wdform_arrows'.$id.'" class="wdform_arrows"><div id="X_'.$id.'" valign="middle" align="right" class="element_toolbar"><img src="' . WD_FM_URL . '/images/delete_el.png" title="Remove the field" onclick="remove_row(&quot;'.$id.'&quot;)"></div><div id="left_'.$id.'" valign="middle" class="element_toolbar"><img src="' . WD_FM_URL . '/images/left.png" title="Move the field to the left" onclick="left_row(&quot;'.$id.'&quot;)"></div><div id="up_'.$id.'" valign="middle" class="element_toolbar"><img src="' . WD_FM_URL . '/images/up.png" title="Move the field up" onclick="up_row(&quot;'.$id.'&quot;)"></div><div id="down_'.$id.'" valign="middle" class="element_toolbar"><img src="' . WD_FM_URL . '/images/down.png" title="Move the field down" onclick="down_row(&quot;'.$id.'&quot;)"></div><div id="right_'.$id.'" valign="middle" class="element_toolbar"><img src="' . WD_FM_URL . '/images/right.png" title="Move the field to the right" onclick="right_row(&quot;'.$id.'&quot;)"></div><div id="edit_'.$id.'" valign="middle" class="element_toolbar"><img src="' . WD_FM_URL . '/images/edit.png" title="Edit the field" onclick="edit(&quot;'.$id.'&quot;)"></div><div id="dublicate_'.$id.'" valign="middle" class="element_toolbar"></div><div id="page_up_'.$id.'" valign="middle" class="element_toolbar"><img src="' . WD_FM_URL . '/images/page_up.png" title="Move the field to the upper page" onclick="page_up(&quot;'.$id.'&quot;)"></div><div id="page_down_'.$id.'" valign="middle" class="element_toolbar"><img src="' . WD_FM_URL . '/images/page_down.png" title="Move the field to the lower page" onclick="page_down(&quot;'.$id.'&quot;)"></div></div>';
@@ -328,8 +332,10 @@ class FMModelManage_fm {
               break;
             }
              case 'type_name': {
-              $params_names = array('w_field_label_size', 'w_field_label_pos', 'w_first_val', 'w_title', 'w_mini_labels', 'w_size', 'w_name_format', 'w_required', 'w_unique', 'w_class', 'w_name_fields');
+              $params_names = array('w_field_label_size', 'w_field_label_pos', 'w_first_val', 'w_title', 'w_mini_labels', 'w_size', 'w_name_format', 'w_required', 'w_unique', 'w_class');
               $temp = $params;
+			  if(strpos($temp, 'w_name_fields') > -1)
+				$params_names = array('w_field_label_size', 'w_field_label_pos', 'w_first_val', 'w_title', 'w_mini_labels', 'w_size', 'w_name_format', 'w_required', 'w_unique', 'w_class', 'w_name_fields');
               foreach ($params_names as $params_name) {
                 $temp = explode('*:*' . $params_name . '*:*', $temp);
                 $param[$params_name] = $temp[0];
@@ -348,7 +354,7 @@ class FMModelManage_fm {
               $w_title = explode('***', $param['w_title']);
               $w_mini_labels = explode('***', $param['w_mini_labels']);
 			  
-			  $param['w_name_fields'] =  $param['w_name_fields']!='' ? $param['w_name_fields'] : ($param['w_name_format'] == 'normal' ? 'no***no' : 'yes***yes');
+			  $param['w_name_fields'] =  isset($param['w_name_fields']) ? $param['w_name_fields'] : ($param['w_name_format'] == 'normal' ? 'no***no' : 'yes***yes');
 			  $w_name_fields = explode('***', $param['w_name_fields']);
 
               $w_name_format = '<div id="'.$id.'_td_name_input_first" style="display: table-cell;"><input type="text" class="'.($w_first_val[0]==$w_title[0] ? "input_deactive" : "input_active").'" id="'.$id.'_element_firstform_id_temp" name="'.$id.'_element_firstform_id_temp" value="'.$w_first_val[0].'" title="'.$w_title[0].'" onfocus="delete_value(&quot;'.$id.'_element_firstform_id_temp&quot;)"onblur="return_value(&quot;'.$id.'_element_firstform_id_temp&quot;)" onchange="change_value(&quot;'.$id.'_element_firstform_id_temp&quot;)" style="margin-right: 10px; width: '.$param['w_size'].'px;"'.$param['attributes'].' disabled /></div><div id="'.$id.'_td_name_input_last" style="display: table-cell;"><input type="text" class="'.($w_first_val[1]==$w_title[1] ? "input_deactive" : "input_active").'" id="'.$id.'_element_lastform_id_temp" name="'.$id.'_element_lastform_id_temp" value="'.$w_first_val[1].'" title="'.$w_title[1].'" onfocus="delete_value(&quot;'.$id.'_element_lastform_id_temp&quot;)"onblur="return_value(&quot;'.$id.'_element_lastform_id_temp&quot;)" onchange="change_value(&quot;'.$id.'_element_lastform_id_temp&quot;)" style="margin-right: 10px; width: '.$param['w_size'].'px;" '.$param['attributes'].' disabled /></div>';
@@ -526,7 +532,7 @@ ngdom</option><option value="United States">United States</option><option value=
                       continue;
                       
                       if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==(int)$param['w_rowcol']*$i+$l)
-							         $rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$l+$i).'" idi="'.((int)$param['w_rowcol']*$l+$i).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$l+$i).'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$l+$i].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled  /><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$l+$i).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'">'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'</label></div>';
+							         $rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$l+$i).'" idi="'.((int)$param['w_rowcol']*$l+$i).'" style="display: table-cell;"><input type="checkbox" value="" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$l+$i).'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$l+$i].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled  /><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$l+$i).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'">'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'</label></div>';
 								else	
 									{
 										$where = '';
@@ -546,7 +552,7 @@ ngdom</option><option value="United States">United States</option><option value=
 											$db_info = "db_info='".$w_choices_params[1]."'";
 										}
 									
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$l+$i).'" idi="'.((int)$param['w_rowcol']*$l+$i).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$l+$i).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$l+$i].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$l+$i).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" '.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'</label></div>';	
+										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$l+$i).'" idi="'.((int)$param['w_rowcol']*$l+$i).'" style="display: table-cell;"><input type="checkbox" value="'.$choise_value.'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$l+$i).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$l+$i].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$l+$i).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" '.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'</label></div>';	
 									}
                     }
                   
@@ -566,7 +572,7 @@ ngdom</option><option value="United States">United States</option><option value=
 								for($l=0; $l<$param['w_rowcol']; $l++)
 								{
 									if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==(int)$param['w_rowcol']*$i+$l)
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled /><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled /><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
 										else
 									{
 										$where = '' ;
@@ -586,7 +592,7 @@ ngdom</option><option value="United States">United States</option><option value=
 											$db_info = "db_info='".$w_choices_params[1]."'";
 										}
 									
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'"
+										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$choise_value.'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'"
 										'.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
 									}	
 								}
@@ -594,7 +600,7 @@ ngdom</option><option value="United States">United States</option><option value=
 								for($l=0; $l<count($param['w_choices']); $l++)
 								{
 									if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==(int)$param['w_rowcol']*$i+$l)
-											$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+											$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'">'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
 									else
 									{
 										$where = '' ;
@@ -614,7 +620,7 @@ ngdom</option><option value="United States">United States</option><option value=
 											$db_info = "db_info='".$w_choices_params[1]."'";
 										}
 									
-										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" '.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
+										$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$i+$l).'" idi="'.((int)$param['w_rowcol']*$i+$l).'" style="display: table-cell;"><input type="checkbox" value="'.$choise_value.'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" name="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$i+$l).'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$i+$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$i+$l).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$i+$l).'" '.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][(int)$param['w_rowcol']*$i+$l].'</label></div>';
 									}
 								}
 							
@@ -629,7 +635,7 @@ ngdom</option><option value="United States">United States</option><option value=
                   {
                     $l = count($param['w_choices']) - count($param['w_choices'])%$param['w_rowcol'] + $k;
                     if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==$l)
-										$rep.='<div valign="top" id="'.$id.'_td_little'.$l.'" idi="'.$l.'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][$l].'" id="'.$id.'_elementform_id_temp'.$l.'" name="'.$id.'_elementform_id_temp'.$l.'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.$l.'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$l.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$l.'">'.$param['w_choices'][$l].'</label></div>';
+										$rep.='<div valign="top" id="'.$id.'_td_little'.$l.'" idi="'.$l.'" style="display: table-cell;"><input type="checkbox" value="" id="'.$id.'_elementform_id_temp'.$l.'" name="'.$id.'_elementform_id_temp'.$l.'" other="1" onclick="if(set_checked(&quot;'.$id.'&quot;,&quot;'.$l.'&quot;,&quot;form_id_temp&quot;)) show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$l.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$l.'">'.$param['w_choices'][$l].'</label></div>';
 								else
 								{
 									$where = '' ;
@@ -648,7 +654,7 @@ ngdom</option><option value="United States">United States</option><option value=
 										$order_by = "order_by='".$w_choices_params[0]."'";
 										$db_info = "db_info='".$w_choices_params[1]."'";
 									}
-									$rep.='<div valign="top" id="'.$id.'_td_little'.$l.'" idi="'.$l.'" style="display: table-cell;"><input type="checkbox" value="'.$param['w_choices'][$l].'" id="'.$id.'_elementform_id_temp'.$l.'" name="'.$id.'_elementform_id_temp'.$l.'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.$l.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$l.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$l.'" '.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][$l].'</label></div>';
+									$rep.='<div valign="top" id="'.$id.'_td_little'.$l.'" idi="'.$l.'" style="display: table-cell;"><input type="checkbox" value="'.$choise_value.'" id="'.$id.'_elementform_id_temp'.$l.'" name="'.$id.'_elementform_id_temp'.$l.'" onclick="set_checked(&quot;'.$id.'&quot;,&quot;'.$l.'&quot;,&quot;form_id_temp&quot;)" '.$param['w_choices_checked'][$l].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.$l.'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.$l.'" '.$where.' '.$order_by.' '.$db_info.'>'.$param['w_choices'][$l].'</label></div>';
 								}	
                   }
                   
@@ -721,7 +727,7 @@ ngdom</option><option value="United States">United States</option><option value=
                       if($j >= count($param['w_choices'])%$param['w_rowcol'] && $l==(int)(count($param['w_choices'])/$param['w_rowcol']))
                       continue;
                       
-                      if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==(int)$param['w_rowcol']*$i+$l)
+                      if($param['w_allow_other']=="yes" && $param['w_allow_other_num']==(int)$param['w_rowcol']*$l+$i)
 											$rep.='<div valign="top" id="'.$id.'_td_little'.((int)$param['w_rowcol']*$l+$i).'" idi="'.((int)$param['w_rowcol']*$l+$i).'" style="display: table-cell;"><input type="radio" value="'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'" id="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'" name="'.$id.'_elementform_id_temp" other="1" onclick="set_default(&quot;'.$id.'&quot;,&quot;'.((int)$param['w_rowcol']*$l+$i).'&quot;,&quot;form_id_temp&quot;); show_other_input(&quot;'.$id.'&quot;,&quot;form_id_temp&quot;);" '.$param['w_choices_checked'][(int)$param['w_rowcol']*$l+$i].' '.$param['attributes'].' '.($param['w_field_option_pos']=='right' ? 'style="float:left !important;"' : "").' disabled/><label id="'.$id.'_label_element'.((int)$param['w_rowcol']*$l+$i).'" class="ch-rad-label" for="'.$id.'_elementform_id_temp'.((int)$param['w_rowcol']*$l+$i).'">'.$param['w_choices'][(int)$param['w_rowcol']*$l+$i].'</label></div>';
 										else	
 										{
@@ -735,7 +741,7 @@ ngdom</option><option value="United States">United States</option><option value=
 												
 											if(isset($param['w_choices_params']) && $param['w_choices_params'][(int)$param['w_rowcol']*$l+$i])
 											{
-												$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][(int)$param['w_rowcol']*$i+$l]);
+												$w_choices_params = explode('[where_order_by]',$param['w_choices_params'][(int)$param['w_rowcol']*$l+$i]);
 												$where = "where='".$w_choices_params[0]."'";
 												$w_choices_params = explode('[db_info]',$w_choices_params[1]);
 												$order_by = "order_by='".$w_choices_params[0]."'";
@@ -1027,8 +1033,10 @@ ngdom</option><option value="United States">United States</option><option value=
             }
              case 'type_date':
             {
-              $params_names=array('w_field_label_size','w_field_label_pos','w_date','w_required','w_class','w_format','w_but_val', 'w_disable_past_days');
-              $temp=$params;
+              $params_names=array('w_field_label_size','w_field_label_pos','w_date','w_required','w_class','w_format','w_but_val');
+              $temp = $params;
+			  if(strpos($temp, 'w_disable_past_days') > -1)
+				$params_names = array('w_field_label_size','w_field_label_pos','w_date','w_required','w_class','w_format','w_but_val', 'w_disable_past_days');
               foreach($params_names as $params_name )
               {	
                 $temp=explode('*:*'.$params_name.'*:*',$temp);
@@ -1210,7 +1218,37 @@ ngdom</option><option value="United States">United States</option><option value=
               
               break;
             }
-            case 'type_recaptcha':
+            case 'type_arithmetic_captcha':
+            {
+              $params_names=array('w_field_label_size','w_field_label_pos', 'w_count', 'w_operations','w_class', 'w_input_size');
+              $temp=$params;
+              foreach($params_names as $params_name )
+              {	
+                $temp=explode('*:*'.$params_name.'*:*',$temp);
+                $param[$params_name] = $temp[0];
+                $temp=$temp[1];
+              }
+
+              if($temp)
+              {	
+                $temp	=explode('*:*w_attr_name*:*',$temp);
+                $attrs	= array_slice($temp,0, count($temp)-1);   
+                foreach($attrs as $attr)
+                  $param['attributes'] = $param['attributes'].' add_'.$attr;
+              }
+			 
+              $param['w_field_label_pos'] = ($param['w_field_label_pos']=="left" ? "table-cell" : "block");	
+			  $param['w_count'] = $param['w_count'] ? $param['w_count'] : 1;
+              $param['w_operations'] = $param['w_operations'] ? $param['w_operations'] : '+, -, *, /';
+              $param['w_input_size'] = $param['w_input_size'] ? $param['w_input_size'] : 60;
+              
+              $rep ='<div id="wdform_field'.$id.'" type="type_arithmetic_captcha" class="wdform_field" style="display: table-cell;">'.$arrows.'<div align="left" id="'.$id.'_label_sectionform_id_temp" class="'.$param['w_class'].'" style="display:'.$param['w_field_label_pos'].'; width: '.$param['w_field_label_size'].'px;"><span id="'.$id.'_element_labelform_id_temp" class="label" style="vertical-align: top;">'.$label.'</span></div><div align="left" id="'.$id.'_element_sectionform_id_temp" class="'.$param['w_class'].'" style="display: '.$param['w_field_label_pos'].';"><input type="hidden" value="type_captcha" name="'.$id.'_typeform_id_temp" id="'.$id.'_typeform_id_temp"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;"><img type="captcha" operations_count="'.$param['w_count'].'" operations="'.$param['w_operations'].'" input_size="'.$param['w_input_size'].'" src="' . add_query_arg(array('action' => 'formmakerwdmathcaptcha', 'operations_count' => $param['w_count'], 'operations' => $param['w_operations'], 'i' => 'form_id_temp'), admin_url('admin-ajax.php')) . '" id="_wd_arithmetic_captchaform_id_temp" class="arithmetic_captcha_img" onclick="captcha_refresh(&quot;_wd_arithmetic_captcha&quot;,&quot;form_id_temp&quot;)" '.$param['attributes'].'></div><div style="display: table-cell;"><input type="text" class="arithmetic_captcha_input" id="_wd_arithmetic_captcha_inputform_id_temp" name="arithmetic_captcha_input" onkeypress="return check_isnum(event)" style="width: '.$param['w_input_size'].'px;" '.$param['attributes'].' disabled/></div><div style="display: table-cell; vertical-align: middle;"><div class="captcha_refresh" id="_element_refreshform_id_temp" onclick="captcha_refresh(&quot;_wd_arithmetic_captcha&quot;,&quot;form_id_temp&quot;)" '.$param['attributes'].'></div></div></div></div></div></div>';
+              
+              break;
+            }
+
+
+			case 'type_recaptcha':
             {
               $params_names=array('w_field_label_size','w_field_label_pos','w_public','w_private','w_theme','w_class');
               $temp=$params;
@@ -2060,6 +2098,7 @@ ngdom</option><option value="United States">United States</option><option value=
     else {
       $row = new stdClass();
       $row->id = 0;
+      $row->backup_id ='';
       $row->title = '';
       $row->mail = '';
       $row->form = '';

@@ -3,7 +3,7 @@
  * Plugin Name: Form Maker
  * Plugin URI: http://web-dorado.com/products/form-maker-wordpress.html
  * Description: This plugin is a modern and advanced tool for easy and fast creating of a WordPress Form. The backend interface is intuitive and user friendly which allows users far from scripting and programming to create WordPress Forms.
- * Version: 1.7.47
+ * Version: 1.7.57
  * Author: WebDorado
  * Author URI: http://web-dorado.com/
  * License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
@@ -34,7 +34,7 @@ function form_maker_options_panel() {
   $licensing_plugins_page = add_submenu_page('manage_fm', 'Licensing/Donation', 'Licensing/Donation', 'manage_options', 'licensing_fm', 'form_maker');
 
   add_submenu_page('manage_fm', 'Featured Plugins', 'Featured Plugins', 'manage_options', 'featured_plugins_fm', 'fm_featured');
-
+  add_submenu_page('manage_fm', 'Featured Themes', 'Featured Themes', 'manage_options', 'featured_themes_fm', 'fm_featured_themes');
   add_submenu_page('manage_fm', 'Form Maker plugins', 'Form Maker plugins', 'manage_options', 'extensions_fm', 'fm_extensions');
   
   $uninstall_page = add_submenu_page('manage_fm', 'Uninstall', 'Uninstall', 'manage_options', 'uninstall_fm', 'form_maker');
@@ -77,6 +77,21 @@ function fm_featured() {
   spider_featured('form-maker');
 }
 
+function fm_featured_themes() {
+  if (function_exists('current_user_can')) {
+    if (!current_user_can('manage_options')) {
+      die('Access Denied');
+    }
+  }
+  else {
+    die('Access Denied');
+  }
+  require_once(WD_FM_DIR . '/featured/featured_themes.php');
+  wp_register_style('fm_featured_themes', WD_FM_URL . '/featured/featured_themes.css', array(), get_option("wd_form_maker_version"));
+  wp_print_styles('fm_featured_themes');
+  spider_featured_themes('form-maker');
+}
+
 function fm_extensions() {
   if (function_exists('current_user_can')) {
     if (!current_user_can('manage_options')) {
@@ -98,6 +113,8 @@ add_action('wp_ajax_generete_xml', 'form_maker_ajax'); // Export xml.
 add_action('wp_ajax_FormMakerPreview', 'form_maker_ajax');
 add_action('wp_ajax_formmakerwdcaptcha', 'form_maker_ajax'); // Generete captcha image and save it code in session.
 add_action('wp_ajax_nopriv_formmakerwdcaptcha', 'form_maker_ajax'); // Generete captcha image and save it code in session for all users.
+add_action('wp_ajax_formmakerwdmathcaptcha', 'form_maker_ajax'); // Generete math captcha image and save it code in session.
+add_action('wp_ajax_nopriv_formmakerwdmathcaptcha', 'form_maker_ajax'); // Generete math captcha image and save it code in session for all users.
 add_action('wp_ajax_fromeditcountryinpopup', 'form_maker_ajax'); // Open country list.
 add_action('wp_ajax_product_option', 'form_maker_ajax'); // Open product options on add paypal field.
 add_action('wp_ajax_frommapeditinpopup', 'form_maker_ajax'); // Open map in submissions.
@@ -151,20 +168,33 @@ function form_maker_admin_ajax() {
 }
 add_action('admin_head', 'form_maker_admin_ajax');
 
-function do_output_buffer() {
+function fm_output_buffer() {
   ob_start();
 }
- add_action('init', 'do_output_buffer');
+ add_action('init', 'fm_output_buffer');
  
 add_shortcode('Form', 'fm_shortcode');
 
 function fm_shortcode($attrs) {
-  $new_shortcode = '[Form';
-  foreach ($attrs as $key=>$value) {
-    $new_shortcode .= ' ' . $key . '="' . $value . '"';
-  }
-  $new_shortcode .= ']';
-  return $new_shortcode;
+	/*  $new_shortcode = '[Form';
+	foreach ($attrs as $key=>$value) {
+		$new_shortcode .= ' ' . $key . '="' . $value . '"';
+	}
+	$new_shortcode .= ']'; 
+	return $new_shortcode;
+	*/
+	ob_start();
+	FM_front_end_main($attrs);
+	return str_replace(array("\r\n", "\n", "\r"), '', ob_get_clean());
+}
+
+function FM_front_end_main($params) {
+	if(!isset($params['type'])){
+		$form_id =  isset($params['id']) ? (int)$params['id'] : '';
+		if($form_id)
+			wd_form_maker($form_id);
+	}
+	return;
 }
 
 add_shortcode('email_verification', 'fm_email_verification_shortcode');
@@ -200,7 +230,7 @@ function Form_maker_fornt_end_main($content) {
   }
   return $content;
 }
-add_filter('the_content', 'Form_maker_fornt_end_main', 5000);
+//add_filter('the_content', 'Form_maker_fornt_end_main', 5000);
 
 // Add the Form Maker button to editor.
 add_action('wp_ajax_formmakerwindow', 'form_maker_ajax');
@@ -216,7 +246,7 @@ if (class_exists('WP_Widget')) {
 // Activate plugin.
 function form_maker_activate() {
   $version = get_option("wd_form_maker_version");
-  $new_version = '1.7.47';
+  $new_version = '1.7.57';
   if (!$version) {
     add_option("wd_form_maker_version", $new_version, '', 'no');
     global $wpdb;
@@ -235,7 +265,7 @@ function form_maker_activate() {
 		  'post_status'   => 'publish',
 		  'post_author'   => 1,
 		);
-	  $mail_verification_post_id = wp_insert_post( $email_verification_post, $wp_error );
+	  $mail_verification_post_id = wp_insert_post( $email_verification_post );
 	  $wpdb->update($wpdb->prefix . "formmaker", array(
         'mail_verification_post_id' => $mail_verification_post_id,
       ), array('id' => 1), array(

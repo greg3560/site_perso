@@ -4,7 +4,7 @@ Donate link: http://web-dorado.com/products/wordpress-form.html
 Tags:  form, forms, form builder, form maker, form manager, form plugin, form with recaptcha,  forms plugin, multiple forms, paypal form, survey form, feedback form, feedback forms, contact form,contact form plugin, contact form builder, form creator, email form, secure form, web form, form to email, contact forms, custom forms, form widget, captcha form, wordpress contact form ,recaptcha contact form, form creation, contact form with auto reply, widget contact form, builder, feedback, contacts form plugin , custom contact form, contact us form,  formular, formulario, admin, captcha, contact, database, email, javascript, jquery, page, plugin, survey, widget, custom form, forms creator, input, validation, send copy, form with captcha
 Requires at least: 3.4
 Tested up to: 4.2
-Stable tag: 1.7.47
+Stable tag: 1.7.57
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,8 @@ WordPress Form Maker is a fresh and innovative form builder. This form builder i
 == Description ==
 
 Form Maker is a FREE and user-friendly plugin to create highly customizable and responsive forms in a few minutes with simple drag and drop interface.
+
+https://www.youtube.com/watch?v=QelKxyW7M98
 
 [WordPress Form Maker](http://web-dorado.com/products/wordpress-form.html)  
 [Demo](http://wpdemo.web-dorado.com/)  
@@ -54,7 +56,7 @@ Survey tools are also very convenient for adding rating systems for the posts, e
 *   WordPress 3.0+  
 *   Multiple pre-installed sample forms 
 *   Responsive layout and design  
-*   Limited up to 9 fields to add   
+*   Limited up to 7 fields to add   
 *   Twelve form fields with detailed parameters for creating forms
 	*   Custom HTML with standard editor  
 	*   Text Input form fields (included 10 different types)   
@@ -276,6 +278,39 @@ The Form Maker (Pro version) has simple PayPal integration. This allows the user
 
 
 == Changelog ==
+
+= 1.7.57 =
+Fixed: Security issue
+
+= 1.7.56 =
+New: ReCaptcha version 2.0
+New: Arithmetic Captcha
+
+= 1.7.55 =
+New: Undo/Rendo form
+
+= 1.7.54 =
+bug in conditional fields fixed
+
+= 1.7.53 =
+bug in select field fixed
+
+= 1.7.52 =
+minor bugs fixed
+
+= 1.7.51 =
+Changed: Featured plugins page.  
+New: Featured themes page.  
+
+= 1.7.50 =
+minor bugs fixed
+
+= 1.7.49 =
+Limited up to 7 fields to add
+Bug fixed
+
+= 1.7.48 =
+bug in radio and matrix fields fixed
 
 = 1.7.47 =
 Show custom html and section break id

@@ -111,7 +111,7 @@ class FMViewForm_maker {
       $form_theme = implode('{', $body_or_classes_implode);
       $form_maker_front_end .= '<style>' . str_replace('[SITE_ROOT]', WD_FM_URL, $form_theme) . '</style>';
       wp_print_scripts('main' . (($old == false || ($old == true && $row->form=='')) ? '_div' : '') . '_front_end', WD_FM_URL . '/js/main' . (($old == false || ($old == true && $row->form=='')) ? '_div' : '') . '_front_end.js?ver='. get_option("wd_form_maker_version"));
-      // $form_maker_front_end .= '<script src="' . WD_FM_URL . '/js/main' . (($old == false || ($old == true && $row->form=='')) ? '_div' : '') . '_front_end.js"></script>';
+
       $form_currency = '$';
       $check_js = '';
       $onload_js = '';
@@ -1390,8 +1390,10 @@ class FMViewForm_maker {
             }
 
              case 'type_name': {
-              $params_names=array('w_field_label_size','w_field_label_pos','w_first_val','w_title', 'w_mini_labels','w_size','w_name_format','w_required','w_unique', 'w_class', 'w_name_fields');
-              $temp=$params;
+              $params_names = array('w_field_label_size', 'w_field_label_pos', 'w_first_val', 'w_title', 'w_mini_labels', 'w_size', 'w_name_format', 'w_required', 'w_unique', 'w_class');
+              $temp = $params;
+			  if(strpos($temp, 'w_name_fields') > -1)
+				$params_names = array('w_field_label_size', 'w_field_label_pos', 'w_first_val', 'w_title', 'w_mini_labels', 'w_size', 'w_name_format', 'w_required', 'w_unique', 'w_class', 'w_name_fields');
               foreach($params_names as $params_name ) {
                 $temp=explode('*:*'.$params_name.'*:*',$temp);
                 $param[$params_name] = $temp[0];
@@ -1409,7 +1411,7 @@ class FMViewForm_maker {
               $w_title = explode('***',$param['w_title']);
 
               $w_mini_labels = explode('***',$param['w_mini_labels']);
-              $param['w_name_fields'] =  $param['w_name_fields']!='' ? $param['w_name_fields'] : ($param['w_name_format'] == 'normal' ? 'no***no' : 'yes***yes');
+              $param['w_name_fields'] =  isset($param['w_name_fields']) ? $param['w_name_fields'] : ($param['w_name_format'] == 'normal' ? 'no***no' : 'yes***yes');
 			  $w_name_fields = explode('***', $param['w_name_fields']);
 			  
               $element_title = isset($_POST['wdform_'.$id1.'_element_title'.$form_id]) ? esc_html(stripslashes($_POST['wdform_'.$id1.'_element_title'.$form_id])) : NULL;
@@ -1491,7 +1493,7 @@ class FMViewForm_maker {
                   $check_js.='
                   if(x.find(jQuery("div[wdid='.$id1.']")).length != 0 && x.find(jQuery("div[wdid='.$id1.']")).css("display") != "none")
                   {
-                    if(jQuery("#wdform_'.$id1.'_element_first'.$form_id.'").val()=="'.$w_title[0].'" || jQuery("#wdform_'.$id1.'_element_first'.$form_id.'").val()=="" || jQuery("#wdform_'.$id1.'_element_last'.$form_id.'").val()=="'.$w_title[1].'" || jQuery("#wdform_'.$id1.'_element_last'.$form_id.'").val()=="" || (jQuery("#wdform_'.$id1.'_element_title'.$form_id.'").length != 0 && (jQuery("#wdform_'.$id1.'_element_title'.$form_id.'").val()=="'.$w_title[2].'" || jQuery("#wdform_'.$id1.'_element_title'.$form_id.'").val()=="")) || (jQuery("#wdform_'.$id1.'_element_middle'.$form_id.'").length != 0 && (jQuery("#wdform_'.$id1.'_element_middle'.$form_id.'").val()=="'.$w_title[3].'" || jQuery("#wdform_'.$id1.'_element_middle'.$form_id.'").val()=="")))
+                    if(jQuery("#wdform_'.$id1.'_element_first'.$form_id.'").val()=="'.$w_title[0].'" || jQuery("#wdform_'.$id1.'_element_first'.$form_id.'").val()=="" || jQuery("#wdform_'.$id1.'_element_last'.$form_id.'").val()=="'.$w_title[1].'" || jQuery("#wdform_'.$id1.'_element_last'.$form_id.'").val()=="" || (jQuery("#wdform_'.$id1.'_element_title'.$form_id.'").length != 0 && (jQuery("#wdform_'.$id1.'_element_title'.$form_id.'").val()=="'.(isset($w_title[2]) ? $w_title[2] : '').'" || jQuery("#wdform_'.$id1.'_element_title'.$form_id.'").val()=="")) || (jQuery("#wdform_'.$id1.'_element_middle'.$form_id.'").length != 0 && (jQuery("#wdform_'.$id1.'_element_middle'.$form_id.'").val()=="'.(isset($w_title[3]) ? $w_title[3] : '').'" || jQuery("#wdform_'.$id1.'_element_middle'.$form_id.'").val()=="")))
                     {
 						alert("' .addslashes($label. ' ' . __('field is required.', 'form_maker')) . '");
 						old_bg=x.find(jQuery("div[wdid='.$id1.']")).css("background-color");
@@ -2174,7 +2176,7 @@ class FMViewForm_maker {
                 $temp	=explode('*:*w_attr_name*:*',$temp);
                 $attrs	= array_slice($temp,0, count($temp)-1);   
                 foreach($attrs as $attr) {
-                  $param['attributes'] = $param['attributes'].' add_'.$attr;
+                  $param['attributes'] = $param['attributes'].' '.$attr;
                 }
               }
 
@@ -2296,8 +2298,10 @@ class FMViewForm_maker {
             }
 
             case 'type_date': {
-              $params_names=array('w_field_label_size','w_field_label_pos','w_date','w_required','w_class','w_format','w_but_val','w_disable_past_days');
-              $temp=$params;
+              $params_names=array('w_field_label_size','w_field_label_pos','w_date','w_required','w_class','w_format','w_but_val');
+				$temp = $params;
+				if(strpos($temp, 'w_disable_past_days') > -1)
+					$params_names = array('w_field_label_size','w_field_label_pos','w_date','w_required','w_class','w_format','w_but_val', 'w_disable_past_days');
 
               foreach($params_names as $params_name ) {
                 $temp=explode('*:*'.$params_name.'*:*',$temp);
@@ -2353,7 +2357,7 @@ class FMViewForm_maker {
 				}
 				';		
               }
-              // $onload_js.= 'Calendar.setup({inputField: "wdform_'.$id1.'_element'.$form_id.'",	ifFormat: "'.$param['w_format'].'",button: "wdform_'.$id1.'_button'.$form_id.'",align: "Tl",singleClick: true,firstDay: 0});';
+
               break;
             }
 
@@ -2564,7 +2568,56 @@ class FMViewForm_maker {
               break;
             }
 
-            case 'type_recaptcha': {
+			case 'type_arithmetic_captcha':
+            {
+              $params_names=array('w_field_label_size','w_field_label_pos', 'w_count', 'w_operations','w_class', 'w_input_size');
+              $temp=$params;
+              foreach($params_names as $params_name )
+              {	
+                $temp=explode('*:*'.$params_name.'*:*',$temp);
+                $param[$params_name] = $temp[0];
+                $temp=$temp[1];
+              }
+
+              if($temp)
+              {	
+                $temp	=explode('*:*w_attr_name*:*',$temp);
+                $attrs	= array_slice($temp,0, count($temp)-1);   
+                foreach($attrs as $attr)
+                  $param['attributes'] = $param['attributes'].' add_'.$attr;
+              }
+			 
+              $param['w_field_label_pos1'] = ($param['w_field_label_pos']=="left" ? "float: left;" : "");	
+              $param['w_field_label_pos2'] = ($param['w_field_label_pos']=="left" ? "" : "display:block;");
+			  $param['w_count'] = $param['w_count'] ? $param['w_count'] : 1;
+              $param['w_operations'] = $param['w_operations'] ? $param['w_operations'] : '+, -, *, /';
+              $param['w_input_size'] = $param['w_input_size'] ? $param['w_input_size'] : 60;
+   
+              $rep ='<div type="type_arithmetic_captcha" class="wdform-field">
+			  <div align="left" class="wdform-label-section" style="display:'.$param['w_field_label_pos1'].'; width: '.$param['w_field_label_size'].'px;"><span class="wdform-label" style="vertical-align: top;">'.$label.'</span></div><div class="wdform-element-section '.$param['w_class'].'" style="display: '.$param['w_field_label_pos2'].';"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell; vertical-align: middle;"><img type="captcha" operations_count="'.$param['w_count'].'" operations="'.$param['w_operations'].'" src="' . add_query_arg(array('action' => 'formmakerwdmathcaptcha', 'operations_count' => $param['w_count'], 'operations' => $param['w_operations'], 'i' => $form_id), admin_url('admin-ajax.php')) . '" id="wd_arithmetic_captcha'.$form_id.'" class="arithmetic_captcha_img" '.$param['attributes'].'></div><div style="display: table-cell;"><input type="text" class="arithmetic_captcha_input" id="wd_arithmetic_captcha_input'.$form_id.'" name="arithmetic_captcha_input" onkeypress="return check_isnum(event)" style="width: '.$param['w_input_size'].'px;" '.$param['attributes'].'/></div><div style="display: table-cell; vertical-align: middle;"><div class="captcha_refresh" id="_element_refresh'.$form_id.'" '.$param['attributes'].'></div></div></div></div></div></div>';
+              
+			  $onload_js .='jQuery("#wd_arithmetic_captcha'.$form_id.'").click(function() { captcha_refresh("wd_arithmetic_captcha","'.$form_id.'") });';
+              $onload_js .='jQuery("#_element_refresh'.$form_id.'").click(function() {captcha_refresh("wd_arithmetic_captcha","'.$form_id.'")});';
+              
+              $check_js.='
+              if(x.find(jQuery("div[wdid='.$id1.']")).length != 0 && x.find(jQuery("div[wdid='.$id1.']")).css("display") != "none")
+              {
+                if(jQuery("#wd_arithmetic_captcha_input'.$form_id.'").val()=="")
+                {
+                  alert("' .addslashes($label. ' ' . __('field is required.', 'form_maker')) . '");
+                  old_bg=x.find(jQuery("div[wdid='.$id1.']")).css("background-color");
+                  x.find(jQuery("div[wdid='.$id1.']")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+                  jQuery("#wd_arithmetic_captcha_input'.$form_id.'").focus();
+                  return false;
+                }
+              }
+              ';
+              $onload_js.= 'captcha_refresh("wd_arithmetic_captcha", "'.$form_id.'");';
+              break;
+            }
+
+
+            case 'type_recaptcha_old': {
               $params_names=array('w_field_label_size','w_field_label_pos','w_public','w_private','w_theme','w_class');
               $temp=$params;
               foreach($params_names as $params_name ) {
@@ -2588,6 +2641,32 @@ class FMViewForm_maker {
 			  $secure_server = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ? recaptcha_get_html($publickey, $error, true) : recaptcha_get_html($publickey, $error);
               $rep ='<script>var RecaptchaOptions = {theme: "'.$param['w_theme'].'"};</script><div type="type_recaptcha" class="wdform-field"><div class="wdform-label-section" style="'.$param['w_field_label_pos1'].'; width: '.$param['w_field_label_size'].'px;"><span class="wdform-label">'.$label.'</span></div><div class="wdform-element-section '.$param['w_class'].'" style="'.$param['w_field_label_pos2'].';">
               <div id="wd_recaptcha'.$form_id.'" '.$param['attributes'].'>'.$secure_server.'</div></div></div>';
+              break;
+            }
+            
+			case 'type_recaptcha': {
+              $params_names=array('w_field_label_size','w_field_label_pos','w_public','w_private','w_class');
+              $temp=$params;
+              foreach($params_names as $params_name ) {
+                $temp=explode('*:*'.$params_name.'*:*',$temp);
+                $param[$params_name] = $temp[0];
+                $temp=$temp[1];
+              }
+              if($temp) {	
+                $temp	=explode('*:*w_attr_name*:*',$temp);
+                $attrs	= array_slice($temp,0, count($temp)-1);   
+                foreach($attrs as $attr) {
+                  $param['attributes'] = $param['attributes'].' '.$attr;
+                }
+              }
+              $param['w_field_label_pos1'] = ($param['w_field_label_pos']=="left" ? "float: left;" : "");	
+              $param['w_field_label_pos2'] = ($param['w_field_label_pos']=="left" ? "" : "display:block;");
+            
+              $publickey=($row->public_key ? $row->public_key : '0');
+              $error = null;
+			  require_once(WD_FM_DIR . '/recaptchalib.php');
+			  $secure_server = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ? recaptcha_get_html($publickey, $error, true) : recaptcha_get_html($publickey, $error);
+              $rep =' <script src="https://www.google.com/recaptcha/api.js"></script><div type="type_recaptcha" class="wdform-field"><div class="wdform-label-section" style="'.$param['w_field_label_pos1'].'; width: '.$param['w_field_label_size'].'px;"><span class="wdform-label">'.$label.'</span></div><div class="wdform-element-section '.$param['w_class'].'" style="'.$param['w_field_label_pos2'].';"><div class="g-recaptcha" data-sitekey="'.$publickey.'"></div></div></div>';
               break;
             }
             
@@ -3453,7 +3532,7 @@ class FMViewForm_maker {
                 $temp	=explode('*:*w_attr_name*:*',$temp);
                 $attrs	= array_slice($temp,0, count($temp)-1);   
                 foreach($attrs as $attr) {
-                  $param['attributes'] = $param['attributes'].' add_'.$attr;
+                  $param['attributes'] = $param['attributes'].' '.$attr;
                 }
               }
               $param['w_field_label_pos1'] = ($param['w_field_label_pos']=="left" ? "float: left;" : "");	
@@ -3508,7 +3587,7 @@ class FMViewForm_maker {
                 $temp	=explode('*:*w_attr_name*:*',$temp);
                 $attrs	= array_slice($temp,0, count($temp)-1);   
                 foreach($attrs as $attr) {
-                  $param['attributes'] = $param['attributes'].' add_'.$attr;
+                  $param['attributes'] = $param['attributes'].' '.$attr;
                 }
               }
               $param['w_field_label_pos1'] = ($param['w_field_label_pos']=="left" ? "float: left;" : "");	
@@ -3565,7 +3644,7 @@ class FMViewForm_maker {
                 $temp	=explode('*:*w_attr_name*:*',$temp);
                 $attrs	= array_slice($temp,0, count($temp)-1);   
                 foreach($attrs as $attr) {
-                  $param['attributes'] = $param['attributes'].' add_'.$attr;
+                  $param['attributes'] = $param['attributes'].' '.$attr;
                 }
               }
               $param['w_field_label_pos1'] = ($param['w_field_label_pos']=="left" ? "float: left;" : "");	
@@ -3619,7 +3698,7 @@ class FMViewForm_maker {
                 $temp	=explode('*:*w_attr_name*:*',$temp);
                 $attrs	= array_slice($temp,0, count($temp)-1);   
                 foreach($attrs as $attr) {
-                  $param['attributes'] = $param['attributes'].' add_'.$attr;
+                  $param['attributes'] = $param['attributes'].' '.$attr;
                 }
               }
               $param['w_field_label_pos1'] = ($param['w_field_label_pos']=="left" ? "float: left;" : "");	
@@ -3676,7 +3755,7 @@ class FMViewForm_maker {
                 $temp	=explode('*:*w_attr_name*:*',$temp);
                 $attrs	= array_slice($temp,0, count($temp)-1);   
                 foreach($attrs as $attr) {
-                  $param['attributes'] = $param['attributes'].' add_'.$attr;
+                  $param['attributes'] = $param['attributes'].' '.$attr;
                 }
               }
               $param['w_field_label_pos1'] = ($param['w_field_label_pos']=="left" ? "float: left;" : "");	
@@ -3734,7 +3813,7 @@ class FMViewForm_maker {
                 $temp	=explode('*:*w_attr_name*:*',$temp);
                 $attrs	= array_slice($temp,0, count($temp)-1);   
                 foreach($attrs as $attr) {
-                  $param['attributes'] = $param['attributes'].' add_'.$attr;
+                  $param['attributes'] = $param['attributes'].' '.$attr;
                 }
               }
               $param['w_field_label_pos1'] = ($param['w_field_label_pos']=="left" ? "float: left;" : "");	
@@ -3807,7 +3886,7 @@ class FMViewForm_maker {
                 $temp	=explode('*:*w_attr_name*:*',$temp);
                 $attrs	= array_slice($temp,0, count($temp)-1);   
                 foreach($attrs as $attr) {
-                  $param['attributes'] = $param['attributes'].' add_'.$attr;
+                  $param['attributes'] = $param['attributes'].' '.$attr;
                 }
               }              
               $param['w_field_label_pos1'] = ($param['w_field_label_pos']=="left" ? "float: left;" : "");	
@@ -3865,7 +3944,7 @@ class FMViewForm_maker {
               }                
               $rep.='</div><div class="wdform-element-section '.$param['w_class'].'"  style="'.$param['w_field_label_pos2'].'"><div id="wdform_'.$id1.'_element'.$form_id.'" class="wdform-matrix-table" '.$param['attributes'].'><div style="display: table-row-group;"><div class="wdform-matrix-head"><div style="display: table-cell;"></div>'.$column_labels.'</div>'.$rows_columns.'</div></div></div></div>';              
               $onsubmit_js.='
-                jQuery("<input type=\"hidden\" name=\"wdform_'.$id1.'_input_type'.$form_id.'\" value = \"'.$param['w_field_input_type'].'\" /><input type=\"hidden\" name=\"wdform_'.$id1.'_hidden_row'.$form_id.'\" value = \"'.$param['w_rows'].'\" /><input type=\"hidden\" name=\"wdform_'.$id1.'_hidden_column'.$form_id.'\" value = \"'.$param['w_columns'].'\" />").appendTo("#form'.$form_id.'");
+                jQuery("<input type=\"hidden\" name=\"wdform_'.$id1.'_input_type'.$form_id.'\" value = \"'.$param['w_field_input_type'].'\" /><input type=\"hidden\" name=\"wdform_'.$id1.'_hidden_row'.$form_id.'\" value = \"'.addslashes($param['w_rows']).'\" /><input type=\"hidden\" name=\"wdform_'.$id1.'_hidden_column'.$form_id.'\" value = \"'.addslashes($param['w_columns']).'\" />").appendTo("#form'.$form_id.'");
                 ';
               if($required) {
                 if($param['w_field_input_type']=='radio') {
@@ -3953,7 +4032,7 @@ class FMViewForm_maker {
                 $temp	=explode('*:*w_attr_name*:*',$temp);
                 $attrs	= array_slice($temp,0, count($temp)-1);   
                 foreach($attrs as $attr) {
-                  $param['attributes'] = $param['attributes'].' add_'.$attr;
+                  $param['attributes'] = $param['attributes'].' '.$attr;
                 }
               }              
               $param['w_field_label_pos1'] = ($param['w_field_label_pos']=="left" ? "float: left;" : "");	
@@ -4102,7 +4181,7 @@ class FMViewForm_maker {
           }
           generate_page_nav(first_form_view<?php echo $id ?>, '<?php echo $id ?>', form_view_count<?php echo $id ?>, form_view_max<?php echo $id ?>);
         }
-        // jQuery('.wdform-element-section select').each(function() { reselect(this,''); });/////why?????????????
+
       });
       function check_required<?php echo $form_id ?>(but_type) {
         if (but_type == 'reset') {
