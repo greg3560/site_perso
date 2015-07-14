@@ -435,6 +435,35 @@ class FMViewManage_fm {
       <?php wp_nonce_field('nonce_fm', 'nonce_fm'); ?>
       <h2><?php echo $page_title; ?></h2>
       <div style="float: right; margin: 0 5px 0 0;">
+	
+		<?php
+		
+		if(isset($row->backup_id) )
+		if($row->backup_id!="")
+		{
+		global $wpdb;
+		
+		$query = "SELECT backup_id FROM " . $wpdb->prefix . "formmaker_backup WHERE backup_id > ".$row->backup_id." AND id = ".$row->id." ORDER BY backup_id ASC LIMIT 0 , 1 ";
+		$backup_id = 	$wpdb->get_var($query);
+
+		if($backup_id)
+		{?>
+		<input class="button-primary" type="submit" onclick="if (spider_check_required('title', 'Form title') || !submitbutton()) {return false;}; jQuery('#saving_text').html('Redo');spider_set_input_value('task', 'redo');" value="Redo"/>
+
+		<?php
+		}
+
+		$query = "SELECT backup_id FROM " . $wpdb->prefix . "formmaker_backup WHERE backup_id < ".$row->backup_id." AND id = ".$row->id." ORDER BY backup_id DESC LIMIT 0 , 1 ";
+		$backup_id = 	$wpdb->get_var($query);
+
+		if($backup_id)
+		{?>
+		<input class="button-secondary" type="submit" onclick="if (spider_check_required('title', 'Form title') || !submitbutton()) {return false;}; jQuery('#saving_text').html('Undo');spider_set_input_value('task', 'undo');" value="Undo"/>
+
+		<?php
+		}
+}
+		 ?>
         <input class="button-primary" type="submit" onclick="if (spider_check_required('title', 'Form title') || !submitbutton()) {return false;}; spider_set_input_value('task', 'form_options');" value="Form Options"/>
         <input class="button-primary" type="submit" onclick="if (spider_check_required('title', 'Form title') || !submitbutton()) {return false;}; spider_set_input_value('task', 'form_layout');" value="Form Layout"/>
         <?php
@@ -676,6 +705,7 @@ class FMViewManage_fm {
       <input type="hidden" id="label_order_current" name="label_order_current" value="<?php echo $row->label_order_current; ?>" />  
       <input type="hidden" name="counter" id="counter" value="<?php echo $row->counter; ?>" />
       <input type="hidden" id="araqel" value="0" />
+	  <input type="hidden" name="backup_id" id="backup_id" value="<?php echo $row->backup_id;?>">
       <?php
       if ($id) {
         ?>
@@ -2656,51 +2686,44 @@ class FMViewManage_fm {
         jQuery("#preview_form").attr("href", '<?php echo add_query_arg(array('action' => 'FormMakerPreview', 'form_id' => $row->id), admin_url('admin-ajax.php')); ?>&test_theme=' + jQuery("#theme").val() + '&width=1000&height=500&TB_iframe=1');
         jQuery("#edit_css").attr("href", '<?php echo add_query_arg(array('action' => 'FormMakerEditCSS', 'form_id' => $row->id), admin_url('admin-ajax.php')); ?>&id=' + jQuery("#theme").val() + '&width=800&height=500&TB_iframe=1');
       }
-      function set_condition() {
-        field_condition ='';
-	
-        for(i=0;i<100;i++)
-        {
-          conditions = '';
-          if(document.getElementById("condition"+i))
-          {
-            field_condition+=document.getElementById("show_hide"+i).value+"*:*show_hide*:*";
-            field_condition+=document.getElementById("fields"+i).value+"*:*field_label*:*";
-            field_condition+=document.getElementById("all_any"+i).value+"*:*all_any*:*";
-            
-            for(k=0;k<100;k++)
-            {
-              if(document.getElementById("condition_div"+i+"_"+k))
-              {
-                conditions+=document.getElementById("field_labels"+i+"_"+k).value+"***";
-                conditions+=document.getElementById("is_select"+i+"_"+k).value+"***";
-                if(document.getElementById("field_value"+i+"_"+k).tagName=="SELECT" && document.getElementById("field_value"+i+"_"+k).getAttribute('multiple'))
-                {
-                  var sel = document.getElementById("field_value"+i+"_"+k);
-                  var selValues = '';
-                  for(m=0; m < sel.length; m++)
-                  {
-                    if(sel.options[m].selected)
-                    {
-                      selValues += sel.options[m].value+"@@@";
-                    }
-                  }
-                conditions+=selValues;
-                }
-                else
-                conditions+=document.getElementById("field_value"+i+"_"+k).value;
-                conditions+="*:*next_condition*:*";
-              }
-            }
-            
-            field_condition+=conditions;
-            field_condition+="*:*new_condition*:*";
-            
-          }
-        }
-        document.getElementById('condition').value = field_condition;
-      }
-		
+		function set_condition() {
+			field_condition = '';
+			for(i=0;i<100;i++) {
+				conditions = '';
+				if(document.getElementById("condition"+i)) {
+					field_condition+=document.getElementById("show_hide"+i).value+"*:*show_hide*:*";
+					field_condition+=document.getElementById("fields"+i).value+"*:*field_label*:*";
+					field_condition+=document.getElementById("all_any"+i).value+"*:*all_any*:*";
+					for(k=0;k<100;k++) {
+						if(document.getElementById("condition_div"+i+"_"+k)) {
+							conditions+=document.getElementById("field_labels"+i+"_"+k).value+"***";
+							conditions+=document.getElementById("is_select"+i+"_"+k).value+"***";
+							if(document.getElementById("field_value"+i+"_"+k).tagName=="SELECT" ) {
+								if(document.getElementById("field_value"+i+"_"+k).getAttribute('multiple')) {
+									var sel = document.getElementById("field_value"+i+"_"+k);
+									var selValues = '';
+									for(m=0; m < sel.length; m++) {
+										if(sel.options[m].selected)
+										
+										selValues += sel.options[m].value+"@@@";
+									}
+									conditions+=selValues;
+								} else {
+									conditions+=document.getElementById("field_value"+i+"_"+k).value;
+								}								
+							}
+							else
+								conditions+=document.getElementById("field_value"+i+"_"+k).value;
+							conditions+="*:*next_condition*:*";
+						}
+					}
+					field_condition+=conditions;
+					field_condition+="*:*new_condition*:*";
+				}
+			}
+			document.getElementById('condition').value = field_condition;
+		}      
+    
 		function show_verify_options(s){
 			if(s){
 				jQuery(".verification_div").removeAttr( "style" );
@@ -3939,14 +3962,13 @@ class FMViewManage_fm {
 									
 									$w_choices_price = explode('*:*w_choices_price*:*',$w_choices[1]);
 									$w_choices_price_array = explode('***',$w_choices_price[0]);
-										
 									for($m=0; $m<count($w_choices_array); $m++)	
 									{
-										if($types[$key_select_or_input]=="type_paypal_checkbox")
-										$w_choice = $w_choices_array[$m].'*:*value*:*'.$w_choices_price_array[$m];
+										if($types[$key_select_or_input]=="type_paypal_checkbox" || $types[$key_select_or_input]=="type_paypal_radio" || $types[$key_select_or_input]=="type_paypal_shipping" || $types[$key_select_or_input]=="type_paypal_select")
+											$w_choice = $w_choices_array[$m].'*:*value*:*'.$w_choices_price_array[$m];
 										else
-										$w_choice = $w_choices_array[$m];
-											
+											$w_choice = $w_choices_array[$m];
+										
 										if(in_array(esc_html($w_choice),$multiselect))
 										{
 											$selected = 'selected="selected"';
@@ -3954,9 +3976,9 @@ class FMViewManage_fm {
 										else
 											$selected ='';
 
-                    if(strpos($w_choices_array[$m], '[') === false && strpos($w_choices_array[$m], ']') === false && strpos($w_choices_array[$m], ':') === false) {
-										echo '<option id="choise_'.$k.'_'.$m.'" value="'.$w_choice.'" '.$selected.'>'.$w_choices_array[$m].'</option>';
-                    }
+										if(strpos($w_choices_array[$m], '[') === false && strpos($w_choices_array[$m], ']') === false && strpos($w_choices_array[$m], ':') === false) {
+											echo '<option id="choise_'.$k.'_'.$m.'" value="'.$w_choice.'" '.$selected.'>'.$w_choices_array[$m].'</option>';
+										}
 									}
 									
 									if($types[$key_select_or_input]=="type_address")
