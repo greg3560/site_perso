@@ -4,7 +4,7 @@ Donate link: http://bestwebsoft.com/donate/
 Tags: add tracking code, analytics, analitics, display statistics report, googel, googgle, gogle, gogole, google, google analytics, google analytics loggins, google analytics plugin, google analytics stats, group stats, group statistics, metrics, page views, retrieve metrics, statistics, statistics report, stats, tracking, visit duration, visits statistics, visitors, visits, web properties, webproperties.
 Requires at least: 3.3
 Tested up to: 4.2.2
-Stable tag: 1.6.3
+Stable tag: 1.6.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,6 +17,7 @@ This plugin establishes a connection with your Google Analytics account and allo
 http://www.youtube.com/watch?v=u6GCmG2SYIg
 
 <a href="http://wordpress.org/plugins/bws-google-analytics/faq/" target="_blank">FAQ</a>
+
 <a href="http://support.bestwebsoft.com" target="_blank">Support</a>
 
 <a href="http://bestwebsoft.com/products/bws-google-analytics/?k=5891b1a2761b39cd5706eba26c3af1d4" target="_blank">Upgrade to Pro Version</a>
@@ -115,6 +116,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog == 
 
+= V1.6.4 - 15.06.2015 =
+* Update: Input maxlength is added.
+* Bugfix: We fixed the settings page display.
+* Update: BWS plugins section was updated.
+
 = V1.6.3 - 07.05.2015 =
 * Update : We updated all functionality for wordpress 4.2.2.
 
@@ -157,6 +163,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * NEW: Ability to retrieve basic statistical information from Google Analytics account was added.
 
 == Upgrade Notice ==
+
+= V1.6.4 =
+Input maxlength is added. We fixed the settings page display. BWS plugins section was updated.
 
 = V1.6.3 =
 We updated all functionality for wordpress 4.2.2.
