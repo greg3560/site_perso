@@ -8,11 +8,11 @@ get_header(); ?>
 		<h1 id="apropos_h1">Développeur Web</h1>
 		
 		<section id="greg_section">		
-		<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/gregory.png" alt="gregory" title="gregory" id="greg"/>Je suis Grégory. Le digital est ma passion conscient des enjeux actuel au sein de notre société liés au numérique (économique, social et éducatif) je souhaite évangéliser mes connaissances dans ce domaine en contrat de professionnalisation.</p>
+		<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/gregory.png" alt="gregory" title="gregory" id="greg"/>Je suis Grégory. Le digital est ma passion, conscient des enjeux actuel au sein de notre société liés au numérique (économique, social et éducatif) je souhaite évangéliser mes connaissances dans ce domaine en contrat de professionnalisation.</p>
 	
 	<p>Ma créativité, mon organisation et l'envie de rendre services m’apporteront tous les atouts pour réussir dans le domaine de l'informatique.Passionné depuis plusieurs années par ce secteur, J’ai tout d’abord effectué la maintenance informatique auprès de mon entourage, puis grâce à mon ex-fonction, utiliser l'outil informatique (bureautique, console de mixage, réseaux Ethersound).</p>
 	
-	<p>Par la suite j'ai appris a programmer dans différents langages (logiciel et internet) et quelques projets en découle (analyseur de spectre audio, carnet d'adresse et quelque sites et application web dont je vous invite a consulter <a href="" title="Portfolio">ici</a>.</p>
+	<p>Par la suite j'ai appris a programmer sur <a href="https://openclassrooms.com/" title="Openclassrooms" target="_blank" >openclassrooms</a> dans différents langages (logiciel et internet).J'ai maintenant décrocher sept <a href="../cv/#ancre" title="certifications">certifications</a> depuis 2003.Quelques projets en découle (analyseur de spectre audio, carnet d'adresse et quelque sites et application web.</p>
 	
 	<p>Très vite je me suis lancé en autoentrepreneur pour des prestations de services en informatique.Du services de dépannage à la formation bureautique, internet, professionnel en passant par la création de site web statique et dynamique j'ai pu me faire une expérience enrichissante notamment sur le projet qui m'a été confiée en fin 2013 : la boite à comptines. J'ai participé à la détermination des exigences et contraintes technique, la démonstration du prototype et la conception finale en vue des tests d'acceptations.</p>
 
@@ -41,7 +41,7 @@ Cependant La portabilité du C# est également intéressante pour les applicatio
 		<li>Le web est ainsi devenu indispensable au quotidien : il permet de communiquer, s'informer, faire des achats, jouer, etc. Internet est plus que jamais au cœur du quotidien des Français et l'arrivée des objets connectés pourrait ouvrir la voie à de nouveaux usages pour s'informer, communiquer ou encore consommer.</li>
 	</ul>
 	<p>Mes besoins en formations sont donc essentiellement focalisés sur le langage java et le développement microsoft que propose cette formation.</p>
-	<h3>JAVA</h3>
+	<h3 class="h3_apropos">JAVA</h3>
 	<ul>
 		<li>Traduire un algorithme en langage Java. Mettre au point une application Java. Configurer et déployer une application Java.</li>
 		<li>Comprendre un diagramme de classes. Traduire un diagramme de classes en code Java en implémentant des classes java avec tous les concepts POO.</li>
@@ -49,7 +49,7 @@ Cependant La portabilité du C# est également intéressante pour les applicatio
 		<li>Concevoir l’interface utilisateur avec respect de la charte graphique, des règles de validation prévues. Utiliser la technologie Java SWING pour fabriquer des applications fenêtrées. Configurer et déployer une application Swing.</li>
 		<li>Planifier, réaliser des tests globaux de l’application. Évaluer les forces, les faiblesses de la solution proposée. S’auto évaluer objectivement et tirer des conclusions, éventuellement, sur l’amélioration des méthodes de travail utilisées.</li>
 	</ul>
-	<h3>ENVIRONNEMENT WINDOWS</h3>
+	<h3 class="h3_apropos">ENVIRONNEMENT WINDOWS</h3>
 	<ul>
 		<li>Comprendre et utiliser le Framework Microsoft Dot.Net.</li>
 		<li>Coder en C# les instructions de base d’un programme informatique. Acquérir les premiers savoir-faire d’un développeur : coder, compiler, tester, déboguer, configurer, déployer.</li>
