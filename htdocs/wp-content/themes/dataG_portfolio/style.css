@@ -291,23 +291,28 @@ td
 
 
 /*facebook*/
-#pre-header-social .facebook a {
-    background: url("img/facebook.png") no-repeat scroll center center transparent;
+#pre-header-social .facebook a 
+{
+    	background: url("img/facebook.png") no-repeat scroll center center transparent;
 }
 /*twitter*/
-#pre-header-social .twitter a {
-    background: url("img/twitter.png") no-repeat scroll center center transparent;
+#pre-header-social .twitter a 
+{
+    	background: url("img/twitter.png") no-repeat scroll center center transparent;
 }
 /*google*/
-#pre-header-social .google a {
-    background: url("img/google.png") no-repeat scroll center center transparent;
+#pre-header-social .google a 
+{
+    	background: url("img/google.png") no-repeat scroll center center transparent;
 }
 /*linkedin*/
-#pre-header-social .linkedin a {
-    background: url("img/linkedin.png") no-repeat scroll center center transparent;
+#pre-header-social .linkedin a 
+{
+    	background: url("img/linkedin.png") no-repeat scroll center center transparent;
 }
-#pre-header-social .facebook a, #pre-header-social .twitter a, #pre-header-social .linkedin a, #pre-header-social .google a, #pre-header-social .flickr a, #pre-header-social .lastfm a, #pre-header-social .rss a {
-    background-size: 20px auto;
+#pre-header-social .facebook a, #pre-header-social .twitter a, #pre-header-social .linkedin a, #pre-header-social .google a, #pre-header-social .flickr a, #pre-header-social .lastfm a, #pre-header-social .rss a 
+{
+    	background-size: 20px auto;
 }
 /***********************************************************************************************************************************
 **************************************************PORTFOLIO***************************************************************************
