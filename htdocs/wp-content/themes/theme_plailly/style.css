@@ -1,0 +1,16 @@
+/*
+Theme Name: theme_plailly
+Description: Thème enfant de voice
+Author: dataG
+Author URI: http://www.gregorypeigne.fr
+Version: 1.0.0
+Template: voice
+*/
+
+
+.main-navigation ul ul
+{
+    position: fixed;
+    top: inherit;
+    left: 50px;
+}

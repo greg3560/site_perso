@@ -1,0 +1,60 @@
+/*
+Theme Name:     Voice Child
+Theme URI:      http://mekshq.com
+Description:    Child theme for the Voice Theme
+Author:         Meks
+Author URI:     http://mekshq.com
+Template:       voice
+Version:        0.1.0
+*/
+
+
+.main-navigation ul ul
+{
+    position: absolute;
+    top: inherit;
+    left: 50px;
+}
+
+.header-left-nav .main-navigation ul 
+{
+    width: 1000px;
+	height:500px;
+}
+
+#menu-item-34
+{
+	background : url('img/presentation.jpg') no-repeat;
+	margin:20px;
+}
+
+.main-navigation ul ul li > ul {
+   
+}
+
+.main-navigation ul ul ul {
+    top: 50px;
+}
+/*
+.main-navigation li > ul
+{
+	visibility: visible;
+	pointer-events: auto;
+}*/
+
+.nav-menu .vce-mega-menu > .sub-menu > li
+{
+	display: inline-block;
+	
+}
+
+.nav-menu .vce-mega-menu .sub-menu .sub-menu
+{
+	top:60px;
+	
+}
+.nav-menu .vce-mega-menu .sub-menu
+{
+	/*left:inherit;*/
+}
+
