@@ -1,0 +1,4 @@
+AuthName "Espace de preproduction"
+AuthType Basic
+AuthUserFile "/srv/data/web/vhosts/preprod.gregorypeigne.fr/htdocs/.htpasswd"
+Require valid-user
