@@ -58,3 +58,20 @@ Version:        0.1.0
 	/*left:inherit;*/
 }
 
+.nav-menu > li > .sub-menu .sub-menu.vce-rev{
+	left: 0;
+	right: 100%; 		
+}
+.nav-menu .vce-mega-menu > .sub-menu > li > a{
+    background-color: rgba(0, 0, 0, 0.4);
+	width:100%;
+    position: relative;
+    top: 60px;
+	text-align: center;
+	color:#ffffff;
+}
+.nav-menu .vce-mega-menu > .sub-menu > li
+{
+	padding:0;
+	width:170px;
+}
