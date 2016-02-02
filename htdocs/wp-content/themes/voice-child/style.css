@@ -19,65 +19,65 @@ Version:        0.1.0
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-155
 {
 	background : url('img/presentation.jpg') no-repeat;
-	padding-left:0;
+	padding:0;
 	margin:20px 0 0 20px;
 }
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-161
 {
 	background : url('img/religion.jpg') no-repeat;
-	padding-left:0;
+	padding:0;
 	margin:20px 0 0 20px;
 }
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-138
 {
 	background : url('img/elu.jpg') no-repeat;
-	padding-left:0;
+	padding:0;
 	margin:20px 0 0 20px;
 }
 
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-140
 {
 	background : url('img/services_technique.jpg') no-repeat;
-	padding-left:0;
+	padding:0;
 	margin:20px 0 0 20px;
 }
 
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-137
 {
 	background : url('img/ccas.jpg') no-repeat;
-	padding-left:0;
+	padding:0;
 	margin:20px 0 0 20px;
 }
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-136
 {
 	background : url('img/ccac.jpg') no-repeat;
-	padding-left:0;
+	padding:0;
 	margin:20px 0 0 20px;
 }
 
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-134
 {
 	background : url('img/affichage_legal.jpg') no-repeat;
-	padding-left:0;
+	padding:0;
 	margin:20px 0 0 20px;
 }
 
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-135
 {
 	background : url('img/bulletin.jpg') no-repeat;
-	padding-left:0;
+	padding:0;
 	margin:20px 0 0 20px;
 }
 
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-139
 {
 	background : url('img/livret_accueil.jpg') no-repeat;
-	padding-left:0;
+	padding:0;
 	margin:20px 0 0 20px;
 }
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link
 {
-	width:97%;
+	width:100%;
 	margin-top:60px;
 	text-align:center;
 	background-color: rgba(0, 0, 0, 0.4);
