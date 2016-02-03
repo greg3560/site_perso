@@ -10,80 +10,105 @@ Version:        0.1.0
 
 
 
-/*.sub-menu 
-{
-    width: 1000px;
-	height:500px;
-}*/
 
+#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-155, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-161, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-138, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-140, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-137, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-136, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-134, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-135, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-139, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-129, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-146, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-142, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-144, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-145
+{
+	padding:75px 0 0 0;
+	margin:2%;
+	width:20%;
+	height:100px;
+}
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-155
 {
 	background : url('img/presentation.jpg') no-repeat;
-	padding:0;
-	margin:20px 0 0 20px;
 }
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-161
 {
 	background : url('img/religion.jpg') no-repeat;
-	padding:0;
-	margin:20px 0 0 20px;
 }
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-138
 {
 	background : url('img/elu.jpg') no-repeat;
-	padding:0;
-	margin:20px 0 0 20px;
 }
 
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-140
 {
 	background : url('img/services_technique.jpg') no-repeat;
-	padding:0;
-	margin:20px 0 0 20px;
 }
 
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-137
 {
 	background : url('img/ccas.jpg') no-repeat;
-	padding:0;
-	margin:20px 0 0 20px;
 }
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-136
 {
 	background : url('img/ccac.jpg') no-repeat;
-	padding:0;
-	margin:20px 0 0 20px;
 }
 
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-134
 {
 	background : url('img/affichage_legal.jpg') no-repeat;
-	padding:0;
-	margin:20px 0 0 20px;
 }
 
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-135
 {
 	background : url('img/bulletin.jpg') no-repeat;
-	padding:0;
-	margin:20px 0 0 20px;
 }
 
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-139
 {
 	background : url('img/livret_accueil.jpg') no-repeat;
-	padding:0;
-	margin:20px 0 0 20px;
 }
+#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-129
+{
+	background : url('img/association.jpg') no-repeat;
+}
+#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-146
+{
+	background : url('img/ecole.jpg') no-repeat;
+}
+#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-142
+{
+	background : url('img/dechets.jpg') no-repeat;
+}
+#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-144
+{
+	background : url('img/reservation.jpg') no-repeat;
+}
+#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-145
+{
+	background : url('img/transport.jpg') no-repeat;
+}
+#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu
+{
+	padding-left:4%;
+}
+
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link
 {
 	width:100%;
-	margin-top:60px;
+	margin-bottom:10px;
 	text-align:center;
 	background-color: rgba(0, 0, 0, 0.4);
 	color: #ffffff;
 }
+#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu
+{
+	height: 350px;
+}
+/*search box*/
+.header-left-nav .search-header-wrap
+{
+	float: none;
+}
 
+.header-bottom-wrapper
+{
+    background: #869487;
+}
+.header-sticky .main-navigation {
+    float: left;
+}
 /*.main-navigation ul ul li > ul {
    
 }
