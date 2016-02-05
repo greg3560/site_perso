@@ -20,6 +20,17 @@ Version:        0.1.0
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('polices/cac_champagne-webfont.eot');
+    src: url('polices/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/cac_champagne-webfont.woff') format('woff'),
+         url('polices/cac_champagne-webfont.ttf') format('truetype'),
+         url('polices/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    
+    font-style: normal;
+
+}
 
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-155, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-161, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-138, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-140, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-137, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-136, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-134, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-135, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-139, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-129, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-146, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-142, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-144, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-145
 {
@@ -121,11 +132,11 @@ Version:        0.1.0
 }
 .site-description {
     color: #a9d68d;
-    text-align: center;
     margin-left: 20%;
 	display:inline;
-	font-size:3em;
-	font-family:'learning_curve_dashed_proRg';
+	font-size:3.5em;
+	font-weight: bold;
+	font-family:'cac_champagneregular';
 }
 .header-2-wrapper .site-branding
 {
