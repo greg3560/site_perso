@@ -14,6 +14,7 @@
 			<ul id="vce_header_nav" class="nav-menu"><li>
 				<a href="<?php echo admin_url('nav-menus.php'); ?>"><?php _e('Click here to add navigation menu', THEME_SLUG); ?></a>
 			</li></ul>
+
 			
 		<?php }
 	?>

@@ -8,7 +8,9 @@
 
 <div class="header-bottom-wrapper header-left-nav">
 	<div class="container">
-
+<div id="widget_header">
+<?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar('header_right') ) ?>
+</div>
 		<?php get_template_part( 'sections/headers/navigation'); ?>
 		
 	</div>

@@ -125,11 +125,11 @@ Version:        0.1.0
 {
 	height: 350px;
 }
-/*search box*/
+/*search box
 .header-left-nav .search-header-wrap
 {
 	float: none;
-}
+}*/
 
 .header-bottom-wrapper
 {
@@ -150,6 +150,32 @@ Version:        0.1.0
 {
 	width:80%;
 	max-width: inherit;
+}
+/*______Zone de widget dans le header ______*/
+
+#widget_header {
+
+}
+
+/*______Chacun des widgets de la zone et leurs titres ______*/
+
+#widget_header .header_right {
+	
+}
+
+#widget_header .header_right h3 {
+
+}
+#widget_header
+{
+	position: absolute;
+right: 0;
+top: 170px;
+z-index: 999;
+}
+button
+{
+	background-color: #b7d3b1;
 }
 /*.main-navigation ul ul li > ul {
    
