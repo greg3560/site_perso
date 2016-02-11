@@ -32,13 +32,7 @@ Version:        0.1.0
 
 }
 
-#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-155, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-161, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-138, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-140, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-137, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-136, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-134, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-135, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-139, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-129, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-146, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-142, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-144, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-145, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-245, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-250, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-281, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-158
-{
-	padding:70px 0 0 0;
-	margin:2% 2% 110px 2%;
-	width:20%;
-	height:100px;
-}
+
 #mega-sub-menu
 {
 	height:300px;
@@ -120,6 +114,105 @@ Version:        0.1.0
 {
 	background : url('img/patrimoine.jpg') no-repeat;
 }
+#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-155, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-161, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-138, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-140, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-137, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-136, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-134, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-135, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-139, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-129, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-146, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-142, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-144, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-145, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-245, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-250, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-281, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-158
+{
+	padding:70px 0 0 0;
+	margin:2% 2% 110px 2%;
+	width:20%;
+	height:100px;
+}
+@media screen and (max-width:650px) 
+{
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-155, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-161, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-138, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-140, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-137, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-136, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-134, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-135, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-139, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-129, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-146, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-142, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-144, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-145, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-245, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-250, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-281, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-158
+	{
+		background:none;
+		padding:0 0 0 0;
+		margin:0 0 0 0;
+		width:100%;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-155
+	{
+		height:130px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-281
+	{
+		height:130px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-158
+	{
+		height:105px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-129
+	{
+		height:150px;
+	}
+
+
+
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-161
+	{
+		height:50px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-138
+	{
+		height:180px;
+	}
+
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-140
+	{
+		height:180px;
+	}
+
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-137
+	{
+		height:180px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-136
+	{
+		height:180px;
+	}
+
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-134
+	{
+		height:180px;
+	}
+
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-135
+	{
+		height:180px;
+	}
+
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-139
+	{
+		height:180px;
+	}
+	
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-146
+	{
+		height:180px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-142
+	{
+		height:180px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-144
+	{
+		height:180px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-145
+	{
+		height:180px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-245
+	{
+		height:180px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-250
+	{
+		height:180px;
+	}
+	
+}
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu
 {
 	padding-left:4%;
@@ -140,14 +233,21 @@ Version:        0.1.0
 .header-bottom-wrapper
 {
     background: #869487;
+	box-shadow:none;
 }
 .site-description {
     color: #a9d68d;
     margin-left: 20%;
 	display:inline;
 	font-size:3.5em;
-	font-weight: bold;
 	font-family:'cac_champagneregular';
+}
+@media screen and (max-width:650px) 
+{
+	.site-description {
+	margin-left: 10%;
+	font-size:2em;
+}
 }
 .header-2-wrapper .site-branding
 {
@@ -161,4 +261,7 @@ button
 #back-top {
     background: #869487;
 }
-
+.fa
+{
+	display:none;
+}
