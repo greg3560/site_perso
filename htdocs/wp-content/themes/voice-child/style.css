@@ -241,21 +241,23 @@ body
 }
 .header-bottom-wrapper
 {
-    background: #AEB09F;
+	background: #AEB09F;
 	box-shadow:none;
 }
-.site-description {
-    margin-left: 20%;
+.site-description
+{
+	margin-left: 15%;
 	display:inline;
 	font-size:4em;
 	font-family:'cac_champagneregular';
 }
 @media screen and (max-width:800px) 
 {
-	.site-description {
-	margin-left: 10%;
-	font-size:2em;
-}
+	.site-description
+	{
+		margin-left: 0;
+		font-size:2em;
+	}
 }
 .header-2-wrapper .site-branding
 {
@@ -326,4 +328,31 @@ button
 	{
 		padding:0;
 	}
+}
+/* hauteur du menu en responsive*/
+@media screen and (max-width:800px)
+{
+	.header-2-wrapper .site-branding, .header-3-wrapper .site-branding
+	{
+		height:50px;
+	}
+}
+/*suppression du focus sur le lien facebook*/
+#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-item > a.mega-menu-link:focus
+{
+	background: none;
+}
+/*deplacement du lien facebook vers la droite en responsive*/
+@media screen and (max-width:800px)
+{
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu li#mega-menu-item-339 > a.mega-menu-link::before
+	{
+		position:relative;
+		left:180%;
+	}
+}
+/*sidebar à droite*/
+#sidebar
+{
+	float:right;
 }
