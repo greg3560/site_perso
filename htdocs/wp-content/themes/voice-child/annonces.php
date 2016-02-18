@@ -5,6 +5,10 @@ Template Name: presentation
 	get_header();
 	get_sidebar ();
 ?>
+<?php
+wp_enqueue_script('jquery-ui-datepicker');
+wp_enqueue_style('jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+?>
 <div style="width: 70%;">
 	<p>Situé à 35 kms au nord de Paris, PLAILLY est un charmant petit village du Valois, qui s’est installé il y a fort longtemps au pied de la colline de Montmélian.</p>
 	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/eglise_plailly.png" alt="eglise Plailly" />
