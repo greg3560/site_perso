@@ -35,10 +35,11 @@ body
 {
 	background-color: rgb(224, 227, 214);
 }
+/*
 #mega-sub-menu
 {
 	height:300px;
-}
+}*/
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-155
 {
 	background : url('img/presentation.jpg') no-repeat;
@@ -134,20 +135,54 @@ body
 	}
 	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-155
 	{
-		height:130px;
+		height:115px;
 	}
 	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-281
 	{
-		height:130px;
+		height:115px;
 	}
 	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-158
 	{
-		height:105px;
+		height:90px;
 	}
 	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-129
 	{
-		height:150px;
+		height:90px;
 	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-135
+	{
+		height:50px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-146
+	{
+		height:50px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-138
+	{
+		height:110px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-134
+	{
+		height:110px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-245
+	{
+		height:110px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-136
+	{
+		height:110px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-140
+	{
+		height:100px;
+	}
+	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-142
+	{
+		height:190px;
+	}
+
+
 
 
 
@@ -155,48 +190,27 @@ body
 	{
 		height:50px;
 	}
-	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-138
-	{
-		height:180px;
-	}
+	
 
-	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-140
-	{
-		height:180px;
-	}
+	
 
 	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-137
 	{
 		height:180px;
 	}
-	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-136
-	{
-		height:180px;
-	}
+	
 
-	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-134
-	{
-		height:180px;
-	}
+	
 
-	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-135
-	{
-		height:180px;
-	}
+	
 
 	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-139
 	{
 		height:180px;
 	}
 	
-	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-146
-	{
-		height:180px;
-	}
-	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-142
-	{
-		height:180px;
-	}
+	
+	
 	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-144
 	{
 		height:180px;
@@ -205,10 +219,7 @@ body
 	{
 		height:180px;
 	}
-	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-245
-	{
-		height:180px;
-	}
+	
 	#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item-250
 	{
 		height:180px;
@@ -237,7 +248,7 @@ body
 }
 #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-megamenu > ul.mega-sub-menu
 {
-	height: 600px;
+	height: 430px;
 }
 .header-bottom-wrapper
 {
@@ -336,11 +347,6 @@ button
 	{
 		height:50px;
 	}
-}
-/*suppression du focus sur le lien facebook*/
-#mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-vce_main_navigation_menu #mega-menu-vce_main_navigation_menu > li.mega-menu-item > a.mega-menu-link:focus
-{
-	background: none;
 }
 /*deplacement du lien facebook vers la droite en responsive*/
 @media screen and (max-width:800px)
