@@ -367,3 +367,8 @@ button
 {
 	text-align:left;
 }
+/*marge sur la video de la page d'accueil*/
+.huge_it_slideshow_image_wrap_videogallery_1
+{
+	margin:0 0 30px 0;
+}
