@@ -361,6 +361,32 @@ button
 #sidebar
 {
 	float:right;
+	width:30%;
+}
+.vce-main-content
+{
+	float:left;
+	width:65%;
+}
+/*bloc page*/
+.container
+{
+	max-width:1300px;
+}
+@media screen and (max-width:800px)
+{
+	#sidebar
+	{
+		float:none;
+		width:90%;
+		margin:auto;
+	}
+	.vce-main-content
+	{
+		float:none;
+		width:90%;
+		margin:auto;
+	}
 }
 /*decalage du logo avec le titre*/
 .header-1-wrapper, .header-2-wrapper, .header-3-wrapper
@@ -368,7 +394,12 @@ button
 	text-align:left;
 }
 /*marge sur la video de la page d'accueil*/
-.huge_it_slideshow_image_wrap_videogallery_1
+.main-box
 {
-	margin:0 0 30px 0;
+	margin-top:30px;
+}
+/*style pour l'image d'appercu de l'article a la une*/
+#alaune img
+{
+	width:100%;
 }

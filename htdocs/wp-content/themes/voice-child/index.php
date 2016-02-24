@@ -13,7 +13,28 @@ get_header(); ?>
 	<?php if ( $vce_sidebar_opts['use_sidebar'] == 'left' ) { get_sidebar(); } ?>
 		
 	<div id="primary" class="vce-main-content">
-<?php echo do_shortcode("[huge_it_videogallery id='1']"); ?>
+<?php echo do_shortcode("[huge_it_videogallery id='1']");
+		echo '<br/>'; ?>
+<iframe width="850" height="315" src="https://www.youtube.com/embed/A_Feb8_lIAY" frameborder="0" allowfullscreen></iframe>
+
+		<div class="main-box">
+
+			
+				<div class="main-box-head">
+					<h1 class="main-box-title">A la une</h1>
+				</div>
+				<div class="main-box-inside">
+					<div class="vce-loop-wrap">
+						<div class="meta-image">
+						<a href="http://localhost/plailly/htdocs/index.php/2016/02/17/369/" title="Article à la une"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/affiche_halloween.jpg" /></a>
+						</div>
+					</div>
+				</div>
+
+		</div>
+		
+	
+
 		<div class="main-box">
 
 			<?php get_template_part('sections/archive-title'); ?>
