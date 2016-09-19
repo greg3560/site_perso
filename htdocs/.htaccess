@@ -18,7 +18,7 @@ redirect 301 http://www.gregorypeigne.fr/portfolio_/naujac-sur-mer/ http://www.g
 redirect 301 http://www.gregorypeigne.fr/portfolio_/test-responsive/ http://www.gregorypeigne.fr/index.php
 redirect 301 http://www.gregorypeigne.fr/portfolio_/blog-zozor/ http://www.gregorypeigne.fr/index.php
 redirect 301 http://www.gregorypeigne.fr/portfolio_/calculatrice/ http://www.gregorypeigne.fr/index.php
-redirect 301 http://www.gregorypeigne.fr/cv/ http://www.gregorypeigne.fr/
+redirect 301 cv/ http://www.gregorypeigne.fr/
 redirect 301 http://www.gregorypeigne.fr/profil/ http://www.gregorypeigne.fr/index.php
 #articles
 redirect 301 http://www.gregorypeigne.fr/developpeur-web/ http://www.gregorypeigne.fr/index.php
