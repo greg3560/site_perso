@@ -5,7 +5,7 @@
 ErrorDocument 404 /erreurs/404.php
 #ErrorDocument 500 /erreurs/erreur_500.php
 #redirection vers l'index
-DirectoryIndex htdocs/index.php htdocs/index.html htdocs/404.php
+DirectoryIndex index.php index.html 404.php
 #redirection 301
 redirect 301 http://www.gregorypeigne.fr/blog/ http://www.gregorypeigne.fr/index.php
 redirect 301 http://www.gregorypeigne.fr/portfolio_/ http://www.gregorypeigne.fr/index.php
