@@ -5,7 +5,7 @@
 ErrorDocument 404 /erreurs/404.php
 #ErrorDocument 500 /erreurs/erreur_500.php
 #redirection vers l'index
-DirectoryIndex index.php index.html /404.php
+DirectoryIndex htdocs/index.php htdocs/index.html htdocs/404.php
 #redirection 301
 redirect 301 http://www.gregorypeigne.fr/blog/ http://www.gregorypeigne.fr/index.php
 redirect 301 http://www.gregorypeigne.fr/portfolio_/ http://www.gregorypeigne.fr/index.php
@@ -18,7 +18,7 @@ redirect 301 http://www.gregorypeigne.fr/portfolio_/naujac-sur-mer/ http://www.g
 redirect 301 http://www.gregorypeigne.fr/portfolio_/test-responsive/ http://www.gregorypeigne.fr/index.php
 redirect 301 http://www.gregorypeigne.fr/portfolio_/blog-zozor/ http://www.gregorypeigne.fr/index.php
 redirect 301 http://www.gregorypeigne.fr/portfolio_/calculatrice/ http://www.gregorypeigne.fr/index.php
-redirect 301 http://www.gregorypeigne.fr/cv/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/cv/ http://www.gregorypeigne.fr/htdocs/index.php
 redirect 301 http://www.gregorypeigne.fr/profil/ http://www.gregorypeigne.fr/index.php
 #articles
 redirect 301 http://www.gregorypeigne.fr/developpeur-web/ http://www.gregorypeigne.fr/index.php
