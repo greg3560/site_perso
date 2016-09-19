@@ -1,7 +1,0 @@
-# Les ligne commençant par '#' sont des commentaires.
-# Ignorer tous les fichiers de config
-# Ignorer tous les fichiers nommés foo.txt
-wp-config.php
-# Ignorer tous les fichiers swap
-*~
-
