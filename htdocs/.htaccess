@@ -1,0 +1,46 @@
+#htaccess
+#erreur
+#ErrorDocument 401 /erreurs/erreur_401.php
+#ErrorDocument 403 /erreurs/erreur_403.php
+ErrorDocument 404 /erreurs/404.php
+#ErrorDocument 500 /erreurs/erreur_500.php
+#redirection vers l'index
+DirectoryIndex index.php index.html /404.php
+#redirection 301
+redirect 301 http://www.gregorypeigne.fr/blog/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/portfolio_/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/portfolio_/mud/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/portfolio_/mud/nos-choix/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/portfolio_/mud/nos-references/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/portfolio_/mud/evenement/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/portfolio_/mud/nous-contacter/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/portfolio_/naujac-sur-mer/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/portfolio_/test-responsive/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/portfolio_/blog-zozor/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/portfolio_/calculatrice/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/cv/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/profil/ http://www.gregorypeigne.fr/index.php
+#articles
+redirect 301 http://www.gregorypeigne.fr/developpeur-web/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/le-langage-informatique-a-lecole/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/un-cryptage-complementaire-a-https/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/voici-le-google-bike/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/amazon-hebergeur-de-malware/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/stockage-en-ligne-illimite/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/radiateurs-serveurs-maison/ http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/700-000-modems-routeurs-faille-de-securite/ http://www.gregorypeigne.fr/index.php
+#media
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/05/portfolio4.png http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/05/certificats1.png http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/05/competences.png http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/05/mud.png http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/05/favicon.png http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/04/developpeur-chungking-fotolia.jpg http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/04/hamon.jpg http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/04/000000044800.jpg http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/03/200.1062672.jpg http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/03/640.1071157.jpg http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/03/200.1071187.jpg http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/03/nerdalize-2.jpg http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/03/nerdalize.jpg http://www.gregorypeigne.fr/index.php
+redirect 301 http://www.gregorypeigne.fr/wp-content/uploads/2015/03/000000044615.jpg http://www.gregorypeigne.fr/index.php

@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grégory Peigné</title>
+		<meta name="description" content="gregory peigne">	
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- CDN CSS materialize compilé et minifié -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!-- CSS perso -->
+		<link href='css/style.css' rel='stylesheet' type='text/css'>
+		<link href='css/owl.carousel.css' rel='stylesheet' type='text/css'>
+        <!-- Une petite favicon -->
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
+	</head>
+	<body id="page-top">
+		<header>
+
+			<!-- 	===================================================================
+					======================= NAVIGATION ================================
+					=================================================================== -->
+
+			<div class="navbar-fixed">		
+				<nav>
+					<div class="nav-wrapper">
+						<a href="#page-top" class="brand-logo"><img class="responsive-img" src="assets/img/logo_gregory.png" id="logo" /></a>
+						<a href="#" data-activates="greg-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+						<ul class="right hide-on-med-and-down">
+							<li class="waves-effect"><a href="#qui_suis_je">Qui suis-je ?</a></li>
+							<li class="waves-effect"><a href="#competences">Compétences</a></li>
+							<li class="waves-effect"><a href="#portfolio">Portfolio</a></li>
+							<li class="waves-effect"><a href="#certifications">Certifications</a></li>
+							<li class="waves-effect"><a href="#contact">Contact</a></li>
+						</ul>
+						<ul class="side-nav" id="greg-mobile">
+							<li class="waves-effect"><a href="#qui_suis_je">Qui suis-je ?</a></li>
+							<li class="waves-effect"><a href="#competences">Compétences</a></li>
+							<li class="waves-effect"><a href="#portfolio">Portfolio</a></li>
+							<li class="waves-effect"><a href="#certifications">Certifications</a></li>
+							<li class="waves-effect"><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- 	===================================================================
+				============================= HOME ================================
+				=================================================================== -->
+	
+		<section id="home" class="parallax-container center-align">
+			<div class="parallax">
+				<img class="responsive-img" src="assets/img/travail_gregory.jpg" />
+			</div>
+			<div class="presentation valign-wrapper">
+				<h1 class="valign"><div id="nom" >Grégory Peigné </div><span id="fonction">Développeur web fullstack à Paris</span></h1>
+			</div>
+		</section>
+		<a href="#qui_suis_je" class="btn-floating btn-large waves-effect waves-light suite"><i class="material-icons">keyboard_arrow_down</i></a>
+	
+		<!-- 	===================================================================
+				======================== QUI SUIS-JE ? ============================
+				=================================================================== -->
+		
+		<section id="qui_suis_je" class="section scrollspy">
+			<div class="container">
+				<div class="row">
+                    <h3 class="left-align">Qui suis-je ?</h3>
+					<div class="col m12 l4">
+						<p class="flow-text grey-text text-darken-3">J'ai fait de ma passion pour le digital mon métier. Conscient des enjeux actuels liés au <strong>numérique</strong>, je souhaite évangéliser mes connaissances en <strong>contrat pro</strong> ou en <strong>CDD/CDI web junior</strong>. Souple et rigoureux dans mon travail, j’ai une bonne culture du web, j’aime les <strong>nouvelles technologies</strong>, la pizza et la musique :)</p>
+						<a class="waves-effect waves-light btn-large white-text"><i class="material-icons left">archive</i> CV</a>
+					</div>
+					<div class="col m6 l4 center-align">
+						<img src="assets/img/photo_gregory.png" class="responsive-img" alt="Gregory Peigne" title="Gregory Peigne" id="greg" />
+					</div>
+					<div class="col m6 l4">
+						<h5 class="flow-text grey-text text-darken-3">Grégory Peigné</h5>
+						<h5 class="flow-text grey-text text-darken-3">35 ans</h5>
+						<h5 class="flow-text grey-text text-darken-3">06.95.81.36.65</h5>
+						<h5 class="flow-text grey-text text-darken-3">contact@gregorypeigne.fr</h5>
+						<h5 class="flow-text grey-text text-darken-3">20 rue victor hugo 75020 Paris</h5>
+						<div class="reseaux-sociaux">
+							<ul>
+								<li><a class="btn-floating waves-effect waves-light white" href="https://fr.linkedin.com/in/gregory-peigné-6636b4b7" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+								<li><a class="btn-floating waves-effect waves-light white" href="https://www.facebook.com/profile.php?id=100009571562244" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="btn-floating waves-effect waves-light white" href="https://twitter.com/GregoryPeigne" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								<li><a class="btn-floating waves-effect waves-light white" href="https://plus.google.com/u/0/117533989173689123445/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 	===================================================================
+				=========================== COMPETENCES ===========================
+				=================================================================== -->
+
+		<section id="competences" class="section scrollspy parallax-container" >
+			<div class="parallax"><img src="assets/img/competences_gregory.jpg"></div>
+			<div class="container">
+				<div class="row">
+					<h3 class="left-align">COMPETENCES</h3>
+					<div class="col m12 l4">
+						<p class="flow-text grey-text text-darken-3">Force de mes capacité d'autodidacte, je détiens 7 129 178 octets de certificats en <strong>programmation</strong> , en <strong>UX/UI design</strong> et en environnement <strong>web</strong>. Perspicacité et intuition me permettent de résoudre les bugs les plus improbables. Agile en <strong>back-end</strong> avec node.js ou PHP, je suis aussi très gourmand de <strong>design</strong> avec photoshop, framework css et javascript.</p>
+					</div>
+					<div class="carousel col m10 l6">
+						<a class="carousel-item" href="#one!">
+                            <span class="score">90%</span>
+							<div class="single-skill">
+                                <div id="html" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>HTML5 CSS3</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">60%</span>
+                            <div class="single-skill">
+                                <div id="javascript" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>JAVASCRIPT</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">70%</span>
+                            <div class="single-skill">
+                                <div id="jquery" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>JQUERY</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">50%</span>
+                            <div class="single-skill">
+                                <div id="node" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>NODE.JS</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">40%</span>
+                            <div class="single-skill">
+                                <div id="angular" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>ANGULAR.JS</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">40%</span>
+                            <div class="single-skill">
+                                <div id="meteor" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>METEOR</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">70%</span>
+                            <div class="single-skill">
+                                <div id="php" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>PHP</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">70%</span>
+                            <div class="single-skill">
+                                <div id="mysql" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>MYSQL</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">80%</span>
+                            <div class="single-skill">
+                                <div id="wordpress" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>WORDPRESS</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">40%</span>
+                            <div class="single-skill">
+                                <div id="prestashop" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>PRESTASHOP</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">60%</span>
+                            <div class="single-skill">
+                                <div id="bootstrap" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>BOOTSTRAP</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">70%</span>
+                            <div class="single-skill">
+                                <div id="materialize" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>MATERIALIZE</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">40%</span>
+                            <div class="single-skill">
+                                <div id="bluemix" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>BLUEMIX</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">70%</span>
+                            <div class="single-skill">
+                                <div id="linux" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>LINUX</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">50%</span>
+                            <div class="single-skill">
+                                <div id="seo" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>SEO</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#one!">
+                            <span class="score">40%</span>
+                            <div class="single-skill">
+                                <div id="photoshop" class="singel-hr-inner">
+                                    <div class="skill-title center-align">
+                                        <strong>PHOTOSHOP</strong>
+                                        <div class="hr">
+                                            <div class="point"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+					</div>
+					<div class="col m2 l2 btn-mobile right-align">
+						<a href="#" class="gauche btn-floating btn-large waves-effect waves-light"><i class="material-icons">keyboard_arrow_left</i></a>
+						<a href="#" class="droite btn-floating btn-large waves-effect waves-light"><i class="material-icons">keyboard_arrow_right</i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 	===================================================================
+				====================== PORTFOLIO ==================================
+				=================================================================== -->
+
+		<section id="portfolio" class="section scrollspy" >
+			<div class="container">
+				<div class="row">
+					<h3 class="left-align">PORTFOLIO</h3>
+					<p class="flow-text">Mes premiers projets m'ont permis d'expérimenter le développement web (projets <strong>statique</strong> et <strong>dynamique</strong>, architecture <strong>MVC</strong>, projets <strong>orientés objets</strong> et procéduraux). Je suis également expert en <strong>front-end</strong> grâce à des collaborations en <strong>hackathon</strong>.</p>
+					<ul id="creation" class="col s10 owl-carousel">
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/mud.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator">Music Until Dawn<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Sonorisations, éclairages évènementiel.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Music Until Dawn<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Refonte du site m-u-d-60.fr.
+									<ul class="collection grey-text text-darken-2">
+										<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
+										<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+                                        <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
+										<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
+										<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+									</ul>
+								</p>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/naujac.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator">Mairie de Naujac/mer<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Projet de fin de formation à l'INFA.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Mairie de Naujac/mer<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">
+									Refonte d'un site de mairie de notre choix pour le jury de fin de formation à l'INFA.
+									<ul class="collection grey-text text-darken-2">
+										<li class="collection-item">Utilisation de l'architecture <strong>MVC</strong> (modèle, vue, contrôleur)</li>
+										<li class="collection-item">Utilisation de <strong>mysqli</strong> pour la connection à la base de données</li>
+										<li class="collection-item">Création et gestion de la base de données</li>
+										<li class="collection-item">Mise en place d'un <strong>bbcode</strong> pour la page commentaire, coloration et rendu en <strong>lien cliquable</strong> des expressions du type http://www et mailto</li>
+									</ul>
+								</p>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/agence.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator">L'agence<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Premier projet responsive.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">L'agence<i class="material-icons right">close</i></span>
+								<p>
+									<ul class="collection grey-text text-darken-2">
+										<li class="collection-item">Mise en pratique des connaissances liées au <strong>responsive design</strong>.Le but étant de créer une page plein écran et l'adapter sur des résolutions plus petites</li>
+										<li class="collection-item">Utilisation des <strong>requêtes de media</strong> en fonction du type d'écran et de sa taille</li>
+										<li class="collection-item">Utilisation des tailles relatives</li>
+										<li class="collection-item"><strong>Ergonomie</strong> liées au contraintes des résolutions d'écrans</li>
+									</ul>
+								</p>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/blog_zozor.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator">Blog de Zozor<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">La mascote d'openclassrooms</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Blog de Zozor<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">
+									Premier mooc d'openclassrooms autour des langages <strong>HTML5</strong> et CSS3.Ceci est le premier TP du tutoriel.
+									<ul class="collection grey-text text-darken-2">
+										<li class="collection-item">Rappel sur la <strong>mise en page</strong> (en-tête, corps de page, pied de page)</li>
+										<li class="collection-item">Utilisation des <strong>balises html5</strong> et sensibilisation de leurs rôles <strong>sémantiques</strong></li>
+										<li class="collection-item">Utilisation des <strong>propriétés CSS3</strong> pour le design et aussi pour le positionnement</li>
+									</ul>
+								</p>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/calculatrice.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator">Calculatrice<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Application PHP</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Calculatrice<i class="material-icons right">close</i></span>
+								<p>
+									<ul class="collection grey-text text-darken-2">
+										<li class="collection-item">Boucles et fonctions javascript pour l'affichage des caractères et la gestion du "lien" =</li>
+										<li class="collection-item">Utilisation des <strong>expressions régulières</strong> pour déterminer le type d'opération</li>
+										<li class="collection-item">Mise en pratique de quelques fonctions PHP: explode, header, preg_match et session_start</li>
+										<li class="collection-item">Maitrise des <strong>variables superglobales</strong> $_POST, $_GET, $_SESSION</li>
+									</ul>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- 	===================================================================
+				====================== CERTIFICATIONS =============================
+				=================================================================== -->
+	
+		<section id="certifications" class="section scrollspy" >
+			<div class=" container">
+				<div class="row">
+					<h3 class="left-align">CERTIFICATIONS</h3>
+					<div class="col s12">
+						<ul class="tabs">
+							<li class="tab col s3"><a class="active" href="#dev">Développement web</a></li>
+							<li class="tab col s3"><a href="#web">Environnement web</a></li>
+							<li class="tab col s3"><a href="#systeme">Systeme</a></li>
+                            <li class="tab col s3"><a href="#parcours">Parcours</a></li>
+						</ul>
+					</div>
+					<div id="dev" class="col s12">
+						<ul>
+							<li class="item card small col s3">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="assets/img/certifications/html_css.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator">Html5 et css3<i class="material-icons right">more_vert</i></span>
+									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/html_css.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Maîtriser les langages <strong>HTML et CSS</strong></li>
+                                            <li class="collection-item">Créer des pages web en HTML et CSS</li>
+                                            <li class="collection-item">Structurer une page web</li>
+                                            <li class="collection-item">Transformer une <strong>maquette</strong> en page web</li>
+                                            <li class="collection-item">Envoyer un site en ligne</li>
+                                        </ul>
+                                    </p>
+								</div>
+							</li>
+							<li class="item card small col s3 offset-s1">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="assets/img/certifications/javascript.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator">Javascript<i class="material-icons right">more_vert</i></span>
+									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/javascript.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Configuration d'un environnement de travail en ligne avec JSFiddle, JS Bin et CodePen ou en local avec un IDE comme Sublime Text, Atom et Brackets</li>
+                                            <li class="collection-item">Les variables, conditions et boucles en <strong>javascript</strong></li>
+                                            <li class="collection-item">Manipuler et créer des fonctions</li>
+                                            <li class="collection-item">Tableaux et chaînes de caractères</li>
+                                            <li class="collection-item">Programmation orientée objet</li>
+                                        </ul>
+                                    </p>
+								</div>
+							</li>
+							<li class="item card small col s3 offset-s1">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="assets/img/certifications/jquery.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator">JQuery<i class="material-icons right">more_vert</i></span>
+									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/jquery.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Sélection d'éléments en <strong>JQuery</strong></li>
+                                            <li class="collection-item">Modifier le contenu d'un élément</li>
+                                            <li class="collection-item">Insérer et remplacer des éléments dans le <strong>DOM</strong></li>
+                                            <li class="collection-item">Gestion événementielle</li>
+                                            <li class="collection-item">Animations et effets</li>
+                                            <li class="collection-item">Files d'attente et timer</li>
+                                            <li class="collection-item">Textes et images</li>
+                                            <li class="collection-item">Formulaires et tableaux</li>
+                                            <li class="collection-item">Communications <strong>AJAX</strong></li>
+                                            <li class="collection-item">Utiliser et créer des <strong>plugins</strong></li>
+                                            <li class="collection-item"><strong>Déboguer</strong> le code jquery</li>
+                                        </ul>
+                                    </p>
+								</div>
+							</li>
+						</ul>
+						<ul class="certificats-informatique-cache">
+							<li class="item card small col s3">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="assets/img/certifications/node-js.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator">Node.js<i class="material-icons right">more_vert</i></span>
+									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/node-js.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Les atouts de <strong>node.js</strong></li>
+                                            <li class="collection-item">Ecouter et créer des évènements</li>
+                                            <li class="collection-item">Fonctions de <strong>callback</strong></li>
+                                            <li class="collection-item">Créer des modules</li>
+                                            <li class="collection-item">Utiliser <strong>NPM</strong> pour installer des modules</li>
+                                            <li class="collection-item">Utilisation du framework <strong>Express.js</strong> pour la gestion des routes, des templates et des middlewares</li>
+                                            <li class="collection-item">La communication temps réel avec <strong>socket.io</strong></li>
+                                        </ul>
+                                    </p>
+								</div>
+							</li>
+							<li class="item card small col s3 offset-s1">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="assets/img/certifications/php.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator">PHP et MySQL<i class="material-icons right">more_vert</i></span>
+									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/php_mysql.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Installation d'un serveur web local comprenant <strong>Apache</strong> <strong>PHP</strong> et <strong>MySQL</strong></li>
+                                            <li class="collection-item">Inclure des portions de page</li>
+                                            <li class="collection-item">Les variables, conditions, boucles, fonctions et tableaux</li>
+                                            <li class="collection-item">Transmettre des données par l'url ou par les formulaires</li>
+                                            <li class="collection-item">Variables superglobales, sessions et cookies</li>
+                                            <li class="collection-item">Stocker et manipuler des informations à l'aide de MySQL</li>
+                                            <li class="collection-item">Les fonctions, dates et jointures entre tables</li>
+                                            <li class="collection-item">Créer des images en PHP</li>
+                                            <li class="collection-item">Les expressions régulières</li>
+                                            <li class="collection-item">La programmation orientée objet</li>
+                                            <li class="collection-item">Organiser son code selon l'architecture MVC</li>
+                                            <li class="collection-item">Proteger un dossier avec un .htaccess</li>
+                                        </ul>
+                                    </p>
+								</div>
+							</li>
+							<li class="item card small col s3 offset-s1">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="assets/img/certifications/bootstrap.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator">Bootstrap<i class="material-icons right">more_vert</i></span>
+									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/bootstrap.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<p>
+                                        <ul class="collection grey-text text-darken-2">
+											<li class="collection-item">Configurer <strong>Bootstrap</strong></li>
+                                            <li class="collection-item">Organisation spatiale des éléments à l'aide de la grille.</li>
+                                            <li class="collection-item">Eléments de base: listes à puces, descriptions, tableaux, formulaires de contact, boutons, icônes et images</li>
+                                            <li class="collection-item">Les composants intégrés: la navigation, effets typographiques, thumbnails, listes groupées, panneaux, médias, alertes et barres de progression</li>
+                                            <li class="collection-item">Les plugins JQuery: menu déroulant, fenêtre modale, onglets, boutons, carrousel, info-bulles et Popover, effet accordéon et le Scrollspy</li>
+                                        </ul>
+                                    </p>
+								</div>
+							</li>
+						</ul>
+                        <ul class="certificats-informatique-cache">
+                            <li class="item card small col s3">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="assets/img/certifications/wordpress.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator">Wordpress<i class="material-icons right">more_vert</i></span>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/wordpress.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+                                    <p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">La publication d'articles, de pages, de menus et de medias sous <strong>wordpress</strong></li>
+                                            <li class="collection-item">Gérer un site participatif</li>
+                                            <li class="collection-item">Développement de thèmes et plugins</li>
+                                            <li class="collection-item">Mise en production</li>
+                                            <li class="collection-item">Amélioration du <strong>référencement</strong></li>
+                                            <li class="collection-item">Optimisation des performances (cacher les ressources et compresser les fichiers JS et CSS) </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="item card small col s3 offset-s1">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="assets/img/certifications/git.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator">Git<i class="material-icons right">more_vert</i></span>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/git.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+                                    <p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Effectuer des commits avec <strong>GIT</strong></li>
+											<li class="collection-item">Lire l'historique</li>
+                                            <li class="collection-item">Se positionner sur un commit donné</li>
+                                            <li class="collection-item">Utilisation de remotes</li>
+                                            <li class="collection-item">Héberger les repositories sur <strong>Github</strong></li>
+                                            <li class="collection-item">Récupérer du code d'un autre repository</li>
+                                            <li class="collection-item">Création de repositories</li>
+											<li class="collection-item">Envoyer le code sur Github</li>
+											<li class="collection-item">Récupérer des modifications</li>
+											<li class="collection-item">Créer des branches</li>
+											<li class="collection-item">Fusionner des branches</li>
+											<li class="collection-item">Résoudre des conflits</li>
+											<li class="collection-item">Identifier les auteurs des différents commits</li>
+											<li class="collection-item">Ignorer des fichiers</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" id="programmeur" class="btn-floating btn-large waves-effect waves-light plus"><i class="material-icons">add</i></a>
+					</div>
+					<div id="web" class="col s12">
+						<ul>
+							<li class="item card small col s3">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="assets/img/certifications/comprendre_le_web.jpg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator">Comprendre le web<i class="material-icons right">more_vert</i></span>
+									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/comprendre_le_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Comprendre la notion de web au travers des représentations</li>
+                                            <li class="collection-item">Maîtriser les notions de <stropng>web, services et cloud</stropng></li>
+                                            <li class="collection-item">Connaissances sur la création du web et ses acteurs</li>
+                                            <li class="collection-item">Notions sur les différents <strong>langages clients/serveurs</strong> qui existent aujourd’hui sur le web</li>
+                                            <li class="collection-item">Fonctionnement et comparaison entre les différentes  <strong>base de données</strong></li>
+                                            <li class="collection-item">Les intérêts d’un site <strong>responsive et mobile</strong></li>
+                                            <li class="collection-item">Les réseaux derrière le web (serveur, IP et protocole)</li>
+											<li class="collection-item">Validation de la question : « Le métier de <strong>développeur web</strong> est-il en adéquation avec mon profil personnel ?</li>
+											<li class="collection-item">Le parcours pour devenir <strong>développeur informatique</strong> et quelques astuces pour accéder au saint Graal</li>
+                                        </ul>
+                                    </p>
+								</div>
+							</li>
+							<li class="item card small col s3 offset-s1">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="assets/img/certifications/decouvrez_le_monde_des_start_ups.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator">Start-up<i class="material-icons right">more_vert</i></span>
+									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/start-ups.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Les caractéristiques principales d'une <strong>start-up</strong></li>
+                                            <li class="collection-item">Les modèles économique des start-ups</li>
+                                            <li class="collection-item">Le mode de fonctionnement d'une start-up</li>
+                                            <li class="collection-item">Envisager l'échec</li>
+                                            <li class="collection-item">L'état d'esprit d'un entrepreneur</li>
+                                            <li class="collection-item">L'écosystème des start-ups</li>
+                                            <li class="collection-item">S'informer et structurer sa veille</li>
+											<li class="collection-item">L'immersion dans un incubateur</li>
+											<li class="collection-item">Trouver, développer, tester et donner vie à une idée</li>
+											<li class="collection-item">Le parcours d'un entrepreneur</li>
+                                        </ul>
+                                    </p>
+								</div>
+							</li>
+							<li class="item card small col s3 offset-s1">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="assets/img/certifications/devenir_mentor.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator">Devenir mentor<i class="material-icons right">more_vert</i></span>
+									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/mentor.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Devenir <strong>mentor</strong></li>
+                                            <li class="collection-item">Les enjeux du mentorat</li>
+                                            <li class="collection-item">Les devoirs du mentor</li>
+                                            <li class="collection-item">Les outils et la formation du mentor</li>
+                                            <li class="collection-item">Recevoir et accompagner les élèves</li>
+                                            <li class="collection-item">Valider un projet</li>
+                                        </ul>
+                                    </p>
+								</div>
+							</li>
+						</ul>
+                        <ul class="certificats-informatique-cache">
+                            <li class="item card small col s3">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="assets/img/certifications/referencement_web.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator">Référencement web<i class="material-icons right">more_vert</i></span>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/referencement_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+                                    <p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Le référencement dans le contexte du <strong>webmarketing</strong></li>
+                                            <li class="collection-item"><strong>Référencement naturel</strong> et <strong>référencement payant</strong></li>
+                                            <li class="collection-item">Les moteurs de recherche</li>
+                                            <li class="collection-item">La pertinence et la notoriété d'une page web</li>
+                                            <li class="collection-item">Définir des mots clés</li>
+                                            <li class="collection-item">Lister les mots clés</li>
+                                            <li class="collection-item">Analyser les recherches des internautes</li>
+											<li class="collection-item">Repérer les mots clés des concurrents</li>
+											<li class="collection-item">Présentation du contenant</li>
+											<li class="collection-item">Optimisation technique du contenant</li>
+											<li class="collection-item">L'unicité du contenu</li>
+											<li class="collection-item">Utilisation des outils <strong>SenSEO</strong> <strong>Semrush</strong> et <strong>google adwords</strong></li>
+											<li class="collection-item">Gestion des liens entrant et sortant</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" id="culture-web" class="btn-floating btn-large waves-effect waves-light plus"><i class="material-icons">add</i></a>
+					</div>
+					<div id="systeme" class="col s12">
+						<ul>
+							<li class="item card small col s3">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="assets/img/certifications/bluemix.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator">IBM Bluemix<i class="material-icons right">more_vert</i></span>
+									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/cours_bluemix.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">L'environnement cloud <strong>d'IBM Bluemix (IaaS, PaaS et SaaS)</strong></li>
+                                            <li class="collection-item">Les services de Bluemix</li>
+                                            <li class="collection-item">La tarification</li>
+                                            <li class="collection-item">L'interface</li>
+                                            <li class="collection-item">Développer un projet avec <strong>DevOps services</strong></li>
+                                            <li class="collection-item">Installer les outils pour utiliser Bluemix depuis chez soi en ligne de commande</li>
+                                            <li class="collection-item">Configurer les paramètres de l'application (nombre de serveurs, mémoire) directement depuis les fichiers de l'application</li>
+											<li class="collection-item">Utiliser Git avec Bluemix</li>
+											<li class="collection-item">Déployer une application en ligne</li>
+											<li class="collection-item">Ajouter des services à une application (<strong>Cloudant</strong>, <strong>Watson</strong> et <strong>Cloud Integration</strong>)</li>
+                                        </ul>
+                                    </p>
+								</div>
+							</li>
+							<li class="item card small col s3 offset-s1">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="assets/img/certifications/linux.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator">Linux<i class="material-icons right">more_vert</i></span>
+									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/linux.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Les fondements de <strong>Linux</strong></li></li>
+                                            <li class="collection-item">Partitionner un disque dur</li>
+                                            <li class="collection-item">Installer Linux dans une machine virtuelle</li>
+                                            <li class="collection-item">Utilisation de la console</li>
+                                            <li class="collection-item">La structure des fichiers et dossiers</li>
+                                            <li class="collection-item">Les utilisateurs et les droits</li>
+                                            <li class="collection-item">Editeur de texte <strong>vim</strong></li>
+											<li class="collection-item">Installer des programmes avec <strong>apt-get</strong></li>
+											<li class="collection-item">Extraire, trier et filtrer des données</li>
+											<li class="collection-item">Rediriger le résultat d'une commande</li>
+											<li class="collection-item">Surveiller l'activité du système</li>
+											<li class="collection-item">Exécuter des programmes en arrière-plan à une heure différée</li>
+											<li class="collection-item">Archiver et compresser</li>
+											<li class="collection-item">La connexion <strong>SSH</strong></li>
+											<li class="collection-item">Transférer des fichiers</li>
+											<li class="collection-item">Analyser le réseau et filtrer le trafic avec un pare-feu</li>
+											<li class="collection-item">Compiler un programme depuis les sources</li>
+											<li class="collection-item"><strong>Scripts shell</strong></li>
+                                        </ul>
+                                    </p>
+								</div>
+							</li>
+							<li class="item card small col s3 offset-s1">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="assets/img/certifications/programmer_en_c.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator">Programmer en C<i class="material-icons right">more_vert</i></span>
+									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/programmer_en_c.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Les bases de la <strong>programmation en C</strong></li>
+                                            <li class="collection-item">Les techniques avancées du langage C (programmation modulaire, pointeurs, tableaux, chaines de caractères, préprocesseur, types de variable, lire et ecrire dans un fichier et allocations dynamique de variable)</li>
+                                            <li class="collection-item">Installation de bibliothèques</li>
+                                            <li class="collection-item">Afficher des images</li>
+                                            <li class="collection-item">La gestion des événements</li>
+                                            <li class="collection-item">Ecrire du texte avec <strong>SDL_ttf</strong></li>
+                                            <li class="collection-item">Gestion de l'audio avec <strong>FMOD</strong></li>
+											<li class="collection-item">Les listes chaînées</li>
+											<li class="collection-item">Les piles et les files</li>
+											<li class="collection-item">Les tables de hachage</li>
+                                        </ul>
+                                    </p>
+								</div>
+							</li>
+						</ul>
+					</div>
+                    <div id="parcours" class="col s12">
+                        <ul>
+                            <li class="item card small col s3">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img id="parcours-javascript" class="activator" src="assets/img/certifications/disciple_javascript.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator">Disciple du Javascript<i class="material-icons right">more_vert</i></span>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/disciple_du_javascript.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
+                                    <p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Apprenez à coder en Javascript</li>
+                                            <li class="collection-item">Dynamisez vos sites web avec Javascript</li>
+                                            <li class="collection-item">Créez un jeu de plateau tour par tour en Javascript</li>
+                                            <li class="collection-item">Simplifiez vos développements Javascript avec JQuery</li>
+                                            <li class="collection-item">Des applications ultra-rapides avec node.js</li>
+                                            <li class="collection-item">Développez vos applications web avec Angular.js</li>
+                                            <li class="collection-item">Créez une single-page app avec node.js et meteor</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="item card small col s3 offset-s1">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img id="parcours-bluemix" class="activator" src="assets/img/certifications/deployez_sur_bluemix.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator">Le cloud d'IBM Bluemix<i class="material-icons right">more_vert</i></span>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/deployez_vos_applications_node_sur_bluemix.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
+                                    <p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Apprenez à coder en Javascript</li>
+                                            <li class="collection-item">Dynamisez vos sites web avec Javascript</li>
+                                            <li class="collection-item">Des applications ultra-rapides avec node.js</li>
+                                            <li class="collection-item">Gérez votre code avec Git et Github</li>
+                                            <li class="collection-item">Déployez des applications dans le cloud avec IBM Bluemix</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="item card small col s3 offset-s1">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img id="parcours-integrateur" class="activator" src="assets/img/certifications/integrateur_web.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator">Intégrateur web<i class="material-icons right">more_vert</i></span>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/integration_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
+                                    <p>
+                                        <ul class="collection grey-text text-darken-2">
+                                            <li class="collection-item">Comprendre le web</li>
+                                            <li class="collection-item">Apprenez à créer votre site web avec HTML5 et CSS3</li>
+                                            <li class="collection-item">Prenez en main Bootstrap</li>
+                                            <li class="collection-item">Gérez votre code avec Git et Github</li>
+                                            <li class="collection-item"></li>
+                                            <li class="collection-item">Utilisation du framework Express.js pour la gestion des routes, des templates et des middlewares</li>
+                                            <li class="collection-item">La communication temps réel avec socket.io</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="certificats-informatique-cache">
+                            <li class="item card small col s3">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img id="parcours-site_web" class="activator" src="assets/img/certifications/lancer_son_site.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator">Lancer son site web<i class="material-icons right">more_vert</i></span>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/lancer_son_site_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
+                                    <p>
+                                        <ul class="collection grey-text text-darken-2">
+											<li class="collection-item">Comprendre le web</li>
+											<li class="collection-item">Apprenez à créer votre site web avec HTML5 et CSS3</li>
+                                            <li class="collection-item">Concevez votre site web avec PHP et MySQL</li>
+                                            <li class="collection-item">Les clés pour réussir son référencement web</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" id="cursus" class="btn-floating btn-large waves-effect waves-light plus"><i class="material-icons">add</i></a>
+                    </div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 	===================================================================
+				======================= CONTACT ===================================
+				=================================================================== -->
+
+		<footer id="contact" class="section scrollspy">
+			<div class="container" >
+				<div class="row">
+					<h3 class="left-align">CONTACT</h3>
+					<form class="col s6 offset-s3" method="post" action="libs/traitement.php?action=formulaire">
+						<div class="row">
+							<div class="input-field col s6">
+								<i class="material-icons prefix">business</i>
+								<input id="first_name" type="text" class="validate" name="societe">
+								<label for="first_name" data-error="wrong" data-success="right">Société</label>
+							</div>
+							<div class="input-field col s6">
+								<i class="material-icons prefix">account_circle</i>
+								<input id="last_name" type="text" class="validate" name="nom">
+								<label for="last_name" data-error="wrong" data-success="right">Nom</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">email</i>
+								<input id="email" type="email" class="validate" name="email">
+								<label for="email" data-error="wrong" data-success="right">Email</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">mode_edit</i>
+								<textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
+								<label for="textarea1">Message</label>
+							</div>
+						</div>
+                        <button class="left waves-effect btn-flat brand-text submit-btn" type="submit" name="action">ENVOYER</button>
+					</form>
+				</div>
+			</div>
+			<div class="reseaux-sociaux center-align">
+                <ul>
+                    <li><a href="https://fr.linkedin.com/in/gregory-peigné-6636b4b7" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100009571562244" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/GregoryPeigne" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://plus.google.com/u/0/117533989173689123445/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+            </div>
+		</footer>
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="js/velocity.min.js"></script>
+		<!-- CDN Javascript materialize compilé et minifié -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+		<!-- javascript slider portfolio -->
+		<script src="js/owl.carousel.js"></script>
+        <!-- javascript perso -->
+		<script src="js/main.js"></script>
+        <!-- traker google analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-84324242-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+	</body>
+</html>

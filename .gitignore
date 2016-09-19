@@ -1,0 +1,5 @@
+# Les ligne commençant par '#' sont des commentaires.
+# Ignorer les fichiers
+
+# Ignorer tous les fichiers swap
+*~
