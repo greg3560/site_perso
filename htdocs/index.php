@@ -63,7 +63,7 @@
 				<img class="responsive-img" src="assets/img/travail_gregory.jpg" alt="Poste de travail" />
 			</div>
 			<div class="presentation valign-wrapper">
-				<h1 class="valign"><div id="nom" >Grégory Peigné </div><span id="fonction">Développeur web fullstack à Paris</span></h1>
+				<h1 class="valign"><span id="nom">Grégory Peigné </span><br />Développeur web fullstack à Paris</h1>
 			</div>
 		</section>
 		<a href="#qui_suis_je" class="btn-floating btn-large waves-effect waves-light suite"><i class="material-icons">keyboard_arrow_down</i></a>
@@ -925,7 +925,7 @@
 				======================= CONTACT ===================================
 				=================================================================== -->
 
-		<footer id="contact" class="section scrollspy">
+		<footer id="contact" class="section scrollspy page-footer">
 			<div class="container" >
 				<div class="row">
 					<h3 class="left-align">CONTACT</h3>
@@ -968,6 +968,12 @@
                     <li><a href="https://plus.google.com/u/0/117533989173689123445/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                 </ul>
             </div>
+            <div class="footer-copyright">
+            	<div class="container">
+            		Crédits photos:
+            		<a class="grey-text text-lighten-4" href="https://openclassrooms.com/">Openclassrooms</a>
+            	</div>
+          	</div>
 		</footer>
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

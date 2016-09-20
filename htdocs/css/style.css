@@ -48,23 +48,19 @@
 }
 h1 {
     color: #fff;
-    font-size: 72px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 400;
     width: 80%;
     margin: auto;
     text-transform: uppercase;
+    line-height: 60px;
 }
 #nom {
     color: #C043D5; /* violet */
+    font-size: 72px;
+    font-weight: 700;
     text-transform:initial;
     font-family: 'kaushanscript', Arial, serif;
-}
-#fonction {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 38px;
-    text-transform: uppercase;
 }
 h3 {
     color: #000;
