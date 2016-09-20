@@ -33,7 +33,7 @@
 			<div class="navbar-fixed">		
 				<nav>
 					<div class="nav-wrapper">
-						<a href="#page-top" class="brand-logo"><img class="responsive-img" src="assets/img/logo_gregory.png" id="logo" /></a>
+						<a href="#page-top" class="brand-logo"><img class="responsive-img" src="assets/img/logo_gregory.png" id="logo" alt="logo Grégory" /></a>
 						<a href="#" data-activates="greg-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 						<ul class="right hide-on-med-and-down">
 							<li class="waves-effect"><a href="#qui_suis_je">Qui suis-je ?</a></li>
@@ -60,7 +60,7 @@
 	
 		<section id="home" class="parallax-container center-align">
 			<div class="parallax">
-				<img class="responsive-img" src="assets/img/travail_gregory.jpg" />
+				<img class="responsive-img" src="assets/img/travail_gregory.jpg" alt="Poste de travail" />
 			</div>
 			<div class="presentation valign-wrapper">
 				<h1 class="valign"><div id="nom" >Grégory Peigné </div><span id="fonction">Développeur web fullstack à Paris</span></h1>
@@ -107,7 +107,7 @@
 				=================================================================== -->
 
 		<section id="competences" class="section scrollspy parallax-container" >
-			<div class="parallax"><img src="assets/img/competences_gregory.jpg"></div>
+			<div class="parallax"><img src="assets/img/competences_gregory.jpg" class="responsive-img" alt="Compétences Grégory" /></div>
 			<div class="container">
 				<div class="row">
 					<h3 class="left-align">COMPETENCES</h3>
@@ -344,7 +344,7 @@
 					<ul id="creation" class="col s10 owl-carousel">
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/mud.png">
+								<img class="activator" src="assets/img/portfolio/mud.png" alt="MUD" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator">Music Until Dawn<i class="material-icons right">more_vert</i></span>
@@ -365,7 +365,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/naujac.png">
+								<img class="activator" src="assets/img/portfolio/naujac.png" alt="Naujac sur mer" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator">Mairie de Naujac/mer<i class="material-icons right">more_vert</i></span>
@@ -386,7 +386,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/agence.png">
+								<img class="activator" src="assets/img/portfolio/agence.png" alt="Agence" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator">L'agence<i class="material-icons right">more_vert</i></span>
@@ -406,7 +406,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/blog_zozor.png">
+								<img class="activator" src="assets/img/portfolio/blog_zozor.png" alt="Blog de Zozor" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator">Blog de Zozor<i class="material-icons right">more_vert</i></span>
@@ -426,7 +426,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/calculatrice.png">
+								<img class="activator" src="assets/img/portfolio/calculatrice.png" alt="Calculatrice" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator">Calculatrice<i class="material-icons right">more_vert</i></span>
@@ -469,7 +469,7 @@
 						<ul>
 							<li class="item card small col s3">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/html_css.png">
+									<img class="activator" src="assets/img/certifications/html_css.png" alt="HTML et CSS" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Html5 et css3<i class="material-icons right">more_vert</i></span>
@@ -490,7 +490,7 @@
 							</li>
 							<li class="item card small col s3 offset-s1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/javascript.png">
+									<img class="activator" src="assets/img/certifications/javascript.png" alt="Javascript" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Javascript<i class="material-icons right">more_vert</i></span>
@@ -511,7 +511,7 @@
 							</li>
 							<li class="item card small col s3 offset-s1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/jquery.png">
+									<img class="activator" src="assets/img/certifications/jquery.png" alt="JQuery" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">JQuery<i class="material-icons right">more_vert</i></span>
@@ -540,7 +540,7 @@
 						<ul class="certificats-informatique-cache">
 							<li class="item card small col s3">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/node-js.png">
+									<img class="activator" src="assets/img/certifications/node-js.png" alt="Node.js" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Node.js<i class="material-icons right">more_vert</i></span>
@@ -563,7 +563,7 @@
 							</li>
 							<li class="item card small col s3 offset-s1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/php.png">
+									<img class="activator" src="assets/img/certifications/php.png" alt="PHP" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">PHP et MySQL<i class="material-icons right">more_vert</i></span>
@@ -591,7 +591,7 @@
 							</li>
 							<li class="item card small col s3 offset-s1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/bootstrap.png">
+									<img class="activator" src="assets/img/certifications/bootstrap.png" alt="Bootstrap" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Bootstrap<i class="material-icons right">more_vert</i></span>
@@ -614,7 +614,7 @@
                         <ul class="certificats-informatique-cache">
                             <li class="item card small col s3">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="assets/img/certifications/wordpress.png">
+                                    <img class="activator" src="assets/img/certifications/wordpress.png" alt="Wordpress" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Wordpress<i class="material-icons right">more_vert</i></span>
@@ -636,7 +636,7 @@
                             </li>
                             <li class="item card small col s3 offset-s1">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="assets/img/certifications/git.png">
+                                    <img class="activator" src="assets/img/certifications/git.png" alt="Git" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Git<i class="material-icons right">more_vert</i></span>
@@ -671,7 +671,7 @@
 						<ul>
 							<li class="item card small col s3">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/comprendre_le_web.jpg">
+									<img class="activator" src="assets/img/certifications/comprendre_le_web.jpg" alt="Comprendre le web" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Comprendre le web<i class="material-icons right">more_vert</i></span>
@@ -696,7 +696,7 @@
 							</li>
 							<li class="item card small col s3 offset-s1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/decouvrez_le_monde_des_start_ups.png">
+									<img class="activator" src="assets/img/certifications/decouvrez_le_monde_des_start_ups.png" alt="Les start-ups" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Start-up<i class="material-icons right">more_vert</i></span>
@@ -722,7 +722,7 @@
 							</li>
 							<li class="item card small col s3 offset-s1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/devenir_mentor.png">
+									<img class="activator" src="assets/img/certifications/devenir_mentor.png" alt="Devenir mentor" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Devenir mentor<i class="material-icons right">more_vert</i></span>
@@ -746,7 +746,7 @@
                         <ul class="certificats-informatique-cache">
                             <li class="item card small col s3">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="assets/img/certifications/referencement_web.png">
+                                    <img class="activator" src="assets/img/certifications/referencement_web.png" alt="Référencement web" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Référencement web<i class="material-icons right">more_vert</i></span>
@@ -780,7 +780,7 @@
 						<ul>
 							<li class="item card small col s3">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/bluemix.png">
+									<img class="activator" src="assets/img/certifications/bluemix.png" alt="Bluemix" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">IBM Bluemix<i class="material-icons right">more_vert</i></span>
@@ -806,7 +806,7 @@
 							</li>
 							<li class="item card small col s3 offset-s1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/linux.png">
+									<img class="activator" src="assets/img/certifications/linux.png" alt="Linux" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Linux<i class="material-icons right">more_vert</i></span>
@@ -840,7 +840,7 @@
 							</li>
 							<li class="item card small col s3 offset-s1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/programmer_en_c.png">
+									<img class="activator" src="assets/img/certifications/programmer_en_c.png" alt="Langage C" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Programmer en C<i class="material-icons right">more_vert</i></span>
@@ -870,7 +870,7 @@
                         <ul>
                             <li class="item card small col s3">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img id="parcours-javascript" class="activator" src="assets/img/certifications/disciple_javascript.png">
+                                    <img id="parcours-javascript" class="activator" src="assets/img/certifications/disciple_javascript.png" alt="Disciple du javascript" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Disciple du Javascript<i class="material-icons right">more_vert</i></span>
@@ -893,7 +893,7 @@
                             </li>
                             <li class="item card small col s3 offset-s1">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img id="parcours-bluemix" class="activator" src="assets/img/certifications/deployez_sur_bluemix.png">
+                                    <img id="parcours-bluemix" class="activator" src="assets/img/certifications/deployez_sur_bluemix.png" alt="Déployer sur Bluemix" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Le cloud d'IBM Bluemix<i class="material-icons right">more_vert</i></span>
@@ -914,7 +914,7 @@
                             </li>
                             <li class="item card small col s3 offset-s1">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img id="parcours-integrateur" class="activator" src="assets/img/certifications/integrateur_web.png">
+                                    <img id="parcours-integrateur" class="activator" src="assets/img/certifications/integrateur_web.png" alt="Intégrateur web" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Intégrateur web<i class="material-icons right">more_vert</i></span>
@@ -939,7 +939,7 @@
                         <ul class="certificats-informatique-cache">
                             <li class="item card small col s3">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img id="parcours-site_web" class="activator" src="assets/img/certifications/lancer_son_site.png">
+                                    <img id="parcours-site_web" class="activator" src="assets/img/certifications/lancer_son_site.png" alt="Lancer son site web" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Lancer son site web<i class="material-icons right">more_vert</i></span>
