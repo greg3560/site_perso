@@ -352,15 +352,14 @@
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-4">Music Until Dawn<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Refonte du site m-u-d-60.fr.
-									<ul class="collection grey-text text-darken-2">
-										<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
-										<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
-                                        <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
-										<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
-										<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
-									</ul>
-								</p>
+								<p class="grey-text text-darken-2 left-align">Refonte du site m-u-d-60.fr.</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
+									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
+									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
+									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+								</ul>
 							</div>
 						</li>
 						<li class="item card small">
@@ -375,13 +374,13 @@
 								<span class="card-title grey-text text-darken-4">Mairie de Naujac/mer<i class="material-icons right">close</i></span>
 								<p class="grey-text text-darken-2 left-align">
 									Refonte d'un site de mairie de notre choix pour le jury de fin de formation à l'INFA.
-									<ul class="collection grey-text text-darken-2">
-										<li class="collection-item">Utilisation de l'architecture <strong>MVC</strong> (modèle, vue, contrôleur)</li>
-										<li class="collection-item">Utilisation de <strong>mysqli</strong> pour la connection à la base de données</li>
-										<li class="collection-item">Création et gestion de la base de données</li>
-										<li class="collection-item">Mise en place d'un <strong>bbcode</strong> pour la page commentaire, coloration et rendu en <strong>lien cliquable</strong> des expressions du type http://www et mailto</li>
-									</ul>
 								</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Utilisation de l'architecture <strong>MVC</strong> (modèle, vue, contrôleur)</li>
+									<li class="collection-item">Utilisation de <strong>mysqli</strong> pour la connection à la base de données</li>
+									<li class="collection-item">Création et gestion de la base de données</li>
+									<li class="collection-item">Mise en place d'un <strong>bbcode</strong> pour la page commentaire, coloration et rendu en <strong>lien cliquable</strong> des expressions du type http://www et mailto</li>
+								</ul>
 							</div>
 						</li>
 						<li class="item card small">
@@ -394,14 +393,12 @@
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-4">L'agence<i class="material-icons right">close</i></span>
-								<p>
-									<ul class="collection grey-text text-darken-2">
-										<li class="collection-item">Mise en pratique des connaissances liées au <strong>responsive design</strong>.Le but étant de créer une page plein écran et l'adapter sur des résolutions plus petites</li>
-										<li class="collection-item">Utilisation des <strong>requêtes de media</strong> en fonction du type d'écran et de sa taille</li>
-										<li class="collection-item">Utilisation des tailles relatives</li>
-										<li class="collection-item"><strong>Ergonomie</strong> liées au contraintes des résolutions d'écrans</li>
-									</ul>
-								</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Mise en pratique des connaissances liées au <strong>responsive design</strong>.Le but étant de créer une page plein écran et l'adapter sur des résolutions plus petites</li>
+									<li class="collection-item">Utilisation des <strong>requêtes de media</strong> en fonction du type d'écran et de sa taille</li>
+									<li class="collection-item">Utilisation des tailles relatives</li>
+									<li class="collection-item"><strong>Ergonomie</strong> liées au contraintes des résolutions d'écrans</li>
+								</ul>
 							</div>
 						</li>
 						<li class="item card small">
@@ -416,12 +413,12 @@
 								<span class="card-title grey-text text-darken-4">Blog de Zozor<i class="material-icons right">close</i></span>
 								<p class="grey-text text-darken-2 left-align">
 									Premier mooc d'openclassrooms autour des langages <strong>HTML5</strong> et CSS3.Ceci est le premier TP du tutoriel.
-									<ul class="collection grey-text text-darken-2">
-										<li class="collection-item">Rappel sur la <strong>mise en page</strong> (en-tête, corps de page, pied de page)</li>
-										<li class="collection-item">Utilisation des <strong>balises html5</strong> et sensibilisation de leurs rôles <strong>sémantiques</strong></li>
-										<li class="collection-item">Utilisation des <strong>propriétés CSS3</strong> pour le design et aussi pour le positionnement</li>
-									</ul>
 								</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Rappel sur la <strong>mise en page</strong> (en-tête, corps de page, pied de page)</li>
+									<li class="collection-item">Utilisation des <strong>balises html5</strong> et sensibilisation de leurs rôles <strong>sémantiques</strong></li>
+									<li class="collection-item">Utilisation des <strong>propriétés CSS3</strong> pour le design et aussi pour le positionnement</li>
+								</ul>
 							</div>
 						</li>
 						<li class="item card small">
@@ -434,14 +431,12 @@
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-4">Calculatrice<i class="material-icons right">close</i></span>
-								<p>
-									<ul class="collection grey-text text-darken-2">
-										<li class="collection-item">Boucles et fonctions javascript pour l'affichage des caractères et la gestion du "lien" =</li>
-										<li class="collection-item">Utilisation des <strong>expressions régulières</strong> pour déterminer le type d'opération</li>
-										<li class="collection-item">Mise en pratique de quelques fonctions PHP: explode, header, preg_match et session_start</li>
-										<li class="collection-item">Maitrise des <strong>variables superglobales</strong> $_POST, $_GET, $_SESSION</li>
-									</ul>
-								</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Boucles et fonctions javascript pour l'affichage des caractères et la gestion du "lien" =</li>
+									<li class="collection-item">Utilisation des <strong>expressions régulières</strong> pour déterminer le type d'opération</li>
+									<li class="collection-item">Mise en pratique de quelques fonctions PHP: explode, header, preg_match et session_start</li>
+									<li class="collection-item">Maitrise des <strong>variables superglobales</strong> $_POST, $_GET, $_SESSION</li>
+								</ul>
 							</div>
 						</li>
 					</ul>
@@ -477,15 +472,13 @@
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-									<p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Maîtriser les langages <strong>HTML et CSS</strong></li>
-                                            <li class="collection-item">Créer des pages web en HTML et CSS</li>
-                                            <li class="collection-item">Structurer une page web</li>
-                                            <li class="collection-item">Transformer une <strong>maquette</strong> en page web</li>
-                                            <li class="collection-item">Envoyer un site en ligne</li>
-                                        </ul>
-                                    </p>
+									<ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Maîtriser les langages <strong>HTML et CSS</strong></li>
+                                        <li class="collection-item">Créer des pages web en HTML et CSS</li>
+                                        <li class="collection-item">Structurer une page web</li>
+                                        <li class="collection-item">Transformer une <strong>maquette</strong> en page web</li>
+                                        <li class="collection-item">Envoyer un site en ligne</li>
+                                    </ul>
 								</div>
 							</li>
 							<li class="item card small col s3 offset-s1">
@@ -498,15 +491,13 @@
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-									<p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Configuration d'un environnement de travail en ligne avec JSFiddle, JS Bin et CodePen ou en local avec un IDE comme Sublime Text, Atom et Brackets</li>
-                                            <li class="collection-item">Les variables, conditions et boucles en <strong>javascript</strong></li>
-                                            <li class="collection-item">Manipuler et créer des fonctions</li>
-                                            <li class="collection-item">Tableaux et chaînes de caractères</li>
-                                            <li class="collection-item">Programmation orientée objet</li>
-                                        </ul>
-                                    </p>
+									<ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Configuration d'un environnement de travail en ligne avec JSFiddle, JS Bin et CodePen ou en local avec un IDE comme Sublime Text, Atom et Brackets</li>
+                                        <li class="collection-item">Les variables, conditions et boucles en <strong>javascript</strong></li>
+                                        <li class="collection-item">Manipuler et créer des fonctions</li>
+                                        <li class="collection-item">Tableaux et chaînes de caractères</li>
+                                        <li class="collection-item">Programmation orientée objet</li>
+                                    </ul>
 								</div>
 							</li>
 							<li class="item card small col s3 offset-s1">
@@ -519,21 +510,19 @@
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-									<p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Sélection d'éléments en <strong>JQuery</strong></li>
-                                            <li class="collection-item">Modifier le contenu d'un élément</li>
-                                            <li class="collection-item">Insérer et remplacer des éléments dans le <strong>DOM</strong></li>
-                                            <li class="collection-item">Gestion événementielle</li>
-                                            <li class="collection-item">Animations et effets</li>
-                                            <li class="collection-item">Files d'attente et timer</li>
-                                            <li class="collection-item">Textes et images</li>
-                                            <li class="collection-item">Formulaires et tableaux</li>
-                                            <li class="collection-item">Communications <strong>AJAX</strong></li>
-                                            <li class="collection-item">Utiliser et créer des <strong>plugins</strong></li>
-                                            <li class="collection-item"><strong>Déboguer</strong> le code jquery</li>
-                                        </ul>
-                                    </p>
+									<ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Sélection d'éléments en <strong>JQuery</strong></li>
+                                        <li class="collection-item">Modifier le contenu d'un élément</li>
+                                        <li class="collection-item">Insérer et remplacer des éléments dans le <strong>DOM</strong></li>
+                                        <li class="collection-item">Gestion événementielle</li>
+                                        <li class="collection-item">Animations et effets</li>
+                                        <li class="collection-item">Files d'attente et timer</li>
+                                        <li class="collection-item">Textes et images</li>
+                                        <li class="collection-item">Formulaires et tableaux</li>
+                                        <li class="collection-item">Communications <strong>AJAX</strong></li>
+                                        <li class="collection-item">Utiliser et créer des <strong>plugins</strong></li>
+                                        <li class="collection-item"><strong>Déboguer</strong> le code jquery</li>
+                                    </ul>
 								</div>
 							</li>
 						</ul>
@@ -548,17 +537,15 @@
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-									<p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Les atouts de <strong>node.js</strong></li>
-                                            <li class="collection-item">Ecouter et créer des évènements</li>
-                                            <li class="collection-item">Fonctions de <strong>callback</strong></li>
-                                            <li class="collection-item">Créer des modules</li>
-                                            <li class="collection-item">Utiliser <strong>NPM</strong> pour installer des modules</li>
-                                            <li class="collection-item">Utilisation du framework <strong>Express.js</strong> pour la gestion des routes, des templates et des middlewares</li>
-                                            <li class="collection-item">La communication temps réel avec <strong>socket.io</strong></li>
-                                        </ul>
-                                    </p>
+									<ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Les atouts de <strong>node.js</strong></li>
+                                        <li class="collection-item">Ecouter et créer des évènements</li>
+                                        <li class="collection-item">Fonctions de <strong>callback</strong></li>
+                                        <li class="collection-item">Créer des modules</li>
+                                        <li class="collection-item">Utiliser <strong>NPM</strong> pour installer des modules</li>
+                                        <li class="collection-item">Utilisation du framework <strong>Express.js</strong> pour la gestion des routes, des templates et des middlewares</li>
+                                        <li class="collection-item">La communication temps réel avec <strong>socket.io</strong></li>
+                                    </ul>
 								</div>
 							</li>
 							<li class="item card small col s3 offset-s1">
@@ -571,22 +558,20 @@
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-									<p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Installation d'un serveur web local comprenant <strong>Apache</strong> <strong>PHP</strong> et <strong>MySQL</strong></li>
-                                            <li class="collection-item">Inclure des portions de page</li>
-                                            <li class="collection-item">Les variables, conditions, boucles, fonctions et tableaux</li>
-                                            <li class="collection-item">Transmettre des données par l'url ou par les formulaires</li>
-                                            <li class="collection-item">Variables superglobales, sessions et cookies</li>
-                                            <li class="collection-item">Stocker et manipuler des informations à l'aide de MySQL</li>
-                                            <li class="collection-item">Les fonctions, dates et jointures entre tables</li>
-                                            <li class="collection-item">Créer des images en PHP</li>
-                                            <li class="collection-item">Les expressions régulières</li>
-                                            <li class="collection-item">La programmation orientée objet</li>
-                                            <li class="collection-item">Organiser son code selon l'architecture MVC</li>
-                                            <li class="collection-item">Proteger un dossier avec un .htaccess</li>
-                                        </ul>
-                                    </p>
+									<ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Installation d'un serveur web local comprenant <strong>Apache</strong> <strong>PHP</strong> et <strong>MySQL</strong></li>
+                                        <li class="collection-item">Inclure des portions de page</li>
+                                        <li class="collection-item">Les variables, conditions, boucles, fonctions et tableaux</li>
+                                        <li class="collection-item">Transmettre des données par l'url ou par les formulaires</li>
+                                        <li class="collection-item">Variables superglobales, sessions et cookies</li>
+                                        <li class="collection-item">Stocker et manipuler des informations à l'aide de MySQL</li>
+                                        <li class="collection-item">Les fonctions, dates et jointures entre tables</li>
+                                        <li class="collection-item">Créer des images en PHP</li>
+                                        <li class="collection-item">Les expressions régulières</li>
+                                        <li class="collection-item">La programmation orientée objet</li>
+                                        <li class="collection-item">Organiser son code selon l'architecture MVC</li>
+                                        <li class="collection-item">Proteger un dossier avec un .htaccess</li>
+                                    </ul>
 								</div>
 							</li>
 							<li class="item card small col s3 offset-s1">
@@ -599,15 +584,13 @@
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-									<p>
-                                        <ul class="collection grey-text text-darken-2">
-											<li class="collection-item">Configurer <strong>Bootstrap</strong></li>
-                                            <li class="collection-item">Organisation spatiale des éléments à l'aide de la grille.</li>
-                                            <li class="collection-item">Eléments de base: listes à puces, descriptions, tableaux, formulaires de contact, boutons, icônes et images</li>
-                                            <li class="collection-item">Les composants intégrés: la navigation, effets typographiques, thumbnails, listes groupées, panneaux, médias, alertes et barres de progression</li>
-                                            <li class="collection-item">Les plugins JQuery: menu déroulant, fenêtre modale, onglets, boutons, carrousel, info-bulles et Popover, effet accordéon et le Scrollspy</li>
-                                        </ul>
-                                    </p>
+									<ul class="collection grey-text text-darken-2">
+										<li class="collection-item">Configurer <strong>Bootstrap</strong></li>
+                                        <li class="collection-item">Organisation spatiale des éléments à l'aide de la grille.</li>
+                                        <li class="collection-item">Eléments de base: listes à puces, descriptions, tableaux, formulaires de contact, boutons, icônes et images</li>
+                                        <li class="collection-item">Les composants intégrés: la navigation, effets typographiques, thumbnails, listes groupées, panneaux, médias, alertes et barres de progression</li>
+                                        <li class="collection-item">Les plugins JQuery: menu déroulant, fenêtre modale, onglets, boutons, carrousel, info-bulles et Popover, effet accordéon et le Scrollspy</li>
+                                    </ul>
 								</div>
 							</li>
 						</ul>
@@ -622,16 +605,14 @@
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-                                    <p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">La publication d'articles, de pages, de menus et de medias sous <strong>wordpress</strong></li>
-                                            <li class="collection-item">Gérer un site participatif</li>
-                                            <li class="collection-item">Développement de thèmes et plugins</li>
-                                            <li class="collection-item">Mise en production</li>
-                                            <li class="collection-item">Amélioration du <strong>référencement</strong></li>
-                                            <li class="collection-item">Optimisation des performances (cacher les ressources et compresser les fichiers JS et CSS) </li>
-                                        </ul>
-                                    </p>
+                                    <ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">La publication d'articles, de pages, de menus et de medias sous <strong>wordpress</strong></li>
+                                        <li class="collection-item">Gérer un site participatif</li>
+                                        <li class="collection-item">Développement de thèmes et plugins</li>
+                                        <li class="collection-item">Mise en production</li>
+                                        <li class="collection-item">Amélioration du <strong>référencement</strong></li>
+                                        <li class="collection-item">Optimisation des performances (cacher les ressources et compresser les fichiers JS et CSS) </li>
+                                    </ul>
                                 </div>
                             </li>
                             <li class="item card small col s3 offset-s1">
@@ -644,24 +625,22 @@
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-                                    <p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Effectuer des commits avec <strong>GIT</strong></li>
-											<li class="collection-item">Lire l'historique</li>
-                                            <li class="collection-item">Se positionner sur un commit donné</li>
-                                            <li class="collection-item">Utilisation de remotes</li>
-                                            <li class="collection-item">Héberger les repositories sur <strong>Github</strong></li>
-                                            <li class="collection-item">Récupérer du code d'un autre repository</li>
-                                            <li class="collection-item">Création de repositories</li>
-											<li class="collection-item">Envoyer le code sur Github</li>
-											<li class="collection-item">Récupérer des modifications</li>
-											<li class="collection-item">Créer des branches</li>
-											<li class="collection-item">Fusionner des branches</li>
-											<li class="collection-item">Résoudre des conflits</li>
-											<li class="collection-item">Identifier les auteurs des différents commits</li>
-											<li class="collection-item">Ignorer des fichiers</li>
-                                        </ul>
-                                    </p>
+                                    <ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Effectuer des commits avec <strong>GIT</strong></li>
+										<li class="collection-item">Lire l'historique</li>
+                                        <li class="collection-item">Se positionner sur un commit donné</li>
+                                        <li class="collection-item">Utilisation de remotes</li>
+                                        <li class="collection-item">Héberger les repositories sur <strong>Github</strong></li>
+                                        <li class="collection-item">Récupérer du code d'un autre repository</li>
+                                        <li class="collection-item">Création de repositories</li>
+										<li class="collection-item">Envoyer le code sur Github</li>
+										<li class="collection-item">Récupérer des modifications</li>
+										<li class="collection-item">Créer des branches</li>
+										<li class="collection-item">Fusionner des branches</li>
+										<li class="collection-item">Résoudre des conflits</li>
+										<li class="collection-item">Identifier les auteurs des différents commits</li>
+										<li class="collection-item">Ignorer des fichiers</li>
+                                    </ul>
                                 </div>
                             </li>
                         </ul>
@@ -679,19 +658,17 @@
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-									<p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Comprendre la notion de web au travers des représentations</li>
-                                            <li class="collection-item">Maîtriser les notions de <stropng>web, services et cloud</stropng></li>
-                                            <li class="collection-item">Connaissances sur la création du web et ses acteurs</li>
-                                            <li class="collection-item">Notions sur les différents <strong>langages clients/serveurs</strong> qui existent aujourd’hui sur le web</li>
-                                            <li class="collection-item">Fonctionnement et comparaison entre les différentes  <strong>base de données</strong></li>
-                                            <li class="collection-item">Les intérêts d’un site <strong>responsive et mobile</strong></li>
-                                            <li class="collection-item">Les réseaux derrière le web (serveur, IP et protocole)</li>
-											<li class="collection-item">Validation de la question : « Le métier de <strong>développeur web</strong> est-il en adéquation avec mon profil personnel ?</li>
-											<li class="collection-item">Le parcours pour devenir <strong>développeur informatique</strong> et quelques astuces pour accéder au saint Graal</li>
-                                        </ul>
-                                    </p>
+									<ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Comprendre la notion de web au travers des représentations</li>
+                                        <li class="collection-item">Maîtriser les notions de <strong>web, services et cloud</strong></li>
+                                        <li class="collection-item">Connaissances sur la création du web et ses acteurs</li>
+                                        <li class="collection-item">Notions sur les différents <strong>langages clients/serveurs</strong> qui existent aujourd’hui sur le web</li>
+                                        <li class="collection-item">Fonctionnement et comparaison entre les différentes  <strong>base de données</strong></li>
+                                        <li class="collection-item">Les intérêts d’un site <strong>responsive et mobile</strong></li>
+                                        <li class="collection-item">Les réseaux derrière le web (serveur, IP et protocole)</li>
+										<li class="collection-item">Validation de la question : « Le métier de <strong>développeur web</strong> est-il en adéquation avec mon profil personnel ?</li>
+										<li class="collection-item">Le parcours pour devenir <strong>développeur informatique</strong> et quelques astuces pour accéder au saint Graal</li>
+                                    </ul>
 								</div>
 							</li>
 							<li class="item card small col s3 offset-s1">
@@ -704,20 +681,18 @@
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-									<p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Les caractéristiques principales d'une <strong>start-up</strong></li>
-                                            <li class="collection-item">Les modèles économique des start-ups</li>
-                                            <li class="collection-item">Le mode de fonctionnement d'une start-up</li>
-                                            <li class="collection-item">Envisager l'échec</li>
-                                            <li class="collection-item">L'état d'esprit d'un entrepreneur</li>
-                                            <li class="collection-item">L'écosystème des start-ups</li>
-                                            <li class="collection-item">S'informer et structurer sa veille</li>
-											<li class="collection-item">L'immersion dans un incubateur</li>
-											<li class="collection-item">Trouver, développer, tester et donner vie à une idée</li>
-											<li class="collection-item">Le parcours d'un entrepreneur</li>
-                                        </ul>
-                                    </p>
+									<ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Les caractéristiques principales d'une <strong>start-up</strong></li>
+                                        <li class="collection-item">Les modèles économique des start-ups</li>
+                                        <li class="collection-item">Le mode de fonctionnement d'une start-up</li>
+                                        <li class="collection-item">Envisager l'échec</li>
+                                        <li class="collection-item">L'état d'esprit d'un entrepreneur</li>
+                                        <li class="collection-item">L'écosystème des start-ups</li>
+                                        <li class="collection-item">S'informer et structurer sa veille</li>
+										<li class="collection-item">L'immersion dans un incubateur</li>
+										<li class="collection-item">Trouver, développer, tester et donner vie à une idée</li>
+										<li class="collection-item">Le parcours d'un entrepreneur</li>
+                                    </ul>
 								</div>
 							</li>
 							<li class="item card small col s3 offset-s1">
@@ -730,16 +705,14 @@
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-									<p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Devenir <strong>mentor</strong></li>
-                                            <li class="collection-item">Les enjeux du mentorat</li>
-                                            <li class="collection-item">Les devoirs du mentor</li>
-                                            <li class="collection-item">Les outils et la formation du mentor</li>
-                                            <li class="collection-item">Recevoir et accompagner les élèves</li>
-                                            <li class="collection-item">Valider un projet</li>
-                                        </ul>
-                                    </p>
+									<ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Devenir <strong>mentor</strong></li>
+                                        <li class="collection-item">Les enjeux du mentorat</li>
+                                        <li class="collection-item">Les devoirs du mentor</li>
+                                        <li class="collection-item">Les outils et la formation du mentor</li>
+                                        <li class="collection-item">Recevoir et accompagner les élèves</li>
+                                        <li class="collection-item">Valider un projet</li>
+                                    </ul>
 								</div>
 							</li>
 						</ul>
@@ -754,23 +727,21 @@
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-                                    <p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Le référencement dans le contexte du <strong>webmarketing</strong></li>
-                                            <li class="collection-item"><strong>Référencement naturel</strong> et <strong>référencement payant</strong></li>
-                                            <li class="collection-item">Les moteurs de recherche</li>
-                                            <li class="collection-item">La pertinence et la notoriété d'une page web</li>
-                                            <li class="collection-item">Définir des mots clés</li>
-                                            <li class="collection-item">Lister les mots clés</li>
-                                            <li class="collection-item">Analyser les recherches des internautes</li>
-											<li class="collection-item">Repérer les mots clés des concurrents</li>
-											<li class="collection-item">Présentation du contenant</li>
-											<li class="collection-item">Optimisation technique du contenant</li>
-											<li class="collection-item">L'unicité du contenu</li>
-											<li class="collection-item">Utilisation des outils <strong>SenSEO</strong> <strong>Semrush</strong> et <strong>google adwords</strong></li>
-											<li class="collection-item">Gestion des liens entrant et sortant</li>
-                                        </ul>
-                                    </p>
+                                    <ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Le référencement dans le contexte du <strong>webmarketing</strong></li>
+                                        <li class="collection-item"><strong>Référencement naturel</strong> et <strong>référencement payant</strong></li>
+                                        <li class="collection-item">Les moteurs de recherche</li>
+                                        <li class="collection-item">La pertinence et la notoriété d'une page web</li>
+                                        <li class="collection-item">Définir des mots clés</li>
+                                        <li class="collection-item">Lister les mots clés</li>
+                                        <li class="collection-item">Analyser les recherches des internautes</li>
+										<li class="collection-item">Repérer les mots clés des concurrents</li>
+										<li class="collection-item">Présentation du contenant</li>
+										<li class="collection-item">Optimisation technique du contenant</li>
+										<li class="collection-item">L'unicité du contenu</li>
+										<li class="collection-item">Utilisation des outils <strong>SenSEO</strong> <strong>Semrush</strong> et <strong>google adwords</strong></li>
+										<li class="collection-item">Gestion des liens entrant et sortant</li>
+                                    </ul>
                                 </div>
                             </li>
                         </ul>
@@ -788,20 +759,18 @@
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-									<p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">L'environnement cloud <strong>d'IBM Bluemix (IaaS, PaaS et SaaS)</strong></li>
-                                            <li class="collection-item">Les services de Bluemix</li>
-                                            <li class="collection-item">La tarification</li>
-                                            <li class="collection-item">L'interface</li>
-                                            <li class="collection-item">Développer un projet avec <strong>DevOps services</strong></li>
-                                            <li class="collection-item">Installer les outils pour utiliser Bluemix depuis chez soi en ligne de commande</li>
-                                            <li class="collection-item">Configurer les paramètres de l'application (nombre de serveurs, mémoire) directement depuis les fichiers de l'application</li>
-											<li class="collection-item">Utiliser Git avec Bluemix</li>
-											<li class="collection-item">Déployer une application en ligne</li>
-											<li class="collection-item">Ajouter des services à une application (<strong>Cloudant</strong>, <strong>Watson</strong> et <strong>Cloud Integration</strong>)</li>
-                                        </ul>
-                                    </p>
+									<ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">L'environnement cloud <strong>d'IBM Bluemix (IaaS, PaaS et SaaS)</strong></li>
+                                        <li class="collection-item">Les services de Bluemix</li>
+                                        <li class="collection-item">La tarification</li>
+                                        <li class="collection-item">L'interface</li>
+                                        <li class="collection-item">Développer un projet avec <strong>DevOps services</strong></li>
+                                        <li class="collection-item">Installer les outils pour utiliser Bluemix depuis chez soi en ligne de commande</li>
+                                        <li class="collection-item">Configurer les paramètres de l'application (nombre de serveurs, mémoire) directement depuis les fichiers de l'application</li>
+										<li class="collection-item">Utiliser Git avec Bluemix</li>
+										<li class="collection-item">Déployer une application en ligne</li>
+										<li class="collection-item">Ajouter des services à une application (<strong>Cloudant</strong>, <strong>Watson</strong> et <strong>Cloud Integration</strong>)</li>
+                                    </ul>
 								</div>
 							</li>
 							<li class="item card small col s3 offset-s1">
@@ -814,28 +783,26 @@
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-									<p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Les fondements de <strong>Linux</strong></li></li>
-                                            <li class="collection-item">Partitionner un disque dur</li>
-                                            <li class="collection-item">Installer Linux dans une machine virtuelle</li>
-                                            <li class="collection-item">Utilisation de la console</li>
-                                            <li class="collection-item">La structure des fichiers et dossiers</li>
-                                            <li class="collection-item">Les utilisateurs et les droits</li>
-                                            <li class="collection-item">Editeur de texte <strong>vim</strong></li>
-											<li class="collection-item">Installer des programmes avec <strong>apt-get</strong></li>
-											<li class="collection-item">Extraire, trier et filtrer des données</li>
-											<li class="collection-item">Rediriger le résultat d'une commande</li>
-											<li class="collection-item">Surveiller l'activité du système</li>
-											<li class="collection-item">Exécuter des programmes en arrière-plan à une heure différée</li>
-											<li class="collection-item">Archiver et compresser</li>
-											<li class="collection-item">La connexion <strong>SSH</strong></li>
-											<li class="collection-item">Transférer des fichiers</li>
-											<li class="collection-item">Analyser le réseau et filtrer le trafic avec un pare-feu</li>
-											<li class="collection-item">Compiler un programme depuis les sources</li>
-											<li class="collection-item"><strong>Scripts shell</strong></li>
-                                        </ul>
-                                    </p>
+									<ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Les fondements de <strong>Linux</strong></li></li>
+                                        <li class="collection-item">Partitionner un disque dur</li>
+                                        <li class="collection-item">Installer Linux dans une machine virtuelle</li>
+                                        <li class="collection-item">Utilisation de la console</li>
+                                        <li class="collection-item">La structure des fichiers et dossiers</li>
+                                        <li class="collection-item">Les utilisateurs et les droits</li>
+                                        <li class="collection-item">Editeur de texte <strong>vim</strong></li>
+										<li class="collection-item">Installer des programmes avec <strong>apt-get</strong></li>
+										<li class="collection-item">Extraire, trier et filtrer des données</li>
+										<li class="collection-item">Rediriger le résultat d'une commande</li>
+										<li class="collection-item">Surveiller l'activité du système</li>
+										<li class="collection-item">Exécuter des programmes en arrière-plan à une heure différée</li>
+										<li class="collection-item">Archiver et compresser</li>
+										<li class="collection-item">La connexion <strong>SSH</strong></li>
+										<li class="collection-item">Transférer des fichiers</li>
+										<li class="collection-item">Analyser le réseau et filtrer le trafic avec un pare-feu</li>
+										<li class="collection-item">Compiler un programme depuis les sources</li>
+										<li class="collection-item"><strong>Scripts shell</strong></li>
+                                    </ul>
 								</div>
 							</li>
 							<li class="item card small col s3 offset-s1">
@@ -848,20 +815,18 @@
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
-									<p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Les bases de la <strong>programmation en C</strong></li>
-                                            <li class="collection-item">Les techniques avancées du langage C (programmation modulaire, pointeurs, tableaux, chaines de caractères, préprocesseur, types de variable, lire et ecrire dans un fichier et allocations dynamique de variable)</li>
-                                            <li class="collection-item">Installation de bibliothèques</li>
-                                            <li class="collection-item">Afficher des images</li>
-                                            <li class="collection-item">La gestion des événements</li>
-                                            <li class="collection-item">Ecrire du texte avec <strong>SDL_ttf</strong></li>
-                                            <li class="collection-item">Gestion de l'audio avec <strong>FMOD</strong></li>
-											<li class="collection-item">Les listes chaînées</li>
-											<li class="collection-item">Les piles et les files</li>
-											<li class="collection-item">Les tables de hachage</li>
-                                        </ul>
-                                    </p>
+									<ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Les bases de la <strong>programmation en C</strong></li>
+                                        <li class="collection-item">Les techniques avancées du langage C (programmation modulaire, pointeurs, tableaux, chaines de caractères, préprocesseur, types de variable, lire et ecrire dans un fichier et allocations dynamique de variable)</li>
+                                        <li class="collection-item">Installation de bibliothèques</li>
+                                        <li class="collection-item">Afficher des images</li>
+                                        <li class="collection-item">La gestion des événements</li>
+                                        <li class="collection-item">Ecrire du texte avec <strong>SDL_ttf</strong></li>
+                                        <li class="collection-item">Gestion de l'audio avec <strong>FMOD</strong></li>
+										<li class="collection-item">Les listes chaînées</li>
+										<li class="collection-item">Les piles et les files</li>
+										<li class="collection-item">Les tables de hachage</li>
+                                    </ul>
 								</div>
 							</li>
 						</ul>
@@ -878,17 +843,15 @@
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
-                                    <p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Apprenez à coder en Javascript</li>
-                                            <li class="collection-item">Dynamisez vos sites web avec Javascript</li>
-                                            <li class="collection-item">Créez un jeu de plateau tour par tour en Javascript</li>
-                                            <li class="collection-item">Simplifiez vos développements Javascript avec JQuery</li>
-                                            <li class="collection-item">Des applications ultra-rapides avec node.js</li>
-                                            <li class="collection-item">Développez vos applications web avec Angular.js</li>
-                                            <li class="collection-item">Créez une single-page app avec node.js et meteor</li>
-                                        </ul>
-                                    </p>
+                                    <ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Apprenez à coder en Javascript</li>
+                                        <li class="collection-item">Dynamisez vos sites web avec Javascript</li>
+                                        <li class="collection-item">Créez un jeu de plateau tour par tour en Javascript</li>
+                                        <li class="collection-item">Simplifiez vos développements Javascript avec JQuery</li>
+                                        <li class="collection-item">Des applications ultra-rapides avec node.js</li>
+                                        <li class="collection-item">Développez vos applications web avec Angular.js</li>
+                                        <li class="collection-item">Créez une single-page app avec node.js et meteor</li>
+                                    </ul>
                                 </div>
                             </li>
                             <li class="item card small col s3 offset-s1">
@@ -901,15 +864,13 @@
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
-                                    <p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Apprenez à coder en Javascript</li>
-                                            <li class="collection-item">Dynamisez vos sites web avec Javascript</li>
-                                            <li class="collection-item">Des applications ultra-rapides avec node.js</li>
-                                            <li class="collection-item">Gérez votre code avec Git et Github</li>
-                                            <li class="collection-item">Déployez des applications dans le cloud avec IBM Bluemix</li>
-                                        </ul>
-                                    </p>
+                                    <ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Apprenez à coder en Javascript</li>
+                                        <li class="collection-item">Dynamisez vos sites web avec Javascript</li>
+                                        <li class="collection-item">Des applications ultra-rapides avec node.js</li>
+                                        <li class="collection-item">Gérez votre code avec Git et Github</li>
+                                        <li class="collection-item">Déployez des applications dans le cloud avec IBM Bluemix</li>
+                                    </ul>
                                 </div>
                             </li>
                             <li class="item card small col s3 offset-s1">
@@ -922,17 +883,15 @@
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
-                                    <p>
-                                        <ul class="collection grey-text text-darken-2">
-                                            <li class="collection-item">Comprendre le web</li>
-                                            <li class="collection-item">Apprenez à créer votre site web avec HTML5 et CSS3</li>
-                                            <li class="collection-item">Prenez en main Bootstrap</li>
-                                            <li class="collection-item">Gérez votre code avec Git et Github</li>
-                                            <li class="collection-item"></li>
-                                            <li class="collection-item">Utilisation du framework Express.js pour la gestion des routes, des templates et des middlewares</li>
-                                            <li class="collection-item">La communication temps réel avec socket.io</li>
-                                        </ul>
-                                    </p>
+                                    <ul class="collection grey-text text-darken-2">
+                                        <li class="collection-item">Comprendre le web</li>
+                                        <li class="collection-item">Apprenez à créer votre site web avec HTML5 et CSS3</li>
+                                        <li class="collection-item">Prenez en main Bootstrap</li>
+                                        <li class="collection-item">Gérez votre code avec Git et Github</li>
+                                        <li class="collection-item"></li>
+                                        <li class="collection-item">Utilisation du framework Express.js pour la gestion des routes, des templates et des middlewares</li>
+                                        <li class="collection-item">La communication temps réel avec socket.io</li>
+                                    </ul>
                                 </div>
                             </li>
                         </ul>
@@ -947,14 +906,12 @@
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
-                                    <p>
-                                        <ul class="collection grey-text text-darken-2">
-											<li class="collection-item">Comprendre le web</li>
-											<li class="collection-item">Apprenez à créer votre site web avec HTML5 et CSS3</li>
-                                            <li class="collection-item">Concevez votre site web avec PHP et MySQL</li>
-                                            <li class="collection-item">Les clés pour réussir son référencement web</li>
-                                        </ul>
-                                    </p>
+                                    <ul class="collection grey-text text-darken-2">
+										<li class="collection-item">Comprendre le web</li>
+										<li class="collection-item">Apprenez à créer votre site web avec HTML5 et CSS3</li>
+                                        <li class="collection-item">Concevez votre site web avec PHP et MySQL</li>
+                                        <li class="collection-item">Les clés pour réussir son référencement web</li>
+                                    </ul>
                                 </div>
                             </li>
                         </ul>
