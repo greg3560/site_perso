@@ -473,8 +473,8 @@
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
-                                        <li class="collection-item">Maîtriser les langages <strong>HTML et CSS</strong></li>
-                                        <li class="collection-item">Créer des pages web en HTML et CSS</li>
+                                        <li class="collection-item">Maîtriser les langages <strong>HTML et CSS</strong></li>
+                                        <li class="collection-item">Créer des pages web en HTML et CSS</li>
                                         <li class="collection-item">Structurer une page web</li>
                                         <li class="collection-item">Transformer une <strong>maquette</strong> en page web</li>
                                         <li class="collection-item">Envoyer un site en ligne</li>
@@ -784,7 +784,7 @@
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
-                                        <li class="collection-item">Les fondements de <strong>Linux</strong></li></li>
+                                        <li class="collection-item">Les fondements de <strong>Linux</strong></li>
                                         <li class="collection-item">Partitionner un disque dur</li>
                                         <li class="collection-item">Installer Linux dans une machine virtuelle</li>
                                         <li class="collection-item">Utilisation de la console</li>
