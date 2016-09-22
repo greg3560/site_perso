@@ -5,15 +5,20 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Grégory Peigné</title>
-		<meta name="description" content="gregory peigne">
+		<meta name="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
 		<!-- meta OG pour facebook -->
 		<meta property="og:title" content="Grégory Peigné | Développeur web fullstack à Paris"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="http://www.gregorypeigne.fr"/>
 		<meta property="og:image" content="http://www.gregorypeigne.fr/assets/img/photo_gregory.png"/>
 		<meta property="og:description" content="Recherche contrat pro ou CDD/CDI développeur web."/>
-		<meta property="og:site_name" content="Grégory Peigné"/> 
+		<meta property="og:site_name" content="Grégory Peigné"/>
 		<meta property="fb:admins" content="Gr3gory.Peigne"/>
+		<!-- meta tweeter -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@GregoryPeigne">
+		<meta name="twitter:title" content="Recherche contrat pro ou CDD/CDI développeur web.">
+		<meta name="twitter:description" content="Recherche contrat pro ou CDD/CDI développeur web.">
 		<!--Import Google Icon Font-->
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- CDN CSS materialize compilé et minifié -->
@@ -32,6 +37,14 @@
         <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
 	</head>
 	<body id="page-top">
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 		<header>
 
 			<!-- 	===================================================================
@@ -971,10 +984,14 @@
 			<div class="reseaux-sociaux center-align">
                 <ul>
                     <li><a href="https://fr.linkedin.com/in/gregory-peigné-6636b4b7" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100009571562244" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					<li><div class="fb-share-button" 
+		data-href="http://www.gregorypeigne.fr" 
+		data-layout="button_count">
+	</div></li>
                     <li><a href="https://twitter.com/GregoryPeigne" target="_blank"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="https://plus.google.com/u/0/117533989173689123445/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                 </ul>
+            
             </div>
             <div class="footer-copyright">
             	<div class="container">
