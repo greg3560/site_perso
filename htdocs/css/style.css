@@ -518,19 +518,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     width:5%;
     font-size: 1.5em;
 }
-#contact .fa-linkedin:before {
-    content: "\f0e1";
-    color: #fff;
-}
-#contact .fa-facebook:before {
-    content: "\f09a";
-    color: #fff;
-}
-#contact .fa-twitter:before {
-    content: "\f099";
-    color: #fff;
-}
-#contact .fa-google-plus:before {
-    content: "\f0d5";
-    color: #fff;
+/* alignement du bouton share de facebook */
+.fb_iframe_widget span {
+    vertical-align: inherit !important;
 }

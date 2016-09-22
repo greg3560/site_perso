@@ -19,6 +19,12 @@
 		<meta name="twitter:site" content="@GregoryPeigne">
 		<meta name="twitter:title" content="Recherche contrat pro ou CDD/CDI développeur web.">
 		<meta name="twitter:description" content="Recherche contrat pro ou CDD/CDI développeur web.">
+		<meta name="twitter:creator" content="@GregoryPeigne">
+		<meta name="twitter:image:src" content="http://www.gregorypeigne.fr/assets/img/photo_gregory.png">
+		<!-- meta google+ -->
+		<meta itemprop="name" content="Grégory Peigné">
+		<meta itemprop="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
+		<meta itemprop="image" content="http://www.gregorypeigne.fr/assets/img/photo_gregory.png">
 		<!--Import Google Icon Font-->
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- CDN CSS materialize compilé et minifié -->
@@ -102,7 +108,7 @@
 						<a href="assets/cv.zip" class="waves-effect waves-light btn-large white-text"><i class="material-icons left">archive</i> CV</a>
 					</div>
 					<div class="col m6 l4 center-align">
-						<img src="assets/img/photo_gregory.png" class="responsive-img circle" alt="Gregory Peigne" title="Gregory Peigne" id="greg" />
+						<img id="greg" class="responsive-img circle" src="assets/img/photo_gregory.png" alt="Gregory Peigne" title="Gregory Peigne" />
 					</div>
 					<div class="col m6 l4">
 						<h5 class="flow-text grey-text text-darken-3">Grégory Peigné</h5>
@@ -982,16 +988,10 @@
 				</div>
 			</div>
 			<div class="reseaux-sociaux center-align">
-                <ul>
-                    <li><a href="https://fr.linkedin.com/in/gregory-peigné-6636b4b7" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-					<li><div class="fb-share-button" 
-		data-href="http://www.gregorypeigne.fr" 
-		data-layout="button_count">
-	</div></li>
-                    <li><a href="https://twitter.com/GregoryPeigne" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://plus.google.com/u/0/117533989173689123445/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                </ul>
-            
+                    <script type="in/share" data-counter="right"></script>
+					<div class="fb-share-button" data-href="http://www.gregorypeigne.fr" data-layout="box_count"></div>
+                    <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="gregorypeigne.fr">Tweet</a>
+                    <g:plusone size="tall"></g:plusone>
             </div>
             <div class="footer-copyright">
             	<div class="container">
@@ -1000,6 +1000,9 @@
             	</div>
           	</div>
 		</footer>
+		<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'fr'}</script>
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="js/velocity.min.js"></script>
