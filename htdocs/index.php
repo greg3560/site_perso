@@ -38,8 +38,10 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<!-- CSS perso -->
-		<link href='css/style.css' rel='stylesheet' type='text/css'>
-		<link href='css/owl.carousel.css' rel='stylesheet' type='text/css'>
+		<!-- <link href='css/style.css' rel='stylesheet' type='text/css'> -->
+		<link href='css/style.min.css' rel='stylesheet' type='text/css'>
+		<!-- <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'> -->
+		<link href='css/owl.carousel.min.css' rel='stylesheet' type='text/css'>
         <!-- Une petite favicon -->
         <link rel="icon" type="image/png" href="favicon.png" />
         <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
