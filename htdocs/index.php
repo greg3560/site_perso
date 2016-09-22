@@ -4,16 +4,15 @@
 		<meta charset="utf-8"> 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Grégory Peigné</title>
-		<meta name="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
 		<!-- meta OG pour facebook -->
-		<meta property="og:title" content="Grégory Peigné | Développeur web fullstack à Paris"/>
+		
+		<meta property="fb:app_id" content="145634995501895"/>
 		<meta property="og:type" content="website"/>
+		<meta property="og:title" content="Grégory Peigné | Développeur web fullstack à Paris"/>
+		<meta property="og:description" content="Recherche contrat pro ou CDD/CDI développeur web."/>
 		<meta property="og:url" content="http://www.gregorypeigne.fr"/>
 		<meta property="og:image" content="http://www.gregorypeigne.fr/assets/img/photo_gregory.png"/>
-		<meta property="og:description" content="Recherche contrat pro ou CDD/CDI développeur web."/>
 		<meta property="og:site_name" content="Grégory Peigné"/>
-		<meta property="fb:admins" content="Gr3gory.Peigne"/>
 		<!-- meta tweeter -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@GregoryPeigne">
@@ -25,6 +24,8 @@
 		<meta itemprop="name" content="Grégory Peigné">
 		<meta itemprop="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
 		<meta itemprop="image" content="http://www.gregorypeigne.fr/assets/img/photo_gregory.png">
+		<title>Grégory Peigné</title>
+		<meta name="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
 		<!--Import Google Icon Font-->
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- CDN CSS materialize compilé et minifié -->
