@@ -5,7 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Grégory Peigné</title>
-		<meta name="description" content="gregory peigne">	
+		<meta name="description" content="gregory peigne">
+		<!-- meta OG pour facebook -->
+		<meta property="og:title" content="Grégory Peigné | Développeur web fullstack à Paris"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="http://www.gregorypeigne.fr"/>
+		<meta property="og:image" content="http://www.gregorypeigne.fr/assets/img/photo_gregory.png"/>
+		<meta property="og:description" content="Recherche contrat pro ou CDD/CDI développeur web."/>
+		<meta property="og:site_name" content="Grégory Peigné"/> 
+		<meta property="fb:admins" content="Gr3gory.Peigne"/>
 		<!--Import Google Icon Font-->
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- CDN CSS materialize compilé et minifié -->
@@ -78,17 +86,17 @@
                     <h3 class="left-align">Qui suis-je ?</h3>
 					<div class="col m12 l4">
 						<p class="flow-text grey-text text-darken-3">J'ai fait de ma passion pour le digital mon métier. Conscient des enjeux actuels liés au <strong>numérique</strong>, je souhaite évangéliser mes connaissances en <strong>contrat pro</strong> ou en <strong>CDD/CDI web junior</strong>. Souple et rigoureux dans mon travail, j’ai une bonne culture du web, j’aime les <strong>nouvelles technologies</strong>, la pizza et la musique :)</p>
-						<a class="waves-effect waves-light btn-large white-text"><i class="material-icons left">archive</i> CV</a>
+						<a href="assets/cv.zip" class="waves-effect waves-light btn-large white-text"><i class="material-icons left">archive</i> CV</a>
 					</div>
 					<div class="col m6 l4 center-align">
-						<img src="assets/img/photo_gregory.png" class="responsive-img" alt="Gregory Peigne" title="Gregory Peigne" id="greg" />
+						<img src="assets/img/photo_gregory.png" class="responsive-img circle" alt="Gregory Peigne" title="Gregory Peigne" id="greg" />
 					</div>
 					<div class="col m6 l4">
 						<h5 class="flow-text grey-text text-darken-3">Grégory Peigné</h5>
 						<h5 class="flow-text grey-text text-darken-3">35 ans</h5>
 						<h5 class="flow-text grey-text text-darken-3">06.95.81.36.65</h5>
 						<h5 class="flow-text grey-text text-darken-3">contact@gregorypeigne.fr</h5>
-						<h5 class="flow-text grey-text text-darken-3">20 rue victor hugo 75020 Paris</h5>
+						<h5 class="flow-text grey-text text-darken-3">rue des prairies 75020 Paris</h5>
 						<div class="reseaux-sociaux">
 							<ul>
 								<li><a class="btn-floating waves-effect waves-light white" href="https://fr.linkedin.com/in/gregory-peigné-6636b4b7" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -468,7 +476,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Html5 et css3<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/html_css.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 89%<a href="certifications/html_css.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -487,7 +495,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Javascript<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/javascript.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 93%<a href="certifications/javascript.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -506,7 +514,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">JQuery<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/jquery.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="certifications/jquery.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -533,7 +541,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Node.js<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/node-js.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="certifications/node-js.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -554,7 +562,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">PHP et MySQL<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/php_mysql.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 72%<a href="certifications/php_mysql.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -580,7 +588,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Bootstrap<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/bootstrap.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 97%<a href="certifications/bootstrap.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -601,7 +609,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Wordpress<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/wordpress.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 92%<a href="certifications/wordpress.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -621,7 +629,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Git<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/git.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 84%<a href="certifications/git.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -654,7 +662,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Comprendre le web<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/comprendre_le_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 100%<a href="certifications/comprendre_le_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -677,7 +685,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Start-up<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/start-ups.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 73%<a href="certifications/start-ups.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -701,7 +709,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Devenir mentor<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/mentor.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 97%<a href="certifications/mentor.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -723,7 +731,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Référencement web<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/referencement_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 95%<a href="certifications/referencement_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -755,7 +763,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">IBM Bluemix<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/cours_bluemix.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 92%<a href="certifications/cours_bluemix.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -779,7 +787,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Linux<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/linux.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="certifications/linux.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -811,7 +819,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Programmer en C<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/programmer_en_c.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 91%<a href="certifications/programmer_en_c.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
@@ -839,7 +847,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Disciple du Javascript<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/disciple_du_javascript.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 93%<a href="certifications/disciple_du_javascript.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
@@ -860,7 +868,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Le cloud d'IBM Bluemix<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/deployez_vos_applications_node_sur_bluemix.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 91%<a href="certifications/deployez_vos_applications_node_sur_bluemix.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
@@ -879,7 +887,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Intégrateur web<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/integration_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 92%<a href="certifications/integration_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
@@ -902,7 +910,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator">Lancer son site web<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 75%<a href="certifications/lancer_son_site_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 89%<a href="certifications/lancer_son_site_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
