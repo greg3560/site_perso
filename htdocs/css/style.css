@@ -10,30 +10,6 @@
 ===================================================================
 */
 
-/* polices de caracteres */
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('../fonts/reseaux_sociaux/fontawesome-webfont.eot?v=4.6.3');
-    src: url('../fonts/reseaux_sociaux/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../fonts/reseaux_sociaux/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../fonts/reseaux_sociaux/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../fonts/reseaux_sociaux/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../fonts/reseaux_sociaux/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'kaushanscript';
-    src: url('../fonts/kaushanscript/kaushanscript-regular-webfont.eot') format('eot'),
-    url('../fonts/kaushanscript/kaushanscript-regular-webfont.woff') format('woff'),
-    url('../fonts/kaushanscript/kaushanscript-regular-webfont.ttf') format('truetype'),
-    url('../fonts/kaushanscript/kaushanscript-regular-webfont.svg') format('svg');
-}
-/* police reseaux sociaux */
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 /* init */
 * {
     margin: 0;
@@ -60,12 +36,11 @@ h1 {
     font-size: 72px;
     font-weight: 700;
     text-transform:initial;
-    font-family: 'kaushanscript', Arial, serif;
+    font-family: 'Kaushan Script', cursive;
 }
 h3 {
     color: #000;
     text-shadow:1px 1px 2px gray;
-    line-height: 2em;
 }
 h4 {
     color: #C043D5; /* violet */
@@ -240,7 +215,6 @@ nav .brand-logo {
 #greg {
     width: 300px;
     height: 300px;
-    border: 3px double #C043D5;
     margin-top: 10%;
 }
 /* decalage de la photo */
@@ -258,20 +232,10 @@ nav .brand-logo {
     margin-left:10%;
 }
 /* icones et couleurs reseaux sociaux */
-#qui_suis_je .fa-linkedin:before {
-    content: "\f0e1";
-    color: #C043D5; /* violet */
-}
-#qui_suis_je .fa-facebook:before {
-    content: "\f09a";
-    color: #C043D5; /* violet */
-}
-#qui_suis_je .fa-twitter:before {
-    content: "\f099";
-    color: #C043D5; /* violet */
-}
+#qui_suis_je .fa-linkedin:before,
+#qui_suis_je .fa-facebook:before,
+#qui_suis_je .fa-twitter:before,
 #qui_suis_je .fa-google-plus:before {
-    content: "\f0d5";
     color: #C043D5; /* violet */
 }
 

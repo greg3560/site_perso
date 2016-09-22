@@ -28,6 +28,7 @@
 		<meta name="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
 		<!--Import Google Icon Font-->
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 		<!-- CDN CSS materialize compilé et minifié -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -116,7 +117,7 @@
 						<h5 class="flow-text grey-text text-darken-3">35 ans</h5>
 						<h5 class="flow-text grey-text text-darken-3">06.95.81.36.65</h5>
 						<h5 class="flow-text grey-text text-darken-3">contact@gregorypeigne.fr</h5>
-						<h5 class="flow-text grey-text text-darken-3">rue des prairies 75020 Paris</h5>
+						<h5 class="flow-text grey-text text-darken-3">Rue des prairies 75020 Paris</h5>
 						<div class="reseaux-sociaux">
 							<ul>
 								<li><a class="btn-floating waves-effect waves-light white" href="https://fr.linkedin.com/in/gregory-peigné-6636b4b7" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -1001,18 +1002,24 @@
             	</div>
           	</div>
 		</footer>
+		<!-- script partage sur les reseaux sociaux -->
 		<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
 		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 		<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'fr'}</script>
-		<!-- jQuery -->
+		<!-- CDN font awesome reseaux sociaux -->
+		<script src="https://use.fontawesome.com/0ad680db36.js"></script>
+		<!-- CDN jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="js/velocity.min.js"></script>
+		<!-- CDN velocity -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script>
 		<!-- CDN Javascript materialize compilé et minifié -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 		<!-- javascript slider portfolio -->
-		<script src="js/owl.carousel.js"></script>
+		<!-- <script src="js/owl.carousel.js"></script> -->
+		<script src="js/owl.carousel.min.js"></script>
         <!-- javascript perso -->
-		<script src="js/main.js"></script>
+		<!-- <script src="js/main.js"></script> -->
+		<script src="js/main.min.js"></script>
         <!-- traker google analytics -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
