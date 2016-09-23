@@ -47,10 +47,6 @@ strong {
 .container {
     width:80%;
 }
-/* controle de la hauteur via javascript */
-.parallax-container {
-        height: 0;
-}
 
 /* +++++++++++++++BOUTONS SOLO++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
