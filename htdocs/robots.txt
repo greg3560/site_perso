@@ -2,7 +2,6 @@ User-Agent: *
 Disallow:/assets/
 Allow:/assets/img/photo_gregory.png
 Allow:/assets/img/logo_gregory.png
-Disallow:/certifications/
 Disallow:/css/
 Disallow:/fonts/
 Disallow:/js/
