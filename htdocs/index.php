@@ -25,11 +25,8 @@
 		<meta itemprop="image" content="http://www.gregorypeigne.fr/assets/img/photo_gregory.png">
 		<title>Grégory Peigné</title>
 		<meta name="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
-		<!--Import Google Icon Font-->
-		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-		<!-- CDN CSS materialize compilé et minifié -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <!-- CDN CSS materialize compilé et minifié -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -1002,6 +999,9 @@
             	</div>
           	</div>
 		</footer>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
         <!-- CSS perso -->
         <!-- <link href='css/style.css' rel='stylesheet' type='text/css'> -->
         <link href='css/style.min.css' rel='stylesheet' type='text/css'>
