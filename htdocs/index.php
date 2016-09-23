@@ -5,7 +5,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- meta OG pour facebook -->
-		
 		<meta property="fb:app_id" content="145634995501895"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:title" content="Grégory Peigné | Développeur web fullstack à Paris"/>
@@ -39,22 +38,21 @@
 		<![endif]-->
 		<!-- CSS perso -->
 		<!-- <link href='css/style.css' rel='stylesheet' type='text/css'> -->
-		<link href='css/style.min.css' rel='stylesheet' type='text/css'>
-		<!-- <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'> -->
-		<link href='css/owl.carousel.min.css' rel='stylesheet' type='text/css'>
+		<link href='css/pre_style.min.css' rel='stylesheet' type='text/css'>
         <!-- Une petite favicon -->
         <link rel="icon" type="image/png" href="favicon.png" />
         <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
 	</head>
 	<body id="page-top">
-	<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.7";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.7";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+        </script>
 		<header>
 
 			<!-- 	===================================================================
@@ -1004,6 +1002,11 @@
             	</div>
           	</div>
 		</footer>
+        <!-- CSS perso -->
+        <!-- <link href='css/style.css' rel='stylesheet' type='text/css'> -->
+        <link href='css/style.min.css' rel='stylesheet' type='text/css'>
+        <!-- <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'> -->
+        <link href='css/owl.carousel.min.css' rel='stylesheet' type='text/css'>
 		<!-- script partage sur les reseaux sociaux -->
 		<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
 		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
