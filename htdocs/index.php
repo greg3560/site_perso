@@ -671,7 +671,7 @@
 						<ul>
 							<li class="item card small col s3">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/comprendre_le_web.jpg" alt="Comprendre le web" />
+									<img class="activator" src="assets/img/certifications/comprendre_le_web.png" alt="Comprendre le web" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator">Comprendre le web<i class="material-icons right">more_vert</i></span>
