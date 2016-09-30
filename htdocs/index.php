@@ -93,8 +93,8 @@
 				======================== QUI SUIS-JE ? ============================
 				=================================================================== -->
 		
-		<section id="qui_suis_je" class="section scrollspy">
-			<div class="container">
+		<section id="qui_suis_je" class="section scrollspy valign-wrapper">
+			<div class="container valign">
 				<div class="row">
                     <h3 class="left-align">Qui suis-je ?</h3>
 					<div class="col m12 l4">
@@ -127,9 +127,9 @@
 				=========================== COMPETENCES ===========================
 				=================================================================== -->
 
-		<section id="competences" class="section scrollspy parallax-container" >
-			<div class="parallax"><img src="assets/img/competences_gregory.jpg" class="responsive-img" alt="Compétences Grégory" /></div>
-			<div class="container">
+		<section id="competences" class="section scrollspy parallax-container valign-wrapper" >
+			<div class="parallax valign"><img src="assets/img/competences_gregory.jpg" class="responsive-img" alt="Compétences Grégory" /></div>
+			<div class="container valign">
 				<div class="row">
 					<h3 class="left-align">COMPETENCES</h3>
 					<div class="col m12 l4">
@@ -357,8 +357,8 @@
 				====================== PORTFOLIO ==================================
 				=================================================================== -->
 
-		<section id="portfolio" class="section scrollspy" >
-			<div class="container">
+		<section id="portfolio" class="section scrollspy valign-wrapper" >
+			<div class="container valign">
 				<div class="row">
 					<h3 class="left-align">PORTFOLIO</h3>
 					<p class="flow-text">Mes premiers projets m'ont permis d'expérimenter le développement web (projets <strong>statique</strong> et <strong>dynamique</strong>, architecture <strong>MVC</strong>, projets <strong>orientés objets</strong> et procéduraux). Je suis également expert en <strong>front-end</strong> grâce à des collaborations en <strong>hackathon</strong>.</p>
@@ -469,8 +469,8 @@
 				====================== CERTIFICATIONS =============================
 				=================================================================== -->
 	
-		<section id="certifications" class="section scrollspy" >
-			<div class=" container">
+		<section id="certifications" class="section scrollspy valign-wrapper" >
+			<div class=" container valign">
 				<div class="row">
 					<h3 class="left-align">CERTIFICATIONS</h3>
 					<div class="col s12">
@@ -947,7 +947,7 @@
 				=================================================================== -->
 
 		<footer id="contact" class="section scrollspy page-footer">
-			<div class="container" >
+			<div class="container">
 				<div class="row">
 					<h3 class="left-align">CONTACT</h3>
 					<form class="col s6 offset-s3" method="post" action="libs/traitement.php?action=formulaire">
@@ -981,13 +981,13 @@
 					</form>
 				</div>
 			</div>
-			<div class="reseaux-sociaux center-align">
+			<div class="reseaux-sociaux center-align valign">
                     <script type="in/share" data-counter="right"></script>
 					<div class="fb-share-button" data-href="http://www.gregorypeigne.fr" data-layout="box_count"></div>
                     <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="gregorypeigne.fr">Tweet</a>
                     <g:plusone size="tall"></g:plusone>
             </div>
-            <div class="footer-copyright">
+            <div class="footer-copyright valign">
             	<div class="container">
             		Crédits photos:
             		<a class="grey-text text-lighten-4" href="https://openclassrooms.com/">Openclassrooms</a>
@@ -999,8 +999,8 @@
         <!-- CSS perso -->
         <!-- <link href='css/pre_style.css' rel='stylesheet' type='text/css'> -->
         <link href='css/pre_style.min.css' rel='stylesheet' type='text/css'>
-        <!-- <link href='css/style.css' rel='stylesheet' type='text/css'> -->
-        <link href='css/style.min.css' rel='stylesheet' type='text/css'>
+        <link href='css/style.css' rel='stylesheet' type='text/css'>
+        <!-- <link href='css/style.min.css' rel='stylesheet' type='text/css'> -->
         <!-- <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'> -->
         <link href='css/owl.carousel.min.css' rel='stylesheet' type='text/css'>
         <!--Import Google Icon Font-->

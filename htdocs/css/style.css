@@ -47,6 +47,9 @@ strong {
 .container {
     width:80%;
 }
+.parallax-container {
+    height: inherit;
+}
 
 /* +++++++++++++++BOUTONS SOLO++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -85,7 +88,7 @@ strong {
 /* competences */
 .btn-mobile {
     position: relative;
-    top: 40%;
+    top: 60%;
 }
 /* boutons + dans certifications */
 .plus {
