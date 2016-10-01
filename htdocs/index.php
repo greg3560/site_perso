@@ -946,8 +946,8 @@
 				======================= CONTACT ===================================
 				=================================================================== -->
 
-		<footer id="contact" class="section scrollspy page-footer">
-			<div class="container">
+		<footer id="contact" class="section scrollspy page-footer valign-wrapper">
+			<div class="container valign">
 				<div class="row">
 					<h3 class="left-align">CONTACT</h3>
 					<form class="col s6 offset-s3" method="post" action="libs/traitement.php?action=formulaire">
@@ -980,27 +980,27 @@
                         <button class="left waves-effect btn-flat brand-text submit-btn" type="submit" name="action">ENVOYER</button>
 					</form>
 				</div>
-			</div>
-			<div class="reseaux-sociaux center-align valign">
+
+            <div class="footer-copyright row">
+                <div class="col s6">
+                    Crédits photos:
+                    <a class="grey-text text-lighten-4" href="https://openclassrooms.com/">Openclassrooms</a>
+                </div>
+                <div class="col s6 reseaux-sociaux center-align">
                     <script type="in/share" data-counter="right"></script>
-					<div class="fb-share-button" data-href="http://www.gregorypeigne.fr" data-layout="box_count"></div>
+                    <div class="fb-share-button" data-href="http://www.gregorypeigne.fr" data-layout="box_count"></div>
                     <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="gregorypeigne.fr">Tweet</a>
                     <g:plusone size="tall"></g:plusone>
+                </div>
             </div>
-            <div class="footer-copyright valign">
-            	<div class="container">
-            		Crédits photos:
-            		<a class="grey-text text-lighten-4" href="https://openclassrooms.com/">Openclassrooms</a>
-            	</div>
-          	</div>
 		</footer>
         <!-- CDN CSS materialize compilé et minifié -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
         <!-- CSS perso -->
         <!-- <link href='css/pre_style.css' rel='stylesheet' type='text/css'> -->
         <link href='css/pre_style.min.css' rel='stylesheet' type='text/css'>
-        <link href='css/style.css' rel='stylesheet' type='text/css'>
-        <!-- <link href='css/style.min.css' rel='stylesheet' type='text/css'> -->
+        <!-- <link href='css/style.css' rel='stylesheet' type='text/css'> -->
+        <link href='css/style.min.css' rel='stylesheet' type='text/css'>
         <!-- <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'> -->
         <link href='css/owl.carousel.min.css' rel='stylesheet' type='text/css'>
         <!--Import Google Icon Font-->
