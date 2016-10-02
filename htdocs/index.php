@@ -102,7 +102,7 @@
 						<a href="assets/cv.zip" class="waves-effect waves-light btn-large white-text"><i class="material-icons left">archive</i> CV</a>
 					</div>
 					<div class="col m6 l4 center-align">
-						<img id="greg" class="responsive-img circle" src="assets/img/photo_gregory.png" alt="Gregory Peigne" title="Gregory Peigne" />
+						<img id="greg" class="responsive-img z-depth-1" src="assets/img/photo_gregory.png" alt="Gregory Peigne" title="Gregory Peigne" />
 					</div>
 					<div class="col m6 l4">
 						<h5 class="flow-text grey-text text-darken-3">Grégory Peigné</h5>
@@ -361,7 +361,7 @@
 			<div class="container valign">
 				<div class="row">
 					<h3 class="left-align">PORTFOLIO</h3>
-					<p class="flow-text">Mes premiers projets m'ont permis d'expérimenter le développement web (projets <strong>statique</strong> et <strong>dynamique</strong>, architecture <strong>MVC</strong>, projets <strong>orientés objets</strong> et procéduraux). Je suis également expert en <strong>front-end</strong> grâce à des collaborations en <strong>hackathon</strong>.</p>
+					<p class="flow-text white-text">Mes premiers projets m'ont permis d'expérimenter le développement web (projets <strong>statique</strong> et <strong>dynamique</strong>, architecture <strong>MVC</strong>, projets <strong>orientés objets</strong> et procéduraux). Je suis également expert en <strong>front-end</strong> grâce à des collaborations en <strong>hackathon</strong>.</p>
 					<ul id="creation" class="col s12 m12 l10 owl-carousel">
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
@@ -997,10 +997,10 @@
         <!-- CDN CSS materialize compilé et minifié -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
         <!-- CSS perso -->
-        <link href='css/pre_style.css' rel='stylesheet' type='text/css'>
-        <!-- <link href='css/pre_style.min.css' rel='stylesheet' type='text/css'> -->
-        <link href='css/style.css' rel='stylesheet' type='text/css'>
-        <!-- <link href='css/style.min.css' rel='stylesheet' type='text/css'> -->
+        <!-- <link href='css/pre_style.css' rel='stylesheet' type='text/css'> -->
+        <link href='css/pre_style.min.css' rel='stylesheet' type='text/css'>
+        <!-- <link href='css/style.css' rel='stylesheet' type='text/css'> -->
+        <link href='css/style.min.css' rel='stylesheet' type='text/css'>
         <!-- <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'> -->
         <link href='css/owl.carousel.min.css' rel='stylesheet' type='text/css'>
         <!--Import Google Icon Font-->
@@ -1022,8 +1022,8 @@
 		<!-- <script src="js/owl.carousel.js"></script> -->
 		<script src="js/owl.carousel.min.js"></script>
         <!-- javascript perso -->
-		<script src="js/main.js"></script>
-		<!-- <script src="js/main.min.js"></script> -->
+		<!-- <script src="js/main.js"></script> -->
+		<script src="js/main.min.js"></script>
         <!-- traker google analytics -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

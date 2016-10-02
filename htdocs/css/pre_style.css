@@ -46,6 +46,12 @@ nav {
     color: #727272;
     line-height: 58px;
 }
+@media all and (max-width:600px) {
+    nav {
+        height: 64px;
+        line-height: 64px;
+    }    
+}
 nav ul a {
     color: #727272; /* gris */
 }

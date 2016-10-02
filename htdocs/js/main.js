@@ -75,7 +75,6 @@ $(function () {
     /* taille mini hauteur #home */
     $('#home').css({minHeight: window.innerHeight-100});
     /* animation du bouton */
-    /*$('.suite').animate({left: "+=100%"}, 1000);*/
     $('.suite').css("left","calc(50% - 27.5px)");
 
     /*  ================================================================

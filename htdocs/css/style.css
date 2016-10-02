@@ -14,6 +14,9 @@ h3 {
     color: #000;
     text-shadow:1px 1px 2px gray;
 }
+#portfolio h3, #contact h3 {
+    color: #fff;
+}
 h4 {
     color: #C043D5; /* violet */
     line-height: 1.5em;
@@ -37,7 +40,7 @@ strong {
     color: #C043D5; /* violet */
 }
 #portfolio strong {
-    color: #242424; /* gris tres foncé */
+    color: #fff;
 }
 #qui_suis_je p, #competences p {
     margin-top: 5%;
@@ -54,9 +57,6 @@ strong {
 /* +++++++++++++++BOUTONS SOLO++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
-.btn-floating:hover {
-    background-color: #AD3CC0; /* violet */
-}
 /* couleurs des boutons */ 
 #competences .btn-large, 
 #competences .btn:hover, 
@@ -134,9 +134,10 @@ strong {
 
  /* photo */
 #greg {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin-top: 10%;
+    border: 5px solid #fff;
 }
 /* decalage de la photo */
 @media all and (max-width:992px) {
@@ -254,7 +255,7 @@ strong {
 */
 
 #portfolio {
-    background-color:#7B1FA2; /* violet */
+    background-color:#C043D5; /*violet */
 }
 @media all and (max-width:992px) {
     #portfolio {
