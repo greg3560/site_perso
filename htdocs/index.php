@@ -475,15 +475,15 @@
 					<h3 class="left-align">CERTIFICATIONS</h3>
 					<div class="col s12">
 						<ul class="tabs">
-							<li class="tab col s3"><a class="active" href="#dev">Développement web</a></li>
-							<li class="tab col s3"><a href="#web">Environnement web</a></li>
+							<li class="tab col s3"><a class="active" href="#dev">Code</a></li>
+							<li class="tab col s3"><a href="#web">Environnement</a></li>
 							<li class="tab col s3"><a href="#systeme">Systeme</a></li>
                             <li class="tab col s3"><a href="#parcours">Parcours</a></li>
 						</ul>
 					</div>
-					<div id="dev" class="col s12">
+					<div id="dev" class="col l12">
 						<ul>
-							<li class="item card small col s3">
+							<li class="item card small col m5 l3">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/html_css.png" alt="HTML et CSS" />
 								</div>
@@ -502,7 +502,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col s3 offset-s1">
+							<li class="item card small col m5 l3 offset-m2 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/javascript.png" alt="Javascript" />
 								</div>
@@ -521,7 +521,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col s3 offset-s1">
+							<li class="item card small col m5 l3 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/jquery.png" alt="JQuery" />
 								</div>
@@ -548,7 +548,7 @@
 							</li>
 						</ul>
 						<ul class="certificats-informatique-cache">
-							<li class="item card small col s3">
+							<li class="item card small col m5 l3 offset-m2">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/node-js.png" alt="Node.js" />
 								</div>
@@ -569,7 +569,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col s3 offset-s1">
+							<li class="item card small col m5 l3 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/php.png" alt="PHP" />
 								</div>
@@ -595,7 +595,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col s3 offset-s1">
+							<li class="item card small col m5 l3 offset-m2 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/bootstrap.png" alt="Bootstrap" />
 								</div>
@@ -616,7 +616,7 @@
 							</li>
 						</ul>
                         <ul class="certificats-informatique-cache">
-                            <li class="item card small col s3">
+                            <li class="item card small col m5 l3">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="activator" src="assets/img/certifications/wordpress.png" alt="Wordpress" />
                                 </div>
@@ -636,7 +636,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="item card small col s3 offset-s1">
+                            <li class="item card small col m5 l3 offset-m2 offset-l1">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="activator" src="assets/img/certifications/git.png" alt="Git" />
                                 </div>
@@ -669,7 +669,7 @@
 					</div>
 					<div id="web" class="col s12">
 						<ul>
-							<li class="item card small col s3">
+							<li class="item card small col m5 l3">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/comprendre_le_web.png" alt="Comprendre le web" />
 								</div>
@@ -692,7 +692,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col s3 offset-s1">
+							<li class="item card small col m5 l3 offset-m2 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/decouvrez_le_monde_des_start_ups.png" alt="Les start-ups" />
 								</div>
@@ -716,7 +716,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col s3 offset-s1">
+							<li class="item card small col m5 l3 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/devenir_mentor.png" alt="Devenir mentor" />
 								</div>
@@ -738,7 +738,7 @@
 							</li>
 						</ul>
                         <ul class="certificats-informatique-cache">
-                            <li class="item card small col s3">
+                            <li class="item card small col m5 l3 offset-m2">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="activator" src="assets/img/certifications/referencement_web.png" alt="Référencement web" />
                                 </div>
@@ -770,7 +770,7 @@
 					</div>
 					<div id="systeme" class="col s12">
 						<ul>
-							<li class="item card small col s3">
+							<li class="item card small col m5 l3">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/bluemix.png" alt="Bluemix" />
 								</div>
@@ -794,7 +794,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col s3 offset-s1">
+							<li class="item card small col m5 l3 offset-m2 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/linux.png" alt="Linux" />
 								</div>
@@ -826,7 +826,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col s3 offset-s1">
+							<li class="item card small col m5 l3 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/programmer_en_c.png" alt="Langage C" />
 								</div>
@@ -854,7 +854,7 @@
 					</div>
                     <div id="parcours" class="col s12">
                         <ul>
-                            <li class="item card small col s3">
+                            <li class="item card small col m5 l3">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img id="parcours-javascript" class="activator" src="assets/img/certifications/disciple_javascript.png" alt="Disciple du javascript" />
                                 </div>
@@ -875,7 +875,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="item card small col s3 offset-s1">
+                            <li class="item card small col m5 l3 offset-m2 offset-l1">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img id="parcours-bluemix" class="activator" src="assets/img/certifications/deployez_sur_bluemix.png" alt="Déployer sur Bluemix" />
                                 </div>
@@ -894,7 +894,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="item card small col s3 offset-s1">
+                            <li class="item card small col m5 l3 offset-l1">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img id="parcours-integrateur" class="activator" src="assets/img/certifications/integrateur_web.png" alt="Intégrateur web" />
                                 </div>
@@ -917,7 +917,7 @@
                             </li>
                         </ul>
                         <ul class="certificats-informatique-cache">
-                            <li class="item card small col s3">
+                            <li class="item card small col m5 l3 offset-m2">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img id="parcours-site_web" class="activator" src="assets/img/certifications/lancer_son_site.png" alt="Lancer son site web" />
                                 </div>
@@ -950,7 +950,7 @@
 			<div class="container valign">
 				<div class="row">
 					<h3 class="left-align">CONTACT</h3>
-					<form class="col s6 offset-s3" method="post" action="libs/traitement.php?action=formulaire">
+					<form class="col m8 l6 offset-m2 offset-l3" method="post" action="libs/traitement.php?action=formulaire">
 						<div class="row">
 							<div class="input-field col s6">
 								<i class="material-icons prefix">business</i>
