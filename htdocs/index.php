@@ -1022,8 +1022,8 @@
 		<!-- <script src="js/owl.carousel.js"></script> -->
 		<script src="js/owl.carousel.min.js"></script>
         <!-- javascript perso -->
-		<!-- <script src="js/main.js"></script> -->
-		<script src="js/main.min.js"></script>
+		<script src="js/main.js"></script>
+		<!-- <script src="js/main.min.js"></script> -->
         <!-- traker google analytics -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

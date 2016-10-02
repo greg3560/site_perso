@@ -29,12 +29,12 @@ h1 {
 /* bouton home */
 .suite {
     bottom: 30px;
-    left: -27.5px;
+    left: -55.5px;
     background-color: #C043D5; /* violet */
-    -webkit-transition:all 500ms ease-out 0.5s;
-   -moz-transition:all 500ms ease-out 0.5s;
-   -o-transition:all 500ms ease-out 0.5s;
-   transition:all 500ms ease-out 0.5s;
+    -webkit-transition:all 1000ms ease-out 1s;
+   -moz-transition:all 1000ms ease-out 1s;
+   -o-transition:all 1000ms ease-out 1s;
+   transition:all 1000ms ease-out 1s;
 }
 /* ================================================================
 ======================= NAVIGATION ================================
