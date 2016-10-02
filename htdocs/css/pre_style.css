@@ -49,6 +49,10 @@ nav {
 nav ul a {
     color: #727272; /* gris */
 }
+/* couleur de l'icone burger menu */
+nav a {
+    color: #C043D5; /* violet */;
+}
 nav ul a.active {
     font-weight: 500;
     padding-left: 18px;
@@ -68,6 +72,10 @@ nav .brand-logo {
     .navbar-fixed {
         height:64px;
     }
+}
+/* liens du menu mobile */
+#greg-mobile .waves-effect {
+    display: block;
 }
 
 /* ================================================================

@@ -87,13 +87,27 @@ strong {
 } 
 /* competences */
 .btn-mobile {
-    position: relative;
-    top: 60%;
+    margin-top: 30%;
+}
+@media all and (max-width:992px) {
+    .btn-mobile {
+        display: none;
+    }    
 }
 /* boutons + dans certifications */
 .plus {
     background-color: #C043D5; /* violet */
-    margin-top: 3%;w
+    margin: 3%;
+}
+@media all and (max-width:992px) and (min-width:600px) {
+    .plus {
+        margin: 20%;
+    }    
+}
+@media all and (max-width:600px) {
+    .plus {
+        margin-left: 45%;
+    }    
 }
 /* contact */
 #contact .btn-flat:hover {
@@ -131,7 +145,7 @@ strong {
     }
 }
 #qui_suis_je .reseaux-sociaux {
-    margin-top: 25%;
+    margin-top: 13%;
 }
 #qui_suis_je .reseaux-sociaux ul li {
     display:inline-block;
@@ -260,6 +274,11 @@ strong {
     right: -20%;
     bottom: 20px;
 }
+@media all and (max-width:992px) {
+    #portfolio .owl-controls {
+        display: none;
+    }    
+}
 #portfolio .card-title {
     color:#C043D5; /*violet */
 }
@@ -277,9 +296,11 @@ strong {
     display:none;
     opacity: 0;
 }
-/* aligner 3 images dans un row de 12 col */
-#certifications .row .col.offset-s1 {
-    margin-left: 12.5%;
+/* aligner 3 images dans un row de 12 col en ecran large */
+@media all and (min-width:992px) {
+    #certifications .row .col.offset-l1 {
+        margin-left: 12.5%;
+    }
 }
 /* margin inferieur sur le menu tabs de certifications */
 #certifications .row .col.s12 {

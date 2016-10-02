@@ -345,7 +345,7 @@
                             </div>
                         </a>
 					</div>
-					<div class="col m2 l2 btn-mobile right-align">
+					<div class="col l2 btn-mobile right-align">
 						<a href="#" class="gauche btn-floating btn-large waves-effect waves-light"><i class="material-icons">keyboard_arrow_left</i></a>
 						<a href="#" class="droite btn-floating btn-large waves-effect waves-light"><i class="material-icons">keyboard_arrow_right</i></a>
 					</div>
@@ -362,7 +362,7 @@
 				<div class="row">
 					<h3 class="left-align">PORTFOLIO</h3>
 					<p class="flow-text">Mes premiers projets m'ont permis d'expérimenter le développement web (projets <strong>statique</strong> et <strong>dynamique</strong>, architecture <strong>MVC</strong>, projets <strong>orientés objets</strong> et procéduraux). Je suis également expert en <strong>front-end</strong> grâce à des collaborations en <strong>hackathon</strong>.</p>
-					<ul id="creation" class="col s10 owl-carousel">
+					<ul id="creation" class="col s12 m12 l10 owl-carousel">
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
 								<img class="activator" src="assets/img/portfolio/mud.png" alt="MUD" />
@@ -483,7 +483,7 @@
 					</div>
 					<div id="dev" class="col l12">
 						<ul>
-							<li class="item card small col m5 l3">
+							<li class="item card small col s12 m5 l3">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/html_css.png" alt="HTML et CSS" />
 								</div>
@@ -502,7 +502,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col m5 l3 offset-m2 offset-l1">
+							<li class="item card small col s12 m5 l3 offset-m2 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/javascript.png" alt="Javascript" />
 								</div>
@@ -521,7 +521,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col m5 l3 offset-l1">
+							<li class="item card small col s12 m5 l3 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/jquery.png" alt="JQuery" />
 								</div>
@@ -548,7 +548,7 @@
 							</li>
 						</ul>
 						<ul class="certificats-informatique-cache">
-							<li class="item card small col m5 l3 offset-m2">
+							<li class="item card small col s12 m5 l3 offset-m2">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/node-js.png" alt="Node.js" />
 								</div>
@@ -569,7 +569,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col m5 l3 offset-l1">
+							<li class="item card small col s12 m5 l3 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/php.png" alt="PHP" />
 								</div>
@@ -595,7 +595,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col m5 l3 offset-m2 offset-l1">
+							<li class="item card small col s12 m5 l3 offset-m2 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/bootstrap.png" alt="Bootstrap" />
 								</div>
@@ -616,7 +616,7 @@
 							</li>
 						</ul>
                         <ul class="certificats-informatique-cache">
-                            <li class="item card small col m5 l3">
+                            <li class="item card small col s12 m5 l3">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="activator" src="assets/img/certifications/wordpress.png" alt="Wordpress" />
                                 </div>
@@ -636,7 +636,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="item card small col m5 l3 offset-m2 offset-l1">
+                            <li class="item card small col s12 m5 l3 offset-m2 offset-l1">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="activator" src="assets/img/certifications/git.png" alt="Git" />
                                 </div>
@@ -669,7 +669,7 @@
 					</div>
 					<div id="web" class="col s12">
 						<ul>
-							<li class="item card small col m5 l3">
+							<li class="item card small col s12 m5 l3">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/comprendre_le_web.png" alt="Comprendre le web" />
 								</div>
@@ -692,7 +692,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col m5 l3 offset-m2 offset-l1">
+							<li class="item card small col s12 m5 l3 offset-m2 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/decouvrez_le_monde_des_start_ups.png" alt="Les start-ups" />
 								</div>
@@ -716,7 +716,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col m5 l3 offset-l1">
+							<li class="item card small col s12 m5 l3 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/devenir_mentor.png" alt="Devenir mentor" />
 								</div>
@@ -738,7 +738,7 @@
 							</li>
 						</ul>
                         <ul class="certificats-informatique-cache">
-                            <li class="item card small col m5 l3 offset-m2">
+                            <li class="item card small col s12 m5 l3 offset-m2">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="activator" src="assets/img/certifications/referencement_web.png" alt="Référencement web" />
                                 </div>
@@ -770,7 +770,7 @@
 					</div>
 					<div id="systeme" class="col s12">
 						<ul>
-							<li class="item card small col m5 l3">
+							<li class="item card small col s12 m5 l3">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/bluemix.png" alt="Bluemix" />
 								</div>
@@ -794,7 +794,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col m5 l3 offset-m2 offset-l1">
+							<li class="item card small col s12 m5 l3 offset-m2 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/linux.png" alt="Linux" />
 								</div>
@@ -826,7 +826,7 @@
                                     </ul>
 								</div>
 							</li>
-							<li class="item card small col m5 l3 offset-l1">
+							<li class="item card small col s12 m5 l3 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="assets/img/certifications/programmer_en_c.png" alt="Langage C" />
 								</div>
@@ -854,7 +854,7 @@
 					</div>
                     <div id="parcours" class="col s12">
                         <ul>
-                            <li class="item card small col m5 l3">
+                            <li class="item card small col s12 m5 l3">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img id="parcours-javascript" class="activator" src="assets/img/certifications/disciple_javascript.png" alt="Disciple du javascript" />
                                 </div>
@@ -875,7 +875,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="item card small col m5 l3 offset-m2 offset-l1">
+                            <li class="item card small col s12 m5 l3 offset-m2 offset-l1">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img id="parcours-bluemix" class="activator" src="assets/img/certifications/deployez_sur_bluemix.png" alt="Déployer sur Bluemix" />
                                 </div>
@@ -894,7 +894,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="item card small col m5 l3 offset-l1">
+                            <li class="item card small col s12 m5 l3 offset-l1">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img id="parcours-integrateur" class="activator" src="assets/img/certifications/integrateur_web.png" alt="Intégrateur web" />
                                 </div>
@@ -917,7 +917,7 @@
                             </li>
                         </ul>
                         <ul class="certificats-informatique-cache">
-                            <li class="item card small col m5 l3 offset-m2">
+                            <li class="item card small col s12 m5 l3 offset-m2">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img id="parcours-site_web" class="activator" src="assets/img/certifications/lancer_son_site.png" alt="Lancer son site web" />
                                 </div>
@@ -997,10 +997,10 @@
         <!-- CDN CSS materialize compilé et minifié -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
         <!-- CSS perso -->
-        <!-- <link href='css/pre_style.css' rel='stylesheet' type='text/css'> -->
-        <link href='css/pre_style.min.css' rel='stylesheet' type='text/css'>
-        <!-- <link href='css/style.css' rel='stylesheet' type='text/css'> -->
-        <link href='css/style.min.css' rel='stylesheet' type='text/css'>
+        <link href='css/pre_style.css' rel='stylesheet' type='text/css'>
+        <!-- <link href='css/pre_style.min.css' rel='stylesheet' type='text/css'> -->
+        <link href='css/style.css' rel='stylesheet' type='text/css'>
+        <!-- <link href='css/style.min.css' rel='stylesheet' type='text/css'> -->
         <!-- <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'> -->
         <link href='css/owl.carousel.min.css' rel='stylesheet' type='text/css'>
         <!--Import Google Icon Font-->
