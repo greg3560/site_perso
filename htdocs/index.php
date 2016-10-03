@@ -26,8 +26,8 @@
 		<title>Grégory Peigné</title>
 		<meta name="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
         <style></style>
-        <!-- CSS perso ligne de flotaison -->
-        <link href='css/pre_style.css' rel='stylesheet' type='text/css'>
+        <!-- CSS perso ligne de flotaison
+        <link href='css/pre_style.css' rel='stylesheet' type='text/css'> -->
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -1001,23 +1001,19 @@
         <!-- <link href='css/materialize.css' rel='stylesheet' type='text/css'> -->
         <link href='css/materialize.min.css' rel='stylesheet' type='text/css'>
         <!-- CSS perso body -->
-        <link href='css/style.css' rel='stylesheet' type='text/css'>
-        <!-- <link href='css/style.min.css' rel='stylesheet' type='text/css'> -->
+        <!-- <link href='css/style.css' rel='stylesheet' type='text/css'> -->
+        <link href='css/style.min.css' rel='stylesheet' type='text/css'>
         <!-- <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'> -->
         <link href='css/owl.carousel.min.css' rel='stylesheet' type='text/css'>
         <!--Import Google Icon Font-->
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-		<!-- script partage sur les reseaux sociaux -->
-		<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
-		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-		<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'fr'}</script>
 		<!-- CDN font awesome reseaux sociaux -->
 		<script src="https://use.fontawesome.com/0ad680db36.js"></script>
 		<!-- CDN jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<!-- CDN velocity -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script>
+		<!-- CDN velocity
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script> -->
 		<!-- CDN Javascript materialize compilé et minifié -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 		<!-- javascript slider portfolio -->
@@ -1026,6 +1022,10 @@
         <!-- javascript perso -->
 		<!-- <script src="js/main.js"></script> -->
 		<script src="js/main.min.js"></script>
+        <!-- script partage sur les reseaux sociaux -->
+        <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        <script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'fr'}</script>
         <!-- traker google analytics -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
