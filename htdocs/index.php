@@ -1012,8 +1012,8 @@
 		<script src="https://use.fontawesome.com/0ad680db36.js"></script>
 		<!-- CDN jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<!-- CDN velocity
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script> -->
+		<!-- CDN velocity -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script>
 		<!-- CDN Javascript materialize compilé et minifié -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 		<!-- javascript slider portfolio -->
