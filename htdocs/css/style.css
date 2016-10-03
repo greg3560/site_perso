@@ -10,9 +10,8 @@
 ===================================================================
 */
 
-h3 {
-    color: #000;
-    text-shadow:1px 1px 2px gray;
+body {
+    overflow-x: hidden;
 }
 #portfolio h3, #contact h3 {
     color: #fff;
@@ -31,9 +30,6 @@ h5 {
 p {
     text-align: justify;
 }
-strong {
-    font-weight: 400;
-}
 #qui_suis_je strong,
 #competences strong,
 #certifications strong {
@@ -49,23 +45,10 @@ strong {
 .container {
     width:80%;
 }
-/* alignement vertical de la section competences */
-#competences.parallax-container {
-    height: inherit;
-}
 
 /* +++++++++++++++BOUTONS SOLO++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
-/* couleurs des boutons */ 
-#competences .btn-large, 
-#competences .btn:hover, 
-#competences .btn-large:hover,  
-#qui_suis_je .btn-large, 
-#qui_suis_je .btn:hover, 
-#qui_suis_je .btn-large:hover {
-    background-color: #C043D5; /* violet */
-}
 #portfolio .btn-large, 
 #portfolio .btn-large:hover {
     background-color: #fff; /* blanc */
@@ -134,8 +117,6 @@ strong {
 
  /* photo */
 #greg {
-    width: 250px;
-    height: 250px;
     margin-top: 10%;
     border: 5px solid #fff;
 }
@@ -150,7 +131,6 @@ strong {
 }
 #qui_suis_je .reseaux-sociaux ul li {
     display:inline-block;
-    width:10%;
     margin-left:10%;
 }
 /* icones et couleurs reseaux sociaux */
@@ -191,15 +171,11 @@ strong {
     top: -8px;
 }
 .skill-title {
+    position: absolute;
     top: -100px;
-    color: #00bcd4;
-    font-size: 13px;
+    right: calc(50% - 50px);
     line-height: 15px;
     width: 100px;
-    right: calc(50% - 50px);
-    display: block;
-    font-weight: 400;
-    position: absolute;
 }
 .singel-hr-inner {
     background-color: #C043D5; /* violet */
@@ -226,19 +202,12 @@ strong {
     top: 25px;
     background-color: #C043D5; /*violet */
 }
-#competences .container, 
-#competences .row, 
-#portfolio .container, 
-#portfolio .row {
-    height: 100%;
-}
 #competences .point:after {
     content: '';
     width: 7px;
     height: 7px;
     position: absolute;
     border-radius: 50%;
-    top: 0;
     left: -3px;
     background-color: #C043D5; /*violet */
 }
@@ -246,7 +215,6 @@ strong {
     position: absolute;
     bottom: 30px;
     right: 10px;
-    color: #C043D5; /*violet */
 }
 
 /* ================================================================
@@ -289,9 +257,6 @@ strong {
 ===================================================================
 */
 
-#certifications {
-    background-color: #fff;
-}
 /* les 3 cartes suivantes */
 .certificats-informatique-cache li {
     display:none;
@@ -306,13 +271,6 @@ strong {
 /* margin inferieur sur le menu tabs de certifications */
 #certifications .row .col.s12 {
     margin-bottom: 3%;
-}
-/* couleurs des liens des 3 onglets */
-.tabs .tab a {
-    color: #C043D5; /* violet */
-}
-.tabs .indicator {
-    background-color: #C043D5; /* violet */
 }
 .tabs .tab a:hover {
     color: #CB86D7; /* violet clair */
@@ -340,7 +298,6 @@ strong {
     position: relative;
     top: 5px;
     left: 32%;
-    color: #C043D5; /* violet */
 }
 /* Reduction de la taille des titre dans l'onglet parcours */
 #parcours .card .card-title {
@@ -356,10 +313,6 @@ footer.page-footer .footer-copyright {
     height: inherit;
     margin-top: 10%;
 }
-
-#contact {
-    background-color: #C043D5; /* violet */
-}
 form {
     background-color:#fff;
     position: relative;
@@ -369,43 +322,6 @@ form {
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.7s cubic-bezier(0,1.48,.99,1.08);
-}
-/* coloration des icones et bordures du formulaire */
-input:focus:not([type]):not([readonly]), 
-input[type="text"]:focus:not([readonly]), 
-input[type="password"]:focus:not([readonly]), 
-input[type="email"]:focus:not([readonly]), 
-input[type="url"]:focus:not([readonly]), 
-input[type="time"]:focus:not([readonly]), 
-input[type="date"]:focus:not([readonly]), 
-input[type="datetime"]:focus:not([readonly]), 
-input[type="datetime-local"]:focus:not([readonly]), 
-input[type="tel"]:focus:not([readonly]), 
-input[type="number"]:focus:not([readonly]),
-input[type="search"]:focus:not([readonly]), 
-textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #C043D5; /* violet */
-    box-shadow: 0 1px 0 0 #C043D5; /* violet */
-}
-/* coloration des labels du formulaire */
-input:focus:not([type]):not([readonly]) + label, 
-input[type="text"]:focus:not([readonly]) + label, 
-input[type="password"]:focus:not([readonly]) + label, 
-input[type="email"]:focus:not([readonly]) + label, 
-input[type="url"]:focus:not([readonly]) + label, 
-input[type="time"]:focus:not([readonly]) + label, 
-input[type="date"]:focus:not([readonly]) + label, 
-input[type="datetime"]:focus:not([readonly]) + label, 
-input[type="datetime-local"]:focus:not([readonly]) + label, 
-input[type="tel"]:focus:not([readonly]) + label, 
-input[type="number"]:focus:not([readonly]) + label,
-input[type="search"]:focus:not([readonly]) + label, 
-textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: #C043D5; /* violet */
-}
-/* champ actif */
-.input-field .prefix.active {
-    color: #C043D5; /* violet */
 }
 /* liens sociaux */
 #contact .reseaux-sociaux ul {

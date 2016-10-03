@@ -1,5 +1,5 @@
 #mise en cache
-Header add Cache-Control "max-age=31536000"
+#Header add Cache-Control "max-age=31536000"
 #erreur
 #ErrorDocument 401 /erreurs/erreur_401.php
 #ErrorDocument 403 /erreurs/erreur_403.php
