@@ -983,9 +983,7 @@
                         <button class="left waves-effect btn-flat brand-text submit-btn" type="submit" name="action">ENVOYER</button>
 					</form>
 				</div>
-            </div>
-            <div class="footer-copyright container valign">
-                <div class="row">
+                <div class="footer-copyright row">
                     <div class="col s6 offset-s1">
                         Crédits photos:
                         <a class="grey-text text-lighten-4" href="https://openclassrooms.com/">Openclassrooms</a>
