@@ -984,16 +984,18 @@
 					</form>
 				</div>
             </div>
-            <div class="footer-copyright row">
-                <div class="col s6">
-                    Crédits photos:
-                    <a class="grey-text text-lighten-4" href="https://openclassrooms.com/">Openclassrooms</a>
-                </div>
-                <div class="col s6 reseaux-sociaux center-align">
-                    <script type="in/share" data-counter="right"></script>
-                    <div class="fb-share-button" data-href="http://www.gregorypeigne.fr" data-layout="box_count"></div>
-                    <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="gregorypeigne.fr">Tweet</a>
-                    <g:plusone size="tall"></g:plusone>
+            <div class="footer-copyright container valign">
+                <div class="row">
+                    <div class="col s6 offset-s1">
+                        Crédits photos:
+                        <a class="grey-text text-lighten-4" href="https://openclassrooms.com/">Openclassrooms</a>
+                    </div>
+                    <div class="col s4 offset-s1 reseaux-sociaux center-align">
+                        <script type="in/share" data-counter="right"></script>
+                        <div class="fb-share-button" data-href="http://www.gregorypeigne.fr" data-layout="box_count"></div>
+                        <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="gregorypeigne.fr">Tweet</a>
+                        <g:plusone size="tall"></g:plusone>
+                    </div>
                 </div>
             </div>
 		</footer>
