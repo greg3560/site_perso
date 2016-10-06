@@ -17,7 +17,7 @@ body {
     color: #fff;
 }
 h4 {
-    color: #C043D5; /* violet */
+    color: #00bfa5; /* vert menthe */
     line-height: 1.5em;
     margin: 30px;
 }
@@ -33,10 +33,13 @@ p {
 #qui_suis_je strong,
 #competences strong,
 #certifications strong {
-    color: #C043D5; /* violet */
+    color: #00bfa5; /* vert menthe */
 }
-#portfolio strong {
+#portfolio > strong {
     color: #fff;
+}
+.collection-item strong {
+    color: #00bfa5; /* vert menthe */
 }
 #qui_suis_je p, #competences p {
     margin-top: 5%;
@@ -62,7 +65,7 @@ p {
     }    
 }
 #portfolio .btn-floating i {
-    color: #C043D5; /* violet */
+    color: #00bfa5; /* vert menthe */
 }
 /* decalage du boutons telecherger cv */
 #qui_suis_je .btn-large {
@@ -79,7 +82,7 @@ p {
 }
 /* boutons + dans certifications */
 .plus {
-    background-color: #C043D5; /* violet */
+    background-color: #00bfa5; /* vert menthe */
     margin: 3%;
 }
 @media all and (max-width:992px) and (min-width:600px) {
@@ -94,13 +97,13 @@ p {
 }
 /* contact */
 #contact .btn-flat:hover {
-    background-color: #C043D5; /* violet */
+    background-color: #00bfa5; /* vert menthe */
     color: #fff;
     box-shadow: none;
     padding-left: 2rem;
 }
 #contact .btn-flat {
-    color: #C043D5; /* violet */
+    color: #00bfa5; /* vert menthe */
     margin: 15px 15px 15px 8px;
     padding-left: 0;
 }
@@ -138,7 +141,7 @@ p {
 #qui_suis_je .fa-facebook:before,
 #qui_suis_je .fa-twitter:before,
 #qui_suis_je .fa-google-plus:before {
-    color: #C043D5; /* violet */
+    color: #00bfa5; /* vert menthe */
 }
 
 /* ================================================================
@@ -178,7 +181,7 @@ p {
     width: 100px;
 }
 .singel-hr-inner {
-    background-color: #C043D5; /* violet */
+    background-color: #00bfa5; /* vert menthe */
     position: absolute;
     width: 100%;
     bottom: 33px;
@@ -200,7 +203,7 @@ p {
     position: absolute;
     left: 50%;
     top: 25px;
-    background-color: #C043D5; /*violet */
+    background-color: #00bfa5; /* vert menthe */
 }
 #competences .point:after {
     content: '';
@@ -209,7 +212,7 @@ p {
     position: absolute;
     border-radius: 50%;
     left: -3px;
-    background-color: #C043D5; /*violet */
+    background-color: #00bfa5; /* vert menthe */
 }
 .score {
     position: absolute;
@@ -223,7 +226,7 @@ p {
 */
 
 #portfolio {
-    background-color:#C043D5; /*violet */
+    background-color:#00bfa5; /* vert menthe */
 }
 @media all and (max-width:992px) {
     #portfolio {
@@ -232,10 +235,6 @@ p {
 }
 #portfolio .owl-carousel {
     margin-top:20px;
-}
-/* activation via javascript */
-#portfolio .owl-item {
-    display:none;
 }
 /* ajustement boutons next prev du crousel */
 #portfolio .owl-controls {
@@ -249,7 +248,7 @@ p {
     }    
 }
 #portfolio .card-title {
-    color:#C043D5; /*violet */
+    color:#00bfa5; /* vert menthe */
 }
 
 /* ================================================================
@@ -273,7 +272,7 @@ p {
     margin-bottom: 3%;
 }
 .tabs .tab a:hover {
-    color: #CB86D7; /* violet clair */
+    color: #00d4b7; /* vert menthe clair */
 }
 /* background pour les 4 img des parcours */
 #parcours-javascript {
