@@ -10,12 +10,14 @@
 ===================================================================
 */
 
-h3 {
-    color: #000;
-    text-shadow:1px 1px 2px gray;
+body {
+    overflow-x: hidden;
+}
+#portfolio h3, #contact h3 {
+    color: #fff;
 }
 h4 {
-    color: #C043D5; /* violet */
+    color: #00bfa5; /* vert menthe */
     line-height: 1.5em;
     margin: 30px;
 }
@@ -28,16 +30,16 @@ h5 {
 p {
     text-align: justify;
 }
-strong {
-    font-weight: 400;
-}
 #qui_suis_je strong,
 #competences strong,
 #certifications strong {
-    color: #C043D5; /* violet */
+    color: #00bfa5; /* vert menthe */
 }
-#portfolio strong {
-    color: #242424; /* gris tres foncé */
+#portfolio > strong {
+    color: #fff;
+}
+.collection-item strong {
+    color: #00bfa5; /* vert menthe */
 }
 #qui_suis_je p, #competences p {
     margin-top: 5%;
@@ -46,26 +48,10 @@ strong {
 .container {
     width:80%;
 }
-/* alignement vertical de la section competences */
-#competences.parallax-container {
-    height: inherit;
-}
 
 /* +++++++++++++++BOUTONS SOLO++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
-.btn-floating:hover {
-    background-color: #AD3CC0; /* violet */
-}
-/* couleurs des boutons */ 
-#competences .btn-large, 
-#competences .btn:hover, 
-#competences .btn-large:hover,  
-#qui_suis_je .btn-large, 
-#qui_suis_je .btn:hover, 
-#qui_suis_je .btn-large:hover {
-    background-color: #C043D5; /* violet */
-}
 #portfolio .btn-large, 
 #portfolio .btn-large:hover {
     background-color: #fff; /* blanc */
@@ -79,7 +65,7 @@ strong {
     }    
 }
 #portfolio .btn-floating i {
-    color: #C043D5; /* violet */
+    color: #00bfa5; /* vert menthe */
 }
 /* decalage du boutons telecherger cv */
 #qui_suis_je .btn-large {
@@ -96,7 +82,7 @@ strong {
 }
 /* boutons + dans certifications */
 .plus {
-    background-color: #C043D5; /* violet */
+    background-color: #00bfa5; /* vert menthe */
     margin: 3%;
 }
 @media all and (max-width:992px) and (min-width:600px) {
@@ -111,13 +97,13 @@ strong {
 }
 /* contact */
 #contact .btn-flat:hover {
-    background-color: #C043D5; /* violet */
+    background-color: #00bfa5; /* vert menthe */
     color: #fff;
     box-shadow: none;
     padding-left: 2rem;
 }
 #contact .btn-flat {
-    color: #C043D5; /* violet */
+    color: #00bfa5; /* vert menthe */
     margin: 15px 15px 15px 8px;
     padding-left: 0;
 }
@@ -134,9 +120,8 @@ strong {
 
  /* photo */
 #greg {
-    width: 300px;
-    height: 300px;
     margin-top: 10%;
+    border: 5px solid #fff;
 }
 /* decalage de la photo */
 @media all and (max-width:992px) {
@@ -149,7 +134,6 @@ strong {
 }
 #qui_suis_je .reseaux-sociaux ul li {
     display:inline-block;
-    width:10%;
     margin-left:10%;
 }
 /* icones et couleurs reseaux sociaux */
@@ -157,7 +141,7 @@ strong {
 #qui_suis_je .fa-facebook:before,
 #qui_suis_je .fa-twitter:before,
 #qui_suis_je .fa-google-plus:before {
-    color: #C043D5; /* violet */
+    color: #00bfa5; /* vert menthe */
 }
 
 /* ================================================================
@@ -190,18 +174,14 @@ strong {
     top: -8px;
 }
 .skill-title {
+    position: absolute;
     top: -100px;
-    color: #00bcd4;
-    font-size: 13px;
+    right: calc(50% - 50px);
     line-height: 15px;
     width: 100px;
-    right: calc(50% - 50px);
-    display: block;
-    font-weight: 400;
-    position: absolute;
 }
 .singel-hr-inner {
-    background-color: #C043D5; /* violet */
+    background-color: #00bfa5; /* vert menthe */
     position: absolute;
     width: 100%;
     bottom: 33px;
@@ -223,13 +203,7 @@ strong {
     position: absolute;
     left: 50%;
     top: 25px;
-    background-color: #C043D5; /*violet */
-}
-#competences .container, 
-#competences .row, 
-#portfolio .container, 
-#portfolio .row {
-    height: 100%;
+    background-color: #00bfa5; /* vert menthe */
 }
 #competences .point:after {
     content: '';
@@ -237,15 +211,13 @@ strong {
     height: 7px;
     position: absolute;
     border-radius: 50%;
-    top: 0;
     left: -3px;
-    background-color: #C043D5; /*violet */
+    background-color: #00bfa5; /* vert menthe */
 }
 .score {
     position: absolute;
     bottom: 30px;
     right: 10px;
-    color: #C043D5; /*violet */
 }
 
 /* ================================================================
@@ -254,7 +226,7 @@ strong {
 */
 
 #portfolio {
-    background-color:#7B1FA2; /* violet */
+    background-color:#00bfa5; /* vert menthe */
 }
 @media all and (max-width:992px) {
     #portfolio {
@@ -263,10 +235,6 @@ strong {
 }
 #portfolio .owl-carousel {
     margin-top:20px;
-}
-/* activation via javascript */
-#portfolio .owl-item {
-    display:none;
 }
 /* ajustement boutons next prev du crousel */
 #portfolio .owl-controls {
@@ -280,7 +248,7 @@ strong {
     }    
 }
 #portfolio .card-title {
-    color:#C043D5; /*violet */
+    color:#00bfa5; /* vert menthe */
 }
 
 /* ================================================================
@@ -288,9 +256,6 @@ strong {
 ===================================================================
 */
 
-#certifications {
-    background-color: #fff;
-}
 /* les 3 cartes suivantes */
 .certificats-informatique-cache li {
     display:none;
@@ -306,15 +271,8 @@ strong {
 #certifications .row .col.s12 {
     margin-bottom: 3%;
 }
-/* couleurs des liens des 3 onglets */
-.tabs .tab a {
-    color: #C043D5; /* violet */
-}
-.tabs .indicator {
-    background-color: #C043D5; /* violet */
-}
 .tabs .tab a:hover {
-    color: #CB86D7; /* violet clair */
+    color: #00d4b7; /* vert menthe clair */
 }
 /* background pour les 4 img des parcours */
 #parcours-javascript {
@@ -339,7 +297,6 @@ strong {
     position: relative;
     top: 5px;
     left: 32%;
-    color: #C043D5; /* violet */
 }
 /* Reduction de la taille des titre dans l'onglet parcours */
 #parcours .card .card-title {
@@ -355,10 +312,6 @@ footer.page-footer .footer-copyright {
     height: inherit;
     margin-top: 10%;
 }
-
-#contact {
-    background-color: #C043D5; /* violet */
-}
 form {
     background-color:#fff;
     position: relative;
@@ -368,43 +321,6 @@ form {
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.7s cubic-bezier(0,1.48,.99,1.08);
-}
-/* coloration des icones et bordures du formulaire */
-input:focus:not([type]):not([readonly]), 
-input[type="text"]:focus:not([readonly]), 
-input[type="password"]:focus:not([readonly]), 
-input[type="email"]:focus:not([readonly]), 
-input[type="url"]:focus:not([readonly]), 
-input[type="time"]:focus:not([readonly]), 
-input[type="date"]:focus:not([readonly]), 
-input[type="datetime"]:focus:not([readonly]), 
-input[type="datetime-local"]:focus:not([readonly]), 
-input[type="tel"]:focus:not([readonly]), 
-input[type="number"]:focus:not([readonly]),
-input[type="search"]:focus:not([readonly]), 
-textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #C043D5; /* violet */
-    box-shadow: 0 1px 0 0 #C043D5; /* violet */
-}
-/* coloration des labels du formulaire */
-input:focus:not([type]):not([readonly]) + label, 
-input[type="text"]:focus:not([readonly]) + label, 
-input[type="password"]:focus:not([readonly]) + label, 
-input[type="email"]:focus:not([readonly]) + label, 
-input[type="url"]:focus:not([readonly]) + label, 
-input[type="time"]:focus:not([readonly]) + label, 
-input[type="date"]:focus:not([readonly]) + label, 
-input[type="datetime"]:focus:not([readonly]) + label, 
-input[type="datetime-local"]:focus:not([readonly]) + label, 
-input[type="tel"]:focus:not([readonly]) + label, 
-input[type="number"]:focus:not([readonly]) + label,
-input[type="search"]:focus:not([readonly]) + label, 
-textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: #C043D5; /* violet */
-}
-/* champ actif */
-.input-field .prefix.active {
-    color: #C043D5; /* violet */
 }
 /* liens sociaux */
 #contact .reseaux-sociaux ul {

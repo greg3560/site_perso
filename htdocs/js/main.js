@@ -35,8 +35,6 @@ $(function () {
             $('#seo').css({height: '40%'});
             $('#photoshop').css({height: '40%'});
         }},
-        {selector: '#creation', offset: -10, callback: function(el) { $('.owl-item').first().fadeIn(150, function showNextOne() {
-            $(this).next($(el)).fadeIn(150, showNextOne); }); } },
         {selector: '.commande', offset: -10, callback: function(el) { $('.commande').animate({left: '+=100%'}, 1000); } },
         {selector: 'form', offset: -10, callback: function(el) { $(el).css({transform: 'rotate(0deg)'}, 1000); } },
         {selector: '.commande-slider', offset: -10, callback: function(el) { $('.commande-slider').animate({left: '+=100%'}, 1000); } }
@@ -75,7 +73,7 @@ $(function () {
     /* taille mini hauteur #home */
     $('#home').css({minHeight: window.innerHeight-100});
     /* animation du bouton */
-    $('.suite').animate({left: '+=75.5%'}, 1000);
+    $('.suite').css("left","calc(50% - 27.5px)");
 
     /*  ================================================================
         ======================== COMPETENCES============================

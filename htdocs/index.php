@@ -25,6 +25,9 @@
 		<meta itemprop="image" content="http://www.gregorypeigne.fr/assets/img/photo_gregory.png">
 		<title>Grégory Peigné</title>
 		<meta name="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
+        <style></style>
+        <!-- CSS perso ligne de flotaison
+        <link href='css/pre_style.css' rel='stylesheet' type='text/css'> -->
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -54,7 +57,7 @@
 			<div class="navbar-fixed">		
 				<nav>
 					<div class="nav-wrapper">
-						<a href="#page-top" class="brand-logo"><img class="responsive-img" src="assets/img/logo_gregory.png" id="logo" alt="logo Grégory" /></a>
+						<a href="#page-top" class="brand-logo"><img class="responsive-img" src="assets/img/logo_gregory.png" alt="logo Grégory" /></a>
 						<a href="#" data-activates="greg-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 						<ul class="right hide-on-med-and-down">
 							<li class="waves-effect"><a href="#qui_suis_je">Qui suis-je ?</a></li>
@@ -98,18 +101,18 @@
 				<div class="row">
                     <h3 class="left-align">Qui suis-je ?</h3>
 					<div class="col m12 l4">
-						<p class="flow-text grey-text text-darken-3">J'ai fait de ma passion pour le digital mon métier. Conscient des enjeux actuels liés au <strong>numérique</strong>, je souhaite évangéliser mes connaissances en <strong>contrat pro</strong> ou en <strong>CDD/CDI web junior</strong>. Souple et rigoureux dans mon travail, j’ai une bonne culture du web, j’aime les <strong>nouvelles technologies</strong>, la pizza et la musique :)</p>
+						<p class="flow-text grey-text text-darken-2">J'ai fait de ma passion pour le digital mon métier. Conscient des enjeux actuels liés au <strong>numérique</strong>, je souhaite évangéliser mes connaissances en <strong>contrat pro</strong> ou en <strong>CDD/CDI web junior</strong>. Souple et rigoureux dans mon travail, j’ai une bonne culture du web, j’aime les <strong>nouvelles technologies</strong>, la pizza et la musique :)</p>
 						<a href="assets/cv.zip" class="waves-effect waves-light btn-large white-text"><i class="material-icons left">archive</i> CV</a>
 					</div>
 					<div class="col m6 l4 center-align">
-						<img id="greg" class="responsive-img circle" src="assets/img/photo_gregory.png" alt="Gregory Peigne" title="Gregory Peigne" />
+						<img id="greg" class="responsive-img z-depth-1" src="assets/img/photo_gregory.png" alt="Gregory Peigne" title="Gregory Peigne" />
 					</div>
 					<div class="col m6 l4">
-						<h5 class="flow-text grey-text text-darken-3">Grégory Peigné</h5>
-						<h5 class="flow-text grey-text text-darken-3">35 ans</h5>
-						<h5 class="flow-text grey-text text-darken-3">06.95.81.36.65</h5>
-						<h5 class="flow-text grey-text text-darken-3">contact@gregorypeigne.fr</h5>
-						<h5 class="flow-text grey-text text-darken-3">Rue des prairies 75020 Paris</h5>
+						<h5 class="flow-text grey-text text-darken-2">Grégory Peigné</h5>
+						<h5 class="flow-text grey-text text-darken-2">35 ans</h5>
+						<h5 class="flow-text grey-text text-darken-2">06.95.81.36.65</h5>
+						<h5 class="flow-text grey-text text-darken-2">contact@gregorypeigne.fr</h5>
+						<h5 class="flow-text grey-text text-darken-2">Rue des prairies 75020 Paris</h5>
 						<div class="reseaux-sociaux">
 							<ul>
 								<li><a class="btn-floating waves-effect waves-light white" href="https://fr.linkedin.com/in/gregory-peigné-6636b4b7" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -133,7 +136,7 @@
 				<div class="row">
 					<h3 class="left-align">COMPETENCES</h3>
 					<div class="col m12 l4">
-						<p class="flow-text grey-text text-darken-3">Force de mes capacité d'autodidacte, je détiens 7 129 178 octets de certificats en <strong>programmation</strong> , en <strong>UX/UI design</strong> et en environnement <strong>web</strong>. Perspicacité et intuition me permettent de résoudre les bugs les plus improbables. Agile en <strong>back-end</strong> avec node.js ou PHP, je suis aussi très gourmand de <strong>design</strong> avec photoshop, framework css et javascript.</p>
+						<p class="flow-text grey-text text-darken-2">Force de mes capacité d'autodidacte, je détiens 7 129 178 octets de certificats en <strong>programmation</strong> , en <strong>UX/UI design</strong> et en environnement <strong>web</strong>. Perspicacité et intuition me permettent de résoudre les bugs les plus improbables. Agile en <strong>back-end</strong> avec node.js ou PHP, je suis aussi très gourmand de <strong>design</strong> avec photoshop, framework css et javascript.</p>
 					</div>
 					<div class="carousel col m10 l6">
 						<a class="carousel-item" href="#one!">
@@ -361,18 +364,18 @@
 			<div class="container valign">
 				<div class="row">
 					<h3 class="left-align">PORTFOLIO</h3>
-					<p class="flow-text">Mes premiers projets m'ont permis d'expérimenter le développement web (projets <strong>statique</strong> et <strong>dynamique</strong>, architecture <strong>MVC</strong>, projets <strong>orientés objets</strong> et procéduraux). Je suis également expert en <strong>front-end</strong> grâce à des collaborations en <strong>hackathon</strong>.</p>
+					<p class="flow-text white-text">Mes premiers projets m'ont permis d'expérimenter le développement web (projets <strong>statique</strong> et <strong>dynamique</strong>, architecture <strong>MVC</strong>, projets <strong>orientés objets</strong> et procéduraux). Je suis également expert en <strong>front-end</strong> grâce à des collaborations en <strong>hackathon</strong>.</p>
 					<ul id="creation" class="col s12 m12 l10 owl-carousel">
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
 								<img class="activator" src="assets/img/portfolio/mud.png" alt="MUD" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator">Music Until Dawn<i class="material-icons right">more_vert</i></span>
+								<span class="card-title activator grey-text text-darken-2">Music Until Dawn<i class="material-icons right">more_vert</i></span>
 								<p class="grey-text text-darken-2 left-align">Sonorisations, éclairages évènementiel.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">Music Until Dawn<i class="material-icons right">close</i></span>
+								<span class="card-title grey-text text-darken-2">Music Until Dawn<i class="material-icons right">close</i></span>
 								<p class="grey-text text-darken-2 left-align">Refonte du site m-u-d-60.fr.</p>
 								<ul class="collection grey-text text-darken-2">
 									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
@@ -388,11 +391,11 @@
 								<img class="activator" src="assets/img/portfolio/naujac.png" alt="Naujac sur mer" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator">Mairie de Naujac/mer<i class="material-icons right">more_vert</i></span>
+								<span class="card-title activator grey-text text-darken-2">Mairie de Naujac/mer<i class="material-icons right">more_vert</i></span>
 								<p class="grey-text text-darken-2 left-align">Projet de fin de formation à l'INFA.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">Mairie de Naujac/mer<i class="material-icons right">close</i></span>
+								<span class="card-title grey-text text-darken-2">Mairie de Naujac/mer<i class="material-icons right">close</i></span>
 								<p class="grey-text text-darken-2 left-align">
 									Refonte d'un site de mairie de notre choix pour le jury de fin de formation à l'INFA.
 								</p>
@@ -409,11 +412,11 @@
 								<img class="activator" src="assets/img/portfolio/agence.png" alt="Agence" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator">L'agence<i class="material-icons right">more_vert</i></span>
+								<span class="card-title activator grey-text text-darken-2">L'agence<i class="material-icons right">more_vert</i></span>
 								<p class="grey-text text-darken-2 left-align">Premier projet responsive.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">L'agence<i class="material-icons right">close</i></span>
+								<span class="card-title grey-text text-darken-2">L'agence<i class="material-icons right">close</i></span>
 								<ul class="collection grey-text text-darken-2">
 									<li class="collection-item">Mise en pratique des connaissances liées au <strong>responsive design</strong>.Le but étant de créer une page plein écran et l'adapter sur des résolutions plus petites</li>
 									<li class="collection-item">Utilisation des <strong>requêtes de media</strong> en fonction du type d'écran et de sa taille</li>
@@ -427,11 +430,11 @@
 								<img class="activator" src="assets/img/portfolio/blog_zozor.png" alt="Blog de Zozor" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator">Blog de Zozor<i class="material-icons right">more_vert</i></span>
+								<span class="card-title activator grey-text text-darken-2">Blog de Zozor<i class="material-icons right">more_vert</i></span>
 								<p class="grey-text text-darken-2 left-align">La mascote d'openclassrooms</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">Blog de Zozor<i class="material-icons right">close</i></span>
+								<span class="card-title grey-text text-darken-2">Blog de Zozor<i class="material-icons right">close</i></span>
 								<p class="grey-text text-darken-2 left-align">
 									Premier mooc d'openclassrooms autour des langages <strong>HTML5</strong> et CSS3.Ceci est le premier TP du tutoriel.
 								</p>
@@ -447,11 +450,11 @@
 								<img class="activator" src="assets/img/portfolio/calculatrice.png" alt="Calculatrice" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator">Calculatrice<i class="material-icons right">more_vert</i></span>
+								<span class="card-title activator grey-text text-darken-2">Calculatrice<i class="material-icons right">more_vert</i></span>
 								<p class="grey-text text-darken-2 left-align">Application PHP</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">Calculatrice<i class="material-icons right">close</i></span>
+								<span class="card-title grey-text text-darken-2">Calculatrice<i class="material-icons right">close</i></span>
 								<ul class="collection grey-text text-darken-2">
 									<li class="collection-item">Boucles et fonctions javascript pour l'affichage des caractères et la gestion du "lien" =</li>
 									<li class="collection-item">Utilisation des <strong>expressions régulières</strong> pour déterminer le type d'opération</li>
@@ -488,11 +491,11 @@
 									<img class="activator" src="assets/img/certifications/html_css.png" alt="HTML et CSS" />
 								</div>
 								<div class="card-content">
-									<span class="card-title activator">Html5 et css3<i class="material-icons right">more_vert</i></span>
+									<span class="card-title activator grey-text text-darken-2">Html5 et css3<i class="material-icons right">more_vert</i></span>
 									<p class="grey-text text-darken-2">Taux de réussite : 89%<a href="certifications/html_css.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Maîtriser les langages <strong>HTML et CSS</strong></li>
                                         <li class="collection-item">Créer des pages web en HTML et CSS</li>
@@ -507,11 +510,11 @@
 									<img class="activator" src="assets/img/certifications/javascript.png" alt="Javascript" />
 								</div>
 								<div class="card-content">
-									<span class="card-title activator">Javascript<i class="material-icons right">more_vert</i></span>
+									<span class="card-title activator grey-text text-darken-2">Javascript<i class="material-icons right">more_vert</i></span>
 									<p class="grey-text text-darken-2">Taux de réussite : 93%<a href="certifications/javascript.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Configuration d'un environnement de travail en ligne avec JSFiddle, JS Bin et CodePen ou en local avec un IDE comme Sublime Text, Atom et Brackets</li>
                                         <li class="collection-item">Les variables, conditions et boucles en <strong>javascript</strong></li>
@@ -526,11 +529,11 @@
 									<img class="activator" src="assets/img/certifications/jquery.png" alt="JQuery" />
 								</div>
 								<div class="card-content">
-									<span class="card-title activator">JQuery<i class="material-icons right">more_vert</i></span>
+									<span class="card-title activator grey-text text-darken-2">JQuery<i class="material-icons right">more_vert</i></span>
 									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="certifications/jquery.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Sélection d'éléments en <strong>JQuery</strong></li>
                                         <li class="collection-item">Modifier le contenu d'un élément</li>
@@ -553,11 +556,11 @@
 									<img class="activator" src="assets/img/certifications/node-js.png" alt="Node.js" />
 								</div>
 								<div class="card-content">
-									<span class="card-title activator">Node.js<i class="material-icons right">more_vert</i></span>
+									<span class="card-title activator grey-text text-darken-2">Node.js<i class="material-icons right">more_vert</i></span>
 									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="certifications/node-js.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Les atouts de <strong>node.js</strong></li>
                                         <li class="collection-item">Ecouter et créer des évènements</li>
@@ -574,11 +577,11 @@
 									<img class="activator" src="assets/img/certifications/php.png" alt="PHP" />
 								</div>
 								<div class="card-content">
-									<span class="card-title activator">PHP et MySQL<i class="material-icons right">more_vert</i></span>
+									<span class="card-title activator grey-text text-darken-2">PHP et MySQL<i class="material-icons right">more_vert</i></span>
 									<p class="grey-text text-darken-2">Taux de réussite : 72%<a href="certifications/php_mysql.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Installation d'un serveur web local comprenant <strong>Apache</strong> <strong>PHP</strong> et <strong>MySQL</strong></li>
                                         <li class="collection-item">Inclure des portions de page</li>
@@ -600,11 +603,11 @@
 									<img class="activator" src="assets/img/certifications/bootstrap.png" alt="Bootstrap" />
 								</div>
 								<div class="card-content">
-									<span class="card-title activator">Bootstrap<i class="material-icons right">more_vert</i></span>
+									<span class="card-title activator grey-text text-darken-2">Bootstrap<i class="material-icons right">more_vert</i></span>
 									<p class="grey-text text-darken-2">Taux de réussite : 97%<a href="certifications/bootstrap.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
 										<li class="collection-item">Configurer <strong>Bootstrap</strong></li>
                                         <li class="collection-item">Organisation spatiale des éléments à l'aide de la grille.</li>
@@ -621,11 +624,11 @@
                                     <img class="activator" src="assets/img/certifications/wordpress.png" alt="Wordpress" />
                                 </div>
                                 <div class="card-content">
-                                    <span class="card-title activator">Wordpress<i class="material-icons right">more_vert</i></span>
+                                    <span class="card-title activator grey-text text-darken-2">Wordpress<i class="material-icons right">more_vert</i></span>
                                     <p class="grey-text text-darken-2">Taux de réussite : 92%<a href="certifications/wordpress.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+                                    <span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
                                     <ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">La publication d'articles, de pages, de menus et de medias sous <strong>wordpress</strong></li>
                                         <li class="collection-item">Gérer un site participatif</li>
@@ -641,11 +644,11 @@
                                     <img class="activator" src="assets/img/certifications/git.png" alt="Git" />
                                 </div>
                                 <div class="card-content">
-                                    <span class="card-title activator">Git<i class="material-icons right">more_vert</i></span>
+                                    <span class="card-title activator grey-text text-darken-2">Git<i class="material-icons right">more_vert</i></span>
                                     <p class="grey-text text-darken-2">Taux de réussite : 84%<a href="certifications/git.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+                                    <span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
                                     <ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Effectuer des commits avec <strong>GIT</strong></li>
 										<li class="collection-item">Lire l'historique</li>
@@ -674,11 +677,11 @@
 									<img class="activator" src="assets/img/certifications/comprendre_le_web.png" alt="Comprendre le web" />
 								</div>
 								<div class="card-content">
-									<span class="card-title activator">Comprendre le web<i class="material-icons right">more_vert</i></span>
+									<span class="card-title activator grey-text text-darken-2">Comprendre le web<i class="material-icons right">more_vert</i></span>
 									<p class="grey-text text-darken-2">Taux de réussite : 100%<a href="certifications/comprendre_le_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Comprendre la notion de web au travers des représentations</li>
                                         <li class="collection-item">Maîtriser les notions de <strong>web, services et cloud</strong></li>
@@ -697,11 +700,11 @@
 									<img class="activator" src="assets/img/certifications/decouvrez_le_monde_des_start_ups.png" alt="Les start-ups" />
 								</div>
 								<div class="card-content">
-									<span class="card-title activator">Start-up<i class="material-icons right">more_vert</i></span>
+									<span class="card-title activator grey-text text-darken-2">Start-up<i class="material-icons right">more_vert</i></span>
 									<p class="grey-text text-darken-2">Taux de réussite : 73%<a href="certifications/start-ups.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Les caractéristiques principales d'une <strong>start-up</strong></li>
                                         <li class="collection-item">Les modèles économique des start-ups</li>
@@ -721,11 +724,11 @@
 									<img class="activator" src="assets/img/certifications/devenir_mentor.png" alt="Devenir mentor" />
 								</div>
 								<div class="card-content">
-									<span class="card-title activator">Devenir mentor<i class="material-icons right">more_vert</i></span>
+									<span class="card-title activator grey-text text-darken-2">Devenir mentor<i class="material-icons right">more_vert</i></span>
 									<p class="grey-text text-darken-2">Taux de réussite : 97%<a href="certifications/mentor.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Devenir <strong>mentor</strong></li>
                                         <li class="collection-item">Les enjeux du mentorat</li>
@@ -743,11 +746,11 @@
                                     <img class="activator" src="assets/img/certifications/referencement_web.png" alt="Référencement web" />
                                 </div>
                                 <div class="card-content">
-                                    <span class="card-title activator">Référencement web<i class="material-icons right">more_vert</i></span>
+                                    <span class="card-title activator grey-text text-darken-2">Référencement web<i class="material-icons right">more_vert</i></span>
                                     <p class="grey-text text-darken-2">Taux de réussite : 95%<a href="certifications/referencement_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+                                    <span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
                                     <ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Le référencement dans le contexte du <strong>webmarketing</strong></li>
                                         <li class="collection-item"><strong>Référencement naturel</strong> et <strong>référencement payant</strong></li>
@@ -775,11 +778,11 @@
 									<img class="activator" src="assets/img/certifications/bluemix.png" alt="Bluemix" />
 								</div>
 								<div class="card-content">
-									<span class="card-title activator">IBM Bluemix<i class="material-icons right">more_vert</i></span>
+									<span class="card-title activator grey-text text-darken-2">IBM Bluemix<i class="material-icons right">more_vert</i></span>
 									<p class="grey-text text-darken-2">Taux de réussite : 92%<a href="certifications/cours_bluemix.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">L'environnement cloud <strong>d'IBM Bluemix (IaaS, PaaS et SaaS)</strong></li>
                                         <li class="collection-item">Les services de Bluemix</li>
@@ -799,11 +802,11 @@
 									<img class="activator" src="assets/img/certifications/linux.png" alt="Linux" />
 								</div>
 								<div class="card-content">
-									<span class="card-title activator">Linux<i class="material-icons right">more_vert</i></span>
+									<span class="card-title activator grey-text text-darken-2">Linux<i class="material-icons right">more_vert</i></span>
 									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="certifications/linux.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Les fondements de <strong>Linux</strong></li>
                                         <li class="collection-item">Partitionner un disque dur</li>
@@ -831,11 +834,11 @@
 									<img class="activator" src="assets/img/certifications/programmer_en_c.png" alt="Langage C" />
 								</div>
 								<div class="card-content">
-									<span class="card-title activator">Programmer en C<i class="material-icons right">more_vert</i></span>
+									<span class="card-title activator grey-text text-darken-2">Programmer en C<i class="material-icons right">more_vert</i></span>
 									<p class="grey-text text-darken-2">Taux de réussite : 91%<a href="certifications/programmer_en_c.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">Acquis<i class="material-icons right">close</i></span>
+									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
 									<ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Les bases de la <strong>programmation en C</strong></li>
                                         <li class="collection-item">Les techniques avancées du langage C (programmation modulaire, pointeurs, tableaux, chaines de caractères, préprocesseur, types de variable, lire et ecrire dans un fichier et allocations dynamique de variable)</li>
@@ -859,11 +862,11 @@
                                     <img id="parcours-javascript" class="activator" src="assets/img/certifications/disciple_javascript.png" alt="Disciple du javascript" />
                                 </div>
                                 <div class="card-content">
-                                    <span class="card-title activator">Disciple du Javascript<i class="material-icons right">more_vert</i></span>
+                                    <span class="card-title activator grey-text text-darken-2">Disciple du Javascript<i class="material-icons right">more_vert</i></span>
                                     <p class="grey-text text-darken-2">Taux de réussite : 93%<a href="certifications/disciple_du_javascript.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
+                                    <span class="card-title grey-text text-darken-2">Cours suivi<i class="material-icons right">close</i></span>
                                     <ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Apprenez à coder en Javascript</li>
                                         <li class="collection-item">Dynamisez vos sites web avec Javascript</li>
@@ -880,11 +883,11 @@
                                     <img id="parcours-bluemix" class="activator" src="assets/img/certifications/deployez_sur_bluemix.png" alt="Déployer sur Bluemix" />
                                 </div>
                                 <div class="card-content">
-                                    <span class="card-title activator">Le cloud d'IBM Bluemix<i class="material-icons right">more_vert</i></span>
+                                    <span class="card-title activator grey-text text-darken-2">Le cloud d'IBM Bluemix<i class="material-icons right">more_vert</i></span>
                                     <p class="grey-text text-darken-2">Taux de réussite : 91%<a href="certifications/deployez_vos_applications_node_sur_bluemix.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
+                                    <span class="card-title grey-text text-darken-2">Cours suivi<i class="material-icons right">close</i></span>
                                     <ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Apprenez à coder en Javascript</li>
                                         <li class="collection-item">Dynamisez vos sites web avec Javascript</li>
@@ -899,11 +902,11 @@
                                     <img id="parcours-integrateur" class="activator" src="assets/img/certifications/integrateur_web.png" alt="Intégrateur web" />
                                 </div>
                                 <div class="card-content">
-                                    <span class="card-title activator">Intégrateur web<i class="material-icons right">more_vert</i></span>
+                                    <span class="card-title activator grey-text text-darken-2">Intégrateur web<i class="material-icons right">more_vert</i></span>
                                     <p class="grey-text text-darken-2">Taux de réussite : 92%<a href="certifications/integration_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
+                                    <span class="card-title grey-text text-darken-2">Cours suivi<i class="material-icons right">close</i></span>
                                     <ul class="collection grey-text text-darken-2">
                                         <li class="collection-item">Comprendre le web</li>
                                         <li class="collection-item">Apprenez à créer votre site web avec HTML5 et CSS3</li>
@@ -922,11 +925,11 @@
                                     <img id="parcours-site_web" class="activator" src="assets/img/certifications/lancer_son_site.png" alt="Lancer son site web" />
                                 </div>
                                 <div class="card-content">
-                                    <span class="card-title activator">Lancer son site web<i class="material-icons right">more_vert</i></span>
+                                    <span class="card-title activator grey-text text-darken-2">Lancer son site web<i class="material-icons right">more_vert</i></span>
                                     <p class="grey-text text-darken-2">Taux de réussite : 89%<a href="certifications/lancer_son_site_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Cours suivi<i class="material-icons right">close</i></span>
+                                    <span class="card-title grey-text text-darken-2">Cours suivi<i class="material-icons right">close</i></span>
                                     <ul class="collection grey-text text-darken-2">
 										<li class="collection-item">Comprendre le web</li>
 										<li class="collection-item">Apprenez à créer votre site web avec HTML5 et CSS3</li>
@@ -980,36 +983,31 @@
                         <button class="left waves-effect btn-flat brand-text submit-btn" type="submit" name="action">ENVOYER</button>
 					</form>
 				</div>
-
-            <div class="footer-copyright row">
-                <div class="col s6">
-                    Crédits photos:
-                    <a class="grey-text text-lighten-4" href="https://openclassrooms.com/">Openclassrooms</a>
-                </div>
-                <div class="col s6 reseaux-sociaux center-align">
-                    <script type="in/share" data-counter="right"></script>
-                    <div class="fb-share-button" data-href="http://www.gregorypeigne.fr" data-layout="box_count"></div>
-                    <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="gregorypeigne.fr">Tweet</a>
-                    <g:plusone size="tall"></g:plusone>
+                <div class="footer-copyright row">
+                    <div class="col s6 offset-s1">
+                        Crédits photos:
+                        <a class="grey-text text-lighten-4" href="https://openclassrooms.com/">Openclassrooms</a>
+                    </div>
+                    <div class="col s4 offset-s1 reseaux-sociaux center-align">
+                        <script type="in/share" data-counter="right"></script>
+                        <div class="fb-share-button" data-href="http://www.gregorypeigne.fr" data-layout="box_count"></div>
+                        <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="gregorypeigne.fr">Tweet</a>
+                        <g:plusone size="tall"></g:plusone>
+                    </div>
                 </div>
             </div>
 		</footer>
-        <!-- CDN CSS materialize compilé et minifié -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-        <!-- CSS perso -->
-        <link href='css/pre_style.css' rel='stylesheet' type='text/css'>
-        <!-- <link href='css/pre_style.min.css' rel='stylesheet' type='text/css'> -->
-        <link href='css/style.css' rel='stylesheet' type='text/css'>
-        <!-- <link href='css/style.min.css' rel='stylesheet' type='text/css'> -->
+        <!-- CSS materialize compilé -->
+        <!-- <link href='css/output.css' rel='stylesheet' type='text/css'> -->
+        <link href='css/output.min.css' rel='stylesheet' type='text/css'>
+        <!-- CSS perso body -->
+        <!-- <link href='css/style.css' rel='stylesheet' type='text/css'> -->
+        <link href='css/style.min.css' rel='stylesheet' type='text/css'>
         <!-- <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'> -->
         <link href='css/owl.carousel.min.css' rel='stylesheet' type='text/css'>
         <!--Import Google Icon Font-->
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-		<!-- script partage sur les reseaux sociaux -->
-		<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
-		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-		<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'fr'}</script>
 		<!-- CDN font awesome reseaux sociaux -->
 		<script src="https://use.fontawesome.com/0ad680db36.js"></script>
 		<!-- CDN jQuery -->
@@ -1024,15 +1022,20 @@
         <!-- javascript perso -->
 		<!-- <script src="js/main.js"></script> -->
 		<script src="js/main.min.js"></script>
+        <!-- script partage sur les reseaux sociaux -->
+        <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        <script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'fr'}</script>
         <!-- traker google analytics -->
         <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-84324242-1', 'auto');
-            ga('send', 'pageview');
+          ga('create', 'UA-85159820-1', 'auto');
+          ga('send', 'pageview');
+
         </script>
 	</body>
 </html>
