@@ -26,8 +26,8 @@
 		<title>Grégory Peigné</title>
 		<meta name="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
         <style></style>
-        <!-- CSS perso ligne de flotaison
-        <link href='css/pre_style.css' rel='stylesheet' type='text/css'> -->
+        <!-- CSS perso ligne de flotaison -->
+        <link href='css/pre_style.css' rel='stylesheet' type='text/css'>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -368,6 +368,226 @@
 					<ul id="creation" class="col s12 m12 l10 owl-carousel">
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/adsi.png" alt="ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">ADSI<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Assistance, dépannage et services informatique.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">ADSI<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
+									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
+									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
+									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/flyers_adsi.png" alt="Flyers ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Flyers ADSI<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Assistance, dépannage et services informatique.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Flyers ADSI<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
+									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
+									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
+									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/logo_adsi.png" alt="Logo ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Logo ADSI<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Assistance, dépannage et services informatique.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Logo ADSI<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
+									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
+									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
+									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/blog_personnel.png" alt="Logo ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Blog personnel<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
+									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
+									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
+									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/Jeu_de_plateau.png" alt="Logo ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Jeu de plateau tour par tour en Javascript.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
+									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
+									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
+									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/premier_site_perso.png" alt="Logo ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Premier site personnel.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
+									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
+									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
+									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/la_maison_de_l_architecte.png" alt="Logo ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">La maison de l'architecte.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
+									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
+									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
+									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/la_maison_de_l_architecture.png" alt="Logo ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">La maison de l'architecture.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
+									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
+									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
+									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/flyers_comptoir_des_saveurs.png" alt="Logo ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Flyers Le conmptoir des saveurs.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
+									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
+									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
+									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/carte_voeux_2016.png" alt="Logo ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Carte de voeux mairie de Plailly.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
+									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
+									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
+									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/generateur_de_formulaires.png" alt="Logo ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Générateur de formulaire.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
+									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
+									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
+									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
 								<img class="activator" src="assets/img/portfolio/mud.png" alt="MUD" />
 							</div>
 							<div class="card-content">
@@ -442,24 +662,6 @@
 									<li class="collection-item">Rappel sur la <strong>mise en page</strong> (en-tête, corps de page, pied de page)</li>
 									<li class="collection-item">Utilisation des <strong>balises html5</strong> et sensibilisation de leurs rôles <strong>sémantiques</strong></li>
 									<li class="collection-item">Utilisation des <strong>propriétés CSS3</strong> pour le design et aussi pour le positionnement</li>
-								</ul>
-							</div>
-						</li>
-						<li class="item card small">
-							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/calculatrice.png" alt="Calculatrice" />
-							</div>
-							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-2">Calculatrice<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Application PHP</p>
-							</div>
-							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-2">Calculatrice<i class="material-icons right">close</i></span>
-								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Boucles et fonctions javascript pour l'affichage des caractères et la gestion du "lien" =</li>
-									<li class="collection-item">Utilisation des <strong>expressions régulières</strong> pour déterminer le type d'opération</li>
-									<li class="collection-item">Mise en pratique de quelques fonctions PHP: explode, header, preg_match et session_start</li>
-									<li class="collection-item">Maitrise des <strong>variables superglobales</strong> $_POST, $_GET, $_SESSION</li>
 								</ul>
 							</div>
 						</li>
