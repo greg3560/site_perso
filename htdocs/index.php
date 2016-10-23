@@ -378,11 +378,11 @@
 								<span class="card-title grey-text text-darken-2">ADSI<i class="material-icons right">close</i></span>
 								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
-									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
-                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
-									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
-									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+									<li class="collection-item">Une page accueil qui presente l'activité de l'entreprise à l'aide d'un slider CSS3</li>
+									<li class="collection-item">Une page télémaintenance avec teamviewer</li>
+									<li class="collection-item">Une page tarifs</li>
+                                    <li class="collection-item">Une page avec un <strong>formulaire de contact</strong></li>
+									<li class="collection-item">Une page avec une <strong>carte google map</strong> pour le plan d'accès</li>
 								</ul>
 							</div>
 						</li>
@@ -391,18 +391,16 @@
 								<img class="activator" src="assets/img/portfolio/flyers_adsi.png" alt="Flyers ADSI" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-2">Flyers ADSI<i class="material-icons right">more_vert</i></span>
+								<span class="card-title activator grey-text text-darken-2">Flyer ADSI<i class="material-icons right">more_vert</i></span>
 								<p class="grey-text text-darken-2 left-align">Assistance, dépannage et services informatique.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-2">Flyers ADSI<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<span class="card-title grey-text text-darken-2">Flyer ADSI<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Réalisation d'un Flyers pour la societe A.D.S.I à l'aide de Photoshop, InDesign et un bon massicot</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
-									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
-                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
-									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
-									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+									<li class="collection-item">Recto verso au format A5 300 pixels/pouce</li>
+									<li class="collection-item">Création du design en accord avec la charte graphique</li>
+									<li class="collection-item">Impression et découpage</li>
 								</ul>
 							</div>
 						</li>
@@ -416,13 +414,10 @@
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Logo ADSI<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<p class="grey-text text-darken-2 left-align">Création d'un logo vectoriel pour la societe A.D.S.I avec Photoshop et InDesign. Application des compétences fraichement acquise.</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
-									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
-                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
-									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
-									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+									<li class="collection-item">Création visuelle d'une représentation pour la societe</li>
+									<li class="collection-item">Déclinaison pour les réseaux sociaux</li>
 								</ul>
 							</div>
 						</li>
@@ -436,10 +431,10 @@
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<p class="grey-text text-darken-2 left-align">Mon premier blog avec Wordpress. Réalisation d'un portfolio à l'issu de ma formation à l'INFA et partage d'articles au sujet du numérique.</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
-									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
+									<li class="collection-item">Une page portfolio</li>
+									<li class="collection-item">Une page C.V</li>
                                     <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
 									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
 									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
