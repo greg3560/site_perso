@@ -426,18 +426,17 @@
 								<img class="activator" src="assets/img/portfolio/blog_personnel.png" alt="Logo ADSI" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-2">Blog personnel<i class="material-icons right">more_vert</i></span>
+								<span class="card-title activator grey-text text-darken-2">Blog/site personnel<i class="material-icons right">more_vert</i></span>
 								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Mon premier blog avec Wordpress. Réalisation d'un portfolio à l'issu de ma formation à l'INFA et partage d'articles au sujet du numérique.</p>
+								<span class="card-title grey-text text-darken-2">Blog et site personnel<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon premier espace avec Wordpress. Réalisation d'un portfolio à l'issu de ma formation à l'INFA et partage d'articles au sujet du numérique.</p>
 								<ul class="collection grey-text text-darken-2">
 									<li class="collection-item">Une page portfolio</li>
 									<li class="collection-item">Une page C.V</li>
-                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
-									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
-									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+                                    <li class="collection-item">Une page de présentation</li>
+									<li class="collection-item">Installation et réglages du <strong>plugin Contact Form 7</strong></li>
 								</ul>
 							</div>
 						</li>
@@ -447,17 +446,17 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Jeu de plateau tour par tour en Javascript.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+								<p class="grey-text text-darken-2 left-align">Création d'un jeu en javascript où 2 joueurs s'affrontent sur une carte.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<span class="card-title grey-text text-darken-2">Jeu de plateau<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Stack technique:</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
-									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
-                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
-									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
-									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+									<li class="collection-item">HTML CSS</li>
+									<li class="collection-item">Les bases de JavaScript (variables, conditions, boucles, évènements)</li>
+                                    <li class="collection-item">La programmation orientée objet en JavaScript</li>
+                                    <li class="collection-item">Dissocier les calculs "métier" du jeu (est-ce que le joueur a le droit d'aller sur cette case ?) avec la mise à jour de l'interface</li>
+                                    <li class="collection-item">Séparer autant que possible les codes ayant des rôles différents dans des fichiers JavaScript différents</li>
 								</ul>
 							</div>
 						</li>
@@ -487,17 +486,16 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">La maison de l'architecte.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+								<p class="grey-text text-darken-2 left-align">Création d'une page web simple à l'aide de Bootstrap pour les 4 types de média prévu par le framework.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<span class="card-title grey-text text-darken-2">La maison de l'architecte.<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Misse en pratique d'une mise en page avec Bootstrap</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
-									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
-                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
-									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
-									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+									<li class="collection-item">En-tête : Utilisation d'un jumbotron avec surchage de la couleur de fond et de la marge inférieur. Au sein de ce jumbotron j'utilise la grille pour répartir du logo et du titre. Utilisation des classes pour centrer le texte et pour cacher le logo sur les smartphones</li>
+									<li class="collection-item">Corps de page : Répartition des images avec la grille. Marge entre les images</li>
+                                    <li class="collection-item">Pied de page : Une rangée et un centrage avec quelques règles css pour les boutons ronds</li>
+									<li class="collection-item">Généralités sur la page : Police Bitter de google fonts pour le texte. Une couleurs de fond à #eef, et la couleur du texte à #259</li>
 								</ul>
 							</div>
 						</li>
@@ -507,17 +505,15 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">La maison de l'architecture.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+								<p class="grey-text text-darken-2 left-align">Réalisation d'une page web complexe avec des plugins javascript pour les 4 types de média prévu par Bootstrap.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<span class="card-title grey-text text-darken-2">La maison de l'architecture<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mise en page faisant intervenir des plugins javascript</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
-									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
-                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
-									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
-									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+									<li class="collection-item">Barre de navigation fixée en haut avec un fond noir qui se rétracte sur les petits supports</li>
+									<li class="collection-item">Un carrousel avec les indicateurs de slide, les titres et les boutons de navigation</li>
+                                    <li class="collection-item">Pour le pied de page utilisation d'une rangée avec un centrage et des images <a href="http://fontawesome.io/icons/" title="Font Awesome" >Font Awesome</a></li>
 								</ul>
 							</div>
 						</li>
