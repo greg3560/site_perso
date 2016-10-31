@@ -368,7 +368,7 @@
 					<ul id="creation" class="col s12 m12 l10 owl-carousel">
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/adsi.png" alt="ADSI" />
+								<img class="activator" src="assets/img/portfolio/adsi.png" alt="Site web ADSI" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">ADSI<i class="material-icons right">more_vert</i></span>
@@ -423,7 +423,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/blog_personnel.png" alt="Logo ADSI" />
+								<img class="activator" src="assets/img/portfolio/blog_personnel.png" alt="Blog personnel" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Blog/site personnel<i class="material-icons right">more_vert</i></span>
@@ -442,7 +442,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/Jeu_de_plateau.png" alt="Logo ADSI" />
+								<img class="activator" src="assets/img/portfolio/Jeu_de_plateau.png" alt="Jeu de plateau" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Jeu de plateau tour par tour en Javascript.<i class="material-icons right">more_vert</i></span>
@@ -462,7 +462,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/premier_site_perso.png" alt="Logo ADSI" />
+								<img class="activator" src="assets/img/portfolio/premier_site_perso.png" alt="Premier site personnel" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Premier site personnel.<i class="material-icons right">more_vert</i></span>
@@ -482,7 +482,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/la_maison_de_l_architecte.png" alt="Logo ADSI" />
+								<img class="activator" src="assets/img/portfolio/la_maison_de_l_architecte.png" alt="La maison de l'architecte" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">La maison de l'architecte.<i class="material-icons right">more_vert</i></span>
@@ -501,7 +501,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/la_maison_de_l_architecture.png" alt="Logo ADSI" />
+								<img class="activator" src="assets/img/portfolio/la_maison_de_l_architecture.png" alt="La maison de l'architecture" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">La maison de l'architecture.<i class="material-icons right">more_vert</i></span>
@@ -519,61 +519,54 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/flyers_comptoir_des_saveurs.png" alt="Logo ADSI" />
+								<img class="activator" src="assets/img/portfolio/flyers_comptoir_des_saveurs.png" alt="Flyers Comptoir des saveurs" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Flyers Le conmptoir des saveurs.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+								<p class="grey-text text-darken-2 left-align">Le comptoir des saveurs.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<span class="card-title grey-text text-darken-2">Flyers Le conmptoir des saveurs.<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Réalisation d'un Flyers pour le restaurant Le comptoir des saveurs à l'aide de Photoshop, InDesign et un bon massicot</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
-									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
-                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
-									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
-									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+									<li class="collection-item">Recto verso au format A5 300 pixels/pouce</li>
+									<li class="collection-item">Création du design en accord avec la charte graphique</li>
+									<li class="collection-item">Impression et découpage</li>
 								</ul>
 							</div>
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/carte_voeux_2016.png" alt="Logo ADSI" />
+								<img class="activator" src="assets/img/portfolio/carte_voeux_2016.png" alt="Carte de voeux Mairie de Plailly" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Carte de voeux mairie de Plailly.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+								<p class="grey-text text-darken-2 left-align">Une carte de voeux pour la communication du Maire.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<span class="card-title grey-text text-darken-2">Carte de voeux.<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Pour la nouvelle année 2016, proposition d'une carte de voeux</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
-									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
-                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
-									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
-									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+									<li class="collection-item">Création d'une carte de voeux au format 10*21 (1/3 de A4) </li>
+									<li class="collection-item">Impression et découpage</li>
 								</ul>
 							</div>
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/generateur_de_formulaires.png" alt="Logo ADSI" />
+								<img class="activator" src="assets/img/portfolio/generateur_de_formulaires.png" alt="Générateur de formulaires" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-2">Générateur de formulaire.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Création d'un blog personnel à l'aide de wordpress.</p>
+								<span class="card-title activator grey-text text-darken-2">Générateur de formulaires.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">définition d'une IHM (Interface Homme Machine) pour faciliter la création de formulaires de saisie.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-2">Blog personnel<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<span class="card-title grey-text text-darken-2">Générateur de formulaires.<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">L’utilisateur peut créer des formulaires personnalisés en cliquant sur les boutons Label, Zone de texte et Bouton, et en fournissant les renseignements demandés</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Redonner un nouvel aspect au site à travers un nouveau design plus épuré</li>
-									<li class="collection-item">Intégration d'une <strong>carte google map</strong> pour le plan d'accès</li>
-                                    <li class="collection-item">Développement d'un <strong>formulaire de contact</strong></li>
-									<li class="collection-item">Conception d'un <strong>menu dynamique</strong> avec PHP</li>
-									<li class="collection-item">Intégration d'un <strong>slider</strong> entièrement développé en CSS3</li>
+									<li class="collection-item">Utilisation des méthodes after() et append() qui permettent toutes deux d'injecter du contenu dans le DOM, mais d'une façon légèrement différente</li>
+									<li class="collection-item">Prévoir un conteneur pour la partie création afin de les supprimer facilement avec la methode remove()</li>
+                                    <li class="collection-item">Un peu de css pour les marges et couleurs</li>
 								</ul>
 							</div>
 						</li>
