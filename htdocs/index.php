@@ -24,7 +24,7 @@
 		<meta itemprop="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
 		<meta itemprop="image" content="http://www.gregorypeigne.fr/assets/img/photo_gregory.png">
 		<title>Grégory Peigné</title>
-		<meta name="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
+		<meta name="description" content="Bonjour, je suis à la recherche d'un contrat pro ou CDD/CDI en développement web junior. Venez découvrir mon profil, mes compétences et mon Portfolio.">
         <style></style>
         <!-- CSS perso ligne de flotaison -->
         <link href='css/pre_style.css' rel='stylesheet' type='text/css'>
