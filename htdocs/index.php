@@ -24,10 +24,10 @@
 		<meta itemprop="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
 		<meta itemprop="image" content="http://www.gregorypeigne.fr/assets/img/photo_gregory.png">
 		<title>Grégory Peigné</title>
-		<meta name="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
+		<meta name="description" content="Bonjour, je suis à la recherche d'un contrat pro ou CDD/CDI en développement web junior. Venez découvrir mon profil, mes compétences et mon Portfolio.">
         <style></style>
-        <!-- CSS perso ligne de flotaison
-        <link href='css/pre_style.css' rel='stylesheet' type='text/css'> -->
+        <!-- CSS perso ligne de flotaison -->
+        <link href='css/pre_style.css' rel='stylesheet' type='text/css'>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -48,6 +48,8 @@
                     fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));
         </script>
+        <!-- balisage des microdonnees -->
+        <span itemscope itemtype="http://schema.org/LocalBusiness" itemref="_telephone3 _email4 _address5">
 		<header>
 
 			<!-- 	===================================================================
@@ -57,7 +59,7 @@
 			<div class="navbar-fixed">		
 				<nav>
 					<div class="nav-wrapper">
-						<a href="#page-top" class="brand-logo"><img class="responsive-img" src="assets/img/logo_gregory.png" alt="logo Grégory" /></a>
+						<a href="#page-top" class="brand-logo"><img itemprop="image" class="responsive-img" src="assets/img/logo_gregory.png" alt="logo Grégory" /></a>
 						<a href="#" data-activates="greg-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 						<ul class="right hide-on-med-and-down">
 							<li class="waves-effect"><a href="#qui_suis_je">Qui suis-je ?</a></li>
@@ -87,9 +89,11 @@
 				<img class="responsive-img" src="assets/img/travail_gregory.jpg" alt="Poste de travail" />
 			</div>
 			<div class="presentation valign-wrapper">
-				<h1 class="valign"><span id="nom">Grégory Peigné </span><br />Développeur web fullstack à Paris</h1>
+				<h1 itemprop="name" class="valign"><span id="nom">Grégory Peigné </span><br />Développeur web Full Stack à Paris</h1>
+				<h2>PHP, MySQL, Javascript, JQuery, Node.js, Bootstrap, Materialize ...</h2>
 			</div>
 		</section>
+		</span> <!-- fin balisage des microdonnees -->
 		<a href="#qui_suis_je" class="btn-floating btn-large waves-effect waves-light suite"><i class="material-icons">keyboard_arrow_down</i></a>
 	
 		<!-- 	===================================================================
@@ -98,21 +102,21 @@
 		
 		<section id="qui_suis_je" class="section scrollspy valign-wrapper">
 			<div class="container valign">
-				<div class="row">
+				<div itemscope itemtype="http://schema.org/LocalBusiness" class="row">
                     <h3 class="left-align">Qui suis-je ?</h3>
 					<div class="col m12 l4">
-						<p class="flow-text grey-text text-darken-2">J'ai fait de ma passion pour le digital mon métier. Conscient des enjeux actuels liés au <strong>numérique</strong>, je souhaite évangéliser mes connaissances en <strong>contrat pro</strong> ou en <strong>CDD/CDI web junior</strong>. Souple et rigoureux dans mon travail, j’ai une bonne culture du web, j’aime les <strong>nouvelles technologies</strong>, la pizza et la musique :)</p>
+						<p class="flow-text grey-text text-darken-2">J'ai fait de ma passion pour le digital mon métier. Conscient des enjeux actuels liés au <strong class="flow-text grey-text text-darken-2">numérique</strong>, je souhaite évangéliser mes connaissances en <strong>contrat pro</strong> ou en <strong>CDD/CDI web junior</strong>. Souple et rigoureux dans mon travail, j’ai une bonne culture du web, j’aime les <strong>nouvelles technologies</strong>, la pizza et la musique :)</p>
 						<a href="assets/cv.zip" class="waves-effect waves-light btn-large white-text"><i class="material-icons left">archive</i> CV</a>
 					</div>
 					<div class="col m6 l4 center-align">
-						<img id="greg" class="responsive-img z-depth-1" src="assets/img/photo_gregory.png" alt="Gregory Peigne" title="Gregory Peigne" />
+						<img itemprop="image" id="greg" class="responsive-img z-depth-1" src="assets/img/photo_gregory.png" alt="Gregory Peigne" title="Gregory Peigne" />
 					</div>
 					<div class="col m6 l4">
-						<h5 class="flow-text grey-text text-darken-2">Grégory Peigné</h5>
+						<h5 itemprop="name" class="flow-text grey-text text-darken-2">Grégory Peigné</h5>
 						<h5 class="flow-text grey-text text-darken-2">35 ans</h5>
-						<h5 class="flow-text grey-text text-darken-2">06.95.81.36.65</h5>
-						<h5 class="flow-text grey-text text-darken-2">contact@gregorypeigne.fr</h5>
-						<h5 class="flow-text grey-text text-darken-2">Rue des prairies 75020 Paris</h5>
+						<h5 id="_telephone3" itemprop="telephone" class="flow-text grey-text text-darken-2">06.95.81.36.65</h5>
+						<h5 id="_email4" itemprop="email" class="flow-text grey-text text-darken-2">contact@gregorypeigne.fr</h5>
+						<h5 id="_address5" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="flow-text grey-text text-darken-2"><span itemprop="streetAddress">Rue des prairies</span> <span itemprop="postalCode">75020</span> <span itemprop="addressLocality">Paris</span> <span itemprop="addressCountry">FRANCE</span></h5>
 						<div class="reseaux-sociaux">
 							<ul>
 								<li><a class="btn-floating waves-effect waves-light white" href="https://fr.linkedin.com/in/gregory-peigné-6636b4b7" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -368,6 +372,81 @@
 					<ul id="creation" class="col s12 m12 l10 owl-carousel">
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/adsi.png" alt="Site web ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">ADSI<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Assistance, dépannage et services informatique.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">ADSI<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon tout premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Une page accueil qui presente l'activité de l'entreprise à l'aide d'un slider CSS3</li>
+									<li class="collection-item">Une page télémaintenance avec teamviewer</li>
+									<li class="collection-item">Une page tarifs</li>
+                                    <li class="collection-item">Une page avec un <strong>formulaire de contacts</strong></li>
+									<li class="collection-item">Une page avec une <strong>carte google map</strong> pour le plan d'accès</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/flyers_adsi.png" alt="Flyers ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Flyer ADSI<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Assistance, dépannage et services informatique.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Flyer ADSI<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Réalisation d'un <strong>Flyers</strong> pour la societe A.D.S.I à l'aide de Photoshop, InDesign et un bon massicot.</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Recto verso au format A5 300 pixels/pouce</li>
+									<li class="collection-item">Création du design en accord avec la <strong>charte graphique</strong></li>
+									<li class="collection-item">Impression et découpage</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/logo_adsi.png" alt="Logo ADSI" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Logo ADSI<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Assistance, dépannage et services informatique.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Logo ADSI<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Création d'un <strong>logo vectoriel</strong> pour la societe A.D.S.I avec Photoshop et InDesign. Application des compétences fraichement acquises.</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item"><strong>Création visuelle</strong> d'une représentation de la société</li>
+									<li class="collection-item">Déclinaison pour les réseaux sociaux</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/blog_zozor.png" alt="Blog de Zozor" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Blog de Zozor<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">La mascote d'openclassrooms</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Blog de Zozor<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">
+									Premier mooc d'openclassrooms autour des langages <strong>HTML5</strong> et CSS3.Ceci est le premier TP du tutoriel.
+								</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Rappel sur la <strong>mise en page</strong> (en-tête, corps de page, pied de page)</li>
+									<li class="collection-item">Utilisation des <strong>balises html5</strong> et sensibilisation de leurs rôles <strong>sémantiques</strong></li>
+									<li class="collection-item">Utilisation des <strong>propriétés CSS3</strong> pour le design et aussi pour le positionnement</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
 								<img class="activator" src="assets/img/portfolio/mud.png" alt="MUD" />
 							</div>
 							<div class="card-content">
@@ -427,39 +506,130 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/blog_zozor.png" alt="Blog de Zozor" />
+								<img class="activator" src="assets/img/portfolio/premier_site_perso.png" alt="Blog personnel" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-2">Blog de Zozor<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">La mascote d'openclassrooms</p>
+								<span class="card-title activator grey-text text-darken-2">Blog/site personnel<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Création d'un <strong>blog personnel</strong> à l'aide de Wordpress.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-2">Blog de Zozor<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">
-									Premier mooc d'openclassrooms autour des langages <strong>HTML5</strong> et CSS3.Ceci est le premier TP du tutoriel.
-								</p>
+								<span class="card-title grey-text text-darken-2">Blog et site personnel<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mon premier espace avec Wordpress. Réalisation d'un <strong>portfolio</strong> à l'issu de ma formation à l'INFA et partage d'articles au sujet du numérique.</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Rappel sur la <strong>mise en page</strong> (en-tête, corps de page, pied de page)</li>
-									<li class="collection-item">Utilisation des <strong>balises html5</strong> et sensibilisation de leurs rôles <strong>sémantiques</strong></li>
-									<li class="collection-item">Utilisation des <strong>propriétés CSS3</strong> pour le design et aussi pour le positionnement</li>
+									<li class="collection-item">Une page portfolio</li>
+									<li class="collection-item">Une page C.V</li>
+                                    <li class="collection-item">Une page de présentation</li>
+									<li class="collection-item">Installation et réglages du <strong>plugin Contact Form 7</strong></li>
 								</ul>
 							</div>
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/calculatrice.png" alt="Calculatrice" />
+								<img class="activator" src="assets/img/portfolio/flyers_comptoir_des_saveurs.png" alt="Flyers Comptoir des saveurs" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-2">Calculatrice<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Application PHP</p>
+								<span class="card-title activator grey-text text-darken-2">Flyers Le conmptoir des saveurs.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Le comptoir des saveurs.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-2">Calculatrice<i class="material-icons right">close</i></span>
+								<span class="card-title grey-text text-darken-2">Flyers Le conmptoir des saveurs.<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Réalisation d'un Flyers pour le restaurant Le comptoir des saveurs à l'aide de Photoshop, InDesign et un bon massicot</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Boucles et fonctions javascript pour l'affichage des caractères et la gestion du "lien" =</li>
-									<li class="collection-item">Utilisation des <strong>expressions régulières</strong> pour déterminer le type d'opération</li>
-									<li class="collection-item">Mise en pratique de quelques fonctions PHP: explode, header, preg_match et session_start</li>
-									<li class="collection-item">Maitrise des <strong>variables superglobales</strong> $_POST, $_GET, $_SESSION</li>
+									<li class="collection-item">Recto verso au format A5 300 pixels/pouce</li>
+									<li class="collection-item">Création du design en accord avec la charte graphique</li>
+									<li class="collection-item">Impression et découpage</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/carte_voeux_2016.png" alt="Carte de voeux Mairie de Plailly" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Carte de voeux mairie de Plailly.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Une carte de voeux pour la communication du Maire.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Carte de voeux.<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Pour la nouvelle année 2016, proposition d'une <strong>carte de voeux</strong></p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Carte de voeux au format 10*21 (1/3 de A4) </li>
+									<li class="collection-item">Impression et découpage</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/la_maison_de_l_architecte.png" alt="La maison de l'architecte" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">La maison de l'architecte.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Création d'une page web simple à l'aide de Bootstrap pour les 4 types de média prévu par le <strong>framework</strong>.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">La maison de l'architecte.<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Misse en pratique d'une <strong>mise en page</strong> avec Bootstrap</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">En-tête : Utilisation d'un <strong>jumbotron</strong> avec surchage de la couleur de fond et de la marge inférieure. Au sein de ce jumbotron j'utilise la grille pour répartir le logo et le titre. Utilisation des classes pour centrer le texte et pour cacher le logo sur les smartphones</li>
+									<li class="collection-item">Corps de page : Répartition des images avec la grille. Marge entre les images</li>
+                                    <li class="collection-item">Pied de page : Une rangée et un centrage avec quelques règles css pour les boutons ronds</li>
+									<li class="collection-item">Généralités sur la page : Police Bitter de <strong>google fonts</strong> pour le texte. Une couleurs de fond à #eef, et la couleur du texte à #259</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/la_maison_de_l_architecture.png" alt="La maison de l'architecture" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">La maison de l'architecture.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Réalisation d'une page web complexe avec des <strong>plugins javascript</strong> pour les 4 types de <strong>média</strong> prévu par Bootstrap.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">La maison de l'architecture<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Mise en page faisant intervenir des plugins javascript</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Barre de navigation fixée en haut avec un fond noir qui se rétracte sur les petits supports</li>
+									<li class="collection-item">Un <strong>carrousel</strong> avec les indicateurs de <strong>slide</strong>, les titres et les boutons de <strong>navigation</strong></li>
+                                    <li class="collection-item">Pour le pied de page utilisation d'une rangée avec un centrage et des images <a href="http://fontawesome.io/icons/" title="Font Awesome" ><strong>Font Awesome</strong></a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/generateur_de_formulaires.png" alt="Générateur de formulaires" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Générateur de formulaires.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">définition d'une IHM (Interface Homme Machine) en JQuery pour faciliter la création de formulaires de saisie.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Générateur de formulaires.<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">L’utilisateur peut créer des formulaires personnalisés en cliquant sur les boutons Label, Zone de texte et Bouton, et en fournissant les renseignements demandés</p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">Utilisation des méthodes <strong>after()</strong> et <strong>append()</strong> qui permettent toutes deux d'injecter du contenu dans le <strong>DOM</strong>, mais d'une façon légèrement différente</li>
+									<li class="collection-item">Prévoir un conteneur pour la partie création afin de les supprimer facilement avec la methode <strong>remove()</strong></li>
+                                    <li class="collection-item">Un peu de css pour les marges et couleurs</li>
+								</ul>
+							</div>
+						</li>
+						<li class="item card small">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="assets/img/portfolio/Jeu_de_plateau.png" alt="Jeu de plateau" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-2">Jeu de plateau tour par tour en Javascript.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Création d'un <strong>jeu en javascript</strong> où 2 joueurs s'affrontent sur une carte.</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-2">Jeu de plateau<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align"><strong>Stack technique</strong></p>
+								<ul class="collection grey-text text-darken-2">
+									<li class="collection-item">HTML CSS</li>
+									<li class="collection-item">Les bases de JavaScript (variables, conditions, boucles, évènements)</li>
+                                    <li class="collection-item">La <strong>programmation orientée objet</strong> en JavaScript</li>
+                                    <li class="collection-item">Dissocier les <strong>calculs "métier"</strong> du jeu (est-ce que le joueur a le droit d'aller sur cette case ?) avec la <strong>mise à jour de l'interface</strong></li>
+                                    <li class="collection-item">Séparer autant que possible les codes ayant des rôles différents dans des fichiers JavaScript différents</li>
 								</ul>
 							</div>
 						</li>

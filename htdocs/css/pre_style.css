@@ -13,12 +13,20 @@
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400; 
 }
-  h1 {
+h1 {
     color: #fff;
     font-size: 18px;
     margin: auto;
     text-transform: uppercase;
     line-height: 60px;
+}
+h2 {
+    position: absolute;
+    width:500px;
+    top: 60%;
+    color: #fff;
+    left: calc(50% - 250px);
+    font-size: 15px !important;
 }
 #nom {
     color: #00bfa5; /* vert menthe */
@@ -30,10 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 .suite {
     bottom: 30px;
     left: -55.5px;
-    -webkit-transition:left 1s ease-out 5s !important;
-   -moz-transition:left 1s ease-out 5s !important;
-   -o-transition:left 1s ease-out 5s !important;
-   transition:left 1s ease-out 5s !important;
+    -webkit-transition:left 1s ease-out 3s !important;
+   -moz-transition:left 1s ease-out 3s !important;
+   -o-transition:left 1s ease-out 3s !important;
+   transition:left 1s ease-out 3s !important;
 }
 ul:not(.browser-default) {
   padding: 0;
