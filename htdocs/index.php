@@ -90,7 +90,7 @@
 			</div>
 			<div class="presentation valign-wrapper">
 				<h1 itemprop="name" class="valign"><span id="nom">Grégory Peigné </span><br />Développeur web Full Stack à Paris</h1>
-				<h2>mots clees mots clees mots clees</h2>
+				<h2>PHP, MySQL, Javascript, JQuery, Node.js, Bootstrap, Materialize ...</h2>
 			</div>
 		</section>
 		</span> <!-- fin balisage des microdonnees -->
@@ -418,7 +418,7 @@
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Logo ADSI<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Création d'un <strong>logo< vectoriel</strong> pour la societe A.D.S.I avec Photoshop et InDesign. Application des compétences fraichement acquises.</p>
+								<p class="grey-text text-darken-2 left-align">Création d'un <strong>logo vectoriel</strong> pour la societe A.D.S.I avec Photoshop et InDesign. Application des compétences fraichement acquises.</p>
 								<ul class="collection grey-text text-darken-2">
 									<li class="collection-item"><strong>Création visuelle</strong> d'une représentation de la société</li>
 									<li class="collection-item">Déclinaison pour les réseaux sociaux</li>
