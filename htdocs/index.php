@@ -90,6 +90,7 @@
 			</div>
 			<div class="presentation valign-wrapper">
 				<h1 itemprop="name" class="valign"><span id="nom">Grégory Peigné </span><br />Développeur web Full Stack à Paris</h1>
+				<h2>mots clees mots clees mots clees</h2>
 			</div>
 		</section>
 		</span> <!-- fin balisage des microdonnees -->
@@ -379,12 +380,12 @@
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">ADSI<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Mon tous premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
+								<p class="grey-text text-darken-2 left-align">Mon tout premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
 								<ul class="collection grey-text text-darken-2">
 									<li class="collection-item">Une page accueil qui presente l'activité de l'entreprise à l'aide d'un slider CSS3</li>
 									<li class="collection-item">Une page télémaintenance avec teamviewer</li>
 									<li class="collection-item">Une page tarifs</li>
-                                    <li class="collection-item">Une page avec un <strong>formulaire de contact</strong></li>
+                                    <li class="collection-item">Une page avec un <strong>formulaire de contacts</strong></li>
 									<li class="collection-item">Une page avec une <strong>carte google map</strong> pour le plan d'accès</li>
 								</ul>
 							</div>
@@ -399,7 +400,7 @@
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Flyer ADSI<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Réalisation d'un <strong>Flyers</strong> pour la societe A.D.S.I à l'aide de Photoshop, InDesign et un bon massicot</p>
+								<p class="grey-text text-darken-2 left-align">Réalisation d'un <strong>Flyers</strong> pour la societe A.D.S.I à l'aide de Photoshop, InDesign et un bon massicot.</p>
 								<ul class="collection grey-text text-darken-2">
 									<li class="collection-item">Recto verso au format A5 300 pixels/pouce</li>
 									<li class="collection-item">Création du design en accord avec la <strong>charte graphique</strong></li>
@@ -417,7 +418,7 @@
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Logo ADSI<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Création d'un <strong>logo< vectoriel</strong> pour la societe A.D.S.I avec Photoshop et InDesign. Application des compétences fraichement acquise.</p>
+								<p class="grey-text text-darken-2 left-align">Création d'un <strong>logo< vectoriel</strong> pour la societe A.D.S.I avec Photoshop et InDesign. Application des compétences fraichement acquises.</p>
 								<ul class="collection grey-text text-darken-2">
 									<li class="collection-item"><strong>Création visuelle</strong> d'une représentation de la société</li>
 									<li class="collection-item">Déclinaison pour les réseaux sociaux</li>
@@ -542,17 +543,17 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/carte_voeux_2016.png" alt="Carte des voeux Mairie de Plailly" />
+								<img class="activator" src="assets/img/portfolio/carte_voeux_2016.png" alt="Carte de voeux Mairie de Plailly" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-2">Carte des voeux mairie de Plailly.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Une carte des voeux pour la communication du Maire.</p>
+								<span class="card-title activator grey-text text-darken-2">Carte de voeux mairie de Plailly.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Une carte de voeux pour la communication du Maire.</p>
 							</div>
 							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-2">Carte des voeux.<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Pour la nouvelle année 2016, proposition d'une <strong>carte des voeux</strong></p>
+								<span class="card-title grey-text text-darken-2">Carte de voeux.<i class="material-icons right">close</i></span>
+								<p class="grey-text text-darken-2 left-align">Pour la nouvelle année 2016, proposition d'une <strong>carte de voeux</strong></p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Carte des voeux au format 10*21 (1/3 de A4) </li>
+									<li class="collection-item">Carte de voeux au format 10*21 (1/3 de A4) </li>
 									<li class="collection-item">Impression et découpage</li>
 								</ul>
 							</div>
@@ -569,7 +570,7 @@
 								<span class="card-title grey-text text-darken-2">La maison de l'architecte.<i class="material-icons right">close</i></span>
 								<p class="grey-text text-darken-2 left-align">Misse en pratique d'une <strong>mise en page</strong> avec Bootstrap</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">En-tête : Utilisation d'un <strong>jumbotron</strong> avec surchage de la couleur de fond et de la marge inférieur. Au sein de ce jumbotron j'utilise la grille pour répartir le logo et le titre. Utilisation des classes pour centrer le texte et pour cacher le logo sur les smartphones</li>
+									<li class="collection-item">En-tête : Utilisation d'un <strong>jumbotron</strong> avec surchage de la couleur de fond et de la marge inférieure. Au sein de ce jumbotron j'utilise la grille pour répartir le logo et le titre. Utilisation des classes pour centrer le texte et pour cacher le logo sur les smartphones</li>
 									<li class="collection-item">Corps de page : Répartition des images avec la grille. Marge entre les images</li>
                                     <li class="collection-item">Pied de page : Une rangée et un centrage avec quelques règles css pour les boutons ronds</li>
 									<li class="collection-item">Généralités sur la page : Police Bitter de <strong>google fonts</strong> pour le texte. Une couleurs de fond à #eef, et la couleur du texte à #259</li>
