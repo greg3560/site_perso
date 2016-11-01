@@ -35,8 +35,9 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
         <!-- Une petite favicon -->
-        <link rel="icon" type="image/png" href="favicon.png" />
-        <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
+        <link rel="shortcut icon" type="image/png" href="favicon.png" />
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+        <!--[if IE 6]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
 	</head>
 	<body id="page-top">
         <div id="fb-root"></div>
