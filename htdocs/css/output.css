@@ -6339,3 +6339,578 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em; } }
 
 /*# sourceMappingURL=output.css.map */
+
+
+
+/* ==========================================================================
+   STYLE PERSO
+   ========================================================================== */
+/**
+
+/**
+ * Presentation
+ * @version 2.0.0
+ * @author Gregory Peigne
+ * @todo minification, remerciement, taille image, microdatas reseaux sociaux
+ */
+
+/* ================================================================
+======================= BODY ======================================
+===================================================================
+*/
+
+body {
+    overflow-x: hidden;
+}
+#portfolio h3, #contact h3 {
+    color: #fff;
+}
+h4 {
+    color: #00bfa5; /* vert menthe */
+    line-height: 1.5em;
+    margin: 30px;
+}
+h5 {
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 12px;
+    padding: 15px;
+    text-align:left;
+}
+p {
+    text-align: justify;
+}
+#qui_suis_je strong,
+#competences strong,
+#certifications strong {
+    color: #00bfa5; /* vert menthe */
+}
+#portfolio > strong {
+    color: #fff;
+}
+.collection-item strong {
+    color: #00bfa5; /* vert menthe */
+}
+#qui_suis_je p, #competences p {
+    margin-top: 5%;
+}
+/* largeur du site */
+.container {
+    width:80%;
+}
+
+/* +++++++++++++++BOUTONS SOLO++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+#portfolio .btn-large, 
+#portfolio .btn-large:hover {
+    background-color: #fff; /* blanc */
+    margin: 3px;
+}
+/* bouton next/prev l'un au dessus de l'autre */
+@media all and (max-width:992px) {
+    #competences .btn-large,
+    #portfolio .btn-large {
+        display:block;
+    }    
+}
+#portfolio .btn-floating i {
+    color: #00bfa5; /* vert menthe */
+}
+/* decalage du boutons telecherger cv */
+#qui_suis_je .btn-large {
+    margin-top:40px;
+} 
+/* competences */
+.btn-mobile {
+    margin-top: 30%;
+}
+@media all and (max-width:992px) {
+    .btn-mobile {
+        display: none;
+    }    
+}
+/* boutons + dans certifications */
+.plus {
+    background-color: #00bfa5; /* vert menthe */
+    margin: 3%;
+}
+@media all and (max-width:992px) and (min-width:600px) {
+    .plus {
+        margin: 20%;
+    }    
+}
+@media all and (max-width:600px) {
+    .plus {
+        margin-left: 45%;
+    }    
+}
+/* contact */
+#contact .btn-flat:hover {
+    background-color: #00bfa5; /* vert menthe */
+    color: #fff;
+    box-shadow: none;
+    padding-left: 2rem;
+}
+#contact .btn-flat {
+    color: #00bfa5; /* vert menthe */
+    margin: 15px 15px 15px 8px;
+    padding-left: 0;
+}
+
+
+/* +++++++++++++++FIN BOUTONS SOLO++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+
+/* ================================================================
+====================== SECTION QUI SUIS-JE ? ======================
+===================================================================
+*/
+
+ /* photo */
+#greg {
+    margin-top: 10%;
+    border: 5px solid #fff;
+}
+/* decalage de la photo */
+@media all and (max-width:992px) {
+    #greg {
+        margin-top:25%;
+    }
+}
+#qui_suis_je .reseaux-sociaux {
+    margin-top: 13%;
+}
+#qui_suis_je .reseaux-sociaux ul li {
+    display:inline-block;
+    margin-left:10%;
+}
+/* icones et couleurs reseaux sociaux */
+#qui_suis_je .fa-linkedin:before,
+#qui_suis_je .fa-facebook:before,
+#qui_suis_je .fa-twitter:before,
+#qui_suis_je .fa-google-plus:before {
+    color: #00bfa5; /* vert menthe */
+}
+
+/* ================================================================
+========================= COMPETENCES =============================
+===================================================================
+*/
+
+#competences {
+    background: rgba(255, 255, 255, 0.7); /* blanc opaque */
+}
+@media all and (max-width:992px) {
+    #competences {
+        height:900px;
+    }
+}
+/* affichage des scores de la competence active */
+.carousel {
+    overflow: visible;
+}
+/* decalage du carousel */
+@media all and (max-width:992px) {
+    .carousel {
+        margin-top: 10%;
+    }
+}
+.carousel .carousel-item img {
+    width: 120px;
+    position: absolute;
+    left: -37px;
+    top: -8px;
+}
+.skill-title {
+    position: absolute;
+    top: -100px;
+    right: calc(50% - 50px);
+    line-height: 15px;
+    width: 100px;
+}
+.singel-hr-inner {
+    background-color: #00bfa5; /* vert menthe */
+    position: absolute;
+    width: 100%;
+    bottom: 33px;
+    height: 0px;
+    -webkit-transition: all 1.2s;
+    transition: all 1.2s;
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+.single-skill {
+    float: right;
+    height: 360px;
+    width: 50px;
+    position: relative;
+}
+.hr {
+    height: 80px;
+    width: 1px;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    background-color: #00bfa5; /* vert menthe */
+}
+#competences .point:after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    border-radius: 50%;
+    left: -3px;
+    background-color: #00bfa5; /* vert menthe */
+}
+.score {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+}
+
+/* ================================================================
+=========================== PORTFOLIO =============================
+===================================================================
+*/
+
+#portfolio {
+    background-color:#00bfa5; /* vert menthe */
+}
+@media all and (max-width:992px) {
+    #portfolio {
+        height:700px;
+    }
+}
+#portfolio .owl-carousel {
+    margin-top:20px;
+}
+/* ajustement boutons next prev du crousel */
+#portfolio .owl-controls {
+    position: absolute;
+    right: -20%;
+    bottom: 20px;
+}
+@media all and (max-width:992px) {
+    #portfolio .owl-controls {
+        display: none;
+    }    
+}
+#portfolio .card-title {
+    color:#00bfa5; /* vert menthe */
+}
+
+/* ================================================================
+====================== CERTIFICATIONS =============================
+===================================================================
+*/
+
+/* les 3 cartes suivantes */
+.certificats-informatique-cache li {
+    display:none;
+    opacity: 0;
+}
+/* aligner 3 images dans un row de 12 col en ecran large */
+@media all and (min-width:992px) {
+    #certifications .row .col.offset-l1 {
+        margin-left: 12.5%;
+    }
+}
+/* margin inferieur sur le menu tabs de certifications */
+#certifications .row .col.s12 {
+    margin-bottom: 3%;
+}
+.tabs .tab a:hover {
+    color: #00d4b7; /* vert menthe clair */
+}
+/* background pour les 4 img des parcours */
+#parcours-javascript {
+    background: #B1E3E3;
+    background: linear-gradient(45deg, #B1E3E3 0%, #26CAD3 100%);
+}
+#parcours-bluemix {
+    background: #4B5D67;
+    background: linear-gradient(45deg, #4B5D67 0%, #2F404D 100%);
+}
+#parcours-integrateur {
+    background: #65485a;
+    background: linear-gradient(45deg, #65485a 0%, #9a5e7a 100%);
+}
+#parcours-site_web {
+    background: #aebd9b;
+    background: linear-gradient(45deg, #aebd9b 0%, #c8cfae 100%);
+}
+
+/* liens vers certifications */
+.card-content p a i {
+    position: relative;
+    top: 5px;
+    left: 32%;
+}
+/* Reduction de la taille des titre dans l'onglet parcours */
+#parcours .card .card-title {
+    font-size: 20px;
+}
+
+/* ================================================================
+======================= CONTACT ===================================
+===================================================================
+*/
+
+footer.page-footer .footer-copyright {
+    height: inherit;
+    margin-top: 10%;
+}
+form {
+    background-color:#fff;
+    position: relative;
+    transform-origin: 80% 80%;
+    transform:rotate(180deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.7s cubic-bezier(0,1.48,.99,1.08);
+}
+/* liens sociaux */
+#contact .reseaux-sociaux ul {
+    padding: 10px;
+}
+#contact .reseaux-sociaux ul li {
+    display:inline-block;
+    width:5%;
+    font-size: 1.5em;
+}
+/* alignement du bouton share de facebook */
+.fb_iframe_widget span {
+    vertical-align: inherit !important;
+}
+
+
+/* ================================================================
+======================= owl-caroussel =============================
+===================================================================
+*/
+
+/* 
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 
+ *  Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+/* 
+ *  Core Owl Carousel CSS File
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+  /*opacity:0;*/
+}
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.owl-carousel.owl-loaded {
+  display: block;
+}
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+.owl-carousel .owl-refresh .owl-item {
+  display: none;
+}
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+.owl-carousel.owl-text-select-on .owl-item {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+.owl-carousel .owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block;
+}
+
+/* 
+ *  Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease;
+  -moz-transition: opacity 400ms ease;
+  -ms-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+.owl-carousel .owl-item img {
+  transform-style: preserve-3d;
+}
+
+/* 
+ *  Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: scale 100ms ease;
+  -moz-transition: scale 100ms ease;
+  -ms-transition: scale 100ms ease;
+  -o-transition: scale 100ms ease;
+  transition: scale 100ms ease;
+}
+.owl-carousel .owl-video-play-icon:hover {
+  -webkit-transition: scale(1.3, 1.3);
+  -moz-transition: scale(1.3, 1.3);
+  -ms-transition: scale(1.3, 1.3);
+  -o-transition: scale(1.3, 1.3);
+  transition: scale(1.3, 1.3);
+}
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none;
+}
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  -webkit-transition: opacity 400ms ease;
+  -moz-transition: opacity 400ms ease;
+  -ms-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+

@@ -1,13 +1,13 @@
 #mise en cache
-#Header add Cache-Control "max-age=31536000"
+Header add Cache-Control "max-age=31536000"
 #erreur
 #ErrorDocument 401 /erreurs/erreur_401.php
 #ErrorDocument 403 /erreurs/erreur_403.php
 ErrorDocument 404 /erreurs/404.php
 #ErrorDocument 500 /erreurs/erreur_500.php
 #redirection vers l'index
-#DirectoryIndex index.min.php index.min.html 404.php
-DirectoryIndex index.php index.html 404.php
+DirectoryIndex index.min.php index.min.html 404.php
+#DirectoryIndex index.php index.html 404.php
 #redirection 301
 Redirect 301 /blog/ http://www.gregorypeigne.fr
 Redirect 301 /portfolio_/ http://www.gregorypeigne.fr
@@ -23,7 +23,6 @@ Redirect 301 /portfolio_/calculatrice/ http://www.gregorypeigne.fr
 Redirect 301 /cv/ http://www.gregorypeigne.fr
 Redirect 301 /profil/ http://www.gregorypeigne.fr
 #articles
-<<<<<<< HEAD
 Redirect 301 /certificats/HTML5%20CSS3.pdf?trk=profile_certification_title http://www.gregorypeigne.fr
 Redirect 301 /certificats/Comprendre%20le%20web.pdf?trk=profile_certification_title http://www.gregorypeigne.fr
 Redirect 301 /gregory.peigne/cv/ http://www.gregorypeigne.fr
@@ -31,8 +30,6 @@ Redirect 301 /commerciale/ http://www.gregorypeigne.fr
 Redirect 301 /securite-informatique/ http://www.gregorypeigne.fr
 Redirect 301 /insolite/ http://www.gregorypeigne.fr
 Redirect 301 /developpement-informatique/ http://www.gregorypeigne.fr
-=======
->>>>>>> 86233155783a85dd06949dab0b72ff7dfbeac729
 Redirect 301 /developpeur-web/ http://www.gregorypeigne.fr
 Redirect 301 /le-langage-informatique-a-lecole/ http://www.gregorypeigne.fr
 Redirect 301 /un-cryptage-complementaire-a-https/ http://www.gregorypeigne.fr
@@ -55,8 +52,5 @@ Redirect 301 /wp-content/uploads/2015/03/640.1071157.jpg http://www.gregorypeign
 Redirect 301 /wp-content/uploads/2015/03/200.1071187.jpg http://www.gregorypeigne.fr
 Redirect 301 /wp-content/uploads/2015/03/nerdalize-2.jpg http://www.gregorypeigne.fr
 Redirect 301 /wp-content/uploads/2015/03/nerdalize.jpg http://www.gregorypeigne.fr
-<<<<<<< HEAD
 Redirect 301 /wp-content/uploads/2015/03/000000044615.jpg http://www.gregorypeigne.fr
-=======
-Redirect 301 /wp-content/uploads/2015/03/000000044615.jpg http://www.gregorypeigne.fr
->>>>>>> 86233155783a85dd06949dab0b72ff7dfbeac729
+

@@ -26,8 +26,8 @@
 		<title>Grégory Peigné</title>
 		<meta name="description" content="Bonjour, je suis à la recherche d'un contrat pro ou CDD/CDI en développement web junior. Venez découvrir mon profil, mes compétences et mon Portfolio.">
         <style></style>
-        <!-- CSS perso ligne de flotaison -->
-        <link href='css/pre_style.css' rel='stylesheet' type='text/css'>
+        <!-- CSS perso ligne de flotaison
+        <link href='css/pre_style.css' rel='stylesheet' type='text/css'> -->
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -1170,11 +1170,6 @@
         <!-- CSS materialize compilé -->
         <!-- <link href='css/output.css' rel='stylesheet' type='text/css'> -->
         <link href='css/output.min.css' rel='stylesheet' type='text/css'>
-        <!-- CSS perso body -->
-        <!-- <link href='css/style.css' rel='stylesheet' type='text/css'> -->
-        <link href='css/style.min.css' rel='stylesheet' type='text/css'>
-        <!-- <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'> -->
-        <link href='css/owl.carousel.min.css' rel='stylesheet' type='text/css'>
         <!--Import Google Icon Font-->
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -1186,10 +1181,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script>
 		<!-- CDN Javascript materialize compilé et minifié -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-		<!-- javascript slider portfolio -->
-		<!-- <script src="js/owl.carousel.js"></script> -->
-		<script src="js/owl.carousel.min.js"></script>
-        <!-- javascript perso -->
+		<!-- javascript perso -->
 		<!-- <script src="js/main.js"></script> -->
 		<script src="js/main.min.js"></script>
         <!-- script partage sur les reseaux sociaux -->
