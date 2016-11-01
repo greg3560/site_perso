@@ -663,7 +663,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Html5 et css3<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 89%<a href="certifications/html_css.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 89%<a href="https://openclassrooms.com/course-certificates/5973857" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -682,7 +682,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Javascript<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 93%<a href="certifications/javascript.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 93%<a href="https://openclassrooms.com/course-certificates/5616265513" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -701,7 +701,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">JQuery<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="certifications/jquery.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="https://openclassrooms.com/course-certificates/7479150407" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -728,7 +728,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Node.js<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="certifications/node-js.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="https://openclassrooms.com/course-certificates/2912982775" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -749,7 +749,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">PHP et MySQL<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 72%<a href="certifications/php_mysql.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 72%<a href="https://openclassrooms.com/course-certificates/326270153" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -775,7 +775,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Bootstrap<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 97%<a href="certifications/bootstrap.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 97%<a href="https://openclassrooms.com/course-certificates/4425680117" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -796,7 +796,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Wordpress<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 92%<a href="certifications/wordpress.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 92%<a href="https://openclassrooms.com/course-certificates/9736380528" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -816,7 +816,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Git<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 84%<a href="certifications/git.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 84%<a href="https://openclassrooms.com/course-certificates/127139870" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -849,7 +849,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Comprendre le web<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 100%<a href="certifications/comprendre_le_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 100%<a href="https://openclassrooms.com/course-certificates/773061235" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -872,7 +872,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Start-up<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 73%<a href="certifications/start-ups.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 73%<a href="https://openclassrooms.com/course-certificates/226310215" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -896,7 +896,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Devenir mentor<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 97%<a href="certifications/mentor.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 97%<a href="https://openclassrooms.com/course-certificates/9042986180" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -918,7 +918,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Référencement web<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 95%<a href="certifications/referencement_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 95%<a href="https://openclassrooms.com/course-certificates/3710317810" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -950,7 +950,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">IBM Bluemix<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 92%<a href="certifications/cours_bluemix.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 92%<a href="https://openclassrooms.com/course-certificates/5477174480" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -974,7 +974,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Linux<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="certifications/linux.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="https://openclassrooms.com/course-certificates/26944028" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -1006,7 +1006,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Programmer en C<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 91%<a href="certifications/programmer_en_c.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 91%<a href="https://openclassrooms.com/course-certificates/754995284" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -1034,7 +1034,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Disciple du Javascript<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 93%<a href="certifications/disciple_du_javascript.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 93%<a href="https://openclassrooms.com/learning-path-certificates/9561442447" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Cours suivi<i class="material-icons right">close</i></span>
@@ -1055,7 +1055,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Le cloud d'IBM Bluemix<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 91%<a href="certifications/deployez_vos_applications_node_sur_bluemix.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 91%<a href="https://openclassrooms.com/learning-path-certificates/8911089906" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Cours suivi<i class="material-icons right">close</i></span>
@@ -1074,7 +1074,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Intégrateur web<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 92%<a href="certifications/integration_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 92%<a href="https://openclassrooms.com/learning-path-certificates/9790170575" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Cours suivi<i class="material-icons right">close</i></span>
@@ -1097,7 +1097,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Lancer son site web<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 89%<a href="certifications/lancer_son_site_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 89%<a href="https://openclassrooms.com/learning-path-certificates/2868458328" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Cours suivi<i class="material-icons right">close</i></span>
