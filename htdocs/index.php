@@ -383,7 +383,7 @@
 								<span class="card-title grey-text text-darken-2">ADSI<i class="material-icons right">close</i></span>
 								<p class="grey-text text-darken-2 left-align">Mon tout premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Une page accueil qui presente l'activité de l'entreprise à l'aide d'un slider CSS3</li>
+									<li class="collection-item">Une page accueil qui présente l'activité de l'entreprise à l'aide d'un slider CSS3</li>
 									<li class="collection-item">Une page télémaintenance avec teamviewer</li>
 									<li class="collection-item">Une page tarifs</li>
                                     <li class="collection-item">Une page avec un <strong>formulaire de contacts</strong></li>
@@ -419,7 +419,7 @@
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Logo ADSI<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Création d'un <strong>logo vectoriel</strong> pour la societe A.D.S.I avec Photoshop et InDesign. Application des compétences fraichement acquises.</p>
+								<p class="grey-text text-darken-2 left-align">Création d'un <strong>logo vectoriel</strong> pour la société A.D.S.I avec Photoshop et InDesign. Application des compétences fraichement acquises.</p>
 								<ul class="collection grey-text text-darken-2">
 									<li class="collection-item"><strong>Création visuelle</strong> d'une représentation de la société</li>
 									<li class="collection-item">Déclinaison pour les réseaux sociaux</li>
@@ -481,7 +481,7 @@
 								</p>
 								<ul class="collection grey-text text-darken-2">
 									<li class="collection-item">Utilisation de l'architecture <strong>MVC</strong> (modèle, vue, contrôleur)</li>
-									<li class="collection-item">Utilisation de <strong>mysqli</strong> pour la connection à la base de données</li>
+									<li class="collection-item">Utilisation de <strong>mysqli</strong> pour la connexion à la base de données</li>
 									<li class="collection-item">Création et gestion de la base de données</li>
 									<li class="collection-item">Mise en place d'un <strong>bbcode</strong> pour la page commentaire, coloration et rendu en <strong>lien cliquable</strong> des expressions du type http://www et mailto</li>
 								</ul>
@@ -569,9 +569,9 @@
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">La maison de l'architecte.<i class="material-icons right">close</i></span>
-								<p class="grey-text text-darken-2 left-align">Misse en pratique d'une <strong>mise en page</strong> avec Bootstrap</p>
+								<p class="grey-text text-darken-2 left-align">Mise en pratique d'une <strong>mise en page</strong> avec Bootstrap</p>
 								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">En-tête : Utilisation d'un <strong>jumbotron</strong> avec surchage de la couleur de fond et de la marge inférieure. Au sein de ce jumbotron j'utilise la grille pour répartir le logo et le titre. Utilisation des classes pour centrer le texte et pour cacher le logo sur les smartphones</li>
+									<li class="collection-item">En-tête : Utilisation d'un <strong>jumbotron</strong> avec surcharge de la couleur de fond et de la marge inférieure. Au sein de ce jumbotron j'utilise la grille pour répartir le logo et le titre. Utilisation des classes pour centrer le texte et pour cacher le logo sur les smartphones</li>
 									<li class="collection-item">Corps de page : Répartition des images avec la grille. Marge entre les images</li>
                                     <li class="collection-item">Pied de page : Une rangée et un centrage avec quelques règles css pour les boutons ronds</li>
 									<li class="collection-item">Généralités sur la page : Police Bitter de <strong>google fonts</strong> pour le texte. Une couleurs de fond à #eef, et la couleur du texte à #259</li>
@@ -602,7 +602,7 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Générateur de formulaires.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">définition d'une IHM (Interface Homme Machine) en JQuery pour faciliter la création de formulaires de saisie.</p>
+								<p class="grey-text text-darken-2 left-align">Définition d'une IHM (Interface Homme Machine) en JQuery pour faciliter la création de formulaires de saisie.</p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Générateur de formulaires.<i class="material-icons right">close</i></span>
