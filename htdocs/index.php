@@ -26,8 +26,8 @@
 		<title>Grégory Peigné</title>
 		<meta name="description" content="Bonjour, je suis à la recherche d'un contrat pro ou CDD/CDI en développement web junior. Venez découvrir mon profil, mes compétences et mon Portfolio.">
         <style></style>
-        <!-- CSS perso ligne de flotaison
-        <link href='css/pre_style.css' rel='stylesheet' type='text/css'> -->
+        <!-- CSS perso ligne de flotaison -->
+        <link href='css/pre_style.css' rel='stylesheet' type='text/css'>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -377,7 +377,7 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">ADSI<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Assistance, dépannage et services informatique.</p>
+								<p class="grey-text text-darken-2 left-align">Site web: <a href="http://adsi.gregorypeigne.fr/" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">ADSI<i class="material-icons right">close</i></span>
@@ -397,7 +397,7 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Flyer ADSI<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Assistance, dépannage et services informatique.</p>
+								<p class="grey-text text-darken-2 left-align">Image png: <a href="/assets/flyers_adsi_recto.png" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Flyer ADSI<i class="material-icons right">close</i></span>
@@ -415,7 +415,7 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Logo ADSI<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Assistance, dépannage et services informatique.</p>
+								<p class="grey-text text-darken-2 left-align">Image png: <a href="/assets/logo_adsi.png" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Logo ADSI<i class="material-icons right">close</i></span>
@@ -432,7 +432,7 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Blog de Zozor<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">La mascote d'openclassrooms</p>
+								<p class="grey-text text-darken-2 left-align">Site web: <a href="http://blogzozor.gregorypeigne.fr/" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Blog de Zozor<i class="material-icons right">close</i></span>
@@ -446,13 +446,33 @@
 								</ul>
 							</div>
 						</li>
+                        <li class="item card small">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/img/portfolio/cv_zozor.png" alt="Blog de Zozor" />
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-2">CV de Zozor<i class="material-icons right">more_vert</i></span>
+                                <p class="grey-text text-darken-2 left-align">Site web: <a href="http://cvzozor.gregorypeigne.fr/" target="_blank" ><i class="material-icons">link</i></a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-2">CV de Zozor<i class="material-icons right">close</i></span>
+                                <p class="grey-text text-darken-2 left-align">
+                                    Premier mooc d'openclassrooms autour des langages <strong>HTML5</strong> et CSS3.Ceci est le premier TP du tutoriel.
+                                </p>
+                                <ul class="collection grey-text text-darken-2">
+                                    <li class="collection-item">Rappel sur la <strong>mise en page</strong> (en-tête, corps de page, pied de page)</li>
+                                    <li class="collection-item">Utilisation des <strong>balises html5</strong> et sensibilisation de leurs rôles <strong>sémantiques</strong></li>
+                                    <li class="collection-item">Utilisation des <strong>propriétés CSS3</strong> pour le design et aussi pour le positionnement</li>
+                                </ul>
+                            </div>
+                        </li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
 								<img class="activator" src="assets/img/portfolio/mud.png" alt="MUD" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Music Until Dawn<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Sonorisations, éclairages évènementiel.</p>
+								<p class="grey-text text-darken-2 left-align">Site web: <a href="http://mud.gregorypeigne.fr/" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Music Until Dawn<i class="material-icons right">close</i></span>
@@ -472,7 +492,7 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Mairie de Naujac/mer<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Projet de fin de formation à l'INFA.</p>
+								<p class="grey-text text-darken-2 left-align">Site web: <a href="http://naujacsurmer.gregorypeigne.fr/" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Mairie de Naujac/mer<i class="material-icons right">close</i></span>
@@ -489,29 +509,11 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/agence.png" alt="Agence" />
-							</div>
-							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-2">L'agence<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Premier projet responsive.</p>
-							</div>
-							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-2">L'agence<i class="material-icons right">close</i></span>
-								<ul class="collection grey-text text-darken-2">
-									<li class="collection-item">Mise en pratique des connaissances liées au <strong>responsive design</strong>.Le but étant de créer une page plein écran et l'adapter sur des résolutions plus petites</li>
-									<li class="collection-item">Utilisation des <strong>requêtes de media</strong> en fonction du type d'écran et de sa taille</li>
-									<li class="collection-item">Utilisation des tailles relatives</li>
-									<li class="collection-item"><strong>Ergonomie</strong> liées au contraintes des résolutions d'écrans</li>
-								</ul>
-							</div>
-						</li>
-						<li class="item card small">
-							<div class="card-image waves-effect waves-block waves-light">
 								<img class="activator" src="assets/img/portfolio/premier_site_perso.png" alt="Blog personnel" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Blog/site personnel<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Création d'un <strong>blog personnel</strong> à l'aide de Wordpress.</p>
+								<p class="grey-text text-darken-2 left-align">Site web: <a href="http://siteperso.gregorypeigne.fr/" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Blog et site personnel<i class="material-icons right">close</i></span>
@@ -529,8 +531,8 @@
 								<img class="activator" src="assets/img/portfolio/flyers_comptoir_des_saveurs.png" alt="Flyers Comptoir des saveurs" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-2">Flyers Le conmptoir des saveurs.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Le comptoir des saveurs.</p>
+								<span class="card-title activator grey-text text-darken-2">Le comptoir des saveurs.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Image png: <a href="/assets/flyers_comptoir_des_saveurs.png" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Flyers Le conmptoir des saveurs.<i class="material-icons right">close</i></span>
@@ -547,8 +549,8 @@
 								<img class="activator" src="assets/img/portfolio/carte_voeux_2016.png" alt="Carte de voeux Mairie de Plailly" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-2">Carte de voeux mairie de Plailly.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Une carte de voeux pour la communication du Maire.</p>
+								<span class="card-title activator grey-text text-darken-2">Carte de voeux.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Image png: <a href="/assets/carte_voeux_2016.png" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Carte de voeux.<i class="material-icons right">close</i></span>
@@ -565,7 +567,7 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">La maison de l'architecte.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Création d'une page web simple à l'aide de Bootstrap pour les 4 types de média prévu par le <strong>framework</strong>.</p>
+								<p class="grey-text text-darken-2 left-align">Site web: <a href="http://lamaisondelarchitecte.gregorypeigne.fr/" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">La maison de l'architecte.<i class="material-icons right">close</i></span>
@@ -584,7 +586,7 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">La maison de l'architecture.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Réalisation d'une page web complexe avec des <strong>plugins javascript</strong> pour les 4 types de <strong>média</strong> prévu par Bootstrap.</p>
+								<p class="grey-text text-darken-2 left-align">Site web: <a href="http://lamaisondelarchitecture.gregorypeigne.fr/" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">La maison de l'architecture<i class="material-icons right">close</i></span>
@@ -602,7 +604,7 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Générateur de formulaires.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Définition d'une IHM (Interface Homme Machine) en JQuery pour faciliter la création de formulaires de saisie.</p>
+								<p class="grey-text text-darken-2 left-align">Application web: <a href="http://formulaires.gregorypeigne.fr/" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Générateur de formulaires.<i class="material-icons right">close</i></span>
@@ -619,8 +621,8 @@
 								<img class="activator" src="assets/img/portfolio/Jeu_de_plateau.png" alt="Jeu de plateau" />
 							</div>
 							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-2">Jeu de plateau tour par tour en Javascript.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Création d'un <strong>jeu en javascript</strong> où 2 joueurs s'affrontent sur une carte.</p>
+								<span class="card-title activator grey-text text-darken-2">Jeu de plateau Javascript.<i class="material-icons right">more_vert</i></span>
+								<p class="grey-text text-darken-2 left-align">Jeu en ligne: <a href="http://jeuplateau.gregorypeigne.fr/" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Jeu de plateau<i class="material-icons right">close</i></span>
@@ -663,7 +665,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Html5 et css3<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 89%<a href="https://openclassrooms.com/course-certificates/5973857" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 89%<a href="/certifications/html_css.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -682,7 +684,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Javascript<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 93%<a href="https://openclassrooms.com/course-certificates/5616265513" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 93%<a href="/certifications/javascript.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -701,7 +703,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">JQuery<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="https://openclassrooms.com/course-certificates/7479150407" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="/certifications/jquery.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -728,7 +730,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Node.js<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="https://openclassrooms.com/course-certificates/2912982775" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="/certifications/node-js.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -749,7 +751,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">PHP et MySQL<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 72%<a href="https://openclassrooms.com/course-certificates/326270153" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 72%<a href="/certifications/php_mysql.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -775,7 +777,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Bootstrap<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 97%<a href="https://openclassrooms.com/course-certificates/4425680117" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 97%<a href="/certifications/bootstrap.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -796,7 +798,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Wordpress<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 92%<a href="https://openclassrooms.com/course-certificates/9736380528" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 92%<a href="/certifications/wordpress.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -816,7 +818,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Git<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 84%<a href="https://openclassrooms.com/course-certificates/127139870" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 84%<a href="/certifications/git.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -849,7 +851,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Comprendre le web<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 100%<a href="https://openclassrooms.com/course-certificates/773061235" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 100%<a href="/certifications/comprendre_le_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -872,7 +874,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Start-up<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 73%<a href="https://openclassrooms.com/course-certificates/226310215" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 73%<a href="/certifications/start-ups.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -896,7 +898,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Devenir mentor<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 97%<a href="https://openclassrooms.com/course-certificates/9042986180" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 97%<a href="/certifications/mentor.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -918,7 +920,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Référencement web<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 95%<a href="https://openclassrooms.com/course-certificates/3710317810" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 95%<a href="/certifications/referencement_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -950,7 +952,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">IBM Bluemix<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 92%<a href="https://openclassrooms.com/course-certificates/5477174480" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 92%<a href="/certifications/cours_bluemix.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -974,7 +976,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Linux<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="https://openclassrooms.com/course-certificates/26944028" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 95%<a href="/certifications/linux.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -1006,7 +1008,7 @@
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Programmer en C<i class="material-icons right">more_vert</i></span>
-									<p class="grey-text text-darken-2">Taux de réussite : 91%<a href="https://openclassrooms.com/course-certificates/754995284" target="_blank" ><i class="material-icons">link</i></a></p>
+									<p class="grey-text text-darken-2">Taux de réussite : 91%<a href="/certifications/programmer_en_c.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
 								</div>
 								<div class="card-reveal">
 									<span class="card-title grey-text text-darken-2">Acquis<i class="material-icons right">close</i></span>
@@ -1034,7 +1036,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Disciple du Javascript<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 93%<a href="https://openclassrooms.com/learning-path-certificates/9561442447" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 93%<a href="/certifications/disciple_du_javascript.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Cours suivi<i class="material-icons right">close</i></span>
@@ -1055,7 +1057,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Le cloud d'IBM Bluemix<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 91%<a href="https://openclassrooms.com/learning-path-certificates/8911089906" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 91%<a href="/certifications/deployez_vos_applications_node_sur_bluemix.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Cours suivi<i class="material-icons right">close</i></span>
@@ -1074,7 +1076,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Intégrateur web<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 92%<a href="https://openclassrooms.com/learning-path-certificates/9790170575" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 92%<a href="/certifications/integration_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Cours suivi<i class="material-icons right">close</i></span>
@@ -1097,7 +1099,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Lancer son site web<i class="material-icons right">more_vert</i></span>
-                                    <p class="grey-text text-darken-2">Taux de réussite : 89%<a href="https://openclassrooms.com/learning-path-certificates/2868458328" target="_blank" ><i class="material-icons">link</i></a></p>
+                                    <p class="grey-text text-darken-2">Taux de réussite : 89%<a href="/certifications/lancer_son_site_web.pdf" target="_blank" ><i class="material-icons">link</i></a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-2">Cours suivi<i class="material-icons right">close</i></span>
@@ -1169,8 +1171,8 @@
             </div>
 		</footer>
         <!-- CSS materialize compilé -->
-        <!-- <link href='css/output.css' rel='stylesheet' type='text/css'> -->
-        <link href='css/output.min.css' rel='stylesheet' type='text/css'>
+        <link href='css/output.css' rel='stylesheet' type='text/css'>
+        <!-- <link href='css/output.min.css' rel='stylesheet' type='text/css'> -->
         <!--Import Google Icon Font-->
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">

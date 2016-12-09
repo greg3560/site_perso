@@ -6620,6 +6620,10 @@ p {
 #certifications .row .col.s12 {
     margin-bottom: 3%;
 }
+/* simulation du btn plus */
+#systeme {
+  margin-bottom: calc(56px + 6%) !important;
+}
 .tabs .tab a:hover {
     color: #00d4b7; /* vert menthe clair */
 }
@@ -6645,10 +6649,10 @@ p {
 .card-content p a i {
     position: relative;
     top: 5px;
-    left: 32%;
+    left: 20%;
 }
 /* Reduction de la taille des titre dans l'onglet parcours */
-#parcours .card .card-title {
+#certifications .card .card-title, #portfolio .card .card-title {
     font-size: 20px;
 }
 

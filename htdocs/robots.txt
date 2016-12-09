@@ -1,2 +1,3 @@
 User-Agent: * 
 Disallow:/libs/
+Disallow:/certifications/
