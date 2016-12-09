@@ -10,8 +10,8 @@ DirectoryIndex index.min.php index.min.html 404.php
 #DirectoryIndex index.php index.html 404.php
 #redirection 301
 Redirect 301 /blog/ http://www.gregorypeigne.fr
-Redirect 301 naujac-sur-mer/?article=4&section=article http://www.gregorypeigne.fr
-Redirect 301 naujac-sur-mer/?article=5&section=article http://www.gregorypeigne.fr
+Redirect 301 /naujac-sur-mer/?article=4&section=article http://www.gregorypeigne.fr
+Redirect 301 /naujac-sur-mer/?article=5&section=article http://www.gregorypeigne.fr
 Redirect 301 /web/start-up/ http://www.gregorypeigne.fr
 Redirect 301 /web/logiciels-malveillant/ http://www.gregorypeigne.fr
 Redirect 301 /web/routeur/ http://www.gregorypeigne.fr
