@@ -1,14 +1,34 @@
 #mise en cache pendant 1 mois
-#Header add Cache-Control "max-age=2592000"
+Header add Cache-Control "max-age=2592000"
 #erreur
 #ErrorDocument 401 /erreurs/erreur_401.php
 #ErrorDocument 403 /erreurs/erreur_403.php
 ErrorDocument 404 /erreurs/404.php
 #ErrorDocument 500 /erreurs/erreur_500.php
 #redirection vers l'index
-#DirectoryIndex index.min.php index.min.html 404.php
-DirectoryIndex index.php index.html 404.php
+DirectoryIndex index.min.php index.min.html 404.php
+#DirectoryIndex index.php index.html 404.php
 #redirection 301
+Redirect 301 /blog/ http://www.gregorypeigne.fr
+Redirect 301 naujac-sur-mer/?article=4&section=article http://www.gregorypeigne.fr
+Redirect 301 naujac-sur-mer/?article=5&section=article http://www.gregorypeigne.fr
+Redirect 301 /web/start-up/ http://www.gregorypeigne.fr
+Redirect 301 /web/logiciels-malveillant/ http://www.gregorypeigne.fr
+Redirect 301 /web/routeur/ http://www.gregorypeigne.fr
+Redirect 301 /web/cryptage/ http://www.gregorypeigne.fr
+Redirect 301 /web/pedagogie/ http://www.gregorypeigne.fr
+Redirect 301 /web/code/ http://www.gregorypeigne.fr
+Redirect 301 /web/serveur/ http://www.gregorypeigne.fr
+Redirect 301 /web/https/ http://www.gregorypeigne.fr
+Redirect 301 /web/firefox/ http://www.gregorypeigne.fr
+Redirect 301 /web/neerlandais/ http://www.gregorypeigne.fr
+Redirect 301 /developpement-web/ http://www.gregorypeigne.fr
+Redirect 301 /2015/03/ http://www.gregorypeigne.fr
+Redirect 301 /web/google/ http://www.gregorypeigne.fr
+Redirect 301 /web/intel/ http://www.gregorypeigne.fr
+Redirect 301 /web/modem/ http://www.gregorypeigne.fr
+Redirect 301 /web/chauffage/ http://www.gregorypeigne.fr
+Redirect 301 /web/cloud/ http://www.gregorypeigne.fr
 Redirect 301 /blog/ http://www.gregorypeigne.fr
 Redirect 301 /portfolio_/ http://www.gregorypeigne.fr
 Redirect 301 /portfolio_/mud/ http://www.gregorypeigne.fr
@@ -26,7 +46,7 @@ Redirect 301 /profil/ http://www.gregorypeigne.fr
 Redirect 301 /web/langage-informatique/ http://www.gregorypeigne.fr
 Redirect 301 /certificats/apprenez%20 http://www.gregorypeigne.fr
 Redirect 301 /certificats/certificat%20gerer%20son%20code%20avec%20git%20et%20github.pdf?trk=profile_certification_title http://www.gregorypeigne.fr
-Redirect 301 /certificats/PHP%20MySql.pdf http://www.gregorypeigne.fr
+Redirect 301 /certificats/PHP%20MySql.pdf?trk=profile_certification_title http://www.gregorypeigne.fr
 Redirect 301 /2015/04/ http://www.gregorypeigne.fr
 Redirect 301 /certificats/HTML5%20CSS3.pdf?trk=profile_certification_title http://www.gregorypeigne.fr
 Redirect 301 /certificats/Comprendre%20le%20web.pdf?trk=profile_certification_title http://www.gregorypeigne.fr
