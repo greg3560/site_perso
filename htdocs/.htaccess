@@ -46,7 +46,7 @@ Redirect 301 /profil/ http://www.gregorypeigne.fr
 Redirect 301 /web/langage-informatique/ http://www.gregorypeigne.fr
 Redirect 301 /certificats/apprenez%20 http://www.gregorypeigne.fr
 Redirect 301 /certificats/certificat%20gerer%20son%20code%20avec%20git%20et%20github.pdf?trk=profile_certification_title http://www.gregorypeigne.fr
-Redirect 301 /certificats/PHP%20MySql.pdf?trk=profile_certification_title http://www.gregorypeigne.fr
+Redirect 301 /certificats/PHP%20MySql.pdf http://www.gregorypeigne.fr
 Redirect 301 /2015/04/ http://www.gregorypeigne.fr
 Redirect 301 /certificats/HTML5%20CSS3.pdf?trk=profile_certification_title http://www.gregorypeigne.fr
 Redirect 301 /certificats/Comprendre%20le%20web.pdf?trk=profile_certification_title http://www.gregorypeigne.fr
