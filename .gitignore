@@ -3,3 +3,6 @@
 
 # Ignorer tous les fichiers swap
 *~
+
+#Ignorer dossier IDE
+.idea/*
