@@ -26,8 +26,9 @@
 		<title>Grégory Peigné</title>
 		<meta name="description" content="Bonjour, je suis à la recherche d'un contrat pro ou CDD/CDI en développement web junior. Venez découvrir mon profil, mes compétences et mon Portfolio.">
         <style></style>
-        <!-- CSS perso ligne de flotaison
-        <link href='css/pre_style.css' rel='stylesheet' type='text/css'> -->
+        <!-- CSS perso ligne de flotaison -->
+        <link href='css/output.css' rel='stylesheet' type='text/css'>
+        <link href='css/style.css' rel='stylesheet' type='text/css'>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
