@@ -15,3 +15,6 @@
 
 # Ignorer l'entree preprocesseur du fm
 ./css/input.css
+
+# Ignorer la generation du fichier index.html
+./index.html

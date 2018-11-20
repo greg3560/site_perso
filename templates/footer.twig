@@ -1,0 +1,46 @@
+<div class="container valign">
+    <div class="row">
+        <h3 class="left-align">CONTACT</h3>
+        <form class="col m8 l6 offset-m2 offset-l3" method="post" action="../libs/traitement.php?action=formulaire">
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">business</i>
+                    <input id="first_name" type="text" class="validate" name="societe">
+                    <label for="first_name" data-error="wrong" data-success="right">Société</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="last_name" type="text" class="validate" name="nom">
+                    <label for="last_name" data-error="wrong" data-success="right">Nom</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate" name="email">
+                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
+                    <label for="textarea1">Message</label>
+                </div>
+            </div>
+            <button class="left waves-effect btn-flat brand-text submit-btn" type="submit" name="action">ENVOYER</button>
+        </form>
+    </div>
+    <div class="footer-copyright row">
+        <div class="col s6 offset-s1">
+            Crédits photos:
+            <a class="grey-text text-lighten-4" href="https://openclassrooms.com/">Openclassrooms</a>
+        </div>
+        <div class="col s4 offset-s1 reseaux-sociaux center-align">
+            <script type="in/share" data-counter="right"></script>
+            <div class="fb-share-button" data-href="http://www.gregorypeigne.fr" data-layout="box_count"></div>
+            <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="gregorypeigne.fr">Tweet</a>
+            <g:plusone size="tall"></g:plusone>
+        </div>
+    </div>
+</div>

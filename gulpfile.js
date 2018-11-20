@@ -9,9 +9,25 @@ var gulp = require('gulp'),
     minifyCss = require('gulp-clean-css'),
     imagemin = require('gulp-imagemin'),
     clean = require('gulp-clean'),
-    zip = require('gulp-zip');
+    zip = require('gulp-zip'),
+    twig = require('gulp-twig');
 
 sass.compiler = require('node-sass');
+
+gulp.task('twig', function () {
+    return gulp.src('./templates/index.twig')
+        .pipe(twig({
+            data: {
+                title: 'Grégory Peigné',
+                benefits: [
+                    'Fast',
+                    'Flexible',
+                    'Secure'
+                ]
+            }
+        }))
+        .pipe(gulp.dest('./'));
+});
 
 gulp.task('sass', function () {
     return gulp.src('./sass/input.scss')
@@ -30,7 +46,7 @@ gulp.task('img', ['clean'], function () {
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('dist', ['sass', 'img'], function() {
+gulp.task('dist', ['sass', 'img', 'twig'], function() {
     return gulp.src('*.html')
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))

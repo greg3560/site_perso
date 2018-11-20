@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-twig": "^1.2.0",
     "materialize-css": "^1.0.0"
   },
   "devDependencies": {

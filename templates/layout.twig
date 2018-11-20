@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        {% include 'head.twig' %}
+    </head>
+    <body id="page-top">
+        <div id="fb-root"></div>
+        {% include 'facebook.twig' %}
+        {% block body %}{% endblock %}
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+        {% include 'js.twig' %}
+    </body>
+</html>
