@@ -3114,7 +3114,7 @@ $(function () {
         {selector: 'form', offset: -10, callback: function(el) { $(el).css({transform: 'rotate(0deg)'}, 1000); } },
         {selector: '.commande-slider', offset: -10, callback: function(el) { $('.commande-slider').animate({left: '+=100%'}, 1000); } }
     ];
-    Materialize.scrollFire(options);
+    // Materialize.scrollFire(options);
     /* effet parallax */
     $('.parallax').parallax();
     /* si il y a le parametre succes dans l'url on affiche le message de confirmation du formulaire */
@@ -3138,7 +3138,7 @@ $(function () {
     */
 
     /* bouton navigation mobile */
-    $(".button-collapse").sideNav();
+    $(".button-collapse").sidenav();
 
     /*  ================================================================
         ============================= HOME==============================

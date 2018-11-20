@@ -1,0 +1,34 @@
+{
+  "name": "greg",
+  "version": "2.1.0",
+  "description": "Site web personnel",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "materialize-css": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-livereload": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-useref": "^3.1.6",
+    "gulp-zip": "^4.2.0",
+    "node-sass": "^4.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/dataG60/gregorypeigne.git"
+  },
+  "author": "greg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/dataG60/gregorypeigne/issues"
+  },
+  "homepage": "https://gitlab.com/dataG60/gregorypeigne#readme"
+}

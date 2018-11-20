@@ -146,14 +146,14 @@ nav .brand-logo {
     width:300px;
     right: calc(50.5% - 150px);
 }
-img.responsive-img,
-video.responsive-video {
-    max-width: 100%;
-    height: auto;
-}
-.right {
-    float: right !important;
-}
+/*img.responsive-img,*/
+/*video.responsive-video {*/
+    /*max-width: 100%;*/
+    /*height: auto;*/
+/*}*/
+/*.right {*/
+    /*float: right !important;*/
+/*}*/
 nav ul a {
     transition: background-color .3s;
     font-size: 1rem;
@@ -162,40 +162,40 @@ nav ul a {
     padding: 0 15px;
     cursor: pointer;
 }
-.center, .center-align {
-    text-align: center;
-}
-.parallax-container {
-    position: relative;
-    overflow: hidden;
-    height: 500px;
-}
-.parallax {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-.parallax img {
-    display: none;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    transform: translateX(-50%);
-}
-.valign-wrapper {
-    display: flex;
-    align-items: center;
-}
-.valign-wrapper .valign {
-    display: block;
-}
+/*.center, .center-align {*/
+    /*text-align: center;*/
+/*}*/
+/*.parallax-container {*/
+    /*position: relative;*/
+    /*overflow: hidden;*/
+    /*height: 500px;*/
+/*}*/
+/*.parallax {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*z-index: -1;*/
+/*}*/
+/*.parallax img {*/
+    /*display: none;*/
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*bottom: 0;*/
+    /*min-width: 100%;*/
+    /*min-height: 100%;*/
+    /*-webkit-transform: translate3d(0, 0, 0);*/
+    /*transform: translate3d(0, 0, 0);*/
+    /*transform: translateX(-50%);*/
+/*}*/
+/*.valign-wrapper {*/
+    /*display: flex;*/
+    /*align-items: center;*/
+/*}*/
+/*.valign-wrapper .valign {*/
+    /*display: block;*/
+/*}*/
 body {
     overflow-x: hidden;
 }

@@ -6,3 +6,12 @@
 
 #Ignorer dossier IDE
 .idea/*
+
+# Ignorer le dossier node_modules
+./node_modules/*
+
+# Ignorer le dossier dist
+./dist/*
+
+# Ignorer l'entree preprocesseur du fm
+./css/input.css

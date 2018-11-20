@@ -10,7 +10,7 @@
 		<meta property="og:title" content="Grégory Peigné | Développeur web fullstack à Paris"/>
 		<meta property="og:description" content="Recherche contrat pro ou CDD/CDI développeur web."/>
 		<meta property="og:url" content="http://www.gregorypeigne.fr"/>
-		<meta property="og:image" content="http://www.gregorypeigne.fr/assets/img/photo_gregory.png"/>
+		<meta property="og:image" content="http://www.gregorypeigne.fr/img/photo_gregory.png"/>
 		<meta property="og:site_name" content="Grégory Peigné"/>
 		<!-- meta tweeter -->
 		<meta name="twitter:card" content="summary">
@@ -18,17 +18,20 @@
 		<meta name="twitter:title" content="Recherche contrat pro ou CDD/CDI développeur web.">
 		<meta name="twitter:description" content="Recherche contrat pro ou CDD/CDI développeur web.">
 		<meta name="twitter:creator" content="@GregoryPeigne">
-		<meta name="twitter:image:src" content="http://www.gregorypeigne.fr/assets/img/photo_gregory.png">
+		<meta name="twitter:image:src" content="http://www.gregorypeigne.fr/img/photo_gregory.png">
 		<!-- meta google+ -->
 		<meta itemprop="name" content="Grégory Peigné">
 		<meta itemprop="description" content="Recherche contrat pro ou CDD/CDI développeur web.">
-		<meta itemprop="image" content="http://www.gregorypeigne.fr/assets/img/photo_gregory.png">
+		<meta itemprop="image" content="http://www.gregorypeigne.fr/img/photo_gregory.png">
 		<title>Grégory Peigné</title>
 		<meta name="description" content="Bonjour, je suis à la recherche d'un contrat pro ou CDD/CDI en développement web junior. Venez découvrir mon profil, mes compétences et mon Portfolio.">
-        <style></style>
-        <!-- CSS perso ligne de flotaison -->
-        <link href='css/output.css' rel='stylesheet' type='text/css'>
+
+		<!-- build:css css/combined.css -->
+		<link href='css/input.css' rel='stylesheet' type='text/css'>
         <link href='css/style.css' rel='stylesheet' type='text/css'>
+		<!-- endbuild -->
+
+
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -61,17 +64,17 @@
 			<div class="navbar-fixed">		
 				<nav>
 					<div class="nav-wrapper">
-						<a href="#page-top" class="brand-logo"><img itemprop="image" class="responsive-img" src="assets/img/logo_gregory.png" alt="logo Grégory" /></a>
+						<a href="#page-top" class="brand-logo"><img itemprop="image" class="responsive-img" src="./img/logo_gregory.png" alt="logo Grégory" /></a>
 						<a href="#" data-activates="greg-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 						<ul class="right hide-on-med-and-down">
-							<li class="waves-effect"><a href="#qui_suis_je">Qui suis-je ?</a></li>
+							<li class="waves-effect"><a href="#qui_suis_je">Qui suis-jes ?</a></li>
 							<li class="waves-effect"><a href="#competences">Compétences</a></li>
 							<li class="waves-effect"><a href="#portfolio">Portfolio</a></li>
 							<li class="waves-effect"><a href="#certifications">Certifications</a></li>
 							<li class="waves-effect"><a href="#contact">Contact</a></li>
 						</ul>
 						<ul class="side-nav" id="greg-mobile">
-							<li class="waves-effect"><a href="#qui_suis_je">Qui suis-je ?</a></li>
+							<li class="waves-effect"><a href="#qui_suis_je">Qui suis-jed ?</a></li>
 							<li class="waves-effect"><a href="#competences">Compétences</a></li>
 							<li class="waves-effect"><a href="#portfolio">Portfolio</a></li>
 							<li class="waves-effect"><a href="#certifications">Certifications</a></li>
@@ -88,7 +91,7 @@
 	
 		<section id="home" class="parallax-container center-align">
 			<div class="parallax">
-				<img class="responsive-img" src="assets/img/travail_gregory.jpg" alt="Poste de travail" />
+				<img class="responsive-img" src="./img/travail_gregory.jpg" alt="Poste de travail" />
 			</div>
 			<div class="presentation valign-wrapper">
 				<h1 itemprop="name" class="valign"><span id="nom">Grégory Peigné </span><br />Développeur web Full Stack à Paris</h1>
@@ -108,10 +111,10 @@
                     <h3 class="left-align">Qui suis-je ?</h3>
 					<div class="col m12 l4">
 						<p class="flow-text grey-text text-darken-2">J'ai fait de ma passion pour le digital mon métier. Conscient des enjeux actuels liés au <strong class="flow-text grey-text text-darken-2">numérique</strong>, je souhaite évangéliser mes connaissances en <strong>contrat pro</strong> ou en <strong>CDD/CDI web junior</strong>. Souple et rigoureux dans mon travail, j’ai une bonne culture du web, j’aime les <strong>nouvelles technologies</strong>, la pizza et la musique :)</p>
-						<a href="assets/cv.zip" class="waves-effect waves-light btn-large white-text"><i class="material-icons left">archive</i> CV</a>
+						<a href="files/cv.zip" class="waves-effect waves-light btn-large white-text"><i class="material-icons left">archive</i> CV</a>
 					</div>
 					<div class="col m6 l4 center-align">
-						<img itemprop="image" id="greg" class="responsive-img z-depth-1" src="assets/img/photo_gregory.png" alt="Gregory Peigne" title="Gregory Peigne" />
+						<img itemprop="image" id="greg" class="responsive-img z-depth-1" src="files/img/photo_gregory.png" alt="Gregory Peigne" title="Gregory Peigne" />
 					</div>
 					<div class="col m6 l4">
 						<h5 itemprop="name" class="flow-text grey-text text-darken-2">Grégory Peigné</h5>
@@ -137,7 +140,7 @@
 				=================================================================== -->
 
 		<section id="competences" class="section scrollspy parallax-container valign-wrapper" >
-			<div class="parallax valign"><img src="assets/img/competences_gregory.jpg" class="responsive-img" alt="Compétences Grégory" /></div>
+			<div class="parallax valign"><img src="files/img/competences_gregory.jpg" class="responsive-img" alt="Compétences Grégory" /></div>
 			<div class="container valign">
 				<div class="row">
 					<h3 class="left-align">COMPETENCES</h3>
@@ -374,7 +377,7 @@
 					<ul id="creation" class="col s12 m12 l10 owl-carousel">
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/adsi.png" alt="Site web ADSI" />
+								<img class="activator" src="files/img/portfolio/adsi.png" alt="Site web ADSI" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">ADSI<i class="material-icons right">more_vert</i></span>
@@ -394,11 +397,11 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/flyers_adsi.png" alt="Flyers ADSI" />
+								<img class="activator" src="files/img/portfolio/flyers_adsi.png" alt="Flyers ADSI" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Flyer ADSI<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Image png: <a href="/assets/flyers_adsi_recto.png" target="_blank" ><i class="material-icons">link</i></a></p>
+								<p class="grey-text text-darken-2 left-align">Image png: <a href="/files/img/portfolio/flyers_adsi_recto.png" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Flyer ADSI<i class="material-icons right">close</i></span>
@@ -412,11 +415,11 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/logo_adsi.png" alt="Logo ADSI" />
+								<img class="activator" src="files/img/portfolio/logo_adsi.png" alt="Logo ADSI" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Logo ADSI<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Image png: <a href="/assets/logo_adsi.png" target="_blank" ><i class="material-icons">link</i></a></p>
+								<p class="grey-text text-darken-2 left-align">Image png: <a href="/files/img/portfolio/logo_adsi.png" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Logo ADSI<i class="material-icons right">close</i></span>
@@ -429,7 +432,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/blog_zozor.png" alt="Blog de Zozor" />
+								<img class="activator" src="files/img/portfolio/blog_zozor.png" alt="Blog de Zozor" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Blog de Zozor<i class="material-icons right">more_vert</i></span>
@@ -449,7 +452,7 @@
 						</li>
                         <li class="item card small">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="assets/img/portfolio/cv_zozor.png" alt="Blog de Zozor" />
+                                <img class="activator" src="files/img/portfolio/cv_zozor.png" alt="Blog de Zozor" />
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-2">CV de Zozor<i class="material-icons right">more_vert</i></span>
@@ -469,7 +472,7 @@
                         </li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/mud.png" alt="MUD" />
+								<img class="activator" src="files/img/portfolio/mud.png" alt="MUD" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Music Until Dawn<i class="material-icons right">more_vert</i></span>
@@ -489,7 +492,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/naujac.png" alt="Naujac sur mer" />
+								<img class="activator" src="files/img/portfolio/naujac.png" alt="Naujac sur mer" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Mairie de Naujac/mer<i class="material-icons right">more_vert</i></span>
@@ -510,7 +513,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/premier_site_perso.png" alt="Blog personnel" />
+								<img class="activator" src="files/img/portfolio/premier_site_perso.png" alt="Blog personnel" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Blog/site personnel<i class="material-icons right">more_vert</i></span>
@@ -529,11 +532,11 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/flyers_comptoir_des_saveurs.png" alt="Flyers Comptoir des saveurs" />
+								<img class="activator" src="files/img/portfolio/flyers_comptoir_des_saveurs.png" alt="Flyers Comptoir des saveurs" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Le comptoir des saveurs.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Image png: <a href="/assets/flyers_comptoir_des_saveurs.png" target="_blank" ><i class="material-icons">link</i></a></p>
+								<p class="grey-text text-darken-2 left-align">Image png: <a href="/files/img/portfolio/flyers_comptoir_des_saveurs.png" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Flyers Le conmptoir des saveurs.<i class="material-icons right">close</i></span>
@@ -547,11 +550,11 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/carte_voeux_2016.png" alt="Carte de voeux Mairie de Plailly" />
+								<img class="activator" src="files/img/portfolio/carte_voeux_2016.png" alt="Carte de voeux Mairie de Plailly" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Carte de voeux.<i class="material-icons right">more_vert</i></span>
-								<p class="grey-text text-darken-2 left-align">Image png: <a href="/assets/carte_voeux_2016.png" target="_blank" ><i class="material-icons">link</i></a></p>
+								<p class="grey-text text-darken-2 left-align">Image png: <a href="/files/img/portfolio/carte_voeux_2016.png" target="_blank" ><i class="material-icons">link</i></a></p>
 							</div>
 							<div class="card-reveal">
 								<span class="card-title grey-text text-darken-2">Carte de voeux.<i class="material-icons right">close</i></span>
@@ -564,7 +567,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/la_maison_de_l_architecte.png" alt="La maison de l'architecte" />
+								<img class="activator" src="files/img/portfolio/la_maison_de_l_architecte.png" alt="La maison de l'architecte" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">La maison de l'architecte.<i class="material-icons right">more_vert</i></span>
@@ -583,7 +586,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/la_maison_de_l_architecture.png" alt="La maison de l'architecture" />
+								<img class="activator" src="files/img/portfolio/la_maison_de_l_architecture.png" alt="La maison de l'architecture" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">La maison de l'architecture.<i class="material-icons right">more_vert</i></span>
@@ -601,7 +604,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/generateur_de_formulaires.png" alt="Générateur de formulaires" />
+								<img class="activator" src="files/img/portfolio/generateur_de_formulaires.png" alt="Générateur de formulaires" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Générateur de formulaires.<i class="material-icons right">more_vert</i></span>
@@ -619,7 +622,7 @@
 						</li>
 						<li class="item card small">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="assets/img/portfolio/Jeu_de_plateau.png" alt="Jeu de plateau" />
+								<img class="activator" src="files/img/portfolio/Jeu_de_plateau.png" alt="Jeu de plateau" />
 							</div>
 							<div class="card-content">
 								<span class="card-title activator grey-text text-darken-2">Jeu de plateau Javascript.<i class="material-icons right">more_vert</i></span>
@@ -662,7 +665,7 @@
 						<ul>
 							<li class="item card small col s12 m5 l3">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/html_css.png" alt="HTML et CSS" />
+									<img class="activator" src="files/img/certifications/html_css.png" alt="HTML et CSS" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Html5 et css3<i class="material-icons right">more_vert</i></span>
@@ -681,7 +684,7 @@
 							</li>
 							<li class="item card small col s12 m5 l3 offset-m2 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/javascript.png" alt="Javascript" />
+									<img class="activator" src="files/img/certifications/javascript.png" alt="Javascript" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Javascript<i class="material-icons right">more_vert</i></span>
@@ -700,7 +703,7 @@
 							</li>
 							<li class="item card small col s12 m5 l3 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/jquery.png" alt="JQuery" />
+									<img class="activator" src="files/img/certifications/jquery.png" alt="JQuery" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">JQuery<i class="material-icons right">more_vert</i></span>
@@ -727,7 +730,7 @@
 						<ul class="certificats-informatique-cache">
 							<li class="item card small col s12 m5 l3 offset-m2">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/node-js.png" alt="Node.js" />
+									<img class="activator" src="files/img/certifications/node-js.png" alt="Node.js" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Node.js<i class="material-icons right">more_vert</i></span>
@@ -748,7 +751,7 @@
 							</li>
 							<li class="item card small col s12 m5 l3 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/php.png" alt="PHP" />
+									<img class="activator" src="files/img/certifications/php.png" alt="PHP" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">PHP et MySQL<i class="material-icons right">more_vert</i></span>
@@ -774,7 +777,7 @@
 							</li>
 							<li class="item card small col s12 m5 l3 offset-m2 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/bootstrap.png" alt="Bootstrap" />
+									<img class="activator" src="files/img/certifications/bootstrap.png" alt="Bootstrap" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Bootstrap<i class="material-icons right">more_vert</i></span>
@@ -795,7 +798,7 @@
                         <ul class="certificats-informatique-cache">
                             <li class="item card small col s12 m5 l3">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="assets/img/certifications/wordpress.png" alt="Wordpress" />
+                                    <img class="activator" src="files/img/certifications/wordpress.png" alt="Wordpress" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Wordpress<i class="material-icons right">more_vert</i></span>
@@ -815,7 +818,7 @@
                             </li>
                             <li class="item card small col s12 m5 l3 offset-m2 offset-l1">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="assets/img/certifications/git.png" alt="Git" />
+                                    <img class="activator" src="files/img/certifications/git.png" alt="Git" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Git<i class="material-icons right">more_vert</i></span>
@@ -848,7 +851,7 @@
 						<ul>
 							<li class="item card small col s12 m5 l3">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/comprendre_le_web.png" alt="Comprendre le web" />
+									<img class="activator" src="files/img/certifications/comprendre_le_web.png" alt="Comprendre le web" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Comprendre le web<i class="material-icons right">more_vert</i></span>
@@ -871,7 +874,7 @@
 							</li>
 							<li class="item card small col s12 m5 l3 offset-m2 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/decouvrez_le_monde_des_start_ups.png" alt="Les start-ups" />
+									<img class="activator" src="files/img/certifications/decouvrez_le_monde_des_start_ups.png" alt="Les start-ups" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Start-up<i class="material-icons right">more_vert</i></span>
@@ -895,7 +898,7 @@
 							</li>
 							<li class="item card small col s12 m5 l3 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/devenir_mentor.png" alt="Devenir mentor" />
+									<img class="activator" src="files/img/certifications/devenir_mentor.png" alt="Devenir mentor" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Devenir mentor<i class="material-icons right">more_vert</i></span>
@@ -917,7 +920,7 @@
                         <ul class="certificats-informatique-cache">
                             <li class="item card small col s12 m5 l3 offset-m2">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="assets/img/certifications/referencement_web.png" alt="Référencement web" />
+                                    <img class="activator" src="files/img/certifications/referencement_web.png" alt="Référencement web" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Référencement web<i class="material-icons right">more_vert</i></span>
@@ -949,7 +952,7 @@
 						<ul>
 							<li class="item card small col s12 m5 l3">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/bluemix.png" alt="Bluemix" />
+									<img class="activator" src="files/img/certifications/bluemix.png" alt="Bluemix" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">IBM Bluemix<i class="material-icons right">more_vert</i></span>
@@ -973,7 +976,7 @@
 							</li>
 							<li class="item card small col s12 m5 l3 offset-m2 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/linux.png" alt="Linux" />
+									<img class="activator" src="files/img/certifications/linux.png" alt="Linux" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Linux<i class="material-icons right">more_vert</i></span>
@@ -1005,7 +1008,7 @@
 							</li>
 							<li class="item card small col s12 m5 l3 offset-l1">
 								<div class="card-image waves-effect waves-block waves-light">
-									<img class="activator" src="assets/img/certifications/programmer_en_c.png" alt="Langage C" />
+									<img class="activator" src="files/img/certifications/programmer_en_c.png" alt="Langage C" />
 								</div>
 								<div class="card-content">
 									<span class="card-title activator grey-text text-darken-2">Programmer en C<i class="material-icons right">more_vert</i></span>
@@ -1033,7 +1036,7 @@
                         <ul>
                             <li class="item card small col s12 m5 l3">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img id="parcours-javascript" class="activator" src="assets/img/certifications/disciple_javascript.png" alt="Disciple du javascript" />
+                                    <img id="parcours-javascript" class="activator" src="files/img/certifications/disciple_javascript.png" alt="Disciple du javascript" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Disciple du Javascript<i class="material-icons right">more_vert</i></span>
@@ -1054,7 +1057,7 @@
                             </li>
                             <li class="item card small col s12 m5 l3 offset-m2 offset-l1">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img id="parcours-bluemix" class="activator" src="assets/img/certifications/deployez_sur_bluemix.png" alt="Déployer sur Bluemix" />
+                                    <img id="parcours-bluemix" class="activator" src="files/img/certifications/deployez_sur_bluemix.png" alt="Déployer sur Bluemix" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Le cloud d'IBM Bluemix<i class="material-icons right">more_vert</i></span>
@@ -1073,7 +1076,7 @@
                             </li>
                             <li class="item card small col s12 m5 l3 offset-l1">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img id="parcours-integrateur" class="activator" src="assets/img/certifications/integrateur_web.png" alt="Intégrateur web" />
+                                    <img id="parcours-integrateur" class="activator" src="files/img/certifications/integrateur_web.png" alt="Intégrateur web" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Intégrateur web<i class="material-icons right">more_vert</i></span>
@@ -1096,7 +1099,7 @@
                         <ul class="certificats-informatique-cache">
                             <li class="item card small col s12 m5 l3 offset-m2">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img id="parcours-site_web" class="activator" src="assets/img/certifications/lancer_son_site.png" alt="Lancer son site web" />
+                                    <img id="parcours-site_web" class="activator" src="files/img/certifications/lancer_son_site.png" alt="Lancer son site web" />
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-2">Lancer son site web<i class="material-icons right">more_vert</i></span>
@@ -1183,11 +1186,41 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<!-- CDN velocity -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script>
-		<!-- CDN Javascript materialize compilé et minifié -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-		<!-- javascript perso -->
+
+		<!-- build:js scripts/combined.js -->
+		<script src="node_modules/materialize-css/js/cash.js"></script>
+		<script src="node_modules/materialize-css/js/component.js"></script>
+		<script src="node_modules/materialize-css/js/global.js"></script>
+		<script src="node_modules/materialize-css/js/anime.min.js"></script>
+		<script src="node_modules/materialize-css/js/collapsible.js"></script>
+		<script src="node_modules/materialize-css/js/dropdown.js"></script>
+		<script src="node_modules/materialize-css/js/modal.js"></script>
+		<script src="node_modules/materialize-css/js/materialbox.js"></script>
+		<script src="node_modules/materialize-css/js/parallax.js"></script>
+		<script src="node_modules/materialize-css/js/tabs.js"></script>
+		<script src="node_modules/materialize-css/js/tooltip.js"></script>
+		<script src="node_modules/materialize-css/js/waves.js"></script>
+		<script src="node_modules/materialize-css/js/toasts.js"></script>
+		<script src="node_modules/materialize-css/js/sidenav.js"></script>
+		<script src="node_modules/materialize-css/js/scrollspy.js"></script>
+		<script src="node_modules/materialize-css/js/autocomplete.js"></script>
+		<script src="node_modules/materialize-css/js/forms.js"></script>
+		<script src="node_modules/materialize-css/js/slider.js"></script>
+		<script src="node_modules/materialize-css/js/cards.js"></script>
+		<script src="node_modules/materialize-css/js/chips.js"></script>
+		<script src="node_modules/materialize-css/js/pushpin.js"></script>
+		<script src="node_modules/materialize-css/js/buttons.js"></script>
+		<script src="node_modules/materialize-css/js/datepicker.js"></script>
+		<script src="node_modules/materialize-css/js/timepicker.js"></script>
+		<script src="node_modules/materialize-css/js/characterCounter.js"></script>
+		<script src="node_modules/materialize-css/js/carousel.js"></script>
+		<script src="node_modules/materialize-css/js/tapTarget.js"></script>
+		<script src="node_modules/materialize-css/js/select.js"></script>
+		<script src="node_modules/materialize-css/js/range.js"></script>
+		<!-- endbuild -->
+
 		<!-- <script src="js/main.js"></script> -->
-		<script src="js/main.min.js"></script>
+		<script src="js/main.js"></script>
         <!-- script partage sur les reseaux sociaux -->
         <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
         <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
