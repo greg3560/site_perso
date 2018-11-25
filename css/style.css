@@ -292,31 +292,7 @@ p {
 ===================================================================
 */
 
-/* photo */
-#greg {
-    margin-top: 10%;
-    border: 5px solid #fff;
-}
-/* decalage de la photo */
-@media all and (max-width:992px) {
-    #greg {
-        margin-top:25%;
-    }
-}
-#qui_suis_je .reseaux-sociaux {
-    margin-top: 13%;
-}
-#qui_suis_je .reseaux-sociaux ul li {
-    display:inline-block;
-    margin-left:10%;
-}
-/* icones et couleurs reseaux sociaux */
-#qui_suis_je .fa-linkedin:before,
-#qui_suis_je .fa-facebook:before,
-#qui_suis_je .fa-twitter:before,
-#qui_suis_je .fa-google-plus:before {
-    color: #00bfa5; /* vert menthe */
-}
+
 
 /* ================================================================
 ========================= COMPETENCES =============================

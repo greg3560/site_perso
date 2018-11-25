@@ -1,0 +1,19 @@
+#qui_suis_je {
+  #greg {
+    margin-top: 10%;
+  }
+  @media all and (max-width:992px) {
+    #greg {
+      margin-top:25%;
+    }
+  }
+  .reseaux-sociaux {
+    margin-top: 13%;
+  }
+  /* icones et couleurs reseaux sociaux */
+  .fa {
+    &:before {
+      color: $primary-color;
+    }
+  }
+}

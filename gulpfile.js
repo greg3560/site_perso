@@ -20,7 +20,15 @@ gulp.task('twig', function () {
         .pipe(twig({
             data: {
                 title: 'Grégory Peigné',
+                age: '37ans',
+                phone: '06.95.81.36.65',
+                mail: 'contact@gregorypeigne.fr',
+                street: '12 grande rue',
+                zipCode: '95470',
+                city: 'Survilliers',
+                country: 'FRANCE',
                 subTitle: 'Développeur web - React.js - Symfony - Javascript - Node.js - Bootstrap - Materialize ...',
+                intro: 'Je suis Grégory Peigné, développeur web depuis 2012. J’ai débuté en autodidacte sur la plateforme openclassrooms. Ensuite j’ai intégré L’INFA pour une formation de 3 mois pour valider mon expérience autodidacte. Puis j’ai obtenu une licence de <strong>chef de projet digital</strong> à Institut F2i à Paris.',
                 skills: [
                     'Fast',
                     'Flexible',
