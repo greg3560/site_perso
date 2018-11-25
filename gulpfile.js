@@ -10,7 +10,8 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     clean = require('gulp-clean'),
     zip = require('gulp-zip'),
-    twig = require('gulp-twig');
+    twig = require('gulp-twig'),
+    webpack = require('webpack-stream');
 
 sass.compiler = require('node-sass');
 
@@ -19,7 +20,8 @@ gulp.task('twig', function () {
         .pipe(twig({
             data: {
                 title: 'Grégory Peigné',
-                benefits: [
+                subTitle: 'Développeur web - React.js - Symfony - Javascript - Node.js - Bootstrap - Materialize ...',
+                skills: [
                     'Fast',
                     'Flexible',
                     'Secure'
@@ -29,14 +31,23 @@ gulp.task('twig', function () {
         .pipe(gulp.dest('./'));
 });
 
+gulp.task('babel', function() {
+    return gulp.src('js/*.js')
+        .pipe(webpack())
+        .pipe(gulp.dest('output/'));
+});
+
+
 gulp.task('sass', function () {
-    return gulp.src('./sass/input.scss')
+    return gulp.src('./sass/materialize.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css'));
 });
 
 gulp.task('clean', function () {
-    return gulp.src('dist', {read: false})
+    gulp.src('dist', {read: false})
+        .pipe(clean());
+    return gulp.src('output', {read: false})
         .pipe(clean());
 });
 
@@ -46,7 +57,7 @@ gulp.task('img', ['clean'], function () {
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('dist', ['sass', 'img', 'twig'], function() {
+gulp.task('dist', ['babel', 'sass', 'img', 'twig'], function() {
     return gulp.src('*.html')
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
@@ -62,8 +73,8 @@ gulp.task('default', ['dist'], function() {
 
 gulp.task('watch', function () {
     livereload.listen();
-    gulp.watch('sass/input.scss', 'sass/_settings.scss', 'sass/_variables.scss', ['sass']);
-    gulp.watch(['*.html', '/sass/*.scss', 'js/*.js']).on('change', function(e) {
+    gulp.watch('sass/*scss', ['sass']);
+    gulp.watch(['*.html', 'templates/*.twig', '/sass/*.scss', 'js/*.js', 'css/style.css']).on('change', function(e) {
         livereload.changed(e.path);
     });
 });

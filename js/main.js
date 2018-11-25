@@ -3127,9 +3127,9 @@ $(function () {
         }
     };
     if($.urlParam('succes') == 'true') {
-        Materialize.toast('Votre message à bien été envoyé.', 5000, 'rounded'); 
+        Materialize.toast('Votre message à bien été envoyé.', 5000, 'rounded');
     } else if($.urlParam('succes') == 'false') {
-        Materialize.toast('Il est survenue un probleme.', 5000, 'rounded'); 
+        Materialize.toast('Il est survenue un probleme.', 5000, 'rounded');
     }
 
     /*  ================================================================
@@ -3137,18 +3137,13 @@ $(function () {
         ================================================================
     */
 
-    /* bouton navigation mobile */
-    $(".button-collapse").sidenav();
 
     /*  ================================================================
         ============================= HOME==============================
         ================================================================
     */
 
-    /* taille mini hauteur #home */
-    $('#home').css({minHeight: window.innerHeight-100});
-    /* animation du bouton */
-    $('.suite').css("left","calc(50% - 27.5px)");
+
 
     /*  ================================================================
         ======================== COMPETENCES============================
