@@ -3092,24 +3092,6 @@ $(function () {
     $('.scrollspy').scrollSpy({scrollOffset:60});
     /* scrollfire */
     var options = [
-        {selector: '.carousel-item', offset: 200, callback: function() {
-            $('#html').css({height: '90%'});
-            $('#javascript').css({height: '60%'});
-            $('#jquery').css({height: '70%'});
-            $('#node').css({height: '50%'});
-            $('#angular').css({height: '40%'});
-            $('#meteor').css({height: '40%'});
-            $('#php').css({height: '70%'});
-            $('#mysql').css({height: '70%'});
-            $('#wordpress').css({height: '80%'});
-            $('#prestashop').css({height: '40%'});
-            $('#bootstrap').css({height: '60%'});
-            $('#materialize').css({height: '70%'});
-            $('#bluemix').css({height: '40%'});
-            $('#linux').css({height: '70%'});
-            $('#seo').css({height: '40%'});
-            $('#photoshop').css({height: '40%'});
-        }},
         {selector: '.commande', offset: -10, callback: function(el) { $('.commande').animate({left: '+=100%'}, 1000); } },
         {selector: 'form', offset: -10, callback: function(el) { $(el).css({transform: 'rotate(0deg)'}, 1000); } },
         {selector: '.commande-slider', offset: -10, callback: function(el) { $('.commande-slider').animate({left: '+=100%'}, 1000); } }

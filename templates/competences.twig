@@ -1,219 +1,26 @@
-<div class="parallax valign"><img src="files/img/competences_gregory.jpg" class="responsive-img" alt="Compétences Grégory" /></div>
+<div class="parallax valign"><img src="img/competences_gregory.jpg" class="responsive-img" alt="Compétences Grégory" /></div>
 <div class="container valign">
     <div class="row">
         <h3 class="left-align">COMPETENCES</h3>
         <div class="col m12 l4">
-            <p class="flow-text grey-text text-darken-2">Force de mes capacité d'autodidacte, je détiens 7 129 178 octets de certificats en <strong>programmation</strong> , en <strong>UX/UI design</strong> et en environnement <strong>web</strong>. Perspicacité et intuition me permettent de résoudre les bugs les plus improbables. Agile en <strong>back-end</strong> avec node.js ou PHP, je suis aussi très gourmand de <strong>design</strong> avec photoshop, framework css et javascript.</p>
+            <p class="flow-text grey-text text-darken-2">{{ resume }}</p>
         </div>
         <div class="carousel col m10 l6">
-            <a class="carousel-item" href="#one!">
-                <span class="score">90%</span>
-                <div class="single-skill">
-                    <div id="html" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>HTML5 CSS3</strong>
-                            <div class="hr">
-                                <div class="point"></div>
+            {% for skill in skills %}
+                <a class="carousel-item" href="#one!">
+                    <div class="single-skill">
+                        <div id="{{ skill.name }}" class="singel-hr-inner">
+                            <div class="skill-title center-align">
+                                <strong>{{ skill.name | replace({'_': ' '}) | upper }}</strong>
+                                <div class="hr">
+                                    <div class="point"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">60%</span>
-                <div class="single-skill">
-                    <div id="javascript" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>JAVASCRIPT</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">70%</span>
-                <div class="single-skill">
-                    <div id="jquery" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>JQUERY</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">50%</span>
-                <div class="single-skill">
-                    <div id="node" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>NODE.JS</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">40%</span>
-                <div class="single-skill">
-                    <div id="angular" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>ANGULAR.JS</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">40%</span>
-                <div class="single-skill">
-                    <div id="meteor" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>METEOR</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">70%</span>
-                <div class="single-skill">
-                    <div id="php" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>PHP</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">70%</span>
-                <div class="single-skill">
-                    <div id="mysql" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>MYSQL</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">80%</span>
-                <div class="single-skill">
-                    <div id="wordpress" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>WORDPRESS</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">40%</span>
-                <div class="single-skill">
-                    <div id="prestashop" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>PRESTASHOP</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">60%</span>
-                <div class="single-skill">
-                    <div id="bootstrap" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>BOOTSTRAP</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">70%</span>
-                <div class="single-skill">
-                    <div id="materialize" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>MATERIALIZE</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">40%</span>
-                <div class="single-skill">
-                    <div id="bluemix" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>BLUEMIX</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">70%</span>
-                <div class="single-skill">
-                    <div id="linux" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>LINUX</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">50%</span>
-                <div class="single-skill">
-                    <div id="seo" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>SEO</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#one!">
-                <span class="score">40%</span>
-                <div class="single-skill">
-                    <div id="photoshop" class="singel-hr-inner">
-                        <div class="skill-title center-align">
-                            <strong>PHOTOSHOP</strong>
-                            <div class="hr">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
+                    <span class="score">{{ skill.score }}%</span>
+                </a>
+            {% endfor %}
         </div>
         <div class="col l2 btn-mobile right-align">
             <a href="#" class="gauche btn-floating btn-large waves-effect waves-light"><i class="material-icons">keyboard_arrow_left</i></a>

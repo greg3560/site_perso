@@ -1,0 +1,31 @@
+module.exports  = {
+        title: 'Grégory Peigné',
+        age: '37ans',
+        phone: '06.95.81.36.65',
+        mail: 'contact@gregorypeigne.fr',
+        street: '12 grande rue',
+        zipCode: '95470',
+        city: 'Survilliers',
+        country: 'FRANCE',
+        subTitle: 'Développeur web - React.js - Symfony - Javascript - Node.js - Bootstrap - Materialize ...',
+        intro: 'Je suis Grégory Peigné, développeur web depuis 2012. J’ai débuté en autodidacte sur la plateforme openclassrooms. Ensuite j’ai intégré L’INFA pour une formation de 3 mois pour valider mon expérience autodidacte. Puis j’ai obtenu une licence de <strong>chef de projet digital</strong> à Institut F2i à Paris.',
+        resume: 'Force de mes capacité d\'autodidacte, je détiens 7 129 178 octets de certificats en <strong>programmation</strong> , en <strong>UX/UI design</strong> et en environnement <strong>web</strong>. Perspicacité et intuition me permettent de résoudre les bugs les plus improbables. Agile en <strong>back-end</strong> avec node.js ou PHP, je suis aussi très gourmand de <strong>design</strong> avec photoshop, framework css et javascript.',
+        skills: [
+        { name: 'html5_css3', score: '90'},
+        { name: 'javascript', score: '60'},
+        { name: 'jquery', score: '70'},
+        { name: 'node_js', score: '50'},
+        { name: 'angular_js', score: '40'},
+        { name: 'meteor', score: '40'},
+        { name: 'php', score: '70'},
+        { name: 'mysql', score: '70'},
+        { name: 'wordpress', score: '80'},
+        { name: 'prestashop', score: '40'},
+        { name: 'bootstrap', score: '60'},
+        { name: 'materialize', score: '70'},
+        { name: 'bluemix', score: '40'},
+        { name: 'linux', score: '70'},
+        { name: 'seo', score: '50'},
+        { name: 'photoshop', score: '40'}
+    ]
+};

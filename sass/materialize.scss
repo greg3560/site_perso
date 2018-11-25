@@ -40,8 +40,13 @@
 @import "components/datepicker";
 @import "components/timepicker";
 
+// personal function & mixins
+@import "functions/_basic";
+@import "_mixin";
+
 // personal component
 @import "_global";
 @import "_header";
 @import "_home";
 @import "_qui_suis_je";
+@import "_competences";

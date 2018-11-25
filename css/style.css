@@ -299,76 +299,11 @@ p {
 ===================================================================
 */
 
-#competences {
-    background: rgba(255, 255, 255, 0.7); /* blanc opaque */
-}
-@media all and (max-width:992px) {
-    #competences {
-        height:900px;
-    }
-}
 /* affichage des scores de la competence active */
-.carousel {
-    overflow: visible;
-}
-/* decalage du carousel */
-@media all and (max-width:992px) {
-    .carousel {
-        margin-top: 10%;
-    }
-}
-.carousel .carousel-item img {
-    width: 120px;
-    position: absolute;
-    left: -37px;
-    top: -8px;
-}
-.skill-title {
-    position: absolute;
-    top: -100px;
-    right: calc(50% - 50px);
-    line-height: 15px;
-    width: 100px;
-}
-.singel-hr-inner {
-    background-color: #00bfa5; /* vert menthe */
-    position: absolute;
-    width: 100%;
-    bottom: 33px;
-    height: 0px;
-    -webkit-transition: all 1.2s;
-    transition: all 1.2s;
-    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-}
-.single-skill {
-    float: right;
-    height: 360px;
-    width: 50px;
-    position: relative;
-}
-.hr {
-    height: 80px;
-    width: 1px;
-    position: absolute;
-    left: 50%;
-    top: 25px;
-    background-color: #00bfa5; /* vert menthe */
-}
-#competences .point:after {
-    content: '';
-    width: 7px;
-    height: 7px;
-    position: absolute;
-    border-radius: 50%;
-    left: -3px;
-    background-color: #00bfa5; /* vert menthe */
-}
-.score {
-    position: absolute;
-    bottom: 30px;
-    right: 10px;
-}
+
+
+
+
 
 /* ================================================================
 =========================== PORTFOLIO =============================
