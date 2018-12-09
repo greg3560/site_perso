@@ -310,31 +310,28 @@ p {
 ===================================================================
 */
 
-#portfolio {
-    background-color:#00bfa5; /* vert menthe */
-}
-@media all and (max-width:992px) {
-    #portfolio {
-        height:700px;
-    }
-}
-#portfolio .owl-carousel {
-    margin-top:20px;
-}
-/* ajustement boutons next prev du carousel */
-#portfolio .owl-controls {
-    position: absolute;
-    right: -20%;
-    bottom: 20px;
-}
-@media all and (max-width:992px) {
-    #portfolio .owl-controls {
-        display: none;
-    }
-}
-#portfolio .card-title {
-    color:#00bfa5; /* vert menthe */
-}
+/*@media all and (max-width:992px) {*/
+    /*#portfolio {*/
+        /*height:700px;*/
+    /*}*/
+/*}*/
+/*#portfolio .owl-carousel {*/
+    /*margin-top:20px;*/
+/*}*/
+/*!* ajustement boutons next prev du carousel *!*/
+/*#portfolio .owl-controls {*/
+    /*position: absolute;*/
+    /*right: -20%;*/
+    /*bottom: 20px;*/
+/*}*/
+/*@media all and (max-width:992px) {*/
+    /*#portfolio .owl-controls {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
+/*#portfolio .card-title {*/
+    /*color:#00bfa5; !* vert menthe *!*/
+/*}*/
 
 /* ================================================================
 ====================== CERTIFICATIONS =============================
@@ -381,12 +378,6 @@ p {
     background: linear-gradient(45deg, #aebd9b 0%, #c8cfae 100%);
 }
 
-/* liens vers certifications */
-.card-content p a i {
-    position: relative;
-    top: 5px;
-    left: 20%;
-}
 /* Reduction de la taille des titre dans l'onglet parcours */
 #certifications .card .card-title, #portfolio .card .card-title {
     font-size: 20px;

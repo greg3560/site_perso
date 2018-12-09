@@ -1,0 +1,26 @@
+#portfolio {
+  background-color: $primary-color;
+  @media #{$medium-and-down} {
+    #portfolio {
+      height:700px;
+      .owl-controls {
+        display: none;
+      }
+    }
+  }
+  .owl-carousel {
+    margin-top:20px;
+    .card-title {
+      color: $primary-color;
+    }
+    /* ajustement boutons next prev du carousel */
+    .owl-controls {
+      position: absolute;
+      right: -20%;
+      bottom: 20px;
+    }
+  }
+  .eyeIcon {
+    margin-right: 10px;
+  }
+}

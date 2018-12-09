@@ -3132,46 +3132,14 @@ $(function () {
         ================================================================
     */
 
-    /* animation des barres de competences */
-    $('.skills').slideUp(1000);
-    /* carousel */
-    $('.carousel').carousel({
-        dist:-100,
-        shift:0,
-        padding:20,
-    });
-    /* boutons left/right */
-    $('.gauche').click(function(e) {
-        e.preventDefault();
-        $('.carousel').carousel('prev');
-    });
-    $('.droite').click(function(e) {
-        e.preventDefault();
-        $('.carousel').carousel('next');
-    });
+
 
     /*  ================================================================
         ========================== PORTFOLIO============================
         ================================================================
     */
 
-    /* slider */
-    $('.owl-carousel').owlCarousel({
-        margin:50,
-        //navigation
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:2
-            },
-            992:{
-                items:3
-            }
-        }
-    });
+
 
     /*  ================================================================
         ====================== CERTIFICATIONS===========================
