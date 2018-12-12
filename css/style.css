@@ -20,13 +20,6 @@
     margin: 0;
     padding: 0;
 }
-#certifications .row .col,
-#portfolio .row .col,
-#competences .row .col,
-#qui_suis_je .row .col,
-#home .row .col {
-    padding: 0;
-}
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
@@ -338,50 +331,29 @@ p {
 ===================================================================
 */
 
-/* les 3 cartes suivantes */
-.certificats-informatique-cache li {
-    display:none;
-    opacity: 0;
-}
-/* aligner 3 images dans un row de 12 col en ecran large */
-@media all and (min-width:992px) {
-    #certifications .row .col.offset-l1 {
-        margin-left: 12.5%;
-    }
-}
-/* margin inferieur sur le menu tabs de certifications */
-#certifications .row .col.s12 {
-    margin-bottom: 3%;
-}
-/* simulation du btn plus */
-#systeme {
-    margin-bottom: calc(56px + 6%) !important;
-}
-.tabs .tab a:hover {
-    color: #00d4b7; /* vert menthe clair */
-}
-/* background pour les 4 img des parcours */
-#parcours-javascript {
-    background: #B1E3E3;
-    background: linear-gradient(45deg, #B1E3E3 0%, #26CAD3 100%);
-}
-#parcours-bluemix {
-    background: #4B5D67;
-    background: linear-gradient(45deg, #4B5D67 0%, #2F404D 100%);
-}
-#parcours-integrateur {
-    background: #65485a;
-    background: linear-gradient(45deg, #65485a 0%, #9a5e7a 100%);
-}
-#parcours-site_web {
-    background: #aebd9b;
-    background: linear-gradient(45deg, #aebd9b 0%, #c8cfae 100%);
-}
+/*!* aligner 3 images dans un row de 12 col en ecran large *!*/
+/*@media all and (min-width:992px) {*/
+    /*#certifications .row .col.offset-l1 {*/
+        /*margin-left: 12.5%;*/
+    /*}*/
+/*}*/
+/*!* margin inferieur sur le menu tabs de certifications *!*/
+/*#certifications .row .col.s12 {*/
+    /*margin-bottom: 3%;*/
+/*}*/
+/*!* simulation du btn plus *!*/
+/*#systeme {*/
+    /*margin-bottom: calc(56px + 6%) !important;*/
+/*}*/
+/*.tabs .tab a:hover {*/
+    /*color: #00d4b7; !* vert menthe clair *!*/
+/*}*/
 
-/* Reduction de la taille des titre dans l'onglet parcours */
-#certifications .card .card-title, #portfolio .card .card-title {
-    font-size: 20px;
-}
+
+/*!* Reduction de la taille des titre dans l'onglet parcours *!*/
+/*#certifications .card .card-title, #portfolio .card .card-title {*/
+    /*font-size: 20px;*/
+/*}*/
 
 /* ================================================================
 ======================= CONTACT ===================================

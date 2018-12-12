@@ -3090,29 +3090,9 @@ $(function () {
     $('#qui_suis_je, #competences, #portfolio, #certifications, #contact').css({minHeight: window.innerHeight-60});
     /* scrollspy */
     $('.scrollspy').scrollSpy({scrollOffset:60});
-    /* scrollfire */
-    var options = [
-        {selector: '.commande', offset: -10, callback: function(el) { $('.commande').animate({left: '+=100%'}, 1000); } },
-        {selector: 'form', offset: -10, callback: function(el) { $(el).css({transform: 'rotate(0deg)'}, 1000); } },
-        {selector: '.commande-slider', offset: -10, callback: function(el) { $('.commande-slider').animate({left: '+=100%'}, 1000); } }
-    ];
     // Materialize.scrollFire(options);
     /* effet parallax */
     $('.parallax').parallax();
-    /* si il y a le parametre succes dans l'url on affiche le message de confirmation du formulaire */
-    $.urlParam = function(name){
-        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-        if(results) {
-            return results[1] || 0;
-        } else {
-            return false;
-        }
-    };
-    if($.urlParam('succes') == 'true') {
-        Materialize.toast('Votre message à bien été envoyé.', 5000, 'rounded');
-    } else if($.urlParam('succes') == 'false') {
-        Materialize.toast('Il est survenue un probleme.', 5000, 'rounded');
-    }
 
     /*  ================================================================
         ===================== NAVIGATION MOBILE=========================
@@ -3146,42 +3126,11 @@ $(function () {
         ================================================================
     */
 
-    /* bouton ajout */
-    var firstClick = true;
-    $('.plus').click(function(e) {
-        e.preventDefault();
-        var show = '.certificats-informatique-cache';
-        switch(this.id) {
-            case "programmeur":
-                if(firstClick) {
-                    show = '#dev ' + show + ':first';
-                    firstClick = false;
-                } else {
-                    show = '#dev ' + show + ':nth-child(3)';
-                    $('#programmeur').css({display: 'none'});
-                }
-                break;
-            case "culture-web":
-                show = '#web ' + show;
-                $('#culture-web').css({display: 'none'});
-                break;
-            case "cursus":
-                show = '#parcours ' + show;
-                $('#cursus').css({display: 'none'});
-                break;
-            default:
-                break;
-        }
-        Materialize.showStaggeredList(show);
-        show += ' li';
-        $(show).css({display: 'block'});
-    });
+
 
     /*  ================================================================
         =========================== CONTACT ============================
         ================================================================
     */
 
-    /* champs textarea */
-    $('#textarea1').trigger('autoresize');
 });

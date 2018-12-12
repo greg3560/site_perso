@@ -43,6 +43,7 @@
 // personal function & mixins
 @import "functions/_basic";
 @import "_mixin";
+@import "_keyframe";
 
 // personal component
 @import "_global";
@@ -51,3 +52,4 @@
 @import "_qui_suis_je";
 @import "_competences";
 @import "_portfolio";
+@import "_certifications";
