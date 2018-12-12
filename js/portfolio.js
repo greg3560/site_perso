@@ -4,7 +4,7 @@ export function portfolio() {
         margin:50,
         //navigation
         nav:true,
-        autoplay: false,
+        autoplay: true,
         responsive:{
             0:{
                 items:1

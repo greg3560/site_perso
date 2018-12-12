@@ -3087,7 +3087,7 @@ $(function () {
     */
 
     /* taille mini hauteur des sections sauf #home */
-    $('#qui_suis_je, #competences, #portfolio, #certifications, #contact').css({minHeight: window.innerHeight-60});
+    $('#qui_suis_je, #competences, #portfolio, #certifications').css({minHeight: window.innerHeight-60});
     /* scrollspy */
     $('.scrollspy').scrollSpy({scrollOffset:60});
     // Materialize.scrollFire(options);

@@ -7,25 +7,21 @@ module.exports = {
     zipCode: '95470',
     city: 'Survilliers',
     country: 'FRANCE',
-    subTitle: 'Développeur web - React.js - Symfony - Javascript - Node.js - Bootstrap - Materialize ...',
+    subTitle: 'Développeur web - React.js - Symfony - Sass',
     intro: 'Je suis Grégory Peigné, développeur web depuis 2012. J’ai débuté en autodidacte sur la plateforme openclassrooms. Ensuite j’ai intégré L’INFA pour une formation de 3 mois pour valider mon expérience autodidacte. Puis j’ai obtenu une licence de <strong>chef de projet digital</strong> à Institut F2i à Paris.',
     resume: 'Force de mes capacité d\'autodidacte, je détiens 7 129 178 octets de certificats en <strong>programmation</strong> , en <strong>UX/UI design</strong> et en environnement <strong>web</strong>. Perspicacité et intuition me permettent de résoudre les bugs les plus improbables. Agile en <strong>back-end</strong> avec node.js ou PHP, je suis aussi très gourmand de <strong>design</strong> avec photoshop, framework css et javascript.',
     skills: [
         {name: 'html5_css3', score: '90'},
-        {name: 'javascript', score: '60'},
-        {name: 'jquery', score: '70'},
-        {name: 'node_js', score: '50'},
+        {name: 'javascript', score: '80'},
+        {name: 'node_js', score: '70'},
         {name: 'angular_js', score: '40'},
-        {name: 'meteor', score: '40'},
-        {name: 'php', score: '70'},
+        {name: 'vue_js', score: '40'},
+        {name: 'php', score: '80'},
         {name: 'mysql', score: '70'},
-        {name: 'wordpress', score: '80'},
-        {name: 'prestashop', score: '40'},
-        {name: 'bootstrap', score: '60'},
-        {name: 'materialize', score: '70'},
-        {name: 'bluemix', score: '40'},
+        {name: 'bootstrap', score: '80'},
+        {name: 'materialize', score: '90'},
         {name: 'linux', score: '70'},
-        {name: 'seo', score: '50'},
+        {name: 'seo', score: '60'},
         {name: 'photoshop', score: '40'}
     ],
     introProjets: 'Mes premiers projets m\'ont permis d\'expérimenter le développement web (projets <strong>statique</strong> et <strong>dynamique</strong>, architecture <strong>MVC</strong>, projets <strong>orientés objets</strong> et procéduraux). Je suis également expert en <strong>front-end</strong> grâce à des collaborations en <strong>hackathon</strong>.',
@@ -45,14 +41,6 @@ module.exports = {
             details: ['Recto verso au format A5 300 pixels/pouce', 'Création du design en accord avec la <strong>charte graphique</strong>', 'Impression et découpage'],
             src: 'img/portfolio/flyers_adsi.png',
             alt: 'Flyers ADSI'
-        },
-        {
-            title: 'Logo ADSI',
-            link: 'img/portfolio/logo_adsi.png',
-            content: 'Création d\'un <strong>logo vectoriel</strong> pour la société A.D.S.I avec Photoshop et InDesign. Application des compétences fraichement acquises.',
-            details: ['<strong>Création visuelle</strong> d\'une représentation de la société', 'Déclinaison pour les réseaux sociaux'],
-            src: 'img/portfolio/logo_adsi.png',
-            alt: 'Logo ADSI'
         },
         {
             title: 'Blog de Zozor',
@@ -101,14 +89,6 @@ module.exports = {
             details: ['Recto verso au format A5 300 pixels/pouce', 'Création du design en accord avec la charte graphique', 'Impression et découpage'],
             src: 'img/portfolio/flyers_comptoir_des_saveurs.png',
             alt: 'Flyers Comptoir des saveurs'
-        },
-        {
-            title: 'Carte de voeux.',
-            link: 'img/portfolio/carte_voeux_2016.png',
-            content: 'Pour la nouvelle année 2016, proposition d\'une <strong>carte de voeux</strong>',
-            details: ['Carte de voeux au format 10*21 (1/3 de A4)', 'Impression et découpage'],
-            src: 'img/portfolio/carte_voeux_2016.png',
-            alt: 'Carte de voeux Mairie de Plailly'
         },
         {
             title: 'La maison de l\'architecte.',
