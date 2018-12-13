@@ -1,29 +1,29 @@
 import { VIEW_HEIGHT } from './constants';
 import { skills } from './content';
 
+let elem = document.querySelector('.carousel');
+let buttonLeft = document.querySelector('.gauche');
+let buttonRight = document.querySelector('.droite');
+let options = {
+    dist:-100,
+    shift:0,
+    padding:20
+};
+let instance = M.Carousel.init(elem, options);
 
 export function skill() {
-    /* animation des barres de competences */
-    // $('.skills').slideUp(1000);
-    /* carousel */
-    $('.carousel').carousel({
-        dist:-100,
-        shift:0,
-        padding:20,
-    });
-    /* boutons left/right */
-    $('.gauche').click(function(e) {
+    buttonLeft.addEventListener('click', (e) => {
         e.preventDefault();
-        $('.carousel').carousel('prev');
+        instance.prev();
     });
-    $('.droite').click(function(e) {
+    buttonRight.addEventListener('click', (e) => {
         e.preventDefault();
-        $('.carousel').carousel('next');
+        instance.next();
     });
-    window.addEventListener("scroll", function(e) {
+    window.addEventListener("scroll", () => {
         if (window.scrollY >= VIEW_HEIGHT * 2) {
             for (let i = 0, c = skills.length; i < c; i++) {
-                $('#' + skills[i].name).css({height: skills[i].score + '%'});
+                document.getElementById(skills[i].name).style.height = skills[i].score + '%';
             }
         }
     });

@@ -45,6 +45,10 @@
 @import "_mixin";
 @import "_keyframe";
 
+// slider
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 // personal component
 @import "_global";
 @import "_header";

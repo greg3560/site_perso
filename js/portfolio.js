@@ -1,20 +1,13 @@
+import Glide, { Controls, Autoplay, Anchors } from '@glidejs/glide/dist/glide.modular.esm'
+
 export function portfolio() {
-    /* slider */
-    $('.owl-carousel').owlCarousel({
-        margin:50,
-        //navigation
-        nav:true,
-        autoplay: true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:2
-            },
-            992:{
-                items:3
-            }
-        }
+    let glide = new Glide('#glide', {
+        type: 'carousel',
+        autoplay: 4000,
+        hoverpause: true,
+        startAt: 0,
+        perView: 3,
+        gap: 20
     });
+    glide.mount({Controls, Autoplay, Anchors});
 }

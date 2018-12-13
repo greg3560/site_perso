@@ -1,33 +1,35 @@
-export function certification() {
-    $('.tabs').tabs();
-    /* bouton ajout */
-    let ajout = document.getElementsByClassName('plus');
+let el = document.querySelector('.tabs');
+let ajout = document.getElementsByClassName('plus');
 
-    const showCards = (element, countCardsWillShowing, countCardsShowing, cards) => {
-        cards.forEach(
-            function(elem, index, array) {
-                let displayCSS = window.getComputedStyle(elem, null).getPropertyValue("display");
-                if (displayCSS === 'none' && countCardsWillShowing < 3) {
-                    countCardsWillShowing++;
-                    elem.style.display = 'list-item';
-                    countCardsShowing++;
-                } else if (displayCSS === 'list-item') {
-                    countCardsShowing++;
-                }
-                if (countCardsShowing === array.length) {
-                    element.style.display = 'none';
-                    element.style.opacity = 0;
-                }
+const showCards = (element, countCardsWillShowing, countCardsShowing, cards) => {
+    cards.forEach(
+        function(elem, index, array) {
+            let displayCSS = window.getComputedStyle(elem, null).getPropertyValue("display");
+            if (displayCSS === 'none' && countCardsWillShowing < 3) {
+                countCardsWillShowing++;
+                countCardsShowing++;
+                elem.style.display = 'list-item';
+            } else if (displayCSS === 'list-item') countCardsShowing++;
+
+            if (countCardsShowing === array.length) {
+                element.style.display = 'none';
+                element.style.opacity = 0;
             }
-        );
-    };
+        }
+    );
+};
+
+export function certification() {
+    M.Tabs.init(el, {});
 
     Array.from(ajout).forEach(
         function(element, index, array) {
             element.addEventListener('click', e => {
+                e.preventDefault();
+
                 let countCardsWillShowing = 0;
                 let countCardsShowing = 0;
-                e.preventDefault();
+
                 switch(e.currentTarget.id) {
                     case "programmeur":
                         let cardsDev = document.querySelectorAll('#dev > ul > li');

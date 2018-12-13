@@ -4,6 +4,7 @@
   "description": "Site web personnel",
   "main": "index.js",
   "dependencies": {
+    "@glidejs/glide": "^3.2.4",
     "gulp": "^3.9.1",
     "gulp-twig": "^1.2.0",
     "materialize-css": "^1.0.0"

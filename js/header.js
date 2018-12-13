@@ -1,4 +1,4 @@
 export function header() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, {});
+    let elems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(elems, {});
 }

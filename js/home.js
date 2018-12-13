@@ -1,8 +1,9 @@
 import { VIEW_HEIGHT_HOME } from './constants';
 
 export function home() {
-    /* taille mini hauteur #home */
-    $('#home').css({minHeight: VIEW_HEIGHT_HOME});
-    /* animation du bouton */
-    $('.suite').css("left","calc(50% - 27.5px)");
+    let homeSection = document.getElementById('home');
+    let buttonNext = document.querySelector('.suite');
+
+    homeSection.style.minHeight = VIEW_HEIGHT_HOME;
+    buttonNext.style.left = "calc(50% - 27.5px)";
 }
