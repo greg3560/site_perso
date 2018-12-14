@@ -26,8 +26,9 @@ p {
 /* bouton home */
 .suite {
   bottom: 30px;
-  left: -55.5px;
-  @include transition(left 1s ease-out 3s);
+  left: calc(50% - 27.5px);
+  transform: translate(-700px);;
+  @include transition(transform 1s ease-out 3s);
 }
 
 #portfolio h3, #contact h3 {

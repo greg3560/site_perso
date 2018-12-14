@@ -5,5 +5,5 @@ export function home() {
     let buttonNext = document.querySelector('.suite');
 
     homeSection.style.minHeight = VIEW_HEIGHT_HOME;
-    buttonNext.style.left = "calc(50% - 27.5px)";
+    buttonNext.style.transform = "inherit";
 }

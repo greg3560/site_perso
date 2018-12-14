@@ -1,61 +1,64 @@
 #competences {
   background: rgba(255, 255, 255, 0.7); /* blanc opaque */
-  .carousel {
+  .carousel-container {
+    position: relative;
     .gauche, .droite {
       position: absolute;
-      bottom: 0;
+      top: 50%;
     }
     .droite {
       right: 0;
     }
     .gauche {
-      left: 5%;
+      left: 12.5%;
     }
-    overflow: visible;
-    .carousel-item {
-      .single-skill {
-        float: right;
-        height: 360px;
-        width: 50px;
-        position: relative;
-        .singel-hr-inner {
-          background-color: $primary-color;
-          position: absolute;
-          width: 100%;
-          bottom: 33px;
-          height: 0;
-          @include transition-property(height);
-          @include transition-duration(1.2s);
-          @include transition-timing-function(cubic-bezier(0.7,0,0.3,1));
-          .skill-title {
+    .carousel {
+      overflow: visible;
+      .carousel-item {
+        .single-skill {
+          float: right;
+          height: 360px;
+          width: 50px;
+          position: relative;
+          .singel-hr-inner {
+            background-color: $primary-color;
             position: absolute;
-            top: -50px;
-            right: calc(50% - 50px);
-            width: 100px;
-            .hr {
-              height: 80px;
-              width: 1px;
+            width: 100%;
+            bottom: 33px;
+            height: 0;
+            @include transition-property(height);
+            @include transition-duration(1.2s);
+            @include transition-timing-function(cubic-bezier(0.7,0,0.3,1));
+            .skill-title {
               position: absolute;
-              left: 50%;
-              top: 25px;
-              background-color: $primary-color;
-              .point:after {
-                content: '';
-                width: 7px;
-                height: 7px;
+              top: -50px;
+              right: calc(50% - 50px);
+              width: 100px;
+              .hr {
+                height: 80px;
+                width: 1px;
                 position: absolute;
-                border-radius: 50%;
-                left: -3px;
+                left: 50%;
+                top: 25px;
                 background-color: $primary-color;
+                .point:after {
+                  content: '';
+                  width: 7px;
+                  height: 7px;
+                  position: absolute;
+                  border-radius: 50%;
+                  left: -3px;
+                  background-color: $primary-color;
+                }
               }
             }
           }
         }
-      }
-      .score {
-        position: absolute;
-        bottom: -160px;
-        right: 10px;
+        .score {
+          position: absolute;
+          bottom: -160px;
+          right: 10px;
+        }
       }
     }
   }
