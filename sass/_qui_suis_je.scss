@@ -8,12 +8,19 @@
     }
   }
   .reseaux-sociaux {
-    margin-top: 13%;
-  }
-  /* icones et couleurs reseaux sociaux */
-  .fa {
-    &:before {
-      color: $primary-color;
+    a.facebook, a.twitter, a.google, a.linkedin {
+      text-align: center;
     }
+    a.facebook, a.twitter, a.google {
+      padding-top: 7px;
+    }
+    a.linkedin {
+      padding-top: 5px;
+    }
+  }
+
+  .icon-facebook, .icon-linkedin2, .icon-twitter, .icon-google-plus {
+    font-size: 28px;
+    color: #00bfa5;;
   }
 }
