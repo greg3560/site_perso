@@ -6,4 +6,18 @@
       margin: auto;
     }
   }
+  .presentation {
+    #nom {
+      color: $primary-color; /* vert menthe */
+      font-size: 72px;
+      font-family: 'kaushan_script', cursive;
+    }
+    h1 {
+      color: #fff;
+      font-size: 18px;
+      margin: auto;
+      text-transform: uppercase;
+      line-height: 60px;
+    }
+  }
 }

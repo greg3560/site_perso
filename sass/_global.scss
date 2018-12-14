@@ -1,3 +1,35 @@
 body {
   overflow-x: hidden;
 }
+
+h5 {
+  border-bottom: $title-border;
+  padding: 15px;
+}
+
+p {
+  text-align: justify;
+}
+
+#qui_suis_je strong,
+#competences strong,
+#certifications strong {
+  color: $primary-color
+}
+#portfolio > strong {
+  color: #fff;
+}
+.collection-item strong {
+  color: $primary-color
+}
+
+/* bouton home */
+.suite {
+  bottom: 30px;
+  left: -55.5px;
+  @include transition(left 1s ease-out 3s);
+}
+
+#portfolio h3, #contact h3 {
+  color: #fff;
+}

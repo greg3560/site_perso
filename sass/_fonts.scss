@@ -1,10 +1,17 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../../fonts/icomoon.eot?vkmw4i');
-  src:  url('../../fonts/icomoon.eot?vkmw4i#iefix') format('embedded-opentype'),
-  url('../../fonts/icomoon.ttf?vkmw4i') format('truetype'),
-  url('../../fonts/icomoon.woff?vkmw4i') format('woff'),
-  url('../../fonts/icomoon.svg?vkmw4i#icomoon') format('svg');
+  src:  url('../../fonts/reseaux_sociaux/icomoon.eot?vkmw4i');
+  src:  url('../../fonts/reseaux_sociaux/icomoon.eot?vkmw4i#iefix') format('embedded-opentype'),
+  url('../../fonts/reseaux_sociaux/icomoon.ttf?vkmw4i') format('truetype'),
+  url('../../fonts/reseaux_sociaux/icomoon.woff?vkmw4i') format('woff'),
+  url('../../fonts/reseaux_sociaux/icomoon.svg?vkmw4i#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kaushan_script';
+  src: url('../../fonts/kaushan_script/KaushanScript-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

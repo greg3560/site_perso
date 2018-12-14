@@ -17,21 +17,20 @@
     }
   }
   /* background pour les 4 img des parcours */
-  #parcours-javascript {
+  #parcours .card-image img[alt="Disciple\ du\ javascript"] {
     background: #B1E3E3;
     background: linear-gradient(45deg, #B1E3E3 0%, #26CAD3 100%);
   }
-  #parcours-bluemix {
+  #parcours .card-image img[alt="Déployer sur Bluemix"] {
     background: #4B5D67;
     background: linear-gradient(45deg, #4B5D67 0%, #2F404D 100%);
   }
-  #parcours-integrateur {
+  #parcours .card-image img[alt="Intégrateur web"] {
     background: #65485a;
     background: linear-gradient(45deg, #65485a 0%, #9a5e7a 100%);
   }
-  #parcours-site_web {
+  #parcours .card-image img[alt="Lancer son site web"] {
     background: #aebd9b;
     background: linear-gradient(45deg, #aebd9b 0%, #c8cfae 100%);
   }
-
 }
