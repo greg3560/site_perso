@@ -21,9 +21,19 @@ export function skill() {
         instance.next();
     });
     window.addEventListener("scroll", () => {
-        if (window.scrollY >= VIEW_HEIGHT * 2) {
-            for (let i = 0, c = skills.length; i < c; i++) {
-                document.getElementById(skills[i].name).style.height = skills[i].score + '%';
+        if (window.matchMedia("(max-width: 600px)").matches) {
+            if (window.scrollY >= VIEW_HEIGHT * 4) {
+                for (let i = 0, c = skills.length; i < c; i++) {
+                    console.log('mobile');
+                    document.getElementById(skills[i].name + '_mobile').style.width = skills[i].score + '%';
+                }
+            }
+        } else {
+            if (window.scrollY >= VIEW_HEIGHT * 2) {
+                for (let i = 0, c = skills.length; i < c; i++) {
+                    console.log('desktop');
+                    document.getElementById(skills[i].name).style.height = skills[i].score + '%';
+                }
             }
         }
     });

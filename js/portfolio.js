@@ -1,4 +1,4 @@
-import Glide, { Controls, Autoplay, Anchors } from '@glidejs/glide/dist/glide.modular.esm'
+import Glide, { Controls, Autoplay, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
 
 export function portfolio() {
     let glide = new Glide('#glide', {
@@ -9,5 +9,9 @@ export function portfolio() {
         perView: 3,
         gap: 15
     });
-    glide.mount({Controls, Autoplay, Anchors});
+    Breakpoints.match({
+        0: { perView: 1 },
+        600: { perView: 3 }
+    });
+    glide.mount({Controls, Autoplay, Breakpoints});
 }

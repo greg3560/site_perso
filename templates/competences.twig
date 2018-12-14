@@ -26,5 +26,24 @@
             </div>
             <a href="#" class="droite btn-floating btn-large waves-effect waves-light right"><i class="material-icons">keyboard_arrow_right</i></a href="#">
         </div>
+        <div class="col s12 show-on-small hide-on-med-and-up">
+            {% for skill in skills %}
+                <div class="row">
+                    <div class="col s6">
+                        <strong>{{ skill.name | replace({'_': ' '}) | upper }}</strong>
+                    </div>
+                    <div class="col s6">
+                        <div class="progress-bar">
+                            <div class="progress-bg">
+
+                            </div>
+                            <div id="{{ skill.name }}_mobile" class="progress-skill">
+                                <span class="score">{{ skill.score }}%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 </div>

@@ -62,4 +62,22 @@
       }
     }
   }
+  .progress-bar {
+    position: relative;
+  }
+  .progress-bg, .progress-skill {
+    position: absolute;
+    height: 20px;
+  }
+  .progress-bg {
+    background-color: grey;
+    width: 100%;
+  }
+  .progress-skill {
+    background-color: $primary-color;
+    width: 0;
+    @include transition-property(width);
+    @include transition-duration(1.2s);
+    @include transition-timing-function(cubic-bezier(0.7,0,0.3,1));
+  }
 }
