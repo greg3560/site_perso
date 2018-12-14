@@ -5,17 +5,16 @@
       height:700px;
     }
   }
-  .card-link {
-    color: $primary-color;
-  }
   .eyeIcon {
     margin-right: 10px;
   }
   .glide__arrow {
-    top: inherit !important;
-    bottom: -60px !important;
+    position: inherit;
+    display: inherit;
   }
   .glide__bullets {
-    bottom: -30px !important;
+    position: relative;
+    bottom: 1em;
+    transform: translateX(-80%);
   }
 }

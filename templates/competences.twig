@@ -5,7 +5,8 @@
         <div class="col m12 l4">
             <p class="flow-text grey-text text-darken-2">{{ resume }}</p>
         </div>
-        <div class="carousel col m10 l6">
+        <div class="carousel col m10 l8">
+            <a href="#" class="gauche btn-floating btn-large waves-effect waves-light left"><i class="material-icons">keyboard_arrow_left</i></a>
             {% for skill in skills %}
                 <a class="carousel-item" href="#one!">
                     <div class="single-skill">
@@ -21,10 +22,7 @@
                     <span class="score">{{ skill.score }}%</span>
                 </a>
             {% endfor %}
-        </div>
-        <div class="col l2 btn-mobile right-align">
-            <a href="#" class="gauche btn-floating btn-large waves-effect waves-light"><i class="material-icons">keyboard_arrow_left</i></a>
-            <a href="#" class="droite btn-floating btn-large waves-effect waves-light"><i class="material-icons">keyboard_arrow_right</i></a>
+            <a href="#" class="droite btn-floating btn-large waves-effect waves-light right"><i class="material-icons">keyboard_arrow_right</i></a>
         </div>
     </div>
 </div>

@@ -7,7 +7,7 @@ export function portfolio() {
         hoverpause: true,
         startAt: 0,
         perView: 3,
-        gap: 20
+        gap: 15
     });
     glide.mount({Controls, Autoplay, Anchors});
 }
