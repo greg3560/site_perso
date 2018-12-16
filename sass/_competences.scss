@@ -62,6 +62,10 @@
       }
     }
   }
+  .score-mobile {
+    position: relative;
+    z-index: 1;
+  }
   .progress-bar {
     position: relative;
   }
@@ -70,8 +74,9 @@
     height: 20px;
   }
   .progress-bg {
-    background-color: grey;
+    background-color: $table-border-color;
     width: 100%;
+    text-align: center;
   }
   .progress-skill {
     background-color: $primary-color;

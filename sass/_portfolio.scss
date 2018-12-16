@@ -1,10 +1,5 @@
 #portfolio {
   background-color: $primary-color;
-  @media #{$medium-and-down} {
-    #portfolio {
-      height:700px;
-    }
-  }
   .eyeIcon {
     margin-right: 10px;
   }

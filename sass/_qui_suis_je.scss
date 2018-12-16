@@ -1,14 +1,16 @@
 #qui_suis_je {
   #greg {
-    margin-top: 10%;
+    margin-top: 50px;
   }
-  @media all and (max-width:992px) {
-    #greg {
-      margin-top:25%;
+  @media #{$small-and-down} {
+    .mobile-center h5 {
+      text-align: center;
     }
   }
   .reseaux-sociaux {
-    //margin-top: rem-calc(20);
+    ul li {
+      text-align: center;
+    }
     margin-top: 60px;
     a.facebook, a.twitter, a.google, a.linkedin {
       text-align: center;

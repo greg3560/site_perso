@@ -4,6 +4,7 @@ import { home } from './home';
 import { skill } from './competences';
 import { portfolio } from './portfolio';
 import { certification } from './certification';
+import { footer } from './footer';
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -13,4 +14,5 @@ document.addEventListener('DOMContentLoaded', function () {
     skill();
     portfolio();
     certification();
+    footer();
 });

@@ -6,12 +6,14 @@ export function portfolio() {
         autoplay: 4000,
         hoverpause: true,
         startAt: 0,
-        perView: 3,
+        breakpoints: {
+            500: { perView: 1 },
+            800: { perView: 2 },
+            1200: { perView: 3 },
+            3000: { perView: 3 }
+        },
         gap: 15
     });
-    Breakpoints.match({
-        0: { perView: 1 },
-        600: { perView: 3 }
-    });
+
     glide.mount({Controls, Autoplay, Breakpoints});
 }
