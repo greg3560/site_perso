@@ -28,7 +28,7 @@ p {
   bottom: 30px;
   left: calc(50% - 27.5px);
   transform: translate(-700px);;
-  @include transition(transform 1s ease-out 3s);
+  @include transition(transform 1s ease-out 1s);
 }
 
 #portfolio h3, #contact h3 {

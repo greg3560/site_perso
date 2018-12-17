@@ -3,7 +3,7 @@ export function footer() {
     let options = {
         direction: 'left'
     };
-    let instances = M.FloatingActionButton.init(elems, options);
+    M.FloatingActionButton.init(elems, options);
 
     let linkedinButton = document.getElementById('linkedin');
     let facebookButton = document.getElementById('facebook');

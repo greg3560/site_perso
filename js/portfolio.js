@@ -7,12 +7,11 @@ export function portfolio() {
         hoverpause: true,
         startAt: 0,
         breakpoints: {
-            500: { perView: 1 },
-            800: { perView: 2 },
+            992: { perView: 2 },
             1200: { perView: 3 },
             3000: { perView: 3 }
         },
-        gap: 15
+        gap: 20
     });
 
     glide.mount({Controls, Autoplay, Breakpoints});

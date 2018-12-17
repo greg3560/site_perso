@@ -21,14 +21,16 @@ export function skill() {
         instance.next();
     });
     window.addEventListener("scroll", () => {
+        let section = document.getElementById('competences');
+        let positionSectionTop = section.offsetTop -70;
         if (window.matchMedia("(max-width: 600px)").matches) {
-            if (window.scrollY >= VIEW_HEIGHT * 4) {
+            if (window.scrollY >= positionSectionTop) {
                 for (let i = 0, c = skills.length; i < c; i++) {
                     document.getElementById(skills[i].name + '_mobile').style.width = skills[i].score + '%';
                 }
             }
         } else {
-            if (window.scrollY >= VIEW_HEIGHT * 2) {
+            if (window.scrollY >= positionSectionTop) {
                 for (let i = 0, c = skills.length; i < c; i++) {
                     document.getElementById(skills[i].name).style.height = skills[i].score + '%';
                 }

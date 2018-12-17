@@ -1,11 +1,21 @@
 let el = document.querySelector('.tabs');
 let ajout = document.getElementsByClassName('plus');
 
-const showCards = (element, countCardsWillShowing, countCardsShowing, cards) => {
+const howManyCardsIsShowing = () => {
+    if (window.matchMedia("(min-width: 992px)").matches) {
+        return 3;
+    } else {
+        return 2
+    }
+};
+const showCards = (element, cards) => {
+    let countCardsWillShowing = 0;
+    let countCardsShowing = 0;
+    let numberCardsPerView = howManyCardsIsShowing();
     cards.forEach(
         function(elem, index, array) {
             let displayCSS = window.getComputedStyle(elem, null).getPropertyValue("display");
-            if (displayCSS === 'none' && countCardsWillShowing < 3) {
+            if (displayCSS === 'none' && countCardsWillShowing < numberCardsPerView) {
                 countCardsWillShowing++;
                 countCardsShowing++;
                 elem.style.display = 'list-item';
@@ -22,26 +32,48 @@ const showCards = (element, countCardsWillShowing, countCardsShowing, cards) => 
 export function certification() {
     M.Tabs.init(el, {});
 
+    let cardsDev = document.querySelectorAll('#dev > ul > li');
+    let cardsWeb = document.querySelectorAll('#web > ul > li');
+    let cardsSysteme = document.querySelectorAll('#systeme > ul > li');
+    let cardsParcours = document.querySelectorAll('#parcours > ul > li');
+
+    let NumberCardsShowing = howManyCardsIsShowing();
+
     Array.from(ajout).forEach(
-        function(element, index, array) {
+        function(element) {
+            let btnId = element.id;
+            switch(btnId) {
+                case "programmeur":
+                    if (cardsDev.length <= NumberCardsShowing) element.style.display = 'none';
+                    break;
+                case "culture-web":
+                    if (cardsWeb.length <= NumberCardsShowing) element.style.display = 'none';
+                    break;
+                case "systemeBtn":
+                    if (cardsSysteme.length <= NumberCardsShowing) element.style.display = 'none';
+                    break;
+                case "cursus":
+                    if (cardsParcours.length <= NumberCardsShowing) element.style.display = 'none';
+                    break;
+                default:
+                    console.log('default');
+                    break;
+            }
             element.addEventListener('click', e => {
                 e.preventDefault();
 
-                let countCardsWillShowing = 0;
-                let countCardsShowing = 0;
-
                 switch(e.currentTarget.id) {
                     case "programmeur":
-                        let cardsDev = document.querySelectorAll('#dev > ul > li');
-                        showCards(element, countCardsWillShowing, countCardsShowing, cardsDev);
+                        showCards(element, cardsDev);
                         break;
                     case "culture-web":
-                        let cardsWeb = document.querySelectorAll('#web > ul > li');
-                        showCards(element, countCardsWillShowing, countCardsShowing, cardsWeb);
+                        showCards(element, cardsWeb);
+                        break;
+                        case "systemeBtn":
+                        showCards(element, cardsSysteme);
                         break;
                     case "cursus":
-                        let cardsParcours = document.querySelectorAll('#parcours > ul > li');
-                        showCards(element, countCardsWillShowing, countCardsShowing, cardsParcours);
+                        showCards(element, cardsParcours);
                         break;
                     default:
                         console.log('default');
