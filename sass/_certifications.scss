@@ -2,6 +2,9 @@
   #dev, #web, #systeme, #parcours {
     padding-top: 60px;
   }
+  .activator {
+    cursor: pointer;
+  }
   ul {
     @media #{$medium-and-down} {
       &:not(.tabs) {

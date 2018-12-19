@@ -18,10 +18,10 @@
                                 <img class="activator" src="{{ code.src }}" alt="{{ code.alt }}" />
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-2">
-                                    {{ code.title | truncate(10) }}
-                                    <i class="material-icons right">more_vert</i>
+                                <span class="card-title grey-text text-darken-2 truncate">
+                                    {{ code.title }}
                                 </span>
+                                <i class="activator material-icons right">more_vert</i>
                                 <p class="grey-text text-darken-2">
                                     <a class="card-link" href="{{ code.file }}" target="_blank" >
                                         <i class="material-icons eyeIcon">remove_red_eye</i>

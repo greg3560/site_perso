@@ -7,15 +7,15 @@
             <div class="glide__track" data-glide-el="track">
                 <ul id="creation" class="   glide__slides">
                     {% for portfolio in portfolios %}
-                        <li class="col s6 m6 glide__slide card small">
+                        <li class="s6 m6 glide__slide card small">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="{{ portfolio.src }}" alt="{{ portfolio.alt }}"/>
+                                <img class="activator responsive-img" src="{{ portfolio.src }}" alt="{{ portfolio.alt }}"/>
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-2">
-                                    {{ portfolio.title | truncate(10) }}
-                                    <i class="material-icons right">more_vert</i>
+                                <span class="card-title activator grey-text text-darken-2 truncate">
+                                    {{ portfolio.title }}
                                 </span>
+                                <i class="material-icons right">more_vert</i>
                                 <p class="grey-text text-darken-2 left-align">
                                     <a class="card-link" href="{{ portfolio.link }}" target="_blank">
                                         <i class="material-icons eyeIcon">remove_red_eye</i>

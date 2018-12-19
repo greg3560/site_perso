@@ -9,22 +9,25 @@ module.exports = {
     country: 'FRANCE',
     subTitle: 'Développeur web - React.js - Symfony - Sass - Gulp',
     intro: 'Je suis Grégory Peigné, développeur web depuis 2012. J’ai débuté en autodidacte sur la plateforme openclassrooms. Ensuite j’ai intégré L’INFA pour une formation de 3 mois pour valider mon expérience autodidacte. Puis j’ai obtenu une licence de <strong>chef de projet digital</strong> à Institut F2i à Paris.',
-    resume: 'Force de mes capacité d\'autodidacte, je détiens 7 129 178 octets de certificats en <strong>programmation</strong> , en <strong>UX/UI design</strong> et en environnement <strong>web</strong>. Perspicacité et intuition me permettent de résoudre les bugs les plus improbables. Agile en <strong>back-end</strong> avec node.js ou PHP, je suis aussi très gourmand de <strong>design</strong> avec photoshop, framework css et javascript.',
+    resume: 'Après un long parcours de formations et une expérience en agence, je maîtrise les technologies du web les plus demandées par les entreprises. Mes connaissances sont d’une part axées sur le code,  et d’autres part sur la gestions de projets.J’utilise aussi des outils de web-design, UX/UI design pour mes besoin personnels. Voici une présentation des niveau de compétences.',
     skills: [
-        {name: 'html5_css3', score: '90'},
-        {name: 'javascript', score: '80'},
+        {name: 'reactjs', score: '70'},
+        {name: 'symfony', score: '60'},
+        {name: 'sass', score: '90'},
+        {name: 'gulp', score: '70'},
+        {name: 'html_css', score: '90'},
+        {name: 'es_6', score: '70'},
         {name: 'node_js', score: '70'},
         {name: 'angular_js', score: '40'},
         {name: 'vue_js', score: '40'},
-        {name: 'php', score: '80'},
+        {name: 'php', score: '70'},
         {name: 'mysql', score: '70'},
         {name: 'bootstrap', score: '80'},
         {name: 'materialize', score: '90'},
         {name: 'linux', score: '70'},
-        {name: 'seo', score: '60'},
-        {name: 'photoshop', score: '40'}
+        {name: 'photoshop', score: '30'}
     ],
-    introProjets: 'Mes premiers projets m\'ont permis d\'expérimenter le développement web (projets <strong>statique</strong> et <strong>dynamique</strong>, architecture <strong>MVC</strong>, projets <strong>orientés objets</strong> et procéduraux). Je suis également expert en <strong>front-end</strong> grâce à des collaborations en <strong>hackathon</strong>.',
+    introProjets: 'Mes premiers projets m\'ont permis d\'expérimenter le développement web (architecture MVC, projets orientés objets). Ensuite j’ai participé a la réalisation de projets bien plus innovant (produits bancaires, réservations d’espaces de travail, Interface de suivi des crypto-monnaies).',
     portfolios: [
         {
             title: 'ADSI',
