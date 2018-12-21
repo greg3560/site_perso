@@ -74,13 +74,13 @@ gulp.task('dist', ['webpack', 'sass', 'twig', 'img', 'fonts'], function () {
 // Run git push
 // remote is the remote repo
 // branch is the remote branch to push to
-gulp.task('push', function(){
-    git.push('origin', 'master', function (err) {
+gulp.task('push', ['dist'], function(){
+    return git.push('origin', 'master', function (err) {
         if (err) throw err;
     });
 });
 
-gulp.task('prod', ['dist', 'push'], () => {
+gulp.task('prod', ['push'], () => {
     return gulp.src('dist/*')
         .pipe(zip('dist.zip'))
         .pipe(gulp.dest('.'));
