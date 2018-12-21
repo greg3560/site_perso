@@ -13,13 +13,17 @@ let gulp = require('gulp'),
     twig = require('gulp-twig'),
     webpack = require('webpack-stream'),
     content = require('./js/content'),
-    git = require('gulp-git');
+    git = require('gulp-git'),
+    robots = require('gulp-robots'),
+    log = require('fancy-log'),
+    favicons = require("favicons").stream;
 
 sass.compiler = require('node-sass');
 
 gulp.task('webpack', function () {
     return gulp.src('js/*.js')
         .pipe(webpack({
+            mode: "development",
             output: {
                 filename: 'main.js',
             },
@@ -46,13 +50,11 @@ gulp.task('default', ['webpack', 'sass', 'twig'], () => {
 });
 
 gulp.task('clean', function () {
-    gulp.src('dist', {read: false})
-        .pipe(clean());
-    gulp.src('output', {read: false})
+    return gulp.src(['dist/*', 'output/*'], {read: false})
         .pipe(clean());
 });
 
-gulp.task('img', ['clean'], function () {
+gulp.task('img', function () {
     return gulp.src('img/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'));
@@ -63,8 +65,46 @@ gulp.task("fonts", function() {
         .pipe(gulp.dest('dist/fonts'));
 });
 
-gulp.task('dist', ['webpack', 'sass', 'twig', 'img', 'fonts'], function () {
-    gulp.src('*.html')
+gulp.task("files", function() {
+    return gulp.src("files/**/*.*")
+        .pipe(gulp.dest('dist/files'));
+});
+
+gulp.task('robots', function () {
+    gulp.src('index.html')
+        .pipe(robots({
+            useragent: '*',
+            allow: [],
+            disallow: ['/libs/', '/certifications/']
+        }))
+        .pipe(gulp.dest('dist/'));
+});
+
+gulp.task("favicons", function () {
+    return gulp.src("img/logo_gregory.png").pipe(favicons({
+        appName: "Gregory Peigné",
+        appShortName: "Greg",
+        appDescription: "Site de présentation",
+        developerName: "Gregory Peigne",
+        developerURL: "http://www.gregorypeigne.fr/",
+        background: "#000",
+        path: "./",
+        url: "http://www.gregorypeigne.fr/",
+        display: "standalone",
+        orientation: "portrait",
+        scope: "/",
+        version: 1.0,
+        logging: false,
+        html: "index.html",
+        pipeHTML: false,
+        replace: true
+    }))
+        .on("error", log)
+        .pipe(gulp.dest("dist"));
+});
+
+gulp.task('dist', ['webpack', 'sass', 'twig', 'img', 'fonts', 'files', 'favicons', 'robots'], function () {
+    return gulp.src('*.html')
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
@@ -74,14 +114,15 @@ gulp.task('dist', ['webpack', 'sass', 'twig', 'img', 'fonts'], function () {
 // Run git push
 // remote is the remote repo
 // branch is the remote branch to push to
-gulp.task('push', ['dist'], function(){
+gulp.task('push', function(){
     return git.push('origin', 'master', function (err) {
         if (err) throw err;
     });
 });
 
-gulp.task('prod', ['push'], () => {
-    return gulp.src('dist/*')
+gulp.task('prod', ['clean'], () => {
+    gulp.start('dist');
+    gulp.src('dist/*')
         .pipe(zip('dist.zip'))
         .pipe(gulp.dest('.'));
 });

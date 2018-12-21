@@ -21,3 +21,6 @@
 
 # Ignorer la generation du fichier index.html
 ./index.html
+
+# ignorer les fichiers htaccess
+./.htaccess

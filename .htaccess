@@ -6,7 +6,9 @@ Header add Cache-Control "max-age=2592000"
 ErrorDocument 404 /erreurs/404.php
 #ErrorDocument 500 /erreurs/erreur_500.php
 #redirection vers l'index
-DirectoryIndex index.php 404.php
+DirectoryIndex index.html 404.php
+# rendre inaccessible le repertoire git
+RedirectMatch 404 /\.git
 #redirection 301
 Redirect 301 /blog/ http://www.gregorypeigne.fr
 Redirect 301 http://www.gregorypeigne.frnaujac-sur-mer/?article=4&section=article http://www.gregorypeigne.fr
