@@ -32,6 +32,7 @@ module.exports = {
         {
             title: 'ADSI',
             link: 'http://adsi.gregorypeigne.fr/',
+            gitlab: 'https://gitlab.com/greg3560/adsi',
             content: 'Mon tout premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).',
             details: ['Une page accueil qui présente l\'activité de l\'entreprise à l\'aide d\'un slider CSS3', 'Une page télémaintenance avec teamviewer', 'Une page tarifs', 'Une page avec un <strong>formulaire de contacts</strong>', 'Une page avec une <strong>carte google map</strong> pour le plan d\'accès'],
             src: 'img/portfolio/adsi.png',
@@ -48,6 +49,7 @@ module.exports = {
         {
             title: 'Blog de Zozor',
             link: 'http://blogzozor.gregorypeigne.fr/',
+            gitlab: 'https://gitlab.com/greg3560/blog_zozor',
             content: 'Premier mooc d\'openclassrooms autour des langages <strong>HTML5</strong> et CSS3. Ceci est le premier TP du tutoriel.',
             details: ['Rappel sur la <strong>mise en page</strong> (en-tête, corps de page, pied de page)', 'Utilisation des <strong>balises html5</strong> et sensibilisation de leurs rôles <strong>sémantiques</strong>', 'Utilisation des <strong>propriétés CSS3</strong> pour le design et aussi pour le positionnement'],
             src: 'img/portfolio/blog_zozor.png',
@@ -56,6 +58,7 @@ module.exports = {
         {
             title: 'CV de Zozor',
             link: 'http://cvzozor.gregorypeigne.fr/',
+            gitlab: 'https://gitlab.com/greg3560/cv_zozor',
             content: 'Premier mooc d\'openclassrooms autour des langages <strong>HTML5</strong> et CSS3.Ceci est le premier TP du tutoriel.',
             details: ['Rappel sur la <strong>mise en page</strong> (en-tête, corps de page, pied de page)', 'Utilisation des <strong>balises html5</strong> et sensibilisation de leurs rôles <strong>sémantiques</strong>', 'Utilisation des <strong>propriétés CSS3</strong> pour le design et aussi pour le positionnement'],
             src: 'img/portfolio/cv_zozor.png',
@@ -64,6 +67,7 @@ module.exports = {
         {
             title: 'Music Until Dawn',
             link: 'http://mud.gregorypeigne.fr/',
+            gitlab: 'https://gitlab.com/greg3560/mud',
             content: 'Refonte du site m-u-d-60.fr.',
             details: ['Redonner un nouvel aspect au site à travers un nouveau design plus épuré', 'Intégration d\'une <strong>carte google map</strong> pour le plan d\'accès', 'Développement d\'un <strong>formulaire de contact</strong>', 'Conception d\'un <strong>menu dynamique</strong> avec PHP', 'Intégration d\'un <strong>slider</strong> entièrement développé en CSS3'],
             src: 'img/portfolio/mud.png',
@@ -72,6 +76,7 @@ module.exports = {
         {
             title: 'Mairie de Naujac/mer',
             link: 'http://naujacsurmer.gregorypeigne.fr/',
+            gitlab: 'https://gitlab.com/greg3560/mairie_naujac',
             content: 'Refonte d\'un site de mairie de notre choix pour le jury de fin de formation à l\'INFA.',
             details: ['Utilisation de l\'architecture <strong>MVC</strong> (modèle, vue, contrôleur)', 'Utilisation de <strong>mysqli</strong> pour la connexion à la base de données', 'Création et gestion de la base de données', 'Mise en place d\'un <strong>bbcode</strong> pour la page commentaire, coloration et rendu en <strong>lien cliquable</strong> des expressions du type http://www et mailto'],
             src: 'img/portfolio/naujac.png',
@@ -80,6 +85,7 @@ module.exports = {
         {
             title: 'Blog/site personnel',
             link: 'http://siteperso.gregorypeigne.fr/',
+            gitlab: 'https://gitlab.com/greg3560/gregorypeigne-v1.1.2',
             content: 'Mon premier espace avec Wordpress. Réalisation d\'un <strong>portfolio</strong> à l\'issu de ma formation à l\'INFA et partage d\'articles au sujet du numérique.',
             details: ['Une page portfolio', 'Une page C.V', 'Une page de présentation', 'Installation et réglages du <strong>plugin Contact Form 7</strong>'],
             src: 'img/portfolio/premier_site_perso.png',
@@ -96,6 +102,7 @@ module.exports = {
         {
             title: 'La maison de l\'architecte.',
             link: 'http://lamaisondelarchitecte.gregorypeigne.fr/',
+            gitlab: 'https://gitlab.com/greg3560/la_maison_de_l_architecte',
             content: 'Mise en pratique d\'une <strong>mise en page</strong> avec Bootstrap',
             details: ['En-tête : Utilisation d\'un <strong>jumbotron</strong> avec surcharge de la couleur de fond et de la marge inférieure. Au sein de ce jumbotron j\'utilise la grille pour répartir le logo et le titre. Utilisation des classes pour centrer le texte et pour cacher le logo sur les smartphones', 'Corps de page : Répartition des images avec la grille. Marge entre les images', 'Pied de page : Une rangée et un centrage avec quelques règles css pour les boutons ronds', 'Généralités sur la page : Police Bitter de <strong>google fonts</strong> pour le texte. Une couleurs de fond à #eef, et la couleur du texte à #259'],
             src: 'img/portfolio/la_maison_de_l_architecte.png',
@@ -104,6 +111,7 @@ module.exports = {
         {
             title: 'La maison de l\'architecture.',
             link: 'http://lamaisondelarchitecture.gregorypeigne.fr/',
+            gitlab: 'https://gitlab.com/greg3560/la_maison_de_l_architecture',
             content: 'Mise en page faisant intervenir des plugins javascript',
             details: ['Barre de navigation fixée en haut avec un fond noir qui se rétracte sur les petits supports', 'Un <strong>carrousel</strong> avec les indicateurs de <strong>slide</strong>, les titres et les boutons de <strong>navigation</strong>', 'Pour le pied de page utilisation d\'une rangée avec un centrage et des images <a href="http://fontawesome.io/icons/" title="Font Awesome" ><strong>Font Awesome</strong></a>'],
             src: 'img/portfolio/la_maison_de_l_architecture.png',
@@ -112,6 +120,7 @@ module.exports = {
         {
             title: 'Générateur de formulaires.',
             link: 'http://formulaires.gregorypeigne.fr/',
+            gitlab: 'https://gitlab.com/greg3560/generateur_de_formulaires',
             content: 'L’utilisateur peut créer des formulaires personnalisés en cliquant sur les boutons Label, Zone de texte et Bouton, et en fournissant les renseignements demandés',
             details: ['Utilisation des méthodes <strong>after()</strong> et <strong>append()</strong> qui permettent toutes deux d\'injecter du contenu dans le <strong>DOM</strong>, mais d\'une façon légèrement différente', 'Prévoir un conteneur pour la partie création afin de les supprimer facilement avec la methode <strong>remove()</strong>', 'Un peu de css pour les marges et couleurs'],
             src: 'img/portfolio/generateur_de_formulaires.png',
@@ -120,6 +129,7 @@ module.exports = {
         {
             title: 'Jeu de plateau Javascript.',
             link: 'http://jeuplateau.gregorypeigne.fr/',
+            gitlab: 'https://gitlab.com/greg3560/jeu_plateau',
             content: '<strong>Stack technique</strong>',
             details: ['HTML CSS', 'Les bases de JavaScript (variables, conditions, boucles, évènements)', 'La <strong>programmation orientée objet</strong> en JavaScript', 'Dissocier les <strong>calculs "métier"</strong> du jeu (est-ce que le joueur a le droit d\'aller sur cette case ?) avec la <strong>mise à jour de l\'interface</strong>', 'Séparer autant que possible les codes ayant des rôles différents dans des fichiers JavaScript différents'],
             src: 'img/portfolio/Jeu_de_plateau.png',
