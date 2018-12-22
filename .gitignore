@@ -5,7 +5,7 @@
 *~
 
 #Ignorer dossier IDE
-.idea/*
+./idea/*
 
 # Ignorer le dossier node_modules
 ./node_modules/*
@@ -17,10 +17,13 @@
 ./output/*
 
 # Ignorer l'entree preprocesseur du fm
-./css/input.css
+./css/*.css
 
 # Ignorer la generation du fichier index.html
 ./index.html
 
 # ignorer les fichiers htaccess
-./.htaccess
+./htaccess
+
+# ignorer le fichier de config
+.content/cnx.js

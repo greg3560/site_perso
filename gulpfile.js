@@ -12,11 +12,13 @@ let gulp = require('gulp'),
     zip = require('gulp-zip'),
     twig = require('gulp-twig'),
     webpack = require('webpack-stream'),
-    content = require('./js/content'),
+    content = require('./content/content'),
+    cnx = require('./content/cnx'),
     git = require('gulp-git'),
     robots = require('gulp-robots'),
     log = require('fancy-log'),
-    favicons = require("favicons").stream;
+    favicons = require("favicons").stream,
+    ftp = require( 'vinyl-ftp' );
 
 sass.compiler = require('node-sass');
 
@@ -104,6 +106,7 @@ gulp.task("favicons", function () {
 });
 
 gulp.task('dist', ['webpack', 'sass', 'twig', 'img', 'fonts', 'files', 'favicons', 'robots'], function () {
+    gulp.src(['.htaccess', 'sitemap.xml']).pipe(gulp.dest('dist'));
     return gulp.src('*.html')
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
@@ -119,6 +122,25 @@ gulp.task('push', function(){
         if (err) throw err;
     });
 });
+
+gulp.task( 'deploy', function () {
+
+
+    let globs = [
+        'dist/**',
+    ];
+
+    cnx.log = log;
+    let conn = ftp.create( cnx );
+
+    // using base = '.' will transfer everything to /public_html correctly
+    // turn off buffering in gulp.src for best performance
+
+    return gulp.src( globs, { base: 'dist/', buffer: false, matchBase: true } )
+        .pipe( conn.newer( '/public_html' ) ) // only upload newer files
+        .pipe( conn.dest( '/public_html' ) );
+
+} );
 
 gulp.task('prod', ['clean'], () => {
     gulp.start('dist');

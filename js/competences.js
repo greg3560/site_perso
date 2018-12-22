@@ -1,5 +1,5 @@
 import { VIEW_HEIGHT } from './constants';
-import { skills } from './content';
+import { skills } from '../content/content';
 
 let elem = document.querySelector('.carousel');
 let buttonLeft = document.querySelector('.gauche');
