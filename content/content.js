@@ -65,15 +65,6 @@ module.exports = {
             alt: 'CV de zozor'
         },
         {
-            title: 'Music Until Dawn',
-            link: 'http://mud.gregorypeigne.fr/',
-            gitlab: 'https://gitlab.com/greg3560/mud',
-            content: 'Refonte du site m-u-d-60.fr.',
-            details: ['Redonner un nouvel aspect au site à travers un nouveau design plus épuré', 'Intégration d\'une <strong>carte google map</strong> pour le plan d\'accès', 'Développement d\'un <strong>formulaire de contact</strong>', 'Conception d\'un <strong>menu dynamique</strong> avec PHP', 'Intégration d\'un <strong>slider</strong> entièrement développé en CSS3'],
-            src: 'img/portfolio/mud.png',
-            alt: 'MUD'
-        },
-        {
             title: 'Mairie de Naujac/mer',
             link: 'http://naujacsurmer.gregorypeigne.fr/',
             gitlab: 'https://gitlab.com/greg3560/mairie_naujac',
