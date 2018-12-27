@@ -65,15 +65,6 @@ module.exports = {
             alt: 'CV de zozor'
         },
         {
-            title: 'Mairie de Naujac/mer',
-            link: 'http://naujacsurmer.gregorypeigne.fr/',
-            gitlab: 'https://gitlab.com/greg3560/mairie_naujac',
-            content: 'Refonte d\'un site de mairie de notre choix pour le jury de fin de formation à l\'INFA.',
-            details: ['Utilisation de l\'architecture <strong>MVC</strong> (modèle, vue, contrôleur)', 'Utilisation de <strong>mysqli</strong> pour la connexion à la base de données', 'Création et gestion de la base de données', 'Mise en place d\'un <strong>bbcode</strong> pour la page commentaire, coloration et rendu en <strong>lien cliquable</strong> des expressions du type http://www et mailto'],
-            src: 'img/portfolio/naujac.png',
-            alt: 'Naujac sur mer'
-        },
-        {
             title: 'Le comptoir des saveurs.',
             link: 'img/portfolio/flyers_comptoir_des_saveurs.png',
             content: 'Réalisation d\'un Flyers pour le restaurant Le comptoir des saveurs à l\'aide de Photoshop, InDesign et un bon massicot',
