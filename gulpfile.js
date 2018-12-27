@@ -89,7 +89,6 @@ gulp.task("favicons", function () {
         appDescription: "Site de présentation",
         developerName: "Gregory Peigne",
         developerURL: "http://www.gregorypeigne.fr/",
-        background: "#000",
         path: "./",
         url: "http://www.gregorypeigne.fr/",
         display: "standalone",

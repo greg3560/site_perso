@@ -83,15 +83,6 @@ module.exports = {
             alt: 'Naujac sur mer'
         },
         {
-            title: 'Blog/site personnel',
-            link: 'http://siteperso.gregorypeigne.fr/',
-            gitlab: 'https://gitlab.com/greg3560/gregorypeigne-v1.1.2',
-            content: 'Mon premier espace avec Wordpress. Réalisation d\'un <strong>portfolio</strong> à l\'issu de ma formation à l\'INFA et partage d\'articles au sujet du numérique.',
-            details: ['Une page portfolio', 'Une page C.V', 'Une page de présentation', 'Installation et réglages du <strong>plugin Contact Form 7</strong>'],
-            src: 'img/portfolio/premier_site_perso.png',
-            alt: 'Blog personnel'
-        },
-        {
             title: 'Le comptoir des saveurs.',
             link: 'img/portfolio/flyers_comptoir_des_saveurs.png',
             content: 'Réalisation d\'un Flyers pour le restaurant Le comptoir des saveurs à l\'aide de Photoshop, InDesign et un bon massicot',
