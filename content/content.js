@@ -69,7 +69,7 @@ module.exports = {
             link: 'img/portfolio/flyers_comptoir_des_saveurs.png',
             content: 'Réalisation d\'un Flyers pour le restaurant Le comptoir des saveurs à l\'aide de Photoshop, InDesign et un bon massicot',
             details: ['Recto verso au format A5 300 pixels/pouce', 'Création du design en accord avec la charte graphique', 'Impression et découpage'],
-            src: 'img/portfolio/flyers_comptoir_des_saveurs.png',
+            src: 'img/portfolio/flyers_comptoir_des_saveurs_preview.png',
             alt: 'Flyers Comptoir des saveurs'
         },
         {

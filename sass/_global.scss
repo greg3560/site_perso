@@ -42,3 +42,10 @@ p {
 .card-link {
   color: $primary-color;
 }
+
+@media screen and (max-width: 400px)
+{
+  .card.small {
+    height: 210px;
+  }
+}
