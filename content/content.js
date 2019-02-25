@@ -30,21 +30,31 @@ module.exports = {
     introProjets: 'Mes premiers projets m\'ont permis d\'expérimenter le développement web (architecture MVC, projets orientés objets). Ensuite j’ai participé a la réalisation de projets bien plus innovant (produits bancaires, réservations d’espaces de travail, Interface de suivi des crypto-monnaies).',
     portfolios: [
         {
-            title: 'ADSI',
-            link: 'http://adsi.gregorypeigne.fr/',
-            gitlab: 'https://gitlab.com/greg3560/adsi',
-            content: 'Mon tout premier site web. Composé exclusivement des langages HTML et CSS. (Même le slider!).',
-            details: ['Une page accueil qui présente l\'activité de l\'entreprise à l\'aide d\'un slider CSS3', 'Une page télémaintenance avec teamviewer', 'Une page tarifs', 'Une page avec un <strong>formulaire de contacts</strong>', 'Une page avec une <strong>carte google map</strong> pour le plan d\'accès'],
-            src: 'img/portfolio/adsi.png',
-            alt: 'Site web ADSI'
+            title: 'HelloBank',
+            link: 'https://www.hellobank.fr/fr/ouvrir-un-compte/?types=HBA',
+            gitlab: 'https://gitlab.com/greg3560/hellobank',
+            content: 'Formulaire de souscription d\'un compte bancaire chez Hellobank.',
+            details: [
+                'Le formulaire se compose d’une landing page sur laquelle les données du prospect sont tout de suite récupérées pour pouvoir le relancer en cas d’abandon',
+                'Ensuite nous récoltons plus d’information sur le prospect comme son adresse postal, son identité, sa profession puis ensuite on demande aux prospect de fournir ses pièces justificatives a l’aide d’un système d’upload avec vérification des données via une api',
+                'Pour la partie technique, le formulaire est livrée dans une iframe, donc j’ai du faire face a des problématique lié au cross-domain pour par exemple étendre la hauteur de l’frame (chez le parent donc) quand on déroule un dropdown dans le formulaire (l’enfant)',
+                'La stack technique était composée de : Symfony2, Jquery, twig, foundation  et  de Web services pour la validation des pièces justificatives. '
+                ],
+            src: 'img/portfolio/hellobank.png',
+            alt: 'Application Hellobank'
         },
         {
-            title: 'Flyer ADSI',
-            link: 'img/portfolio/flyers_adsi_recto.png',
-            content: 'Réalisation d\'un <strong>Flyers</strong> pour la societe A.D.S.I à l\'aide de Photoshop, InDesign et un bon massicot.',
-            details: ['Recto verso au format A5 300 pixels/pouce', 'Création du design en accord avec la <strong>charte graphique</strong>', 'Impression et découpage'],
-            src: 'img/portfolio/flyers_adsi.png',
-            alt: 'Flyers ADSI'
+            title: 'BNP Paribas',
+            link: 'https://mabanque.bnpparibas/fr/ouvrir-un-compte/?agence=EERI',
+            gitlab: 'https://gitlab.com/greg3560/bnp-paribas',
+            content: 'Formulaire d\'ouverture de compte BNP Paribas 9 minutes',
+            details: [
+                'Le client BNP Paribas nous a sollicité afin de pouvoir se positionner sur le marché du compte bancaire en 9 minutes ! Donc c’est la première contrainte technique. Mais le formulaire reste sensiblement le meme.',
+                'Le formulaire est a peu près identique à celui de Hellobank, donc le gain de temps est au niveau des vérifications des pièces fourni. Pour des raison de productivité nous avion récupérer le système d’upload de Hellobank',
+                'La stack technique était composée de Symfony pour le back-end, REACT pour le front avec le framework material ui basé sur REACTJS. '
+            ],
+            src: 'img/portfolio/bnp_paribas.png',
+            alt: 'BNP Paribas'
         },
         {
             title: 'Blog de Zozor',
