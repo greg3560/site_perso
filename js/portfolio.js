@@ -15,4 +15,18 @@ export function portfolio() {
     });
 
     glide.mount({Controls, Autoplay, Breakpoints});
+
+    /* Click More on the cards */
+
+    document.querySelectorAll('.card-content i').forEach(function(elem, index, array) {
+       elem.addEventListener('click', function() {
+           console.log('onClick');
+           var event = new MouseEvent('click', {
+               'view': window,
+               'bubbles': true,
+               'cancelable': true
+           });
+           elem.parentElement.childNodes[1].dispatchEvent(event);
+       });
+    });
 }

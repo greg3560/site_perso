@@ -7,12 +7,14 @@ module.exports = {
     zipCode: '95470',
     city: 'Survilliers',
     country: 'FRANCE',
-    subTitle: 'Développeur web - React.js - Symfony - Sass - Gulp',
+    subTitle: 'Développeur web - React.js/Redux/SSR - Symfony - Sass - Gulp',
     intro: 'Je suis Grégory Peigné, développeur web depuis 2012. J’ai débuté en autodidacte sur la plateforme openclassrooms. Ensuite j’ai intégré L’INFA pour une formation de 3 mois pour valider mon expérience autodidacte. Puis j’ai obtenu une licence de <strong>chef de projet digital</strong> à Institut F2i à Paris.',
     resume: 'Après un long parcours de formations et une expérience en agence, je maîtrise les technologies du web les plus demandées par les entreprises. Mes connaissances sont d’une part axées sur le code,  et d’autres part sur la gestions de projets.J’utilise aussi des outils de web-design, UX/UI design pour mes besoin personnels. Voici une présentation des niveau de compétences.',
     skills: [
         {name: 'reactjs', score: '70'},
         {name: 'symfony', score: '60'},
+        {name: 'redux', score: '30'},
+        {name: 'SSR', score: '30'},
         {name: 'sass', score: '90'},
         {name: 'gulp', score: '70'},
         {name: 'html_css', score: '90'},
@@ -57,24 +59,6 @@ module.exports = {
             alt: 'BNP Paribas'
         },
         {
-            title: 'Blog de Zozor',
-            link: 'http://blogzozor.gregorypeigne.fr/',
-            gitlab: 'https://gitlab.com/greg3560/blog_zozor',
-            content: 'Premier mooc d\'openclassrooms autour des langages <strong>HTML5</strong> et CSS3. Ceci est le premier TP du tutoriel.',
-            details: ['Rappel sur la <strong>mise en page</strong> (en-tête, corps de page, pied de page)', 'Utilisation des <strong>balises html5</strong> et sensibilisation de leurs rôles <strong>sémantiques</strong>', 'Utilisation des <strong>propriétés CSS3</strong> pour le design et aussi pour le positionnement'],
-            src: 'img/portfolio/blog_zozor.png',
-            alt: 'Blog de Zozor'
-        },
-        {
-            title: 'CV de Zozor',
-            link: 'http://cvzozor.gregorypeigne.fr/',
-            gitlab: 'https://gitlab.com/greg3560/cv_zozor',
-            content: 'Premier mooc d\'openclassrooms autour des langages <strong>HTML5</strong> et CSS3.Ceci est le premier TP du tutoriel.',
-            details: ['Rappel sur la <strong>mise en page</strong> (en-tête, corps de page, pied de page)', 'Utilisation des <strong>balises html5</strong> et sensibilisation de leurs rôles <strong>sémantiques</strong>', 'Utilisation des <strong>propriétés CSS3</strong> pour le design et aussi pour le positionnement'],
-            src: 'img/portfolio/cv_zozor.png',
-            alt: 'CV de zozor'
-        },
-        {
             title: 'Le comptoir des saveurs.',
             link: 'img/portfolio/flyers_comptoir_des_saveurs.png',
             content: 'Réalisation d\'un Flyers pour le restaurant Le comptoir des saveurs à l\'aide de Photoshop, InDesign et un bon massicot',
@@ -117,6 +101,24 @@ module.exports = {
             details: ['HTML CSS', 'Les bases de JavaScript (variables, conditions, boucles, évènements)', 'La <strong>programmation orientée objet</strong> en JavaScript', 'Dissocier les <strong>calculs "métier"</strong> du jeu (est-ce que le joueur a le droit d\'aller sur cette case ?) avec la <strong>mise à jour de l\'interface</strong>', 'Séparer autant que possible les codes ayant des rôles différents dans des fichiers JavaScript différents'],
             src: 'img/portfolio/Jeu_de_plateau.png',
             alt: 'Jeu de plateau'
+        },
+        {
+            title: 'Blog de Zozor',
+            link: 'http://blogzozor.gregorypeigne.fr/',
+            gitlab: 'https://gitlab.com/greg3560/blog_zozor',
+            content: 'Premier mooc d\'openclassrooms autour des langages <strong>HTML5</strong> et CSS3. Ceci est le premier TP du tutoriel.',
+            details: ['Rappel sur la <strong>mise en page</strong> (en-tête, corps de page, pied de page)', 'Utilisation des <strong>balises html5</strong> et sensibilisation de leurs rôles <strong>sémantiques</strong>', 'Utilisation des <strong>propriétés CSS3</strong> pour le design et aussi pour le positionnement'],
+            src: 'img/portfolio/blog_zozor.png',
+            alt: 'Blog de Zozor'
+        },
+        {
+            title: 'CV de Zozor',
+            link: 'http://cvzozor.gregorypeigne.fr/',
+            gitlab: 'https://gitlab.com/greg3560/cv_zozor',
+            content: 'Premier mooc d\'openclassrooms autour des langages <strong>HTML5</strong> et CSS3.Ceci est le premier TP du tutoriel.',
+            details: ['Rappel sur la <strong>mise en page</strong> (en-tête, corps de page, pied de page)', 'Utilisation des <strong>balises html5</strong> et sensibilisation de leurs rôles <strong>sémantiques</strong>', 'Utilisation des <strong>propriétés CSS3</strong> pour le design et aussi pour le positionnement'],
+            src: 'img/portfolio/cv_zozor.png',
+            alt: 'CV de zozor'
         }
     ],
     codes: [
