@@ -7,6 +7,7 @@ export function portfolio() {
         hoverpause: true,
         startAt: 0,
         breakpoints: {
+            450: { perView : 1},
             992: { perView: 2 },
             1200: { perView: 3 },
             3000: { perView: 3 }

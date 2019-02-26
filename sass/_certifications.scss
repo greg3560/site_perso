@@ -1,6 +1,6 @@
 #certifications {
   #dev, #web, #systeme, #parcours {
-    padding-top: 60px;
+    padding-top: 10px;
   }
   .activator {
     cursor: pointer;
@@ -51,5 +51,18 @@
   #parcours .card-image img[alt="Lancer son site web"] {
     background: #aebd9b;
     background: linear-gradient(45deg, #aebd9b 0%, #c8cfae 100%);
+  }
+
+  @media screen and (max-width: 450px)
+  {
+    #dev li, #web li, #systeme li, #parcours li {
+      width: 100% !important;
+      margin-left: auto !important;
+      left: auto;
+      right: auto;
+    }
+    .card.small {
+      height: 300px;
+    }
   }
 }
