@@ -4,13 +4,13 @@
     position: relative;
     .gauche, .droite {
       position: absolute;
-      top: 50%;
+      top: 124%;
     }
     .droite {
-      right: 0;
+      left: 87%;
     }
     .gauche {
-      left: 12.5%;
+      left: 15.5%;
     }
     .carousel {
       overflow: visible;
@@ -59,6 +59,20 @@
           bottom: -160px;
           right: 10px;
         }
+      }
+    }
+  }
+  @media #{$medium-and-down} {
+    .carousel-container {
+      bottom: 45px;
+      .gauche, .droite {
+        top: 90%;
+      }
+      .droite {
+        left: 92%;
+      }
+      .gauche {
+        left: 0;
       }
     }
   }

@@ -7,7 +7,7 @@ module.exports = {
     zipCode: '95470',
     city: 'Survilliers',
     country: 'FRANCE',
-    subTitle: 'Développeur web - React.js/Redux/SSR - Symfony - Sass - Gulp',
+    subTitle: 'Développeur web - React.js - Redux - SSR - Symfony - Sass - Gulp',
     intro: 'Je suis Grégory Peigné, développeur web depuis 2012. J’ai débuté en autodidacte sur la plateforme openclassrooms. Ensuite j’ai intégré L’INFA pour une formation de 3 mois pour valider mon expérience autodidacte. Puis j’ai obtenu une licence de <strong>chef de projet digital</strong> à Institut F2i à Paris.',
     resume: 'Après un long parcours de formations et une expérience en agence, je maîtrise les technologies du web les plus demandées par les entreprises. Mes connaissances sont d’une part axées sur le code,  et d’autres part sur la gestions de projets.J’utilise aussi des outils de web-design, UX/UI design pour mes besoin personnels. Voici une présentation des niveau de compétences.',
     skills: [
