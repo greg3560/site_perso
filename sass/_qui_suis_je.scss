@@ -2,6 +2,11 @@
   #greg {
     margin-top: 50px;
   }
+  @media #{$medium-and-down} {
+    #greg {
+      float: left;
+    }
+  }
   .reseaux-sociaux {
     ul li {
       text-align: center;
