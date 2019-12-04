@@ -30,12 +30,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/dataG60/gregorypeigne.git"
+    "url": "git+https://github.com/greg3560/site_perso.git"
   },
   "author": "greg",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/dataG60/gregorypeigne/issues"
+    "url": "https://gitlab.com/greg3560/site_perso/issues"
   },
-  "homepage": "https://gitlab.com/dataG60/gregorypeigne#readme"
+  "homepage": "https://gitlab.com/greg3560/site_perso#readme"
 }
